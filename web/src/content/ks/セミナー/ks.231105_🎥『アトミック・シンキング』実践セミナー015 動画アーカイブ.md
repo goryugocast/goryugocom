@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー015 動画アーカイブ
-subtitle: Obsidian仕事術2023
+title: Obsidian仕事術2023
+subtitle: 『アトミック・シンキング』実践セミナー015 動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/015'
 date_published: 2023-11-05T00:00:00.000Z

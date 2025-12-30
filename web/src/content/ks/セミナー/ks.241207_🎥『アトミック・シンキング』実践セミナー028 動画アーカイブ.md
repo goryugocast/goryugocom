@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー028 動画アーカイブ
+subtitle: イントロダクション - ホームノートの概念と目的 / ホームノートは複数あっても良い - 文脈に応じた使い分け / 効果的なホームノートのための3原則
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks028'
 date_published: 2024-12-07T00:00:00.000Z

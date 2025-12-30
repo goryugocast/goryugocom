@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー3動画アーカイブ
-subtitle: Obsidian1.0の基本的な使い方のおさらい
+title: Obsidian1.0の基本的な使い方のおさらい
+subtitle: 『アトミック・シンキング』実践セミナー3動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/seminar003'
 date_published: 2022-11-28T00:00:00.000Z

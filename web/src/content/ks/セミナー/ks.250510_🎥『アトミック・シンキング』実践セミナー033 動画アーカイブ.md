@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー033 動画アーカイブ
-subtitle: Obsidian x Cursor 入門
+title: Obsidian x Cursor 入門
+subtitle: 『アトミック・シンキング』実践セミナー033 動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks033'
 date_published: 2025-05-10T00:00:00.000Z

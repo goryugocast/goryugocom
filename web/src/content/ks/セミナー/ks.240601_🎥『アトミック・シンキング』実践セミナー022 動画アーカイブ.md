@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー022 動画アーカイブ
+subtitle: イントロダクション - 基本を固めて次に進む / デジタル情報整理の原則 - なぜフォルダ分けはダメなのか / デイリーノートからノートを分けるタイミング
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks022'
 date_published: 2024-06-01T00:00:00.000Z

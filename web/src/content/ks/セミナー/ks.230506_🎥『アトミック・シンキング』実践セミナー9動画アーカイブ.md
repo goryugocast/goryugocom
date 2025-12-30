@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー9動画アーカイブ
-subtitle: Obsidian Advanced URIの基本と活用
+title: Obsidian Advanced URIの基本と活用
+subtitle: 『アトミック・シンキング』実践セミナー9動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks009'
 date_published: 2023-05-06T00:00:00.000Z
@@ -21,6 +21,7 @@ series_code: seminar
 category: アーカイブ
 ---
 
+## セミナー構成
 ### [1. Advanced URIプラグイン紹介 - デイリーノート活用の鍵](https://knowledgestuck.substack.com/p/ks009?timestamp=0)
 **時間**: 00:00:00 ～ 00:03:20
 

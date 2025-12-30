@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー025 動画アーカイブ
+subtitle: イントロダクション - Obsidianの得意なことと活用法 / Obsidianが持つ3つの得意技と3つの目的 / Obsidianを使った知識の整理（PKM）
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks025'
 date_published: 2024-09-07T00:00:00.000Z

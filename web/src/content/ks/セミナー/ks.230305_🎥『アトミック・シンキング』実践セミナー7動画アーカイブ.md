@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー7動画アーカイブ
-subtitle: デイリーノート仕事術入門
+title: デイリーノート仕事術入門
+subtitle: 『アトミック・シンキング』実践セミナー7動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks007'
 date_published: 2023-03-05T00:00:00.000Z

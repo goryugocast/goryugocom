@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー021 動画アーカイブ
+subtitle: イントロダクション - 基本を固めて次に進む / デジタル情報の無限性と人類の課題 / デジタルと紙の得意なこと
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks021'
 date_published: 2024-05-11T00:00:00.000Z

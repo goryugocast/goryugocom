@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー2動画アーカイブ
-subtitle: 読書メモをアトミックにする方法
+title: 読書メモをアトミックにする方法
+subtitle: 『アトミック・シンキング』実践セミナー2動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/seminar002'
 date_published: 2022-10-24T00:00:00.000Z

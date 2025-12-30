@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー034 動画アーカイブ
+subtitle: ツェッテルカステンとは何か - 誤解と本質 / ツェッテルカステンの3種類のメモ - その役割と難しさ / ツェッテルカステンの番号付け - 思考の展開を追跡する
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks034'
 date_published: 2025-06-07T00:00:00.000Z

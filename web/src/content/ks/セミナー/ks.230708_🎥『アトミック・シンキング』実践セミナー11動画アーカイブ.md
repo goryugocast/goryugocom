@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー11動画アーカイブ
+subtitle: イントロダクション - 日記とデイリーノートの使い分け / 共通点と基本的な目的 - すべて記録し忘れても大丈夫にする / 使い分けの実例 - 時系列vs主題別の記録
 description: null
 url: 'https://knowledgestuck.substack.com/p/11'
 date_published: 2023-07-08T00:00:00.000Z
@@ -17,7 +18,7 @@ series_emoji: "🎥"
 series_code: seminar
 category: アーカイブ
 ---
-
+## セミナー構成
 ### [1. イントロダクション - 日記とデイリーノートの使い分け](https://knowledgestuck.substack.com/p/11?timestamp=0)
 **時間**: 00:00:00 ～ 00:01:00
 

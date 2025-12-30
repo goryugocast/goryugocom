@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー031 動画アーカイブ
+subtitle: イントロダクション - ObsidianにおけるJohnny Decimal / リンク型ノートの課題 - 情報過多と整理の困難さ / Johnny Decimalの概要 - 数字による体系的情報整理術
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks031'
 date_published: 2025-03-01T00:00:00.000Z

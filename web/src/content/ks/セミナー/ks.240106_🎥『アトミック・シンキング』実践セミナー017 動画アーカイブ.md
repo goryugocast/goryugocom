@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー017 動画アーカイブ
+subtitle: イントロダクション - なぜ目標ではなく「テーマ」なのか / 過去5年間のテーマ変遷 - 失敗から学んだこと / テーマが目標より優れている理由 - 判断の軸を持つ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks017'
 date_published: 2024-01-06T00:00:00.000Z

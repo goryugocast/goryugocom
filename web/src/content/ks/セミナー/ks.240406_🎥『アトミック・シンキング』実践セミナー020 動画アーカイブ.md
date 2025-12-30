@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー020 動画アーカイブ
+subtitle: イントロダクションと環境設定 / 今後の学習計画と「知性」を鍛えるという目的 / なぜ最初はデイリーノートだけなのか？
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks020'
 date_published: 2024-04-06T00:00:00.000Z

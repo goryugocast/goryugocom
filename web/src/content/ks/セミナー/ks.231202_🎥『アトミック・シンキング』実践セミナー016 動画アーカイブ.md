@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー016 動画アーカイブ
+subtitle: イントロダクション - デジタルアトミックシンキング入門 / 小さくまとめたらやる気が出た物語 - goryugo.comの事例 / 失敗例と成功例 - 旅行記の書き方比較
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks016'
 date_published: 2023-12-02T00:00:00.000Z

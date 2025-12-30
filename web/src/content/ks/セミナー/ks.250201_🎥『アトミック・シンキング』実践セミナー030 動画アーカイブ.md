@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー030 動画アーカイブ
+subtitle: イントロダクション - Spaced Repetitionでノートをエバーグリーンに / Spaced Repetitionの仕組み - 忘却曲線との戦い / 「いつかやりたい」リストをSpaced Repetitionで管理
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks030'
 date_published: 2025-02-01T00:00:00.000Z

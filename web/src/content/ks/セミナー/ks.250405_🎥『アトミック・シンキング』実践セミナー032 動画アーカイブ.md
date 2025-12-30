@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー032 動画アーカイブ
+subtitle: ジョニーデシマル実践編 - Obsidianで情報整理 / 数字がもたらす高速アクセスと直感的な操作 / Obsidianでジョニーデシマルを構築 - 柔軟な構造変更
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks032'
 date_published: 2025-04-05T00:00:00.000Z

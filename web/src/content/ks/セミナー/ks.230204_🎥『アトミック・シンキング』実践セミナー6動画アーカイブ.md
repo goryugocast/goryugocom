@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー6動画アーカイブ
-subtitle: ノートの振り返りを活用した次世代GTD的仕事術
+title: ノートの振り返りを活用した次世代GTD的仕事術
+subtitle: 『アトミック・シンキング』実践セミナー6動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks006'
 date_published: 2023-02-04T00:00:00.000Z

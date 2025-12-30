@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー027 動画アーカイブ
+subtitle: イントロダクション - 「アトミック仕事術」の提唱 / 「一つの仕事に一つのノート」原則の定義と利点 / 仕事ノートの具体的な運用方法と命名規則
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks027'
 date_published: 2024-11-03T00:00:00.000Z

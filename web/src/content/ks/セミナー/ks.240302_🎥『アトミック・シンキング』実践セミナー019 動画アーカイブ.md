@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー019 動画アーカイブ
+subtitle: イントロダクションとCanvasの概要 / Obsidian Canvasの利点と操作の基本 / Canvas活用事例（成功と失敗）
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks019'
 date_published: 2024-03-02T00:00:00.000Z

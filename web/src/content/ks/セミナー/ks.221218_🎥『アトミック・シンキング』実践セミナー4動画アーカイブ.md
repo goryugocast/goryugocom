@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー4動画アーカイブ
-subtitle: Anki問題作りは究極のアトミックノート作り
+title: Anki問題作りは究極のアトミックノート作り
+subtitle: 『アトミック・シンキング』実践セミナー4動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/4-465'
 date_published: 2022-12-18T00:00:00.000Z

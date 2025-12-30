@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー5動画アーカイブ
-subtitle: Obsidian デイリーノート仕事術
+title: Obsidian デイリーノート仕事術
+subtitle: 『アトミック・シンキング』実践セミナー5動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/5'
 date_published: 2023-01-08T00:00:00.000Z

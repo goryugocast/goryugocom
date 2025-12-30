@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー029 動画アーカイブ
+subtitle: イントロダクション - 「年間テーマ」で最高の1年を / ゴリゴの7年間のテーマ遍歴 - 成長と身体化 / 目標ではなく「テーマ」を設定する理由
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks029'
 date_published: 2025-01-11T00:00:00.000Z

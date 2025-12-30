@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー026 動画アーカイブ
+subtitle: イントロダクション - 持続可能な仕事術への転換 / 「書いて考える」を仕事の基礎にする / Evergreenな仕事の進め方 - 記録と改善のサイクル
 description: null
 url: 'https://knowledgestuck.substack.com/p/026'
 date_published: 2024-10-06T00:00:00.000Z

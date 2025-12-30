@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー基本編 動画アーカイブ
-subtitle: 3種のノートでObsidianを整理
+title: 3種のノートでObsidianを整理
+subtitle: 『アトミック・シンキング』実践セミナー基本編 動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks-basic001'
 date_published: 2023-04-15T00:00:00.000Z

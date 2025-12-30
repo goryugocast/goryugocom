@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー動画アーカイブ
+subtitle: Obsidianの全体像と使用用途 / ワークスペース機能の活用 / ノートづくりのワークフロー
 description: null
 url: 'https://knowledgestuck.substack.com/p/216'
 date_published: 2022-09-27T00:00:00.000Z

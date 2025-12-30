@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー024 動画アーカイブ
-subtitle: リンクを使ってボトムアップで思考を整理する
+title: リンクを使ってボトムアップで思考を整理する
+subtitle: 『アトミック・シンキング』実践セミナー024 動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks024'
 date_published: 2024-08-03T00:00:00.000Z

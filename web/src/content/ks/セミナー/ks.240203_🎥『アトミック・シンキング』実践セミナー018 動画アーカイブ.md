@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー018 動画アーカイブ
-subtitle: Obsidian以外のノートツールの活用事例
+title: Obsidian以外のノートツールの活用事例
+subtitle: 『アトミック・シンキング』実践セミナー018 動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks018'
 date_published: 2024-02-03T00:00:00.000Z

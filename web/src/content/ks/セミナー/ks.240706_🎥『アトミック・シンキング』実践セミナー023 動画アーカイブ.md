@@ -3,6 +3,7 @@ project: ks
 topic: その他
 topic_code: misc
 title: 『アトミック・シンキング』実践セミナー023 動画アーカイブ
+subtitle: イントロダクション - トピックノートで情報をリンク整理 / なぜフォルダ・タグではなくリンクで整理するのか / 脳の検索メカニズムとデジタルツール
 description: null
 url: 'https://knowledgestuck.substack.com/p/ks023'
 date_published: 2024-07-06T00:00:00.000Z

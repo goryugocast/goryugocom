@@ -2,8 +2,8 @@
 project: ks
 topic: その他
 topic_code: misc
-title: 『アトミック・シンキング』実践セミナー8動画アーカイブ
-subtitle: ChatGPTでの独学プログラミング入門
+title: ChatGPTでの独学プログラミング入門
+subtitle: 『アトミック・シンキング』実践セミナー8動画アーカイブ
 description: null
 url: 'https://knowledgestuck.substack.com/p/8'
 date_published: 2023-04-01T00:00:00.000Z
