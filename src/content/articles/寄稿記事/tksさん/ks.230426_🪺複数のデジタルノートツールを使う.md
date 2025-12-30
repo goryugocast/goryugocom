@@ -1,0 +1,50 @@
+---
+project: ks
+topic: 友人(tks)の記事
+topic_code: tks
+title: 複数のデジタルノートツールを使う
+subtitle: "\U0001FABA002 選べないならどっちも使えばいいじゃない"
+description: null
+url: 'https://knowledgestuck.substack.com/p/tks002'
+date_published: 2023-04-26T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!HJP6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F121d5225-5a7c-474a-97c6-3c1c41d28fa8_1264x556.png
+draft_link: null
+series_name: 寄稿記事
+series_emoji: "\U0001FABA"
+series_code: contribution
+category: tksさん
+---
+
+## メモ・原稿
+
+---
+series: personal_document
+date_published: 2023-04-26
+---
+
+2023-05-15
+SBIで継続することにした。
+自己負担額を5−10万円にして、車両保険の金額を320万円にした。
+
+[[2023年5月自動車保険.pdf]]
+
+---
+
+クロストレックに乗り換えるために手続き
+
+追加の保険料が80円だった
+スバルで短期だと8000円のところがこの金額
+
+[[2023-04-26自動車保険契約変更.pdf]]
+
+from 2023-04-26(Wed)
+
+
+継続でいくらになるかを確認する
+
+つぎ、ChatGPTで料金を比較する
+自己をした場合に値上りして、その金額がいくらになるか。
+
+![[17993377397192.jpg]]

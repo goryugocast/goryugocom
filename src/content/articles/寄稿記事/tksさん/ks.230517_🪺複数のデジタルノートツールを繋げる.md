@@ -1,0 +1,41 @@
+---
+project: ks
+topic: 友人(tks)の記事
+topic_code: tks
+title: 複数のデジタルノートツールを繋げる
+subtitle: "\U0001FABA003 繋げておけば使い分けなくてもいいんじゃない？"
+description: null
+url: 'https://knowledgestuck.substack.com/p/tks003'
+date_published: 2023-05-17T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!VeVP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb3e2d0a1-d5d4-4825-a5a2-39bdb1b6a0dc_1428x906.png
+draft_link: null
+tags: []
+series_name: 寄稿記事
+series_emoji: "\U0001FABA"
+series_code: contribution
+category: tksさん
+---
+
+## メモ・原稿
+
+# 複数のデジタルノートツールを繋げる
+
+### 🪺003 繋げておけば使い分けなくてもいいんじゃない？
+
+https://substack.com/@tks1988https://substack.com/@tks1988May 17, 2023∙ Paid71Sharehttps://substackcdn.com/image/fetch/$s_!T8Dn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5668d1e1-ab7d-4359-b5c2-a18b8f9367bc_1920x300.jpeg## 前回の振り返り
+
+前回は複数ツールを使う経緯や実際の様子について書きました。もともとは、ツールを１つに絞ることができなかったため複数ツールを使うに至ったものの、発想の転換によって複数ツールの使用をむしろ肯定的に評価できるようになったことや、実際にはデイリーノートと非公開ノートと公開ノートの3つの役割に合わせてツールを使い分けていることを書きました。今回は、複数ツールを使う上で、ツールとモードを対応させることやツール同士を繋げることについて書きます。
+
+https://publish.obsidian.md/knowledgestack/ks_guest_post
+
+## ツールとモードを対応させる
+
+複数のツールを使うと、必然的にツール間を行ったり来たりすることになります。すると、「あれ。今私は何をしようとしていたのだっけ？」と混乱することがあります。そこで私は、ツールとモードを対応させ…
+
+## Keep reading with a 7-day free trial
+
+Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+
+https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Ftks003&utm_source=paywall-free-trial&utm_medium=web&utm_content=120671507&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Ftks003&for_pub=knowledgestuck&change_user=falsehttps://substack.com/@tks1988A guest post byhttps://substack.com/@tks1988?utm_campaign=guest_post_bio&utm_medium=webラジオやポッドキャストを聴くことが趣味の男です。https://tks1988.substack.com/subscribe?

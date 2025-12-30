@@ -1,0 +1,120 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: "\U0001F9D8‍♂️記録は日々の生活の質をあげる"
+subtitle: 記録には直接的な時短の効果はないが、フィードバックによって質が良くなる
+description: null
+url: 'https://knowledgestuck.substack.com/p/788'
+date_published: 2021-03-21T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!X-y3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7c0e7785-b8a5-4db2-9386-0e2c52d1d14d_5184x3094.jpeg
+draft_link: null
+tags: []
+series_name: ライフスタイル
+series_emoji: "\U0001F9D8"
+series_code: life
+---
+
+## メモ・原稿
+
+# 🧘‍♂️記録は日々の生活の質をあげる
+
+### 記録には直接的な時短の効果はないが、フィードバックによって質が良くなる
+
+https://substack.com/@goryugohttps://substack.com/@goryugoMar 21, 20215Sharehttps://substackcdn.com/image/fetch/$s_!X-y3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7c0e7785-b8a5-4db2-9386-0e2c52d1d14d_5184x3094.jpeg『佐々木さん、記録って何の役に立つんですか？』という本を、2020年に作りました。
+
+📖 https://amzn.to/2OUtH94
+
+この本を作ったことで、「毎日のあらゆる出来事を記録する意味」に関して一定の答えを見つけられた、という感覚ができました。
+
+（これは、実に素晴らしい体験でした）
+
+そこから1年ほど経過し、少し自分なりの「記録の意味」のようなものが見えてきたので、それをまとめてみたいと思います。
+
+## 記録は「非常に効率が良い方法」
+
+最近私は、記録を残すというのは「非常に効率が良い方法」だと感じるようになりました。
+
+記録というものには、直接的な時短の効果はありません。
+
+目の前のことをただ早く終わらせるためには、記録という行為はただひたすらに「時間を無駄にする行動」です。
+
+じゃあ記録の何が効率が良いのかということを考えた時にわかったのは、記録は「経験値効率がいい」ということでした。
+
+どんな経験もただの経験で終わらせるのでなく、記録によって今後の自分に活かせる確率が上がる。
+
+1回目は「遅い」けれども、2回3回と繰り返すことでレベルが上がって、1回目より早く終わらせることができたり、これまでと違うことをやった場合にも経験を活かしやすくなる。
+
+そういう意味で、記録というのはここで何度も書いている「https://knowledgestuck.substack.com/p/6a8」方法の1つだとも言えます。
+
+## 学びに重要なのは振り返り
+
+学習から効果を得る（効率よく学ぶ）ためには、以下の6つのステップを踏むことが非常に重要だと言われています。file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn1-15555
+
+価値を見いだす
+
+- 目標を設定する
+
+- スキルと知識を伸ばす
+
+- 発展させる
+
+- 関係づける
+
+- 再考する
+
+記録というのは、主にこの最後のステップ「再考」に位置付けられるもの。
+
+「再考」にあたって、記録というのは一番簡単で、さらに効果も高い素晴らしい方法です。
+
+記録の重要な効果は、内省による自分自身への素早いフィードバック。
+
+自分の行動について深く考えを巡らし、うまくいった点、いかなかった点などを記録しておくことが自分自身の経験から学ぶために非常に重要なこと。
+
+この「記録」は、深い思考である必要はなく、「もっと腰を使わないといけないとわかった」「もっと声を張れと言われた」という程度のメモだけでも十分に豊かな学びのきっかけになります。file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn2-15555
+
+書くという行為は「**思考を減速させ、熟考を促す**」効果があり、学習の質をあげることができるのです。
+
+## 日々のあらゆる行動も「振り返って学べる」
+
+ここに書いた記録して熟考する、というのは、一般的には「学習」についての話です。
+
+ただ、これは学習に限らず、日々の生活でも同じことが言えるのではないか、というのが今回の主題です。
+
+ごりゅごは毎日「たすくま」を使って日々何をしたのかということを（世間一般から見れば気狂いというレベルで）記録しています。
+
+この記録の熱意にも波があるのですが、最近は「全ての記録に必ず一言コメントを残す」ということを徹底するようになりました。
+
+https://substackcdn.com/image/fetch/$s_!179e!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F9108e3dd-ceb9-4767-b6ac-84f767a9dc78_828x1792.png全てのセクションに「メモを残す」と書いておいたこのことを徹底してみたら、今までよりも明らかに「1つ1つの行動の意味」を考える頻度が増えてきています。
+
+よりやる気が出る行動の順番を考えたり、意味がないと思う行動を見直したり。
+
+自分自身で「改善しよう」という意識は特にありません。
+
+そういうことは考えていないけど、コメントを残すことで、自然に、無意識に改善したいことが見えてくる。
+
+改善の「成果」に関しては、期間が短すぎるので判断は難しいのですが、現段階で言うと「自分がつい手癖でやってしまう、無駄だと感じる行為（Twitterを眺める）」が発生するタイミングをある程度突き止められたりはしています。
+
+（Podcastの更新情報などをツイートしようとしてTwitterを開くのが悪い→外部ツールで投稿するという対策実施。こういう初歩的なことに、意外に気がつけない）
+
+## 自分へのフィードバックを忘れない
+
+これらのことは全て「フィードバック」という言葉で整理することができます。日記も、手帳も、記録も全て「自分へのフィードバック」のための行為。
+
+学習では、フィードバックの間隔は短ければ短いほどよいと言われています。これと同じ理屈で言えば、記録の頻度も細かければ細かいほど良い理屈。
+
+**日々の出来事に対して細かいフィードバックを繰り返すことで、あらゆる行動に熟考を促し、日々の生活の質をあげる**。
+
+本質は『佐々木さん、記録って何の役に立つんですか？』に書いてあることとほとんど同じようなことなのですが、自分なりの言語にして理解できたことは、自分にとってすごくよい経験になりました。
+
+日々の生活の質をあげる、みたいな言葉はかなり抽象的な言葉なんですが、多分これこそが「今の自分が求めているもの」なんだろうな、ということを思います。
+
+https://amzn.to/2OUtH94
+
+Ulrich Boser.https://amzn.to/3s5FQ9L. 英治出版. 2018. 328 p. file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr1-15555
+
+- Ulrich Boser.https://amzn.to/3s5FQ9L. 英治出版. 2018. 307 p. file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr2-15555
+
+5Share

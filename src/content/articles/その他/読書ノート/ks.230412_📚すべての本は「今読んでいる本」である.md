@@ -1,0 +1,41 @@
+---
+project: ks
+topic: 本
+topic_code: hon
+title: すべての本は「今読んでいる本」である
+subtitle: "\U0001F4DA✍️007 意識が変われば結果的により多くのことを知ることができる"
+description: null
+url: 'https://knowledgestuck.substack.com/p/atomic-reading007'
+date_published: 2023-04-12T00:00:00.000Z
+audience: only_paid
+tags:
+  - 読書
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F4DA"
+series_code: other
+category: 読書ノート
+---
+
+## メモ・原稿
+
+#ks/📔✍️ `= this.file.frontmatter.url`
+
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+[並行読書によって「自分の興味」がわかる](https://knowledgestuck.substack.com/p/a0c)の続きです。
+
+![[📔✍️007 熱量が高いうちに少しだけ読んでおく]]

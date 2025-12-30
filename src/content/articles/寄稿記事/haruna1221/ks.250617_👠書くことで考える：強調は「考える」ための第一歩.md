@@ -1,0 +1,23 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: 書くことで考える：強調は「考える」ための第一歩
+subtitle: デジタルで使える3つの「強調」テクニック
+description: null
+url: 'https://knowledgestuck.substack.com/p/haruna019'
+date_published: 2025-06-17T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!i9_y!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8670600d-f818-4d7c-8067-1278c7bdeafd_1184x650.png
+draft_link: null
+tags: []
+series_name: 寄稿記事
+series_emoji: "\U0001F460"
+series_code: contribution
+category: haruna1221
+---
+
+## メモ・原稿
+
+（ここに原稿やメモを書く）

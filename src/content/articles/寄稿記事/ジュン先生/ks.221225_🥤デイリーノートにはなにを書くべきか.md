@@ -1,0 +1,66 @@
+---
+project: ks
+topic: 友人(jun)の記事
+topic_code: jun
+title: デイリーノートにはなにを書くべきか
+subtitle: "\U0001F964002 日記は「何をしていたか」「次になにをやるべきか」がわかるように書く"
+description: null
+url: 'https://knowledgestuck.substack.com/p/be3'
+date_published: 2022-12-25T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!hMoI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff14ec61c-4dc9-4dcf-ac34-75bde425c400_992x738.jpeg
+tags:
+  - デイリーノート
+draft_link: null
+series_name: 寄稿記事
+series_emoji: "\U0001F964"
+series_code: contribution
+category: ジュン先生
+---
+
+## メモ・原稿
+
+# デイリーノートにはなにを書くべきか
+
+### 🥤002 日記は「何をしていたか」「次になにをやるべきか」がわかるように書く
+
+https://substack.com/@kodawarihttps://substack.com/@kodawariDec 25, 2022∙ Paid7Sharehttps://substackcdn.com/image/fetch/$s_!UMaG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8729a9e8-be19-4564-b404-8bed6b52d921_1920x300.jpeghttps://publish.obsidian.md/knowledgestack/ks_guest_post
+
+生きることにこだわりを。こんにちは、魚住惇です。
+
+ナレッジスタックへの寄稿第2弾です。今回も、Obsidianの使い方へのこだわりについて、語っていきます。
+
+## デイリーノートから始めるObsidian
+
+ここ最近はローカル版Roam ResearchことLogseqに毎日の記録をしていくっていうイメージが付きがちですが、僕は全てObsidianでデイリーノートを記録しています。
+
+理由は前回の1回目の配信にも書いたとおり、自分のObsidianの使い方はNotePlan3を使ったバレットジャーナルがベースになっているからです。
+
+### デイリーノートを快適に使うために設定したこと
+
+https://substackcdn.com/image/fetch/$s_!hMoI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff14ec61c-4dc9-4dcf-ac34-75bde425c400_992x738.jpegそんな僕がObsidianをインストールして、まず導入したコミュニティプラグインが、「Calendar」です。コアプラグインに「Daily notes」がありますが、それをカレンダーの表示を使って行き来できるようにしようというプラグインです。
+
+https://substackcdn.com/image/fetch/$s_!RUki!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1b1f886-12a0-4e95-8a27-f01c0295a23b_3180x2384.pngNotePlan3でも常にカレンダーの表示が出ていたので、それと同じ状態を再現したくてインストールしました。最初は画面右側から左に向かってスワイプしないとカレンダーが表示されませんでしたが、ピンを留めることで常にカレンダーを見ながらObsidianが使えるようになりました。
+
+https://substackcdn.com/image/fetch/$s_!3v9G!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa58764be-6cb4-4438-b855-0661004780c0_1541x678.jpegCalendarプラグインを導入することで、カレンダー上に表示された日付の数字部分をクリックすることで、その日付のデイリーノートを開くことができるようになりました。
+
+ただしこのままでは、使い勝手が良いとは言えません。デイリーノートを行き来するために、いちいち日付の数字までマウスポインタを運んでいき、クリックしなければなりません。
+
+そこで設定したのが、Hotkeyです。ショートカットキーやキーボードショートカットとも呼びます。Obsidianではプラグインで実現できる動きの一部をキーボードのキーを組み合わせることで動作させることができて、その組み合わせを使う側が自由に使うことができるようになっています。
+
+Daily notesプラグインでは、「Open next daily note」、「Open previous daily note」、「open today's daily note」が設定できるようになっていました。nextとpreviousにHotkeyを割り当てると、マウスやトラックパッドまで指を運ばなくてもデイリーノートの日付を行き来できるようになるわけです。
+
+上の画像の通り、僕は⌘キー＋左右で、開いているデイリーノートの前日と翌日を行き来できるようにしました。他のノートを開いているときに一発でデイリーノートを開くためのHotkeyを⌘キー＋Dに設定してありますが、僕のObsidianの画面では常にデイリーノートを開いているため、そこまで使ったことはありません。
+
+以上の設定を行うことで、Obsidianでデイリーノートを使うための環境が整いました。
+
+### デイリーノートに書くべき内容の指針
+
+では次に、僕が考えている、「デイリーノートに書くべき内容」について触れていきます。
+
+## Keep reading with a 7-day free trial
+
+Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+
+https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Fbe3&utm_source=paywall-free-trial&utm_medium=web&utm_content=92378368&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Fbe3&for_pub=knowledgestuck&change_user=falsehttps://substack.com/@kodawariA guest post byhttps://substack.com/@kodawari?utm_campaign=guest_post_bio&utm_medium=web愛知県立高等学校情報科の教諭。HHKBケーキの人 http://bit.ly/2Zezmfg、『教師のiPad仕事術』と『逆境に負けない　学校DX物語』の著者📖、勤務校にTeamsとロイロノート、ScanSnapを5台導入した学校DX推進者、職員室での通り名は「もはや業者」 ※勤務中はNotes投稿しませんhttps://kodawari.substack.com/subscribe?

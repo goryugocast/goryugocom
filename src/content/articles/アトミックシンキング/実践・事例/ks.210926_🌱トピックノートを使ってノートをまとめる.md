@@ -1,0 +1,81 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: "\U0001F331トピックノートを使ってノートをまとめる"
+subtitle: MOCに「制約」を設けることで考えをまとめやすくなった
+description: null
+url: 'https://knowledgestuck.substack.com/p/6cb'
+date_published: 2021-09-26T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!h_5X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea63525-242c-4b59-b7f8-fe5d4d5422cc_1038x1496.png
+draft_link: null
+tags: []
+series_name: アトミックシンキング
+series_emoji: "\U0001F331"
+series_code: atomic
+category: 実践・事例
+---
+
+## メモ・原稿
+
+# 🌱トピックノートを使ってノートをまとめる
+
+### MOCに「制約」を設けることで考えをまとめやすくなった
+
+https://substack.com/@goryugohttps://substack.com/@goryugoSep 26, 20217Shareトピックノートという種類のノートを考えて、自分で使うようにしてみたら、ノートの管理が捗るようになりました。
+
+**概念としてはほとんど「MOC」と変わりない**ものなんですが、ごりゅごが実際に「MOC」というものを使おうとしてみると、なんとなく感覚的にしっくりこない。これをどうにか自分が使いやすいようにしようとして考え出した「俺ルール」がトピックノート、というものです。
+
+https://knowledgestuck.substack.com/p/moc
+
+この手のノート術というものは、まずは一度真似してみて、**合わないようなら自分に合うように変える**ということが重要です。
+
+今回は「いかにして俺ルールを作ったか」というところなどをまとめつつ、自分なりのノート術を構築するヒントにしていただければ幸いです。
+
+## MOCにまとめても整理された感じがしない
+
+https://knowledgestuck.substack.com/p/moc
+
+↑でごりゅごはMOCについて偉そうに語っていますが、長い間どうもなんだかしっくりきていませんでした。
+
+ある意味何ヶ月もナレッジスタックでノートに関することを書いていなかったのも、要するにこれはいいぞと思ったノートの使い方が出てこなかったから。
+
+過去の自分のノートを調べてみても、悪戦苦闘の履歴があり、「 [[MOCに感じる違和感]]」「 [[文章を書くためにMOCは必要ない]]」なんていうタイトルのノートにも、色々と「うまくいってないと感じている」ノートが残っていました。
+
+なにがうまくいっていないのか、というのを言語化できればいいんですが、なんとなくうまくいかないと感じているという感覚は、言語化できないから解決しない問題でもあるわけで、当時はこうやって「どこが違和感があるのか」ということを色々とノートに書いて考えていました。
+
+## 先頭に§をつけた「アウトライン」を作ってみる
+
+ここで行き詰まって何度も見ていたのが「エバーグリーンノート」の提唱者であるAndy Matuschak氏のページ。
+
+https://notes.andymatuschak.org/About_these_notes
+
+彼が作っているノートの一部には先頭に§が書かれたものがあり、これがどうやら「アウトライン」「目次」のようなものとして機能している模様。
+
+https://notes.andymatuschak.org/About_these_notes?stackedNotes=zUw5PuD8op9oq8kHvni6sug6eRTNtR9Wqma
+
+自分でもそれを取り入れて、§付きのページを「アウトライン」として、そこで記事の下書きを作る、というようなことを試していました。
+
+これはある程度機能して、記事を書こうと思いついたら§付きノートを作る、という方法でそれなりに運用はできていたんですが、これは「思いつかないとできない」「考えが整理されてないとできない」方法です。
+
+自分が求めているのは「記事を思いつく方法」「考えを整理する方法」であって「ひらめいた記事をまとめる方法」ではありません。
+
+結局この方法も自分なりの言語化できるいいやり方ではない、という結論になりました。（あくまでも「自分に合わなかった」だけです）
+
+## リンクしかないノートは気分がいい
+
+こういう経緯を経て辿り着いた「自分なりに考えがまとまる方法」というのが「トピックノートを作る」というもの。
+
+どうも自分は考えを整理しようとするときには「リンクしかないノート」というものが「気分がいい」みたいです。
+
+https://substackcdn.com/image/fetch/$s_!h_5X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea63525-242c-4b59-b7f8-fe5d4d5422cc_1038x1496.pngリンクしかないノートhttps://substackcdn.com/image/fetch/$s_!1hq6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F81eb31f8-88ad-48f7-bf09-9f97d7d3b4c3_1062x1486.pngリンクとテキストが混ざったノート↑の文中のテキストはそれぞれ別のノートにしてしまいたい。
+
+そして、そういう風にノート内のテキストというのをすべて1つ1つのノートに分割すること自体が自分が思う「考える」「整理する」という行為そのものでもあるのかな、と感じています。
+
+という感じで、次回は「トピックノートの自分ルール」について詳しく紹介したいと思います。
+
+続きです。
+
+https://knowledgestuck.substack.com/p/8d5?utm_source=substack&utm_campaign=post_embed&utm_medium=web7Share

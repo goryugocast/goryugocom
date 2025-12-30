@@ -1,0 +1,85 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: "\U0001F331自分が作った記事やノートを1回だけの使い捨てにするのってもったいなくない？"
+subtitle: エバーグリーンノートを作って、自分の資産を積み上げていく
+description: null
+url: 'https://knowledgestuck.substack.com/p/1'
+date_published: 2021-02-13T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/b0c30070-c84c-403f-9f77-c14e5ef782f8_4608x3072.jpeg
+draft_link: null
+tags: []
+series_name: アトミックシンキング
+series_emoji: "\U0001F331"
+series_code: atomic
+category: 実践・事例
+---
+
+## メモ・原稿
+
+# 🌱自分が作った記事やノートを1回だけの使い捨てにするのってもったいなくない？
+
+### エバーグリーンノートを作って、自分の資産を積み上げていく
+
+https://substack.com/@goryugohttps://substack.com/@goryugoFeb 13, 20217Shareここ数日「Evergreen note」という概念を考えだしたhttps://notes.andymatuschak.org/About_these_notesと、同じくhttps://publish.obsidian.md/lyt-kit/_Start+Hereをすごい全力で読み返していました。
+
+改めて読み返してみると、以前はよくわかってなかったことがいっぱいあったということに改めて気が付かされ、これらの概念を考えた人たちすげーな、と改めて感じ入っています。
+
+で、改めて読んでみて気が付いたんですが、いきなりLYTとかMOCの話をするより、**最初に「Evergreen note」というものについてある程度の詳しい話をして、そのあとで「Link Your Thinking」の話をした方がわかりやすいことが多いのでは**と考えました。
+
+なのでまずは最初に、「Evergreen note」と「Link Your Thinking」というものについて簡単に話をして、そこから少しずつ話を進めていきたいと思います。
+
+## Evergreen noteとLink Your Thinking
+
+「自分が書いた記事」「ノート」「メモ」とかって、1回作っておしまいになってない？
+
+これってすごい勿体無いよね？メモやノートはもっと丁寧に、大事に育てていって、ずっと価値を持つ「エバーグリーンノート」というやつを作っていこう。
+
+そうすれば、自分が作ったノートというのは「ずっと使える、価値あるもの」として残り続け、ナレッジワーカーとしての資産をどんどん増やしていくことができるよ。
+
+1回書いておしまい、ってするんじゃなくて、そっちの方が良くない？
+
+Evergreen noteというのはこういう考えから生まれたもので、ノートを「使い切り」のものにするのではなく「いつまでも使えるノート」を目指していこう、というコンセプトのものです。
+
+それらのノートの作り方や考え方、概念などを「エバーグリーンノートを使って」まとめられたものが、下記ページです。
+
+https://notes.andymatuschak.org/About_these_notes
+
+この教えに従ってエバーグリーンノートを作っていくと、どんどん「使い続けられるノート」というのが増えていく理屈になります。
+
+これは大変素晴らしいことですが、ノートの数が増えるに従い、いつか必ず「増えたノートをどうやって管理するか」という問題が発生してきます。
+
+この「増えたノートの整理整頓をどうしようか」という時にすごく役に立つのが「Link Your Thinking（LYT）」という概念です。
+
+もちろん「エバーグリーンノート」の方にもノートの管理の仕方だとか「いかに育てるか」みたいなことは書かれています。
+
+どっちがいいとか悪いとかそういうのはないんですが**「ノートを整理して、繋いでいく」という部分に関しては「LYT」の方がきちんと体型立ててまとめられていて、概念を理解して真似するのに参考にしやすい、という印象です。**
+
+そういう意味で、パーソナル・ナレッジ・マネージメント（PKM）というものを考えていくときには、とっかかりとしてまずはEvergreen noteというものをある程度理解すること。
+
+それによって**「ノートを大事に育てていく」ということを意識してみる**のが良いのかな、と感じました。
+
+https://publish.obsidian.md/lyt-kit/Is+LYT+For+Me、ということをMOC考案者のNick Miloさんも書いています。
+
+実際に自分自身のノートを見返してみても、これから話す予定の「エバーグリーンノートの元」になりそうなノートは100も見つからない感じでした。(ちゃんとノートを作ろうとするとすごく大変)
+
+ということで次回、ごりゅごなりの解釈を交え、できる限り丁寧に、Evergreen noteとはどういうものなのか、どうやって作ってどうやって育てていけばいいのか、というようなことをまとめていきたいと思います。
+
+https://substackcdn.com/image/fetch/$s_!f3_k!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F996ac348-ff09-4b73-887d-b2e4347d8ea7_1600x200.png今回は「無理して体型立てようとせず、まずは自分が思っていることをできるだけ簡潔に伝えよう」と考えて書いてみました。
+
+ここで書いているものは全て「自分だったらこういうのが読みたい」というものになるように意識しています。
+
+よかったらTwitterやコメントなどで感想や意見をお聞かせください。
+
+また、今回のような内容が引き続き読みたいな、という方はぜひ下記よりニュースレター登録をお願いします。
+
+Subscribe## 参考
+
+https://notes.andymatuschak.org/About_these_notes
+
+https://publish.obsidian.md/lyt-kit/Is+LYT+For+Me
+
+7Share

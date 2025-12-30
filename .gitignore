@@ -24,8 +24,8 @@ dist/
 *.tmp
 *.log
 
-# Content - セミナーフォルダ以外を除外
-web/src/content/ks/*
-!web/src/content/ks/セミナー/
-web/src/content/atomic-notes/
-web/src/content/topic/
+# Content - 公開用コンテンツを許可
+!src/content/videos/
+!src/content/articles/
+!src/content/atomic-notes/
+!src/content/topic/

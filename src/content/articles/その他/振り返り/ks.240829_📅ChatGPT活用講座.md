@@ -1,0 +1,38 @@
+---
+project: ks
+topic: 振り返り
+topic_code: rev
+title: ChatGPT活用講座
+subtitle: "\U0001F4C58月31日10時から無料開催"
+description: null
+url: 'https://knowledgestuck.substack.com/p/chatgpt-e09'
+date_published: 2024-08-29T00:00:00.000Z
+audience: everyone
+tags:
+  - AI
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F4C5"
+series_code: other
+category: 振り返り
+---
+
+## メモ・原稿
+
+# ChatGPT活用講座
+
+### 📅8月31日10時から無料開催
+
+https://substack.com/@goryugohttps://substack.com/@goryugoAug 29, 202441Shareごりゅごのパートナーのはるなさんが開催する、ChatGPT講座のご案内です。
+
+8月31日（土）10:00〜11:30にて、iPad Workers主催のChatGPT講座が開催されます。
+
+本講座では、ChatGPTを使ってどのようにコンテンツ制作をしているのか実際の作業手順やプロンプトの紹介、ChatGPT以外に使っている生成AIサービスなどを紹介します。
+
+ごりゅごも講座のお手伝いで参加する予定です。時間が余ればごりゅごの使い方なども紹介できるかもしれません。（最近は、特に趣味の用途でChatGPTめっちゃ便利に使ってます）
+
+当日のリアルタイム試聴は無料なので、気になる方は是非ご参加ください。リアルタイム産科が難しい人向けに、アーカイブ視聴チケットも販売中です。
+
+https://ipadworkers.substack.com/p/2408seminar
+
+41Share

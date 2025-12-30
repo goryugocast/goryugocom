@@ -1,0 +1,51 @@
+---
+project: ks
+topic: 本
+topic_code: hon
+title: 時間ではなく期間をかけて本を読むことで記憶に残りやすくなる
+subtitle: "\U0001F4DA✍️005 沢山の本を同時に読み進める並行読書術"
+description: null
+url: 'https://knowledgestuck.substack.com/p/atomic-reading005'
+date_published: 2023-03-29T00:00:00.000Z
+audience: only_paid
+tags:
+  - 読書
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F4DA"
+series_code: other
+category: 読書ノート
+---
+
+## メモ・原稿
+
+#ks/📔✍️ `= this.file.frontmatter.url`
+
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+3/23になんとか書き終えたい
+→できたので予約だけする
+
+---
+
+今回の記事の途中から、原稿は「有料購読者限定公開」です。ちょっと今月はこればかりになってしまいましたが、**いつもよりたくさんいいねを押していただけて、ものすごく励みになっています**。これは、今まで考えたことなかった新しい本の書き方だな、というのを痛感しており、今後も週1のペースでこうやって記事を公開していく予定です。（今のところ3回分くらい余裕がある）
+
+これとは別に「いつもの感じの投稿」も増やしつつ、来月以降も「軸はブレずに改善していく」という姿勢で続けていきたいと思います。
+
+今回はアトミック・読書術（仮）の「並行読書」という方法が「なぜいいのか」という話を書きました。
+
+
+![[📔✍️005 並行読書のススメ]]

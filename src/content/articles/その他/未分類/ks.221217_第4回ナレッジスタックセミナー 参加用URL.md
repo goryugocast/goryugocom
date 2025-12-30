@@ -1,0 +1,54 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: 第4回ナレッジスタックセミナー 参加用URL
+subtitle: 12月17日（土）21時から
+description: null
+url: 'https://knowledgestuck.substack.com/p/4-url'
+date_published: 2022-12-17T00:00:00.000Z
+audience: only_paid
+tags:
+  - セミナー
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F527"
+series_code: other
+category: 未分類
+---
+
+## メモ・原稿
+
+#ks/当日案内
+
+```dataview
+LIST
+FROM #ks/当日案内 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+ナレッジスタックセミナー第4回は、本日12月17日（土）21時から開催です。
+
+どんなことを話すのかは、以下のページにまとめてあります。
+
+[Anki問題作りは「究極のアトミックノート」作り](https://knowledgestuck.substack.com/p/anki-b1e)
+
+テーマは「Anki」ではあるんですが、話す内容をまとめていて、改めて「Ankiとアトミック・ノートは同じ」であることを痛感しています。
+
+AnkiはあくまでもAnkiであって「暗記」ではない。「覚えること」は確かに目的の1つではあるけれども、最も重要なのはこのツールを使って「考える」ことなのである。
+
+そういうことを話す予定です。
+
+ミーティングは、10分前から入室いただけます。
+
+
+トピック: アトミック・シンキング実践セミナー004
+時間: 2022年12月17日 09:00 PM 大阪、札幌、東京
+
+Zoomミーティングに参加する
+https://us02web.zoom.us/j/81884343691?pwd=NXZwbHlFM0NaanVLTnkxS3FVVkNadz09
+
+ミーティングID: 818 8434 3691
+パスコード: 753839

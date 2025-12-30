@@ -1,0 +1,49 @@
+---
+project: ks
+topic: ワークシートアップデート
+topic_code: upd
+title: 個人でGitを使うことでなにが得られるのか
+subtitle: "\U0001F527002 Gitの基本、みんなでGitを使うとなにがいいのかまでを含めたGitのはなし"
+description: null
+url: 'https://knowledgestuck.substack.com/p/git'
+date_published: 2022-09-22T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!m7y8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6c54f234-55ec-4894-bb6f-30b4d32a7c7a_1658x927.jpeg
+tags:
+  - 読書
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F527"
+series_code: other
+category: 技術・ノウハウ
+---
+
+## メモ・原稿
+
+#ks 
+ナレッジスタック有料会員の皆様。早期の有料プランのお申し込みありがとうございます。
+
+ナレッジスタック月1セミナーシリーズ（予定）の第一回、『アトミック・シンキング』実践編のご案内です。
+
+第一回の『アトミック・シンキング』実践編は、9月23日21時から開催いたします。
+
+当日の質問やリクエスト、次回以降こんな内容の話が聞きたい、などがあれば、このメールへの返信や、コメント欄などをご利用ください。
+
+匿名でのご意見を希望の方は、以下のフォームもご利用いただけます。
+
+https://docs.google.com/forms/d/1iSGha-eS-KUEhumCMQ39da708nhZ0-yyLwOxP-qFuw4/edit
+
+有料会員の方には前編後編の2回にわけてアーカイブ動画＆配信内容の補足メールをお送りしますので、当日参加できない場合や、内容の振り返りなどにお役立てください。
+
+以下、参加用の案内です。
+
+日時：2022年9月23日21時〜（当日は、15分前から入室いただけます）
+
+Zoomミーティング参加用URL
+
+https://us02web.zoom.us/j/81022571063?pwd=N1R1dENMbWUrVmQzZE9mRDdRRlVTZz09
+
+ミーティングID: 810 2257 1063
+
+パスコード: 570614

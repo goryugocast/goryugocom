@@ -1,0 +1,60 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: "\U0001F9D8‍♂️夜更かしをしてしまう原因は「昼間の不満」から"
+subtitle: “報復性熬夜” (revenge bedtime procrastination)について
+description: null
+url: 'https://knowledgestuck.substack.com/p/b2a'
+date_published: 2021-07-18T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/c754110f-cbd2-4446-b3b1-0dfb2241bcd9_3661x2898.jpeg
+draft_link: null
+tags: []
+series_name: ライフスタイル
+series_emoji: "\U0001F9D8"
+series_code: life
+---
+
+## メモ・原稿
+
+# 🧘‍♂️夜更かしをしてしまう原因は「昼間の不満」から
+
+### “報復性熬夜” (revenge bedtime procrastination)について
+
+https://substack.com/@goryugohttps://substack.com/@goryugoJul 18, 202116Share睡眠時間8時間では小学生では睡眠不足。大人でも、睡眠6時間は足りなくて、少なくとも7時間は必要。file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn1-15583
+
+以前話題になったこの話が、強く印象に残っています。（ソースは残っていたけど、きっかけを忘れてしまった）
+
+自分自身も、この話を聞いてから睡眠時間の目標値を6時間以上から7時間以上に変更し（記録を元にした体感ベースながらも）日中に疲れたり眠くなったりしにくい睡眠時間は7時間以上かもしれない、ということを感じています。
+
+とはいえ、そんなかっこいいことを自信満々に語れるほどごりゅご自身も規則正しい生活ができているわけではありません。
+
+夜更かしして起きられない、夜更かししたせいで日中眠い、ということはよくあることで、あくまでも「昔よりはマシになった」程度。
+
+今の生活で言えば、目標時間にきちんと眠れているのは週に1回あるかないか。半分くらいの日がどうにか「1時間遅れ」くらいで布団に向かえている、くらいの状態です。
+
+そんな中で目にした“報復性熬夜” (revenge bedtime procrastination)file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn2-15583という言葉はなかなかに衝撃的なものでした。
+
+https://twitter.com/daphnekylee/status/1277101831693275136https://twitter.com/daphnekylee/status/1277101831693275136この現象を一言で説明すると、**日中の時間をうまくコントロールできないから、その「復讐」として床に就く時間をコントロールしようとする**というもの。
+
+極端な言い方をすると「**昼間が不満だと夜に眠りたくなくなる**」という研究内容です。
+
+どうやら昼間の時間をうまくコントロールできないでたまる「不満」を、深夜の時間帯を自由にコントロールすることで解消しようとしている、という仕組みらしく、それを「revenge」という単語を使って「自分自身に復讐している」という言葉で表現してしまうのはすごい感覚。
+
+この"revenge bedtime procrastination"への対策は、結局以下のような「よくある対策」以上のものはなかなか見つかっていないみたいです。
+
+- 寝る前はディスプレイを見ない
+
+- 日中に運動する
+
+- コーヒーは午後からは飲まない
+
+とはいえ、ごりゅごがいつも考えている「言葉にできるものは理解が深まる」の法則に従うと、この"revenge bedtime procrastination"という言葉を知ることの効果は偉大です。昼間の時間を自由にできない不満を夜に取り戻そうとしている、という現象を理解することができれば、就寝時間が遅くなりがちなことへの対策には繋がると思っています。
+
+- https://www.sciencedirect.com/journal/sleep-health/vol/1/issue/1file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr1-15583
+
+- https://www.sleepfoundation.org/sleep-hygiene/revenge-bedtime-procrastinationfile:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr2-15583
+
+16Share

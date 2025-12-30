@@ -1,0 +1,123 @@
+---
+project: ks
+topic: Podcast
+topic_code: pod
+title: 現状をメタ的に把握するためにObsidianを使う
+subtitle: "\U0001F399ありひとさんのタスクシュート＆Obsidian併用術"
+description: null
+url: 'https://knowledgestuck.substack.com/p/pod011'
+date_published: 2024-09-02T00:00:00.000Z
+audience: everyone
+tags:
+  - Obsidian
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F399"
+series_code: other
+category: Podcast
+---
+
+## メモ・原稿
+
+https://knowledgestuck.substack.comナレッジスタック Podcast現状をメタ的に把握するためにObsidianを使う82- 1×0:00Current time: 0:00 / Total time: -1:26:18-1:26:18Audio playback is not supported on your browser. Please upgrade.## 現状をメタ的に把握するためにObsidianを使う
+
+🎙ありひとさんのタスクシュート＆Obsidian併用術https://substack.com/@goryugohttps://substack.com/@goryugoSep 02, 202482ShareTranscriptナレッジスタックPodcast、今回のゲストはTaskChute認定トレーナーのhttps://twitter.com/rihito_ymoymoさんです。
+
+これまでの配信リスト一覧はこちらからご覧いただけます
+
+→https://goryugo.com/ks_podcast
+
+今回は、主に以下のようなことを話題にしました。
+
+**オープニング**
+
+- ゲスト：タスクシュート認定トレーナーのありひとさん
+
+- テーマ：Obsidianとタスクシュートの使い方。2つのツールをどう使い分けるか
+
+- **Obsidianとタスクシュートの使い分け**
+
+- Obsidianでプロジェクトノートを細かく分けることについて
+
+- タスクシュートとObsidianの併用
+
+- タスクシュートでのタスク管理とObsidianでの知識管理の方法
+
+- **TaskChute Cloud 2**
+
+- 「TaskChute Cloud 2」リリース
+
+- ノート機能が強化されており、従来のクラウド1と比較して、タスク管理とノート作成が一体化している点が特徴
+
+- 新バージョンの導入後、クラウド1と比べて、ノート機能の使い勝手や日常のタスク管理にどのような影響があったか
+
+- **会社でのツール利用状況とObsidianの選択理由**
+
+- 会社でのタスク管理にはNotionやGoogleスプレッドシートを使用
+
+- 個人的なタスク管理や知識管理には、Obsidianとタスクシュートを使用
+
+- 過去の職場では、OneNoteや他のMS系ツールを使用していたが、転職時に個人のメモを持ち出すのが困難だった経験から、Obsidianに切り替えた理由
+
+Obsidianはローカル保存が可能であり、転職時にも自分のメモを簡単に持ち運べる点がメリット
+
+- **デイリーノートとタスクシュートの併用についての悩み**
+
+- タスクシュートを使って日々のタスクを詳細に管理しているが、Obsidianのデイリーノートをどのように活用すべきか
+
+- タスクシュートは1日のタスクを時間ごとに記録するツールであるため、Obsidianのデイリーノートと重複する部分が多い
+
+- デイリーノートで感情的なことや、その日の雑感を書くようにしているが、タスクシュートとのバランスが難しい
+
+- **細かいタスク記録とフリーライティングのバランス**
+
+- 朝のルーティンを細かく記録する例として、「起床」「マネーフォワードの更新」「モーニングルーティン（体温測定、カーテンを開けるなど）」
+
+- 細かいタスクを記録することで、日々の生活や仕事の流れを把握するのに役立つ
+
+- フリーライティングを取り入れて、感情や考えを自由に書き出し、精神的な整理
+
+- **タスクシュートの導入に至るまでの経緯と記録の価値**
+
+- 元々勉強時間や資格取得の時間を記録する習慣があったが、より広範囲での時間管理を目指してタスクシュートを導入
+
+- 「幸福度が上がる」という科学的な背景を持つ本を読んだことがきっかけで、タスクシュートによる24時間の記録管理を始める
+
+- タスクシュートを使い始めて、最初の1ヶ月で「このツールは続けられる」という確信を持った理由について詳述
+
+例：記録をつけることで、1日を振り返った際に行動の再現度が高まることを実感
+
+- **プロジェクト管理と記録方法についての考察**
+
+- プロジェクトに紐づくタスクをどこに記録すべきか
+
+- タスクシュートでは1日の記録が日付ごとに残るが、プロジェクトの全体像を把握するには不向き
+
+- 現在は、Obsidianでプロジェクトノートを参照し、バックリンク機能を活用して関連情報を整理する方法を採用
+
+- **終盤のまとめと考察**
+
+- デイリーノートを使う上で、タスクシュートとの相性や、記録の詳細さについて再評価
+
+- 全てのプロジェクトで完璧に記録を残すのは難しいため、重要な部分に絞って整理することが重要
+
+- タスクシュートは日々のタスク管理に適しているが、フリーライティングや長期的なプロジェクト管理にはObsidianを併用することが効果的
+
+このPodcastは、ナレッジスタック有料会員の方々のサポートによって配信が実現できています。
+
+有料会員にご加入いただくと、有料限定記事の他、月に一回の『アトミック・シンキング』実践セミナーや、20時間分以上のセミナーアーカイブなどもご覧いただけます。
+
+このPodcastを気に入っていただけたならば、有料会員への加入もご検討ください。
+
+Subscribe## ごりゅごの感想
+
+いい意味で、Obsidian主体じゃない話が色々できてとても楽しかったです。
+
+Podcastのテーマは一応「いろんな人がどんな風にObsidianを使ってるのか」ということなんですが、誰も彼もが「これは最高だ」とかって言ってるわけじゃなくて、他のツールもあった方がいいとか、最近いい使い道が見つからないとか、そういう話の方がよりリアルで、むしろ参考になることが多いんじゃないかと思ってます。
+
+特に今回の「ツール1つだけでは視野が狭くなりがち」というのは重要で、そういえばごりゅごもObsidianメインでありつつも、場面に応じて色々とツールは使い分けてます。
+
+いろんな人に話を聞くと、こうやって一人ではなかなか内容な発見がたくさんあることも嬉しいことです。
+
+Discussion about this episodeCommentsRestackshttps://knowledgestuck.substack.comナレッジスタック Podcastアトミック・シンキングという「学び方」を学び、新しい価値観へシフトしていくことを目指していきます。ZettelkastenとEvergreen notesの手法をベースに、Obsidianを活用して実践していきます。アトミック・シンキングという「学び方」を学び、新しい価値観へシフトしていくことを目指していきます。
+ZettelkastenとEvergreen notesの手法をベースに、Obsidianを活用して実践していきます。SubscribeListen onSubstack AppRSS FeedAppears in episodehttps://substack.com/@goryugogoryugoRecent Episodeshttps://knowledgestuck.substack.com/p/ks040Dec 7 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/rink-7b1Nov 27 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/obv8Nov 13 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/ks039Nov 8 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/obv7Oct 30 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/obv6Oct 16 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/ks038Oct 11 • https://substack.com/@goryugohttps://knowledgestuck.substack.com/p/obv5Oct 2 • https://substack.com/@goryugo

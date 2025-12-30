@@ -1,0 +1,87 @@
+---
+project: ks
+topic: 友人(tks)の記事
+topic_code: tks
+title: 手間をかけず、同時にしっかり読めるアトミック式マーキング
+subtitle: "\U0001FABA005 直接マーキングしながら読むだけで「1.5回読む」くらいの効果がある"
+description: null
+url: 'https://knowledgestuck.substack.com/p/tks005'
+date_published: 2023-07-30T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!k_sp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F117ccfe0-ebb3-45cf-8ad6-2995947255bf_1863x943.jpeg
+draft_link: null
+series_name: 寄稿記事
+series_emoji: "\U0001FABA"
+series_code: contribution
+category: tksさん
+---
+
+## メモ・原稿
+
+#ks/📮 `= this.file.frontmatter.url`
+
+```dataview
+LIST
+FROM #ks/📮
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #ks/📮
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+```dataview
+LIST
+FROM #🗣プレゼン 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+次回のナレッジスタックセミナーの開催日は8月5日（土）。
+次回は「Obsidian × Zettelkasten的執筆術」をテーマにしてZoom上で話します。
+
+[8月11日発売の『アトミック・リーディング』](https://publish.obsidian.md/knowledgestack/book_atomic_reading)は、これまでObsidianにため込んできたカードを活かして、ほとんどのことはObsidianで完成させました。
+
+前作の『アトミック・シンキング』は、初期に様々な執筆方を試し、目次案ができてから「Obsidianで書いた」本です。実質的にObsidianのリンク機能などは使っておらず、ただ普段使ってるツールをそのまま使って文字を書いた、というだけでした。
+
+それに対し、今作では明確に「カードを元にして本を書く」ということを意識し、いわゆる「Zettelkastenを使って執筆」ということが実現できたと思えるものになりました。
+
+もちろんこれは「ごりゅごがZettelkasten的な執筆ができた」と感じたサンプル数1の事例であり、これをもってZettelkastenというシステムの良し悪しを評価できるものではないし、そうした部分に踏み込むつもりはありません。
+
+そうだとしても、少なくとも自分はこうやって「カードを使って書いた」という話を具体的な話しとして見かけたことはないし、そうやって実際に本を作っていった過程を見たことはありません。
+
+人がどんな風に本という数万文字単位の文章を作っていくのか、という過程が見られるというのは手前みそながら中々ない機会だと思います。なによりも、この「カードを組み合わせて考える」という手法は執筆に限らずあらゆる考え事を進めるために非常に有効な方法だと考えています。そして、そうしたもののヒントになるようなものを実際にお見せできるのではないか、とも考えています。
+
+今回の執筆は、最初期からgitを使って原稿管理をしていたため、実際にどんなことをしたのかをかなり詳しく「執筆履歴」の紹介が可能です。（git使っててよかった点が、こんなところにも現われました。自分でも忘れてるくらい「どんなことをどんな順番でやったのか」がきちんと記録に残ってて、ちょっと自分で感動してます）
+
+そういう意味では、ナレッジスタック的な思考の基本である「記録の偉大さ」を改めて示すことができるような事例になるとも言えるかもしれません。
+
+今回の話は、正直まだまだ言語化できていない部分も多いため「こういうことをやりました」という実例の紹介が主体になると思います。
+
+ですが、よく考えてみると「どうやって考えたのか」なんてことは、結局自分でやってみるしかないわけで、そうそう簡単に言語化できるものではなく、こうやって実例を見ながら参考にするしかないんじゃないかな、なんてことも思ったりします。
+
+そういう視点で見てみると、今回の話は「いかにしてObsidianを使って考えを整理するのか」がテーマだと言えるかもしれません。
+
+---
+
+## 参加用URL
+
+ナレッジスタック有料会員の方は、以下のZoom参加用のURLよりご参加いただけます。開催直前には、Substackアプリのチャット機能でもURLをお送りします。
+
+開催日時：8月5日（土）21時〜22時
+
+内容：『アトミック・リーディング』の原稿執筆の過程を紹介
+
+
+Zoomミーティングに参加する
+https://us02web.zoom.us/j/84678016584?pwd=QktTK3NOQUJqZ0FiTmFmM3c3bi9MQT09
+
+ミーティングID: 846 7801 6584
+パスコード: 555596

@@ -1,0 +1,82 @@
+---
+project: ks
+topic: 妻の記事
+topic_code: gst
+title: ⏱時間が貴重だと思うほど時間に追われる感覚になる
+subtitle: 希少性が高いものは「足りない」ように感じる
+description: null
+url: 'https://knowledgestuck.substack.com/p/6bb'
+date_published: 2021-08-29T00:00:00.000Z
+audience: everyone
+cover_image: >-
+  https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/34a82ed3-7a5f-4959-aba7-ebf4b04a9d73_5184x3456.jpeg
+draft_link: null
+tags: []
+series_name: ライフスタイル
+series_emoji: "\U0001F9D8"
+series_code: life
+---
+
+## メモ・原稿
+
+# ⏱時間が貴重だと思うほど時間に追われる感覚になる
+
+### 希少性が高いものは「足りない」ように感じる
+
+https://substack.com/@goryugohttps://substack.com/@goryugoAug 29, 202143Share時間は、万人に平等で、お金では買えない大変貴重なものです。
+
+ですが、時間が貴重だと感じるほど結果的にその人は「時間に追われている感覚」を感じやすくなります。file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn1-10591
+
+今回は、この「時間が足りない感覚」はなぜ起こるのか。そして、それにどのように対処すると良いのか、という事をまとめてみたいと思います。
+
+## 希少性が高いものは「足りない」ように感じる
+
+人間は「希少性が高い」ものは、価値が高いものだと認識します。そして、価値が高いものというのは「もっと欲しい」と感じます。
+
+時間に対しても、希少性が高く、価値が高いと感じることで「足りないからもっと欲しい」と感じる。
+
+これが「時間が貴重だと思うと時間に追われる感覚になる」原因です。
+
+一般的に、お金を多く稼ぐ人ほど時間あたりの「価値」は高くなるため、収入は増えれば増えるほど時間に追われる感覚になりやすくなります。
+
+収入が一定程度を超えると「幸福度」が上がらなくなる、ということはよく言われますが、収入が増えることにこういった弊害まである、というのはなかなかに厄介な問題です。
+
+## 時間が足りないという「欠乏」に占拠される
+
+時間が「足りないと感じる」というのは厄介なことです。人間はなにか「足りない」ものがあるとそのことに脳のメモリが占拠され、他のことを考える余裕がなくなってしまいます。file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fn2-10591
+
+自由時間がたっぷりあれば運動をしたり勉強をしたりできるのに、と感じるのはある意味では真実なのですが、原因の多くは「時間が足りない」のではなく「https://knowledgestuck.substack.com/p/18b」ことだったり「時間が足りないと感じている」からなのです。
+
+## 時間は「人のために使う」と「余裕がある感じがする」
+
+じゃあどうすれば「時間に余裕がある感じ」になるのかというと簡単で、価値が高いと感じることの反対のことをすればいい。
+
+時間は希少性が高いものだと感じるから足りないのだから「時間は希少性が高いものではない」と脳を騙してやればよいのです。
+
+最も簡単な方法は、人のために時間を使うこと。仕事や生活で、身の回りの困っている人を手伝ったり助けてあげたりすることです。
+
+これによって「人を助けることに時間を使う余裕があるくらい自分は時間に余裕がある」と脳を騙すことができるようになります。
+
+この方法が素晴らしいのは、15分だけでも効果がある、ということ。目的は「人を助ける余裕がある」と脳を騙すことなので、何時間もそのことに時間を使う必要はないわけです。
+
+## 「時は金なり」という考え方は不幸のもと
+
+「時は金なり」という言葉は昔から語り継がれているものですが、実は「時間に余裕があると感じる」ためにはあまりよろしくない考え方である、と言えます。
+
+時間がお金を生み出す元になることは事実ですが、時間効率、コスパ、などを考えてしまうのは、実は幸福な人生を送るためにはよくないのかもしれない。
+
+少なくとも、その「瞬間」を楽しむためにお金や時間をいちいち気にしていたら心から楽しめない、ということは誰もが感覚で理解していると思います。
+
+とはいえ、こういうことをきちんと言語で認識して、意識することで確実に行動は変わります。
+
+「自分のため」に「人を助ける」ということであれば、きっと誰でもできるはず。
+
+余裕があったら助ける、のではなく、余裕を感じるために助けるということを、是非一度試してみてください。
+
+この記事に「ハート」をつけたりシェアしたりするのも「人のために使う時間」の1つです。
+
+- https://amzn.to/3gmMLr0file:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr1-10591
+
+- https://amzn.to/3Bnv8zufile:///Applications/iA%20Writer.app/Contents/Frameworks/Kit.framework/Versions/A/Resources/Templates/Copy%20Formatted.iatemplate/Contents/Resources/#fnr2-10591
+
+43Share

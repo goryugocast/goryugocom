@@ -1,0 +1,43 @@
+---
+project: ks
+topic: ワークシートアップデート
+topic_code: upd
+title: 見出しに絵文字を併用してノートを整理する
+subtitle: "\U0001F527010 適切な絵文字の設定で構成案が大きく捗った"
+description: null
+url: 'https://knowledgestuck.substack.com/p/fdc'
+date_published: 2022-12-18T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!96TM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03965c9-a7e2-4283-ab5c-88e12f2c8593_1369x1658.jpeg
+draft_link: null
+tags: []
+series_name: その他
+series_emoji: "\U0001F527"
+series_code: other
+category: 技術・ノウハウ
+---
+
+## メモ・原稿
+
+# 見出しに絵文字を併用してノートを整理する
+
+### 🔧010 適切な絵文字の設定で構成案が大きく捗った
+
+https://substack.com/@goryugohttps://substack.com/@goryugoDec 18, 2022∙ Paid1Sharehttps://knowledgestuck.substack.com/p/fcbで本の目次案を作るモード（Obsidianの画面レイアウト）を紹介しました。
+
+この目次案では、見出しに「🗃️」という絵文字を使い、その中のノートを複数まとめて先頭に📇という絵文字をつける、というのを進めています。
+
+https://substackcdn.com/image/fetch/$s_!96TM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa03965c9-a7e2-4283-ab5c-88e12f2c8593_1369x1658.jpeg今のところ本の目次案作りが順調に勧められているのは、この絵文字の効果もあるのではないかと考えています。
+
+## 繰り返し行うことには絵文字をつける
+
+ビジュアルの力は偉大なもので、これがあるだけで脳内の「イメージ」の形成には大きく役立ってくれます。
+
+たとえばナレッジスタックの投稿では、サブタイトルに必ず絵文字を使っています。（絵文字+連番で連載シリーズを意味するようにした）これは半分は趣味みたいなものですが、それでも手元で「次に書く内容」を考えるときに絵文字だけで「どういうテーマの記事を書こうとし…
+
+## Keep reading with a 7-day free trial
+
+Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+
+https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Ffdc&utm_source=paywall-free-trial&utm_medium=web&utm_content=90981421&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Ffdc&for_pub=knowledgestuck&change_user=false

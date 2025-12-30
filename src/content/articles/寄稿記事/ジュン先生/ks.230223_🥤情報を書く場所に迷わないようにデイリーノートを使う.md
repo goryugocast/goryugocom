@@ -1,0 +1,46 @@
+---
+project: ks
+topic: 友人(jun)の記事
+topic_code: jun
+title: 情報を書く場所に迷わないようにデイリーノートを使う
+subtitle: "\U0001F964004 毎日を生きる僕たちの軸はデイリーノート"
+description: null
+url: 'https://knowledgestuck.substack.com/p/dailynote003'
+date_published: 2023-02-23T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!ioh0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6789df76-bae7-4ed9-910e-074bbce1637f_1385x2874.jpeg
+tags:
+  - デイリーノート
+draft_link: null
+series_name: 寄稿記事
+series_emoji: "\U0001F964"
+series_code: contribution
+category: ジュン先生
+---
+
+## メモ・原稿
+
+# 情報を書く場所に迷わないようにデイリーノートを使う
+
+### 🥤004 毎日を生きる僕たちの軸はデイリーノート
+
+https://substack.com/@kodawarihttps://substack.com/@kodawariFeb 23, 2023∙ Paid5Sharehttps://substackcdn.com/image/fetch/$s_!PYo5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F631c4282-fcd7-4f5f-bcb0-2ba19785a6c4_1920x300.jpeghttps://publish.obsidian.md/knowledgestack/ks_guest_post
+
+生きることにこだわりを。こんにちは、魚住惇です。
+
+ナレッジスタックへの寄稿第4弾です。
+
+前回の内容では、Mac mini 2018に使うための2TBのSSDを購入するまでに、どんな内容をデイリーノートに書いたのかを紹介しました。
+
+USB-C接続のSSDって、最初からフォーマットされていて、普通なら接続するだけで使えるようになっています。ただし、Macに繋げっぱなしで使うとなると話は別で、設定作業が必要でした。
+
+今では困った時にネットで検索してブログなどを読み漁れば、解決方法などの先人たちの知恵が出てきます。しかし、新しいMacを買った時や、いつかSSDを新調する時などに、同じサイトに辿り着けるかどうかもわかりません。それなら記憶に新しいうちに設定した内容のまとめておけば、初期化された状態のMacを今の状態になるまでの作業が難なく進められるはずです。
+
+なので今回の内容では、SSDが届いてMacに接続して、設定を変更したり、作業したメモなどを、どうやってデイリーノートに書いていったのかをお見せしようと思います。
+
+## Keep reading with a 7-day free trial
+
+Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+
+https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Fdailynote003&utm_source=paywall-free-trial&utm_medium=web&utm_content=103446513&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Fdailynote003&for_pub=knowledgestuck&change_user=falsehttps://substack.com/@kodawariA guest post byhttps://substack.com/@kodawari?utm_campaign=guest_post_bio&utm_medium=web愛知県立高等学校情報科の教諭。HHKBケーキの人 http://bit.ly/2Zezmfg、『教師のiPad仕事術』と『逆境に負けない　学校DX物語』の著者📖、勤務校にTeamsとロイロノート、ScanSnapを5台導入した学校DX推進者、職員室での通り名は「もはや業者」 ※勤務中はNotes投稿しませんhttps://kodawari.substack.com/subscribe?

@@ -1,0 +1,23 @@
+---
+project: ks
+topic: Obsidian Tips
+topic_code: obs
+title: 人間にもやさしくAIにもやさしいファイル名を付ける
+subtitle: "\U0001F48Eプレフィックス＋絵文字のハイブリッド運用"
+description: null
+url: 'https://knowledgestuck.substack.com/p/ai'
+date_published: 2025-10-21T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!GMFb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F005a90c8-57d6-496b-859d-6eb6de2f8724_1358x1500.png
+tags:
+  - AI
+draft_link: null
+series_name: Obsidian Tips
+series_emoji: "\U0001F48E"
+series_code: obs
+---
+
+## メモ・原稿
+
+（ここに原稿やメモを書く）

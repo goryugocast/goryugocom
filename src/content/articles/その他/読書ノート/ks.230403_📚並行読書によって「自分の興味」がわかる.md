@@ -1,0 +1,47 @@
+---
+project: ks
+topic: 本
+topic_code: hon
+title: 並行読書によって「自分の興味」がわかる
+subtitle: "\U0001F4DA✍️006 読みたい本がたくさんあるなら全部読めばいい"
+description: null
+url: 'https://knowledgestuck.substack.com/p/a0c'
+date_published: 2023-04-03T00:00:00.000Z
+audience: only_paid
+tags:
+  - 読書
+draft_link: null
+series_name: その他
+series_emoji: "\U0001F4DA"
+series_code: other
+category: 読書ノート
+---
+
+## メモ・原稿
+
+#ks/📔✍️ `= this.file.frontmatter.url`
+
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #ks/📔✍️ 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+
+今回から、基本的に週に1回のペースで原稿を公開していきます。（裏ではもう少したくさんかいています）
+
+そして、原稿とは別に「いつもの感じの投稿」も元に戻し、Obsidianの話とか、今めっちゃ興味があるChatGPTの話などもこれからいろいろ書いていく予定です。
+
+なお、今回はアトミック・読書術（仮）の「並行読書」という方法が「なぜいいのか」という話の続きを書きました。
+
+
+![[📔✍️006 並行読書によって「自分の興味」がわかる]]
