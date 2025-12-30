@@ -1,0 +1,1181 @@
+---
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('ks');
+const glossary = await getCollection('topic');
+
+// Extract seminar sections from markdown body
+function extractSeminarSections(body: string): Array<{ title: string; time: string; link: string; description: string }> {
+  const sections: Array<{ title: string; time: string; link: string; description: string }> = [];
+
+  // Find the "セミナー構成" section
+  const seminarSectionMatch = body.match(/##\s*セミナー構成\s*\n([\s\S]*?)(?=\n##[^#]|$)/);
+  if (!seminarSectionMatch) return sections;
+
+  const seminarContent = seminarSectionMatch[1];
+
+  // Extract each subsection (###)
+  const subsectionRegex = /###\s*\[([^\]]+)\]\(([^)]+)\)\s*\n\*\*時間\*\*:\s*([^\n]+)\s*\n\n?([^\n]*)/g;
+  let match;
+
+  while ((match = subsectionRegex.exec(seminarContent)) !== null) {
+    sections.push({
+      title: match[1],
+      link: match[2],
+      time: match[3].replace(/～$/, '').trim(),
+      description: match[4].trim()
+    });
+  }
+
+  return sections;
+}
+
+// Add sections for each article (seminars only)
+const articlesWithSections = articles.map((article) => {
+  const isSeminar = article.data.tags?.includes('セミナー') || article.data.series_name === 'セミナー';
+  let sections = [];
+
+  if (isSeminar && article.body) {
+    sections = extractSeminarSections(article.body);
+  }
+
+  return { ...article, sections, isSeminar };
+});
+
+// Sort by date (newest first)
+const sortedArticles = articlesWithSections.sort((a, b) => {
+  const dateA = new Date(a.data.date_published);
+  const dateB = new Date(b.data.date_published);
+  return dateB.getTime() - dateA.getTime();
+});
+
+// Extract folder structure from article IDs
+function getFolderPath(id: string): { parent: string; child: string | null } {
+  const parts = id.split('/');
+  // Remove filename (last part)
+  parts.pop();
+
+  if (parts.length === 0) {
+    return { parent: 'その他', child: null };
+  } else if (parts.length === 1) {
+    return { parent: parts[0], child: null };
+  } else {
+    return { parent: parts[0], child: parts[1] };
+  }
+}
+
+// Build series hierarchy from folder structure
+const seriesHierarchy: Record<string, { count: number; children: Record<string, number> }> = {};
+
+sortedArticles.forEach(article => {
+  const { parent, child } = getFolderPath(article.id);
+
+  if (!seriesHierarchy[parent]) {
+    seriesHierarchy[parent] = { count: 0, children: {} };
+  }
+
+  seriesHierarchy[parent].count++;
+
+  if (child) {
+    if (!seriesHierarchy[parent].children[child]) {
+      seriesHierarchy[parent].children[child] = 0;
+    }
+    seriesHierarchy[parent].children[child]++;
+  }
+});
+
+const parentSeries = Object.keys(seriesHierarchy).sort();
+
+// Get glossary categories
+const glossaryByCategory: Record<string, typeof glossary> = {};
+glossary.forEach(term => {
+  const category = term.data.category;
+  if (!glossaryByCategory[category]) {
+    glossaryByCategory[category] = [];
+  }
+  glossaryByCategory[category].push(term);
+});
+const glossaryCategories = Object.keys(glossaryByCategory).sort();
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Knowledge Stack</title>
+    <style>
+      :root {
+        --color-bg-start: #e0f2ff;
+        --color-bg-end: #fce7f3;
+        --color-glass: rgba(255, 255, 255, 0.7);
+        --color-glass-border: rgba(255, 255, 255, 0.3);
+        --color-text: #1a1a1a;
+        --color-text-secondary: #666666;
+        --color-text-tertiary: #999999;
+        --color-accent: #007aff;
+        --color-accent-light: rgba(0, 122, 255, 0.1);
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --radius-lg: 20px;
+        --radius-xl: 24px;
+        --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1);
+        --blur: 20px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+        color: var(--color-text);
+        background: linear-gradient(135deg, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--spacing-lg) var(--spacing-md);
+      }
+
+      .header {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .site-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        margin-bottom: var(--spacing-lg);
+        text-align: center;
+        background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Search */
+      .search-box {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .search-box input {
+        width: 100%;
+        padding: var(--spacing-sm) var(--spacing-md);
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-lg);
+        font-size: 0.9rem;
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        box-shadow: var(--shadow-glass);
+        transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .search-box input:focus {
+        outline: none;
+        border-color: var(--color-accent);
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .search-box input::placeholder {
+        color: var(--color-text-secondary);
+      }
+
+      /* Main filter buttons - horizontal */
+      .main-filter-buttons {
+        display: flex;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .main-filter-button {
+        padding: var(--spacing-md) var(--spacing-lg);
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-lg);
+        font-size: 1rem;
+        font-weight: 600;
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        color: var(--color-text);
+        cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+        box-shadow: var(--shadow-glass);
+        will-change: transform;
+      }
+
+      .main-filter-button:hover {
+        background: rgba(255, 255, 255, 0.85);
+        border-color: var(--color-accent);
+        transform: translateY(-1px);
+      }
+
+      .main-filter-button.active {
+        background: linear-gradient(135deg, var(--color-accent) 0%, #5856d6 100%);
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+      }
+
+      /* Filter list section - separate island */
+      .filter-list-section {
+        margin-bottom: var(--spacing-md);
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-glass);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+      }
+
+      .filter-list-section.visible {
+        display: block;
+        opacity: 1;
+      }
+
+      /* Series list - horizontal tabs */
+      .series-list {
+        display: flex;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+      }
+
+      .series-item {
+        display: contents;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+      }
+
+      .topic-list {
+        display: flex;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+      }
+
+      .filter-button {
+        padding: 6px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.4);
+        color: var(--color-text);
+        cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        white-space: nowrap;
+        will-change: transform;
+      }
+
+      .filter-button:hover {
+        background: rgba(255, 255, 255, 0.6);
+        border-color: var(--color-accent);
+        transform: translateY(-1px);
+      }
+
+      .filter-button.active {
+        background: linear-gradient(135deg, var(--color-accent) 0%, #5856d6 100%);
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+      }
+
+      /* Arrow icon */
+      .arrow {
+        font-size: 0.65rem;
+        transition: transform 0.1s ease;
+        display: inline-block;
+      }
+
+      .parent-button.expanded .arrow {
+        transform: rotate(90deg);
+      }
+
+      .filter-count {
+        font-size: 0.7rem;
+        opacity: 0.7;
+        font-weight: 600;
+      }
+
+      .filter-button.active .filter-count {
+        opacity: 0.9;
+      }
+
+      /* Child series - horizontal second row */
+      .child-series {
+        display: none;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: var(--spacing-lg);
+        margin-top: var(--spacing-xs);
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.15s ease, opacity 0.15s ease;
+      }
+
+      .child-series.visible {
+        display: flex;
+        max-height: 500px;
+        opacity: 1;
+      }
+
+      .child-button {
+        background: rgba(255, 255, 255, 0.25);
+        font-size: 0.75rem;
+        padding: 4px 10px;
+      }
+
+      .child-button:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Sort */
+      .sort-section {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .sort-select {
+        padding: 6px 12px;
+        border: 1px solid var(--color-glass-border);
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        background: var(--color-glass);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: var(--color-text);
+        cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease;
+      }
+
+      .sort-select:hover {
+        background: rgba(255, 255, 255, 0.7);
+        border-color: var(--color-accent);
+      }
+
+      .sort-select:focus {
+        outline: none;
+        border-color: var(--color-accent);
+      }
+
+      /* Result header - compact */
+      .result-header {
+        margin-bottom: var(--spacing-md);
+        padding-top: var(--spacing-sm);
+        display: flex;
+        align-items: baseline;
+        gap: var(--spacing-sm);
+      }
+
+      .result-header h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      .result-count {
+        color: var(--color-text-secondary);
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
+      /* Article list - compact */
+      .article-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+
+      .article-card {
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-md);
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        will-change: transform;
+      }
+
+      .article-card:hover {
+        background: rgba(255, 255, 255, 0.85);
+        border-color: var(--color-accent);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-meta {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm);
+        flex-wrap: wrap;
+      }
+
+      .series-badge {
+        background: rgba(0, 122, 255, 0.1);
+        padding: 2px 8px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--color-accent);
+      }
+
+      .article-date {
+        color: var(--color-text-tertiary);
+        font-size: 0.7rem;
+        font-weight: 500;
+      }
+
+      .article-title {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-xs);
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+      }
+
+      .article-topic {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(88, 86, 214, 0.12) 0%, rgba(0, 122, 255, 0.12) 100%);
+        color: #5856d6;
+        padding: 2px 8px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+
+      .article-link {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+      }
+
+      .empty-state {
+        text-align: center;
+        padding: var(--spacing-xl) * 2;
+        color: var(--color-text-secondary);
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-xl);
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      /* Glossary list */
+      .glossary-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+      }
+
+      .glossary-card {
+        background: var(--color-glass);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        border: 1px solid var(--color-glass-border);
+        border-radius: var(--radius-lg);
+        padding: var(--spacing-lg);
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      }
+
+      .glossary-card:hover {
+        background: rgba(255, 255, 255, 0.85);
+        border-color: var(--color-accent);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .glossary-header {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .glossary-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin: 0;
+      }
+
+      .glossary-category-badge {
+        background: rgba(88, 86, 214, 0.15);
+        color: #5856d6;
+        padding: 2px 10px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .glossary-description {
+        color: var(--color-text);
+        line-height: 1.7;
+        margin-bottom: var(--spacing-md);
+        font-size: 0.95rem;
+      }
+
+      .glossary-section-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .glossary-recommended {
+        margin-bottom: var(--spacing-md);
+        padding: var(--spacing-sm);
+        background: rgba(0, 122, 255, 0.05);
+        border-radius: var(--radius-lg);
+      }
+
+      .glossary-recommended-list {
+        list-style: none;
+        margin: var(--spacing-xs) 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .glossary-recommended-list li {
+        padding-left: var(--spacing-md);
+        position: relative;
+      }
+
+      .glossary-recommended-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-accent);
+        font-weight: bold;
+      }
+
+      .glossary-recommended-list a {
+        color: var(--color-accent);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.15s ease;
+      }
+
+      .glossary-recommended-list a:hover {
+        color: #5856d6;
+        text-decoration: underline;
+      }
+
+      .glossary-related {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: var(--spacing-md);
+      }
+
+      .glossary-related-toggle {
+        width: 100%;
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: var(--radius-lg);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        transition: background 0.15s ease, border-color 0.15s ease;
+      }
+
+      .glossary-related-toggle:hover {
+        background: rgba(255, 255, 255, 0.5);
+        border-color: var(--color-accent);
+      }
+
+      .glossary-related-count {
+        margin-left: auto;
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+        font-weight: 600;
+      }
+
+      .glossary-toggle-arrow {
+        font-size: 0.7rem;
+        transition: transform 0.15s ease;
+      }
+
+      .glossary-related-toggle.expanded .glossary-toggle-arrow {
+        transform: rotate(180deg);
+      }
+
+      .glossary-related-articles {
+        margin-top: var(--spacing-sm);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .glossary-related-item {
+        padding: var(--spacing-sm);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: var(--radius-lg);
+        transition: background 0.15s ease;
+      }
+
+      .glossary-related-item:hover {
+        background: rgba(255, 255, 255, 0.6);
+      }
+
+      .glossary-related-item a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-sm);
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .glossary-related-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        flex: 1;
+      }
+
+      .glossary-related-date {
+        font-size: 0.75rem;
+        color: var(--color-text-tertiary);
+        white-space: nowrap;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Seminar sections */
+      .seminar-sections {
+        margin-top: var(--spacing-md);
+        padding-top: var(--spacing-md);
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+
+      .seminar-section-item {
+        padding: var(--spacing-sm) var(--spacing-md);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+        display: block;
+      }
+
+      .seminar-section-item:hover {
+        background: rgba(255, 255, 255, 0.6);
+        border-color: var(--color-accent);
+        transform: translateX(4px);
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-bottom: 4px;
+      }
+
+      .section-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--color-accent) 0%, #5856d6 100%);
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+
+      .section-time {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--color-text-tertiary);
+        font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+      }
+
+      .section-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-text);
+        line-height: 1.4;
+        margin-bottom: 2px;
+      }
+
+      .section-description {
+        font-size: 0.75rem;
+        color: var(--color-text-secondary);
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="site-title">Knowledge Stack</h1>
+
+        <!-- Search -->
+        <div class="search-box">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="記事を検索..."
+          />
+        </div>
+
+        <!-- Main filter buttons - horizontal -->
+        <div class="main-filter-buttons">
+          <button class="main-filter-button active" data-main-filter="series">シリーズ</button>
+          <button class="main-filter-button" data-main-filter="glossary">用語集</button>
+        </div>
+
+        <!-- Series filter list (separate island) -->
+        <div class="filter-list-section visible" id="series-filter-list">
+          <div class="series-list">
+            <div class="series-item">
+              <button class="filter-button" data-filter-type="series" data-filter-parent="all" data-filter-child="">
+                すべて
+                <span class="filter-count">{sortedArticles.length}</span>
+              </button>
+            </div>
+            {parentSeries.map(parent => {
+              const data = seriesHierarchy[parent];
+              const hasChildren = Object.keys(data.children).length > 0;
+              const isSeminar = parent === 'セミナー';
+              return (
+                <div class="series-item">
+                  <button
+                    class={`filter-button parent-button ${isSeminar ? 'active' : ''}`}
+                    data-filter-type="series"
+                    data-filter-parent={parent}
+                    data-filter-child=""
+                    data-has-children={hasChildren ? 'true' : 'false'}
+                  >
+                    {hasChildren && <span class="arrow">▶</span>}
+                    {parent}
+                    <span class="filter-count">{data.count}</span>
+                  </button>
+                  {hasChildren && (
+                    <div class="child-series" data-parent={parent}>
+                      {Object.entries(data.children).map(([child, count]) => (
+                        <button
+                          class="filter-button child-button"
+                          data-filter-type="series"
+                          data-filter-parent={parent}
+                          data-filter-child={child}
+                        >
+                          {child}
+                          <span class="filter-count">{count}</span>
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <!-- Glossary filter list (separate island) -->
+        <div class="filter-list-section" id="glossary-filter-list">
+          <div class="filter-buttons">
+            <button class="filter-button active" data-filter-type="glossary-category" data-filter-value="all">
+              すべて
+              <span class="filter-count">{glossary.length}</span>
+            </button>
+            {glossaryCategories.map(category => {
+              const termsInCategory = glossaryByCategory[category];
+              return (
+                <button
+                  class="filter-button"
+                  data-filter-type="glossary-category"
+                  data-filter-value={category}
+                >
+                  {category}
+                  <span class="filter-count">{termsInCategory.length}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <!-- Sort -->
+        <div class="sort-section">
+          <select class="sort-select" id="sort-select">
+            <option value="newest">新しい順</option>
+            <option value="oldest">古い順</option>
+          </select>
+        </div>
+      </header>
+
+      <!-- Result header (for articles) -->
+      <div class="result-header" id="article-result-header">
+        <h2 id="current-filter-title">セミナー</h2>
+        <div class="result-count" id="result-count">{seriesHierarchy['セミナー']?.count || 0} 件の記事</div>
+      </div>
+
+      <!-- Article list -->
+      <div class="article-list" id="article-list">
+        {sortedArticles.map((article) => {
+          const { parent, child } = getFolderPath(article.id);
+          const folderPath = child ? `${parent}/${child}` : parent;
+          const isInitiallyVisible = parent === 'セミナー';
+
+          return (
+            <article
+              class={`article-card ${!isInitiallyVisible ? 'hidden' : ''}`}
+              data-series-parent={parent}
+              data-series-child={child || ''}
+              data-topic={article.data.topic || ''}
+              data-title={article.data.title.toLowerCase()}
+              data-date={new Date(article.data.date_published).getTime()}
+            >
+              <a href={article.data.url} target="_blank" rel="noopener noreferrer" class="article-link">
+                <div class="article-meta">
+                  <span class="series-badge">{folderPath}</span>
+                  <span class="article-date">
+                    {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
+                      year: 'numeric',
+                      month: '2-digit',
+                      day: '2-digit'
+                    })}
+                  </span>
+                </div>
+                <div class="article-title">{article.data.title}</div>
+              </a>
+
+              {/* セミナー構成 */}
+              {article.sections && article.sections.length > 0 && (
+                <div class="seminar-sections">
+                  {article.sections.map((section, index) => (
+                    <a
+                      href={section.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="seminar-section-item"
+                    >
+                      <div class="section-header">
+                        <span class="section-number">{index + 1}</span>
+                        <span class="section-time">{section.time}</span>
+                      </div>
+                      <div class="section-title">{section.title}</div>
+                      {section.description && (
+                        <div class="section-description">{section.description}</div>
+                      )}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </article>
+          );
+        })}
+      </div>
+
+      <div class="empty-state hidden" id="empty-state">
+        <p>該当する記事が見つかりませんでした</p>
+      </div>
+
+      <!-- Glossary list (hidden by default) -->
+      <div class="glossary-list hidden" id="glossary-list">
+        {glossary.map((term) => {
+          const relatedArticles = sortedArticles.filter(a => a.data.topic === term.data.topic_id);
+          const recommendedArticles = term.data.recommended_articles || [];
+
+          return (
+            <div class="glossary-card" data-category={term.data.category}>
+              <div class="glossary-header">
+                <h3 class="glossary-title">{term.data.title}</h3>
+                <span class="glossary-category-badge">{term.data.category}</span>
+              </div>
+
+              <p class="glossary-description">{term.data.description}</p>
+
+              {recommendedArticles.length > 0 && (
+                <div class="glossary-recommended">
+                  <h4 class="glossary-section-title">📌 おすすめ記事</h4>
+                  <ul class="glossary-recommended-list">
+                    {recommendedArticles.map(articleId => {
+                      const article = sortedArticles.find(a => a.id.includes(articleId));
+                      return article ? (
+                        <li>
+                          <a href={article.data.url} target="_blank" rel="noopener noreferrer">
+                            {article.data.title}
+                          </a>
+                        </li>
+                      ) : null;
+                    })}
+                  </ul>
+                </div>
+              )}
+
+              <div class="glossary-related">
+                <button class="glossary-related-toggle" data-term-id={term.data.topic_id}>
+                  <span class="glossary-section-title">📚 関連記事</span>
+                  <span class="glossary-related-count">{relatedArticles.length}件</span>
+                  <span class="glossary-toggle-arrow">▼</span>
+                </button>
+                <div class="glossary-related-articles hidden" data-term-id={term.data.topic_id}>
+                  {relatedArticles.map(article => (
+                    <div class="glossary-related-item">
+                      <a href={article.data.url} target="_blank" rel="noopener noreferrer">
+                        <span class="glossary-related-title">{article.data.title}</span>
+                        <span class="glossary-related-date">
+                          {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
+                            year: 'numeric',
+                            month: '2-digit',
+                            day: '2-digit'
+                          })}
+                        </span>
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <script>
+      let currentSeriesParent = 'セミナー';
+      let currentSeriesChild = '';
+      let currentTopic = 'all';
+      let currentSearchQuery = '';
+      let currentSort = 'newest';
+
+      const articleList = document.getElementById('article-list');
+      const emptyState = document.getElementById('empty-state');
+      const resultCount = document.getElementById('result-count');
+      const filterTitle = document.getElementById('current-filter-title');
+      const searchInput = document.getElementById('search-input');
+      const sortSelect = document.getElementById('sort-select');
+
+      // Initialize with seminar filter
+      window.addEventListener('DOMContentLoaded', () => {
+        filterArticles();
+      });
+
+      // Filter articles
+      function filterArticles() {
+        const cards = Array.from(document.querySelectorAll('.article-card'));
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const seriesParent = card.dataset.seriesParent;
+          const seriesChild = card.dataset.seriesChild;
+          const topic = card.dataset.topic;
+          const title = card.dataset.title;
+
+          const seriesMatch = currentSeriesParent === 'all' ||
+            (seriesParent === currentSeriesParent &&
+             (currentSeriesChild === '' || seriesChild === currentSeriesChild));
+
+          const topicMatch = currentTopic === 'all' || topic === currentTopic;
+          const searchMatch = currentSearchQuery === '' ||
+            title.includes(currentSearchQuery.toLowerCase()) ||
+            topic.toLowerCase().includes(currentSearchQuery.toLowerCase());
+
+          if (seriesMatch && topicMatch && searchMatch) {
+            card.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          articleList.classList.add('hidden');
+          emptyState.classList.remove('hidden');
+        } else {
+          articleList.classList.remove('hidden');
+          emptyState.classList.add('hidden');
+        }
+
+        resultCount.textContent = `${visibleCount} 件の記事`;
+
+        // Update title
+        let title = 'すべての記事';
+        if (currentSeriesParent !== 'all') {
+          title = currentSeriesChild ? `${currentSeriesParent} / ${currentSeriesChild}` : currentSeriesParent;
+        }
+        if (currentTopic !== 'all') {
+          title = currentTopic;
+        }
+        if (currentSearchQuery !== '') {
+          title = `"${currentSearchQuery}" の検索結果`;
+        }
+        filterTitle.textContent = title;
+
+        sortArticles();
+      }
+
+      // Sort articles
+      function sortArticles() {
+        const cards = Array.from(articleList.querySelectorAll('.article-card:not(.hidden)'));
+
+        cards.sort((a, b) => {
+          const dateA = parseInt(a.dataset.date);
+          const dateB = parseInt(b.dataset.date);
+          return currentSort === 'newest' ? dateB - dateA : dateA - dateB;
+        });
+
+        cards.forEach(card => articleList.appendChild(card));
+      }
+
+      // Series filter with hierarchy
+      document.querySelectorAll('[data-filter-type="series"]').forEach(button => {
+        button.addEventListener('click', () => {
+          const parent = button.dataset.filterParent;
+          const child = button.dataset.filterChild;
+          const hasChildren = button.dataset.hasChildren === 'true';
+
+          // Toggle child series visibility
+          if (hasChildren && child === '') {
+            const childContainer = document.querySelector(`[data-parent="${parent}"]`);
+            if (childContainer) {
+              childContainer.classList.toggle('visible');
+              button.classList.toggle('expanded');
+            }
+          }
+
+          // Update filter immediately
+          document.querySelectorAll('[data-filter-type="series"]').forEach(b => b.classList.remove('active'));
+          button.classList.add('active');
+          currentSeriesParent = parent;
+          currentSeriesChild = child;
+          filterArticles();
+        });
+      });
+
+      // Topic filter
+      document.querySelectorAll('[data-filter-type="topic"]').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('[data-filter-type="topic"]').forEach(b => b.classList.remove('active'));
+          button.classList.add('active');
+          currentTopic = button.dataset.filterValue;
+          filterArticles();
+        });
+      });
+
+      // Search
+      searchInput.addEventListener('input', (e) => {
+        currentSearchQuery = e.target.value;
+        filterArticles();
+      });
+
+      // Sort
+      sortSelect.addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        sortArticles();
+      });
+
+      // Main filter button toggle
+      document.querySelectorAll('.main-filter-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const filterType = button.dataset.mainFilter;
+
+          // Update button states
+          document.querySelectorAll('.main-filter-button').forEach(b => b.classList.remove('active'));
+          button.classList.add('active');
+
+          // Show/hide filter lists
+          document.getElementById('series-filter-list').classList.toggle('visible', filterType === 'series');
+          document.getElementById('glossary-filter-list').classList.toggle('visible', filterType === 'glossary');
+
+          // Show/hide article list and glossary list
+          const articleList = document.getElementById('article-list');
+          const glossaryList = document.getElementById('glossary-list');
+          const articleResultHeader = document.getElementById('article-result-header');
+          const sortSection = document.querySelector('.sort-section');
+          const emptyState = document.getElementById('empty-state');
+
+          if (filterType === 'series') {
+            articleList.classList.remove('hidden');
+            glossaryList.classList.add('hidden');
+            articleResultHeader.classList.remove('hidden');
+            sortSection.classList.remove('hidden');
+          } else if (filterType === 'glossary') {
+            articleList.classList.add('hidden');
+            glossaryList.classList.remove('hidden');
+            articleResultHeader.classList.add('hidden');
+            sortSection.classList.add('hidden');
+            emptyState.classList.add('hidden');
+          }
+        });
+      });
+
+      // Glossary category filter
+      document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(b => b.classList.remove('active'));
+          button.classList.add('active');
+
+          const category = button.dataset.filterValue;
+          const glossaryCards = document.querySelectorAll('.glossary-card');
+
+          // Show/hide glossary cards based on category
+          glossaryCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Glossary related articles toggle
+      document.querySelectorAll('.glossary-related-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const termId = button.dataset.termId;
+          const articlesContainer = document.querySelector(`.glossary-related-articles[data-term-id="${termId}"]`);
+
+          button.classList.toggle('expanded');
+          articlesContainer.classList.toggle('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
