@@ -114,22 +114,22 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=M+PLUS+Rounded+1c:wght@300;500&display=swap" rel="stylesheet">
     <style>
       :root {
-        --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
-        --glass-bg: rgba(255, 255, 255, 0.25);
-        --glass-border: rgba(255, 255, 255, 0.5);
-        --text-main: #444;
-        --text-secondary: #666;
-        --text-tertiary: #888;
-        --accent: #8e9eab;
-        --spacing-xs: 0.25rem;
-        --spacing-sm: 0.5rem;
-        --spacing-md: 1rem;
-        --spacing-lg: 1.5rem;
-        --spacing-xl: 2rem;
-        --radius-lg: 24px;
-        --radius-xl: 32px;
-        --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
-        --blur: 16px;
+        --bg-gradient: linear-gradient(135deg, #f2f2f7 0%, #ffffff 100%);
+        --glass-bg: rgba(255, 255, 255, 0.4);
+        --glass-border: rgba(255, 255, 255, 0.6);
+        --text-main: #1c1c1e;
+        --text-secondary: #3a3a3c;
+        --text-tertiary: #8e8e93;
+        --accent: #007aff;
+        --spacing-xs: 4px;
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+        --radius-lg: 20px;
+        --radius-xl: 24px;
+        --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        --blur: 12px;
       }
 
       * {
@@ -139,7 +139,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
       }
 
       body {
-        font-family: 'Quicksand', 'M PLUS Rounded 1c', "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+        font-family: 'Quicksand', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
         margin: 0;
         padding: 0;
         background: #e0e5ec;
@@ -201,35 +201,6 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         color: #333;
       }
 
-      /* Search */
-      .search-box {
-        margin-bottom: var(--spacing-md);
-      }
-
-      .search-box input {
-        width: 100%;
-        padding: 0.8rem 1.5rem;
-        border: 1px solid var(--glass-border);
-        border-radius: 50px;
-        font-size: 0.95rem;
-        background: var(--glass-bg);
-        backdrop-filter: blur(var(--blur));
-        -webkit-backdrop-filter: blur(var(--blur));
-        box-shadow: var(--shadow-glass);
-        transition: 0.3s;
-        color: var(--text-main);
-      }
-
-      .search-box input:focus {
-        outline: none;
-        border-color: #fff;
-        background: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      }
-
-      .search-box input::placeholder {
-        color: var(--text-tertiary);
-      }
 
       /* Main filter buttons - horizontal */
       .main-filter-buttons {
@@ -459,6 +430,104 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         -webkit-backdrop-filter: blur(20px);
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      /* Floating Controls (Permanent Sticky Bar) */
+      .floating-controls {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        padding: 8px 16px;
+        transform: translateY(-100%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: auto;
+      }
+
+      .floating-controls.visible {
+        transform: translateY(0);
+      }
+
+      .floating-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--spacing-md);
+      }
+
+      .floating-controls .main-filter-buttons {
+        margin-bottom: 0;
+        gap: 4px;
+      }
+
+      .floating-controls .main-filter-button {
+        padding: 6px 12px;
+        font-size: 1.1rem;
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+        box-shadow: none;
+        color: var(--color-text);
+      }
+
+      .floating-controls .main-filter-button.active {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        color: var(--color-text);
+      }
+
+      .floating-controls .controls-section {
+        margin-top: 0;
+        background: transparent;
+        backdrop-filter: none;
+        border: none;
+        padding: 0;
+        gap: 8px;
+      }
+
+      .floating-controls .segmented-control {
+        padding: 1px;
+        background: rgba(0, 0, 0, 0.03);
+      }
+
+      .floating-controls .segmented-control-option {
+        padding: 4px 8px;
+        font-size: 1rem;
+        color: var(--color-text);
+      }
+
+      .floating-controls .bulk-toggle-btn {
+        padding: 6px 10px;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        color: var(--color-text);
+      }
+
+      @media (max-width: 768px) {
+        .floating-controls .controls-section {
+          display: none;
+        }
+        
+        .floating-controls .main-filter-buttons {
+          width: 100%;
+          justify-content: space-around;
+        }
+        
+        .floating-controls .main-filter-button {
+          flex: 1;
+          padding: 8px 4px;
+          font-size: 1.2rem;
+        }
       }
 
       .segmented-control {
@@ -869,27 +938,74 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         }
 
         .article-card {
-          padding: 1.25rem;
-          border-radius: 20px;
+          padding: 1rem; /* さらに削減 */
+          border-radius: 16px;
         }
 
         .article-title {
-          font-size: 1.15rem;
-          line-height: 1.5;
+          font-size: 1.1rem;
+          line-height: 1.4;
         }
 
         .article-description {
-          font-size: 1rem;
-          line-height: 1.6;
-          margin-top: 0.75rem;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          margin-top: 0.5rem;
         }
 
         .article-meta span {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
         }
 
         .series-badge {
-          padding: 4px 10px;
+          padding: 2px 8px;
+        }
+
+        /* Mobile Timeline Adjustments */
+        .seminar-sections {
+          padding-left: 10px;
+          margin-left: 5px;
+          gap: var(--spacing-sm);
+        }
+
+        .seminar-sections::before {
+          left: 4px;
+        }
+
+        .seminar-section-item {
+          padding: 4px 0 4px 16px;
+          background: transparent;
+          border: none;
+        }
+
+        .seminar-section-item:hover {
+          background: transparent;
+          transform: none;
+        }
+
+        .section-number {
+          width: 18px;
+          height: 18px;
+          font-size: 0.6rem;
+          position: absolute;
+          left: -15px;
+          top: 8px;
+          z-index: 2;
+        }
+
+        .section-header {
+          position: relative;
+          margin-bottom: 2px;
+        }
+
+        .section-title {
+          font-size: 0.9rem;
+          line-height: 1.4;
+        }
+
+        .section-description {
+          font-size: 0.85rem;
+          margin-left: 0;
         }
       }
 
@@ -952,16 +1068,29 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         display: none !important;
       }
 
-      /* Seminar sections */
+      /* Seminar sections - Timeline Style */
       .seminar-sections {
         margin-top: var(--spacing-md);
         padding-top: var(--spacing-md);
-        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
         display: none;
         flex-direction: column;
-        gap: var(--spacing-xs);
+        gap: var(--spacing-md);
         opacity: 0;
         transition: opacity 0.3s ease;
+        position: relative;
+        padding-left: 24px;
+      }
+
+      .seminar-sections::before {
+        content: "";
+        position: absolute;
+        top: var(--spacing-md);
+        bottom: var(--spacing-md);
+        left: 9px;
+        width: 2px;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 1px;
       }
 
       .article-card.expanded .seminar-sections {
@@ -970,14 +1099,12 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
       }
 
       .seminar-section-item {
-        padding: var(--spacing-sm) var(--spacing-md);
-        border: 1px solid rgba(0, 0, 0, 0.08);
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.3);
+        padding: var(--spacing-sm);
         text-decoration: none;
         color: inherit;
-        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+        transition: all 0.2s ease;
         display: block;
+        position: relative;
       }
 
       .seminar-section-item:hover {
@@ -1004,6 +1131,10 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         color: white;
         font-size: 0.7rem;
         font-weight: 700;
+        position: absolute;
+        left: -25px;
+        top: 10px;
+        z-index: 2;
       }
 
       .section-time {
@@ -1026,30 +1157,49 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         color: var(--color-text-secondary);
         line-height: 1.4;
       }
+
+      .section-chevron {
+        margin-left: auto;
+        font-size: 0.7rem;
+        color: var(--color-text-tertiary);
+        opacity: 0.5;
+      }
     </style>
   </head>
   <body>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
+
+    <!-- Floating Controls (Permanent Sticky) -->
+    <div class="floating-controls" id="floating-controls">
+      <div class="floating-container">
+        <div class="main-filter-buttons">
+          <button class="main-filter-button active" data-main-filter="videos" title="動画">🎥</button>
+          <button class="main-filter-button" data-main-filter="articles" title="記事">📄</button>
+          <button class="main-filter-button" data-main-filter="glossary" title="用語集">📖</button>
+          <button class="main-filter-button" data-main-filter="notes" title="ノート">📝</button>
+        </div>
+        <div class="controls-section">
+          <div class="segmented-control" id="floating-sort-control">
+            <button class="segmented-control-option active" data-sort="newest" title="新しい順">🆕</button>
+            <button class="segmented-control-option" data-sort="oldest" title="古い順">⏳</button>
+          </div>
+          <button id="floating-bulk-toggle-btn" class="bulk-toggle-btn" title="すべて開く/閉じる">📂</button>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <header class="header">
         <h1 class="site-title">Knowledge Stack</h1>
 
-        <!-- Search -->
-        <div class="search-box">
-          <input
-            type="text"
-            id="search-input"
-            placeholder="記事を検索..."
-          />
-        </div>
 
         <!-- Main filter buttons - horizontal -->
         <div class="main-filter-buttons">
-          <button class="main-filter-button active" data-main-filter="videos">動画</button>
-          <button class="main-filter-button" data-main-filter="articles">記事</button>
-          <button class="main-filter-button" data-main-filter="glossary">用語集</button>
-          <button class="main-filter-button" data-main-filter="notes">ノート</button>
+          <button class="main-filter-button active" data-main-filter="videos">🎥 動画</button>
+          <button class="main-filter-button" data-main-filter="articles">📄 記事</button>
+          <button class="main-filter-button" data-main-filter="glossary">📖 用語集</button>
+          <button class="main-filter-button" data-main-filter="notes">📝 ノート</button>
         </div>
 
         <!-- Videos filter list -->
@@ -1154,10 +1304,10 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         <div class="controls-section">
           <div class="segmented-control" id="sort-segmented-control" data-value="newest">
             <div class="segmented-control-slider"></div>
-            <button class="segmented-control-option active" data-sort="newest">新しい順</button>
-            <button class="segmented-control-option" data-sort="oldest">古い順</button>
+            <button class="segmented-control-option active" data-sort="newest">🆕 新しい順</button>
+            <button class="segmented-control-option" data-sort="oldest">⏳ 古い順</button>
           </div>
-          <button class="bulk-toggle-btn" id="bulk-toggle-btn">すべて開く</button>
+          <button class="bulk-toggle-btn" id="bulk-toggle-btn">📂 すべて開く</button>
         </div>
       </header>
 
@@ -1180,7 +1330,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             <div class="article-header">
               <div class="article-content">
                 <div class="article-meta">
-                  <span class="series-badge">{video.data.series_name}</span>
+                  <span class="series-badge">📺 {video.data.series_name}</span>
                   <span class="article-date">
                     {new Date(video.data.date_published).toLocaleDateString('ja-JP', {
                       year: 'numeric',
@@ -1200,14 +1350,15 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             {video.sections && video.sections.length > 0 && (
               <div class="seminar-sections">
                 {video.sections.map((section, index) => (
-                  <a href={section.link} target="_blank" rel="noopener noreferrer" class="seminar-section-item">
-                    <div class="section-header">
-                      <span class="section-number">{index + 1}</span>
-                      <span class="section-time">{section.time}</span>
-                    </div>
-                    <div class="section-title">{section.title}</div>
-                    {section.description && <div class="section-description">{section.description}</div>}
-                  </a>
+                    <a href={section.link} target="_blank" rel="noopener noreferrer" class="seminar-section-item">
+                      <div class="section-header">
+                        <span class="section-number">{index + 1}</span>
+                        <span class="section-time">⏱️ {section.time}</span>
+                        <div class="section-chevron">▶</div>
+                      </div>
+                      <div class="section-title">{section.title}</div>
+                      {section.description && <div class="section-description">{section.description}</div>}
+                    </a>
                 ))}
               </div>
             )}
@@ -1239,7 +1390,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
               <div class="article-header">
                 <div class="article-content">
                   <div class="article-meta">
-                    <span class="series-badge">{folderPath}</span>
+                    <span class="series-badge">📄 {folderPath}</span>
                     <span class="article-date">
                       {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
                         year: 'numeric',
@@ -1282,7 +1433,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             <div class="glossary-card" data-category={term.data.category} style={`animation-delay: ${0.2 + (index % 10) * 0.1}s`}>
               <div class="glossary-header">
                 <h3 class="glossary-title">{term.data.title}</h3>
-                <span class="glossary-category-badge">{term.data.category}</span>
+                <span class="glossary-category-badge">📖 {term.data.category}</span>
               </div>
 
               <p class="glossary-description">{term.data.description}</p>
@@ -1365,7 +1516,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             <div class="article-header">
               <div class="article-content">
                 <div class="article-meta">
-                  {note.data.prefix && <span class="series-badge">{note.data.prefix}</span>}
+                  {note.data.prefix && <span class="series-badge">📝 {note.data.prefix}</span>}
                   {Array.isArray(note.data.topic) && note.data.topic.map(t => (
                     <span class="article-topic" style="margin-right: 4px;">{t}</span>
                   ))}
@@ -1389,7 +1540,6 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
       let currentArticleSeriesChild = '';
       let currentGlossaryCategory = 'all';
       let currentNoteTopic = 'all';
-      let currentSearchQuery = '';
       let currentSort = 'newest';
 
       const videoList = document.getElementById('video-list');
@@ -1399,7 +1549,6 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
       const emptyState = document.getElementById('empty-state');
       const resultCount = document.getElementById('result-count');
       const filterTitle = document.getElementById('current-filter-title');
-      const searchInput = document.getElementById('search-input');
       const sortSegmentedControl = document.getElementById('sort-segmented-control');
       const bulkToggleBtn = document.getElementById('bulk-toggle-btn');
 
@@ -1417,7 +1566,19 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         notes: document.getElementById('notes-filter-list')
       };
 
-      // Initialize
+      // Permanent Sticky Bar
+      const floatingControls = document.getElementById('floating-controls');
+      const scrollThreshold = 150;
+
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > scrollThreshold) {
+          floatingControls.classList.add('visible');
+        } else {
+          floatingControls.classList.remove('visible');
+        }
+      });
       window.addEventListener('DOMContentLoaded', () => {
         updateUI();
       });
@@ -1430,9 +1591,14 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
           filterLists[mode].classList.toggle('visible', mode === currentMode);
         });
 
-        // Update main buttons
+        // Update main buttons (both header and floating)
         document.querySelectorAll('.main-filter-button').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.mainFilter === currentMode);
+        });
+
+        // Update sort controls (both header and floating)
+        document.querySelectorAll('.segmented-control-option').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.sort === currentSort);
         });
 
         // Filter and Sort
@@ -1449,27 +1615,20 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
 
           if (currentMode === 'videos') {
             const series = card.dataset.series;
-            const title = card.dataset.title;
             const seriesMatch = currentVideoSeries === 'all' || series === currentVideoSeries;
-            const searchMatch = currentSearchQuery === '' || title.includes(currentSearchQuery.toLowerCase());
-            isVisible = seriesMatch && searchMatch;
+            isVisible = seriesMatch;
           } else if (currentMode === 'articles') {
             const parent = card.dataset.seriesParent;
             const child = card.dataset.seriesChild;
-            const title = card.dataset.title;
             const seriesMatch = currentArticleSeriesParent === 'all' ||
               (parent === currentArticleSeriesParent && (currentArticleSeriesChild === '' || child === currentArticleSeriesChild));
-            const searchMatch = currentSearchQuery === '' || title.includes(currentSearchQuery.toLowerCase());
-            isVisible = seriesMatch && searchMatch;
+            isVisible = seriesMatch;
           } else if (currentMode === 'glossary') {
             const category = card.dataset.category;
-            const title = card.querySelector('.glossary-title')?.textContent.toLowerCase() || '';
             const categoryMatch = currentGlossaryCategory === 'all' || category === currentGlossaryCategory;
-            const searchMatch = currentSearchQuery === '' || title.includes(currentSearchQuery.toLowerCase());
-            isVisible = categoryMatch && searchMatch;
+            isVisible = categoryMatch;
           } else if (currentMode === 'notes') {
             const topicsStr = card.dataset.topics || '[]';
-            const title = card.dataset.title || '';
             let topics = [];
             try {
               topics = JSON.parse(topicsStr);
@@ -1477,8 +1636,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
               console.error('Error parsing topics:', topicsStr);
             }
             const topicMatch = currentNoteTopic === 'all' || topics.includes(currentNoteTopic);
-            const searchMatch = currentSearchQuery === '' || title.includes(currentSearchQuery.toLowerCase());
-            isVisible = topicMatch && searchMatch;
+            isVisible = topicMatch;
           }
 
           card.classList.toggle('hidden', !isVisible);
@@ -1503,10 +1661,12 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
       function updateBulkToggleVisibility() {
         const hasExpandableCards = currentMode === 'videos' || currentMode === 'articles';
         bulkToggleBtn.classList.toggle('hidden', !hasExpandableCards);
+        const floatingBulkBtn = document.getElementById('floating-bulk-toggle-btn');
+        if (floatingBulkBtn) floatingBulkBtn.classList.toggle('hidden', !hasExpandableCards);
         
-        // Reset button text
         const anyExpanded = Array.from(modeLists[currentMode].querySelectorAll('.article-card.expanded')).length > 0;
-        bulkToggleBtn.textContent = anyExpanded ? 'すべて閉じる' : 'すべて開く';
+        bulkToggleBtn.textContent = anyExpanded ? '📁 すべて閉じる' : '📂 すべて開く';
+        if (floatingBulkBtn) floatingBulkBtn.textContent = anyExpanded ? '📁' : '📂';
       }
 
       function updateTitle() {
@@ -1521,9 +1681,6 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
           title = currentNoteTopic === 'all' ? 'アトミックノート' : currentNoteTopic;
         }
 
-        if (currentSearchQuery) {
-          title = `"${currentSearchQuery}" の検索結果`;
-        }
         filterTitle.textContent = title;
       }
 
@@ -1591,29 +1748,16 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
         });
       });
 
-      // Search & Sort
-      searchInput.addEventListener('input', (e) => {
-        currentSearchQuery = e.target.value;
-        filterContent();
-      });
 
-      sortSegmentedControl.querySelectorAll('.segmented-control-option').forEach(option => {
+      document.querySelectorAll('.segmented-control-option').forEach(option => {
         option.addEventListener('click', () => {
           const value = (option as HTMLElement).dataset.sort;
           currentSort = value;
-          
-          // Update UI
-          sortSegmentedControl.dataset.value = value;
-          sortSegmentedControl.querySelectorAll('.segmented-control-option').forEach(opt => {
-            opt.classList.toggle('active', opt === option);
-          });
-          
-          sortContent();
+          updateUI();
         });
       });
 
-      // Bulk Toggle
-      bulkToggleBtn.addEventListener('click', () => {
+      function toggleBulkExpand() {
         const currentList = modeLists[currentMode];
         const visibleCards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden)'));
         const anyExpanded = visibleCards.some(card => card.classList.contains('expanded'));
@@ -1622,8 +1766,11 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
           card.classList.toggle('expanded', !anyExpanded);
         });
         
-        bulkToggleBtn.textContent = !anyExpanded ? 'すべて閉じる' : 'すべて開く';
-      });
+        updateBulkToggleVisibility();
+      }
+
+      bulkToggleBtn.addEventListener('click', toggleBulkExpand);
+      document.getElementById('floating-bulk-toggle-btn').addEventListener('click', toggleBulkExpand);
 
       // Card Interaction
       document.addEventListener('click', (e) => {
