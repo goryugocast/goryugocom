@@ -7,9 +7,7 @@ const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 
 // https://astro.build/config
 export default defineConfig({
-  site: isGitHubActions
-    ? 'https://goryugocast.github.io'
-    : 'http://localhost:4321',
-  base: isGitHubActions ? '/goryugocom' : '/',
+  site: 'https://portal.goryugo.com',
+  base: '/',
   output: 'static'
 });

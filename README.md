@@ -28,7 +28,7 @@ GitHub Pagesへの自動デプロイは、`main` ブランチへのプッシュ�
 `astro.config.mjs` では、環境変数 `GITHUB_ACTIONS` を使ってローカル開発環境と本番環境を自動的に切り替えています：
 
 - **ローカル開発**: `base: '/'` でシンプルなURL（`http://localhost:4321/`）
-- **GitHub Pages**: `base: '/goryugocom'` でサブパスに対応（`https://goryugocast.github.io/goryugocom/`）
+- **GitHub Pages**: `base: '/'` でカスタムドメインに対応（`https://portal.goryugo.com/`）
 
 GitHub Actionsでは `GITHUB_ACTIONS=true` が自動的に設定されるため、デプロイ時は自動的に正しい設定が適用されます。
 
@@ -51,9 +51,9 @@ web/
 1. `main` ブランチにプッシュ
 2. GitHub Actions が自動実行（`.github/workflows/deploy.yml`）
 3. `npm ci` で依存関係インストール
-4. `npm run build` で静的ファイル生成（GitHub Actionsでは `base: '/goryugocom'` が適用される）
+4. `npm run build` で静的ファイル生成
 5. GitHub Pages にデプロイ
-6. https://goryugocast.github.io/goryugocom/ で公開
+6. https://portal.goryugo.com/ で公開
 
 ## 公開範囲
 
