@@ -1,9 +1,9 @@
 ---
 project: ks
 title: ナレッジスタックのコンテンツをサクッと整理して確認できるポータル（プロトタイプ）を作りました
-subtitle: 💬ポータルサイトを作った話
+subtitle: ちゃんといいものを提供して満足して課金してもらいたい
 date_published: 2026-01-01
-url: 
+url: https://knowledgestuck.substack.com/p/b04
 description: "ナレッジスタックのコンテンツを整理・確認できるポータルサイト（プロトタイプ）を作成。Obsidian Publishのような仕組みを自作し、自分の欲しい機能を実装していく過程と、その楽しさにについて。"
 topic:
   - Web制作

@@ -32,3 +32,4 @@ Obsidian Basesは、タスク管理においてもその真価を発揮する。
 - [『アトミック・シンキング』実践セミナー038 動画アーカイブ](https://knowledgestuck.substack.com/p/ks038)
   - [00:23:00](https://knowledgestuck.substack.com/p/ks038?timestamp=1380) - Basesを使ったタスク管理は、締め切り日順にタスクを自動ソートする
   - [00:25:45](https://knowledgestuck.substack.com/p/ks038?timestamp=1545) - Baseビュー内でタスクのチェックボックスを直接操作できるなど、Dataviewにはない直接編集機能が大きなメリット
+- [Obsidian Basesを使ったタスク管理の実例](https://knowledgestuck.substack.com/p/obsidian-bases-b15)
