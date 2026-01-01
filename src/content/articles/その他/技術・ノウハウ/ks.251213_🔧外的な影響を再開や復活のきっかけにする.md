@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: ワークシートアップデート
+topic:
+  - Obsidian
+  - ワークシート
+  - 生成AI
+  - 習慣化
+  - 思考法
 topic_code: upd
 title: 外的な影響を再開や復活のきっかけにする
 subtitle: "\U0001F527ワークシートのアップデートと今後の方針確認など"
-description: null
+description: >-
+  アトミック・シンキング実践ワークシートの最新アップデートについて解説。生成AIとの協業を意識したフォルダ構造の変更や、完璧よりも完成を優先するマインドセット、そして無理なく長期的に継続する習慣化の重要性について考察しています。
 url: 'https://knowledgestuck.substack.com/p/worksheet-2512update'
 date_published: 2025-12-13T00:00:00.000Z
 audience: everyone

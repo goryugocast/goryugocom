@@ -1,10 +1,14 @@
 ---
 project: ks
-topic: 本
+topic:
+  - 読書
+  - 書評
+  - おすすめ本
 topic_code: hon
 title: 2025年に読んだお気に入りの本のまとめ
 subtitle: "\U0001F4DAジャンルごとに数冊で合計10冊くらい"
-description: null
+description: >-
+  2025年に読んだお気に入りの本をジャンル別に紹介。音楽、人体・運動・食事系、純文学、ミステリから厳選した書籍を具体的なエピソードと共に解説。特に高野秀行氏の『酒を主食とする人々』は、個人的な生き方にも大きな影響を与えた一冊として推奨しています。
 url: 'https://knowledgestuck.substack.com/p/2025'
 date_published: 2025-12-17T00:00:00.000Z
 audience: everyone

@@ -1,10 +1,17 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - 振り返り
+  - コミュニティ
+  - Obsidian
+  - 習慣化
+  - 学習
+  - セミナー
 topic_code: rev
 title: 自分の当たり前は常に疑い続けなければならない
 subtitle: "\U0001F4C52025年11月の振り返り"
-description: null
+description: >-
+  2025年11月の活動を振り返り。運動習慣の向上と共にナレッジスタックの執筆意欲も高まりました。Discordコミュニティからのフィードバックを元に、長期運営ならではの課題に気づき、全体ガイドマップの整備や「レッスンシリーズ」の構想を進めています。今後のセミナー開催についても触れています。
 url: 'https://knowledgestuck.substack.com/p/395'
 date_published: 2025-12-03T00:00:00.000Z
 audience: everyone

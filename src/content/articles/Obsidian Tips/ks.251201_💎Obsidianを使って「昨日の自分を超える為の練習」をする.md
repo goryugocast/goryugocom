@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: Obsidian Tips
+topic:
+  - Obsidian
+  - 練習記録
+  - モチベーション
+  - 学習
+  - 動画活用
 topic_code: obs
 title: Obsidianを使って「昨日の自分を超える為の練習」をする
 subtitle: "\U0001F48Eやったことリストはやることリストになる"
-description: null
+description: >-
+  Obsidianを活用した効果的な練習記録の付け方を解説。多角的な記録方法（手帳、Obsidian、DayOneの連携）を通じて、モチベーション維持、客観的なフォーム評価、練習内容の迷い解消に繋げる手法を紹介。特に動画記録の重要性と、小さな記録から始める継続のヒントを提案します。
 url: 'https://knowledgestuck.substack.com/p/adventcalendar2025'
 date_published: 2025-12-01T00:00:00.000Z
 audience: everyone
