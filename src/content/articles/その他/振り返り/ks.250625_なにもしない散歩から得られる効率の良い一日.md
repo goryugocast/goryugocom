@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - 散歩
+  - スロージョギング
+  - 運動
+  - 健康
+  - マインドセット
 topic_code: rev
 title: 「なにもしない散歩」から得られる効率の良い一日
 subtitle: "\U0001F4C5なにもしない散歩から超スロージョギングまでの道のり"
-description: null
+description: >-
+  「なにもしない散歩」を通じて得られた効率性から、足の怪我をきっかけに「スロージョギング」へと移行するまでの経緯を解説。健康オタクとしての運動遍歴を振り返りつつ、運動に対する誤ったマインドセットや、客観的な自己認識の重要性について考察しています。
 url: 'https://knowledgestuck.substack.com/p/963'
 date_published: 2025-06-25T00:00:00.000Z
 audience: everyone

@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - 振り返り
+  - 習慣化
+  - 手放す
+  - 選択
+  - 音楽
 topic_code: rev
 title: やめたことも自信を持ってちゃんと記録しておく
 subtitle: "\U0001F4C5好きなことをやるために、好き度がちょっと足りないものを少し手放した"
-description: null
+description: >-
+  音楽活動への集中のため、2024年に取り組んだ手書き（紙の手帳、お絵描き）の習慣を「やめたこと」として記録。やめたことも含めて自信を持って記録することの意義と、新しい活動にエネルギーを集中するために「手放す」ことの重要性を考察しています。
 url: 'https://knowledgestuck.substack.com/p/c4a'
 date_published: 2025-06-15T00:00:00.000Z
 audience: everyone

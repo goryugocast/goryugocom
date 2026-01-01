@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - スロージョギング
+  - 運動
+  - 習慣化
+  - マインドセット
+  - 学習
 topic_code: rev
 title: 「つらい練習が正解だ」という価値観を手放す
 subtitle: "\U0001F4C5犬の散歩よりも遅いジョギングで速くなる"
-description: null
+description: >-
+  「つらい練習が正解」という価値観を手放し、犬の散歩より遅い「スロージョギング」で効率的に心肺機能を高める方法を提案。心拍数を目標にすることで、速度に囚われず継続と上達を促す、大人の趣味としての運動の楽しみ方とマインドセットを解説します。
 url: 'https://knowledgestuck.substack.com/p/cb0'
 date_published: 2025-07-01T00:00:00.000Z
 audience: everyone

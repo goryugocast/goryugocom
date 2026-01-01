@@ -11,6 +11,7 @@ audience: everyone
 tags:
   - Obsidian
   - 振り返り
+  - review
 draft_link: null
 series_name: その他
 series_emoji: "\U0001F4C5"

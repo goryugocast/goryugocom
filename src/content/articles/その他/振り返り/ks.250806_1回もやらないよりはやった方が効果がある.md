@@ -12,6 +12,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!Kx6F!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9cbfa835-1c02-4b6a-bbd9-44f6e24f6cef_480x360.jpeg
 tags:
   - 振り返り
+  - review
 draft_link: null
 series_name: その他
 series_emoji: "\U0001F4C5"
