@@ -103,7 +103,9 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
   }
   if (a.data.prefix) return -1;
   if (b.data.prefix) return 1;
-  return a.data.title.localeCompare(b.data.title);
+  const titleA = a.data.title || a.slug || '';
+  const titleB = b.data.title || b.slug || '';
+  return titleA.localeCompare(titleB);
 });
 ---
 
@@ -1324,7 +1326,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             class="article-card"
             style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
             data-series={video.data.series_name}
-            data-title={video.data.title.toLowerCase()}
+            data-title={(video.data.title || '').toLowerCase()}
             data-date={new Date(video.data.date_published).getTime()}
           >
             <div class="article-header">
@@ -1384,7 +1386,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
               style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
               data-series-parent={parent}
               data-series-child={child || ''}
-              data-title={article.data.title.toLowerCase()}
+              data-title={(article.data.title || '').toLowerCase()}
               data-date={new Date(article.data.date_published).getTime()}
             >
               <div class="article-header">
@@ -1510,7 +1512,7 @@ const sortedAtomicNotes = atomicNotes.sort((a, b) => {
             class="article-card"
             style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
             data-topics={JSON.stringify(note.data.topic || [])}
-            data-title={note.data.title.toLowerCase()}
+            data-title={(note.data.title || note.slug || '').toLowerCase()}
             data-date="0"
           >
             <div class="article-header">
