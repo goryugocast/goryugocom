@@ -1,10 +1,11 @@
 ---
 project: ks
-topic: Obsidian Tips
-topic_code: obs
+topic:
+  - Obsidian Tips
+  - デイリーノート
 title: なぜデイリーノートにテンプレートを使うことを勧めないのか
-subtitle: "\U0001F48E一見すると小さな違いでも実際には大きな違いが存在する"
-description: null
+subtitle: "💎一見すると小さな違いでも実際には大きな違いが存在する"
+description: Obsidianのデイリーノートでテンプレートを使わない理由を解説。テンプレートは硬直化を招き、やる気がある時に作った過剰なリストは継続が困難。代替案として、修正が容易な「サイドバーにルーチンを置く」方法を提案し、その利便性を強調します。
 url: 'https://knowledgestuck.substack.com/p/b5f'
 date_published: 2025-11-23T00:00:00.000Z
 audience: everyone
