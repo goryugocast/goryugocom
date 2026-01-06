@@ -1,25 +1,20 @@
 ---
 project: ks
-topic: 友人(tks)の記事
+topic: ['Obsidian', 'Logseq', 'デイリーノート']
 topic_code: tks
 title: LogseeqからObsidianに一本化したデイリーノートの使い方
 subtitle: "\U0001FABA参照ノートはDataviewでうまく自動化する"
-description: null
+description: Obsidianでのデイリーノート活用術。Logseqから一本化し、タスク、作業記録、思考メモを統合。参照ノートと並行利用で効率的な情報整理と作業を実現。
 url: 'https://knowledgestuck.substack.com/p/tks013'
 date_published: 2024-04-17T00:00:00.000Z
 audience: only_paid
 cover_image: >-
   https://substackcdn.com/image/fetch/$s_!Od3U!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F494e87bb-4fad-48a7-b60b-474d50216261_1637x999.png
-tags:
-  - Obsidian
-  - デイリーノート
-  - 読書
-  - Dataview
+tags: []
 draft_link: null
-series_name: 寄稿記事
-series_emoji: "\U0001FABA"
+series_name: ""
+series_emoji: ""
 series_code: contribution
-category: tksさん
 ---
 
 ## メモ・原稿
