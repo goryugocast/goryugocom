@@ -1,0 +1,58 @@
+---
+project: ks
+topic: その他
+topic_code: misc
+title: Obsidianで変わる資料管理術
+subtitle: Obsidianで原稿を書くようになって執筆時間が短縮された
+description: null
+url: 'https://knowledgestuck.substack.com/p/haruna004'
+date_published: 2024-03-06T00:00:00.000Z
+audience: only_paid
+cover_image: >-
+  https://substackcdn.com/image/fetch/$s_!LqB3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa62c6763-ac53-4922-bae0-b71b969b089f_3920x2446.jpeg
+tags:
+  - Obsidian
+draft_link: null
+series_name: 寄稿記事
+series_emoji: "\U0001F460"
+series_code: contribution
+category: haruna1221
+---
+
+## メモ・原稿
+
+# Obsidianで変わる資料管理術
+
+### Obsidianで原稿を書くようになって執筆時間が短縮された
+
+https://substack.com/@ipadworkershttps://substack.com/@ipadworkersMar 06, 2024∙ Paid122Share👋 こんにちは、はるなです。
+
+普段は✉️ https://ipadworkers.substack.com/というiPad特化型のニュースレターを配信しています。五藤隆介（ごりゅご）さんの妻です。
+
+ナレッジスタックへの4回目の寄稿記事です。前回の記事「https://knowledgestuck.substack.com/p/haruna003」で、私がObsidianの中に入れているデータは大きく分けて3種類あるとお伝えました。ニュースレターや書籍の原稿データ、日記を含む記録、アプリやOSの資料の3つです。
+
+今日は「**資料管理や自分データベースの使用方法**」について紹介します。
+
+## 🗂 原稿執筆に欠かせない資料ファイル
+
+Obsidianは私の日常業務において欠かせないツールの一つです。ニュースレターや書籍の原稿データ、日記を含む記録、アプリやOSの資料など、大きく分けて3種類のデータを管理しています。
+
+💎 https://knowledgestuck.substack.com/p/haruna003
+
+原稿を執筆する際、特に欠かせないのが資料ファイルです。私の場合は、iPadアプリや、iPadOS、Apple製品の名称などのファイルを作成し、資料として活用しています。
+
+https://substackcdn.com/image/fetch/$s_!LqB3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa62c6763-ac53-4922-bae0-b71b969b089f_3920x2446.jpegこれらの資料が、原稿ファイルと同じObsidian内にあることで、原稿執筆が非常にスムーズです。必要な資料を即座に参照できるようになったのもObsidianを使い始めてからのことです。
+
+https://substackcdn.com/image/fetch/$s_!aV9J!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F46c7f051-199b-484e-83f0-951f867eace3_3920x2446.jpegObsidian（正確にはリンクネットワーク型のノートアプリ）を使う前は、あちこちに散らばった資料をかき集めるところから作業がスタートしていました。また、調べ物をしようと思ってインターネットブラウザを開いたら、いつの間にか違うことをやっているという現象も多発します。
+
+現在は、資料集めもスムーズだし、ネットで調べ物をする必要が少なくなったので「いつの間にか違うことをやっていた現象」はかなり減りました。
+
+## 📝 資料をどのようにして使っているのか
+
+私の使う資料ファイルには、大きく2つの役割があります。
+
+## Keep reading with a 7-day free trial
+
+Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+
+https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Fharuna004&utm_source=paywall-free-trial&utm_medium=web&utm_content=142171164&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Fharuna004&for_pub=knowledgestuck&change_user=false

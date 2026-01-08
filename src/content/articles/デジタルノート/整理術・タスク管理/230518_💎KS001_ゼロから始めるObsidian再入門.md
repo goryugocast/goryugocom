@@ -15,7 +15,6 @@ series_emoji: "💎"
 series_code: obs
 topic: ['Obsidian', '入門', '情報整理']
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

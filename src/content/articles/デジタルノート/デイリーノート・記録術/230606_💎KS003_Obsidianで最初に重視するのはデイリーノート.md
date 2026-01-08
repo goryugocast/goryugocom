@@ -16,7 +16,6 @@ series_emoji: "💎"
 series_code: obs
 topic: ['Obsidian', 'デイリーノート', '習慣化']
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

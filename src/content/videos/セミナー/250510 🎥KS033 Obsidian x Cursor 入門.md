@@ -20,7 +20,6 @@ series_emoji: "\U0001F3A5"
 series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. Cursor入門 - Obsidian連携の可能性](https://knowledgestuck.substack.com/p/ks033?timestamp=0)
@@ -4190,3 +4189,55 @@ AIがわかりにくいと言ったということは
 01:08:00,180 --> 01:08:02,180
 こういうのをピッて渡して
 ```
+
+---
+<!-- Merged from: 250510_🎥KS033『アトミック・シンキング』実践セミナー033動画アーカイブ.md -->
+
+```dataview
+LIST
+WHERE file.day <= this.file.day - dur(1 d) AND series = "セミナーアーカイブ"
+SORT file.day DESC
+LIMIT 5
+SORT file.day ASC
+```
+
+```dataview
+LIST
+WHERE file.day >= this.file.day + dur(1 d) AND series = "セミナーアーカイブ"
+SORT file.day ASC
+LIMIT 5
+```
+
+
+```dataview
+LIST
+WHERE series = "ksセミナー" AND series_order = this.series_order
+```
+
+---
+セミナー終わったら、動画書き出しが終わるのを待ち、写真アプリへ。切り取りをして書き出し。
+書き出し終わったらアップロード。
+アーカイブを動画フォルダに保存
+どれも待ち時間が長いので、終わってからすぐにやる。
+
+→翌日に配信を目指す
+
+[[📋ナレッジスタックセミナー]]ページの更新
+
+[[KS029文字起こし]]
+
+---
+
+
+『アトミック・シンキング』実践セミナーの動画アーカイブです。
+
+今回のテーマは「ジョニーデシマルという情報整理法」についてです。
+
+これまでのセミナーの一覧は、こちからから確認できます。
+
+→[📋ナレッジスタックセミナー - Obsidian Publish](https://goryugo.com/ks_seminar)
+
+
+---
+
+以下、当日の資料をそのまま添付します。

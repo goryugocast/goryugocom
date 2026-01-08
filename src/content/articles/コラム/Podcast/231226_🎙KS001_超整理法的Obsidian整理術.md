@@ -1,19 +1,20 @@
 ---
 project: ks
-topic: Podcast
+topic:
+  - Podcast
+  - Obsidian
 topic_code: pod
 title: 超整理法的Obsidian整理術
-subtitle: "\U0001F399KS001 ジュン先生のObsidian活用術"
-description: null
+subtitle: "🎙KS001 ジュン先生のObsidian活用術"
+description: 「ナレッジスタック」のポッドキャストでは、ジュン先生がObsidian活用術を語ります。高校生の推薦書作成、4分割画面での効率化、仕事と趣味の融合、そして整理のルールを設けすぎない柔軟な運用法などが議論されました。
 url: 'https://knowledgestuck.substack.com/p/pod001'
 date_published: 2023-12-26T00:00:00.000Z
 audience: everyone
-tags:
-  - Obsidian
+tags: []
 draft_link: null
-series_name: その他
-series_emoji: "\U0001F399"
-series_code: other
+series_name: Podcast
+series_emoji: "🎙"
+series_code: pod
 category: Podcast
 ---
 

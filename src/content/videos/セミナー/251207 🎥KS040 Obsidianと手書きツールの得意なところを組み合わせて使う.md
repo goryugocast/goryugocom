@@ -3855,3 +3855,91 @@ iPadの話は春奈さんがこのiPadワークアースでいろいろマニア
 01:22:53,400 --> 01:22:58,200
 ではご参加ありがとうございました
 ```
+
+---
+<!-- Merged from: 251206_🎥KS040Obsidianと手書きツールの得意なところを組み合わせて使う.md -->
+
+```base
+filters:
+  and:
+    - topic == this.topic
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - topic_order <= this.topic_order
+    order:
+      - date_published
+      - topic_order
+      - file.name
+    sort:
+      - property: topic_order
+        direction: DESC
+    limit: 5
+    columnSize:
+      note.date_published: 155
+      note.topic_order: 54
+
+```
+
+
+```base
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.name.contains(this.file.name.slice(0,7))
+    order:
+      - date_published
+      - file.name
+    sort:
+      - property: date_published
+        direction: DESC
+    limit: 5
+    columnSize:
+      note.date_published: 155
+      note.topic_order: 54
+
+```
+
+```base
+filters:
+  and:
+    - topic.startsWith("セミナー")
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.name.contains(this.file.name.slice(8,11))
+
+```
+
+
+セミナー終わったら、動画書き出しが終わるのを待ち、写真アプリへ。切り取りをして書き出し。
+Finulcutを使ったら早くできる
+
+書き出し終わったらアップロード。
+アーカイブを動画フォルダに保存
+どれも待ち時間が長いので、終わってからすぐにやる。
+
+→当日に配信を目指す
+
+[[📋ナレッジスタックセミナー]]ページの更新
+
+---
+
+ナレッジスタックセミナーの動画アーカイブです。
+
+今回のテーマは「Obsidianと手書き」についてです。
+
+これまでのセミナーの一覧は、こちからから確認できます。
+
+→[📋ナレッジスタックセミナー - Obsidian Publish](https://goryugo.com/ks_seminar)
+
+
+---
+
+以下、当日の資料をそのまま添付します。

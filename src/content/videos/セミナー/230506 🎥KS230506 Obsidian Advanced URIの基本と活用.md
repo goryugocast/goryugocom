@@ -20,7 +20,6 @@ series_emoji: "🎥"
 series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 ### [1. Advanced URIプラグイン紹介 - デイリーノート活用の鍵](https://knowledgestuck.substack.com/p/ks009?timestamp=0)
 **時間**: 00:00:00 ～ 00:03:20
@@ -1725,3 +1724,64 @@ Windowsってどういうのが代表的なものなのかっていうのはち�
 00:58:51,760 --> 00:58:59,160
 ワークスペースの設定変更ボタンぜひ作ってくださいありがとうございますありがとうございました
 ```
+
+---
+<!-- Merged from: 230507_🎥ks009のアーカイブ.md -->
+
+#ks/🎥  `= this.file.frontmatter.url`
+
+```dataview
+LIST
+FROM #ks/🎥 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #ks/🎥 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+```dataview
+LIST
+FROM #🗣プレゼン 
+WHERE file.day <= this.file.day + dur(1 d)
+SORT file.day DESC
+LIMIT 1
+```
+
+---
+セミナー終わったら、動画書き出しが終わるのを待ち、写真アプリへ。切り取りをして書き出し。
+書き出し終わったらアップロード。
+アーカイブを動画フォルダに保存
+どれも待ち時間が長いので、終わってからすぐにやる。
+
+→翌日に配信を目指す
+
+[[📋ナレッジスタックセミナー]]ページの更新
+
+
+---
+
+
+『アトミック・シンキング』実践セミナーの動画アーカイブです。
+
+今回のテーマは
+「Obsidian Advanced URIの基本と活用」
+です。
+
+動画の文字起こしファイルはこちら
+[[ks009]]
+当日使用した資料のPDFはこちら
+
+
+これまでのセミナーの一覧は、こちからから確認できます。
+
+→[📋ナレッジスタックセミナー - Obsidian Publish](https://publish.obsidian.md/knowledgestack/Publish/%F0%9F%93%8B%E3%83%8A%E3%83%AC%E3%83%83%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC)
+
+
+---
+
+以下、当日の資料をそのまま添付します。

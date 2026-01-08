@@ -17,7 +17,6 @@ series_emoji: "💎"
 series_code: obs
 topic: ['Obsidian', 'メモ整理', 'アナログ']
 ---
-
 ## メモ・原稿
 
 #ks/💎 

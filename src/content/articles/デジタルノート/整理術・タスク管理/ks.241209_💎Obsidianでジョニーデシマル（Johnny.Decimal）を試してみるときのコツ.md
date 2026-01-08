@@ -16,7 +16,6 @@ series_name: Obsidian Tips
 series_emoji: "\U0001F48E"
 series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

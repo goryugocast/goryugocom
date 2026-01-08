@@ -17,6 +17,157 @@ series_code: contribution
 category: haruna1221
 ---
 
-## メモ・原稿
+`= this.file.frontmatter.url`
 
-（ここに原稿やメモを書く）
+```dataview
+LIST
+FROM #ks/👠 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 5
+SORT file.day ASC
+```
+```dataview
+LIST
+FROM #ks/👠 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+
+
+はるなが書いてくれた記事をコピペしてローカルに貼っておく
+次回の原稿をコピーする
+
+---
+
+[[Publish/Pub_hide/ナレッジスタックの寄稿記事一覧]]を更新する
+
+---
+
+👋 こんにちは、はるなです。
+
+普段は✉️ [iPad Workers](https://ipadworkers.substack.com/)というiPad特化型のニュースレターを配信しています。五藤隆介（ごりゅご）さんの妻です。
+
+ナレッジスタックへの11回目の寄稿記事です。前回は、書いて考える技術の1つとして「[読書メモフォーマットの紹介](https://knowledgestuck.substack.com/p/haruna010)」をしました。さらに、書いて考える技術において、最も重要なことは「書き出すこと」であって、「キレイに整えて書くこと」ではないとも書きまとめました。
+
+今回はもう少し具体的な、「**最初の1行を書き出すための工夫**」について紹介したいと思います。
+
+## ✍️まずは書き出すことが大切
+
+「キレイに書くこと」よりもまず優先すべきなのは、とにかく「書き出すこと」です。
+
+しかし、誰でも白紙のページを前にすると身構えてしまうものです。何から書き始めて良いのか分からず、手が止まってしまう人も多いでしょう。
+
+[前回の記事](https://knowledgestuck.substack.com/p/haruna010)では、書き出しのハードルを下げるために、小さなポストイットのような紙や、捨てても構わない裏紙を使うことを提案しました。気軽に書ける環境を整えることで、書き出す勇気を持つことができるからです。
+
+今回紹介するもう1つの方法は、「**フォーマット思考**」を使うことです。あらかじめ「書く内容」を決めておくことで、書き出しがぐっと楽になります。
+
+## 🗓️最初の1行を書くハードルを下げるために
+
+フォーマット思考とは、あらかじめ「**書き始める内容や書き方のルールを決めておく**」ことで、書き出しのハードルを下げるというものです。
+
+何を書いたらいいのか迷ったり、完璧に書こうと身構えてしまう時でも、最初の1行に決まったルールを設けることで、その迷いを減らし、スムーズに書き始められるようにします。
+
+たとえば、ノートには最初に日付を書くところから始める。さらに、その日の天気や気分、今いる場所などの「今の自分の様子」を書くというルールを決めておくと「何を書いたらいいのか」という迷いが無くなり、ページを埋めることへの心理的な負担が軽くなります。
+
+### 📅基本のフォーマット：日付と今の自分を書く
+
+まず、ページの左上に「日付」を書きます。これにより「いつの自分が書いたものか」が明確になり、後で振り返る際にその日の状況を思い出しやすくなります。
+
+次に「天気や今いる場所などの環境」を書きます。どちらも考えなくても書ける事実であることが重要です。
+
+- **天気：** 晴れ、20°、ようやく秋らしい過ごしやすい気候に etc.
+    
+- **場所：** PMキッチンで、2階仕事部屋にて etc.
+    
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fb0060d-50d7-4ac5-9a30-077425c1984d_2002x1569.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5fb0060d-50d7-4ac5-9a30-077425c1984d_2002x1569.jpeg)
+
+このステップによってページの一部が埋まると、残りの部分に何を書こうかというプレッシャーが自然と軽減され、次に書くことがすんなりと浮かんでくるようになります。少しでも書き始めると不思議と筆が進むものです。
+
+### 📚読書メモの場合
+
+フォーマット思考は読書メモにも応用できます。たとえば、本の内容をまとめる際に次のような項目をフォーマットとして使うと便利です。
+
+1. **なぜこの本を手に取ったのか？**
+    
+2. **一番面白いと感じた部分はどこか？**
+    
+3. **著者の言いたいことは何か？**
+    
+4. **この内容を自分の生活や仕事にどう応用できるか？**
+    
+
+こうした項目を最初に決めておくことで、重要なポイントをまとめやすくなります。また、後で見返すときにもどこにどの情報が書かれているかが明確で、役立てやすい記録になります。
+
+私は、左上に四角で囲んだ本のタイトル、その下に日付と一言メモ、中央に手書きで書影イラストを描き、「この本は：」という一文でその本を簡潔に紹介する文を書くというフォーマットで運用しています。私は元々、絵を描くことが好きなので、書影を見ながら手書きで書くことも「考えなくても書ける」ことの1つです。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4768f782-77a0-4b28-bf62-9858793b2b43_2767x2162.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4768f782-77a0-4b28-bf62-9858793b2b43_2767x2162.jpeg)
+
+**目に見える罫線や枠線のようなフォーマットではなく、何をかくかあらかじめ型を持っておくということが「フォーマット思考」**になります。
+
+フォーマット思考で決めた項目は、あくまで書き出すための「取っ掛かり」です。フォーマット部分を書き始めることができたら、その後は自由に自分の思考を展開していくことができます。
+
+## 🚀書くことでしか始まらない思考
+
+書いて考えるためには、当然ですが「書かないと始まりません」。しかし、多くの人は書き始めることに難しさを感じています。それは、書く内容が思いつかない、失敗することが怖い、などさまざまです。
+
+今回は、最初の1行を書くハードルを下げるために、フォーマット思考を紹介しましたが、そこから先を書くためには思考することが必須で、思考のためには自分の中の知的好奇心が少なからず必要です。
+
+そして、その好奇心がどこを向いているのかを見つけるためには、やはり「書く」ことが欠かせません。フォーマット部分が書けるようになったら、次のステップとして事実の記録がおすすめです。記録することで、自分が何に関心を持ち、どこに向かっているのかや、問題点などが徐々に見えてきます。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5bc42756-c054-4d12-9c5e-aa4cd15d7dfe_2669x2128.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5bc42756-c054-4d12-9c5e-aa4cd15d7dfe_2669x2128.jpeg)
+
+書くことで自分の気持ちや物事を客観的に見ることができるようになるからです。書くことでより深く物事を考えることができます。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd6a4c26-cf56-47c1-a242-9f052dc7312d_2266x1488.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd6a4c26-cf56-47c1-a242-9f052dc7312d_2266x1488.jpeg)
+
+たとえば、この記事を書くにあたっても、Obsidianで原稿を書く前段階として「書くことを考えることを書くこと」からスタートしています。この1枚の文章とは言えない絵のようなメモから、この原稿が生まれています。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F049ab41c-ee23-46d4-a771-ef4e22b8b406_2002x1569.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F049ab41c-ee23-46d4-a771-ef4e22b8b406_2002x1569.jpeg)
+
+書いたメモが思考のベースとなり、Obsidian上でアウトラインが書けるようになるのです。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2c9e1a8-d8f4-4754-8c8e-152828adb756_1920x1146.png)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2c9e1a8-d8f4-4754-8c8e-152828adb756_1920x1146.png)
+
+日付や今の自分の状態など「簡単に書ける事実」からスタートし、そこから少しずつ、書きたいことを見つけて書いていく。そして、書き続けていくことでページが埋まり、思考が形になっていくのです。
+
+ということで今日は「**キレイに書くことよりも、まずは書き出すことが大切であり、そのためにフォーマット思考を使うといい**」というお話でした。

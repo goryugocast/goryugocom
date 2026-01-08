@@ -16,7 +16,6 @@ series_emoji: "\U0001F4C5"
 series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅 `= this.file.frontmatter.url`

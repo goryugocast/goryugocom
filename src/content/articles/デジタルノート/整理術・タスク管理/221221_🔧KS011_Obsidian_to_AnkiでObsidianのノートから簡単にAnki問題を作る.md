@@ -21,7 +21,7 @@ category: 技術・ノウハウ
 
 ## メモ・原稿
 
-#ks/🔧 `= this.file.frontmatter.url`
+
 
 ```dataview
 LIST

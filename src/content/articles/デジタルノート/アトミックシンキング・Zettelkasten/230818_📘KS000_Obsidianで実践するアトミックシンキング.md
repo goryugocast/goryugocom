@@ -16,7 +16,6 @@ series_emoji: "\U0001F4D8"
 series_code: obv
 category: 実践編
 ---
-
 ## メモ・原稿
 
 #ks/📘✍️ `= this.file.frontmatter.url`

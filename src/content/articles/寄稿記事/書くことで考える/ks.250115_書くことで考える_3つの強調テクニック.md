@@ -17,6 +17,129 @@ series_code: contribution
 category: haruna1221
 ---
 
-## メモ・原稿
+`= this.file.frontmatter.url`
 
-（ここに原稿やメモを書く）
+```dataview
+LIST
+FROM #ks/👠 
+WHERE file.day <= this.file.day - dur(1 d)
+SORT file.day DESC
+LIMIT 5
+SORT file.day ASC
+```
+```dataview
+LIST
+FROM #ks/👠 
+WHERE file.day >= this.file.day + dur(1 d)
+SORT file.day ASC
+LIMIT 1
+```
+
+
+
+はるなが書いてくれた記事をコピペしてローカルに貼っておく
+次回の原稿をコピーする
+
+---
+
+[[ナレッジスタックの寄稿記事一覧]]を更新する
+
+---
+👋 こんにちは、はるなです。
+
+普段は✉️ [iPad Workers](https://ipadworkers.substack.com/)というiPad特化型のニュースレターを配信しています。五藤隆介（ごりゅご）さんの妻です。
+
+前回は、情報を整理して「分けて」考えた後、それらを「[つなぐ技術](https://knowledgestuck.substack.com/p/haruna013)」について紹介しました。
+
+矢印（→）を使って順序や因果関係を示したり、イコール（＝）で関連性を表現したり、補助線（―）で補足情報を追加する。これらの方法で、複雑な情報をわかりやすく整理することができます。
+
+今回は、「**強調する技術**」を掘り下げます。
+
+## 🗺️ 全体の構造が見えたら次のステップへ
+
+どんな情報にも、必ず「伝えたいこと」や「重要なポイント」があります。しかし、情報量が増えると、それらが埋もれてわかりにくくなっていることも多いです。
+
+そこで、その情報の本質は何なのか？何を伝えたいのか？を明確にするための必要な作業が、情報のレベル付けです。
+
+思考を深めていくとき、まずは全体の構造を把握することが大切です。全体像が見えることで、物事の関連性が明らかになり、次に何をするべきかが見えてきます。そして次に取り組むことは、重要になりそうなポイントを強調していくことです。
+
+この「強調」は、単に目立たせるだけではなく、思考を整理する上で重要なプロセスです。フラットな情報に重要度という“色”を付けていく作業です。
+
+では、どうすれば書いた内容を効果的に強調できるのでしょうか？3つの「強調」方法を紹介します。
+
+## ✍️ 強調のための3つのテクニック
+
+### 1. 🟥赤色を使って視覚的に目立たせる
+
+色は、視覚的に目立たせたい情報を強調するのに最適な手法です。
+
+[「分けて」書くコツ](https://knowledgestuck.substack.com/p/haruna012)の中でも、事実と感想を分けるために色を使う方法を紹介しました。同じように重要な部分は赤色を使うことで、視覚的に目立たせることができます。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8c1aac7-1ecc-4587-8e1f-72de9f1caa83_4032x3024.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8c1aac7-1ecc-4587-8e1f-72de9f1caa83_4032x3024.jpeg)
+
+- 赤色で「重要な部分」を目立たせる
+    
+- 青色で「2番目に重要な部分」を目立たせる
+    
+
+色を多用しすぎると、どれも目立たなくなり逆効果になります。「最も重要」と「その次に重要」の2レベル程度にとどめておきます。
+
+赤ペンや青ペンが手元にあればいいのですが、そんなに都合よく色ペンがないという時に使うテクニックが次の2や3のテクニックです。
+
+### 2. ⭐️記号や下線を使う
+
+記号や下線は、シンプルですが効果的な強調方法です。色ペンを持っていなくても簡単に強調できます。
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F244af188-fc1b-4867-9b9e-4002ab6a69b9_2048x1536.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F244af188-fc1b-4867-9b9e-4002ab6a69b9_2048x1536.jpeg)
+
+- ★や◎などの記号を使って、注目すべき点を示す
+    
+- 強調部分に下線を引く
+    
+
+色ペンを使わなくても、重要な部分を強調できます。
+
+### 3.サイズを変える
+
+文字のサイズやフォントを変えるのも、簡単に強調する方法の1つです。
+
+- キーワードを大きくして目立たせる
+    
+- 太字や斜体で重要なキーワードを強調する
+    
+
+[
+
+![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a81f26f-3696-4072-b59a-3d36c1d79bfe_1920x1440.jpeg)
+
+
+
+](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8a81f26f-3696-4072-b59a-3d36c1d79bfe_1920x1440.jpeg)
+
+フォントを変えるにはある程度の練習が必要なので、基本は文字のサイズに変化をつけるだけでいいと思います。
+
+また、サイズの中には「文字のサイズ」と「余白のサイズ」が含まれます。文字を大きく書いたら、周りの余白を多めに取ると、より目立ちやすくなります。
+
+## 🦅 俯瞰して考える力を鍛える
+
+強調する技術を使うことで、情報の中で「重要な部分」を際立たせることができます。また、重要な部分を見つけるためには1段高い場所から全体を捉える、俯瞰の目を持たなければいけません。
+
+まずは情報を分けて、3つの記号を使って関係性を考え、さらに1段高いところから全体を見渡し「一番重要な部分は何か？」を考え、重要な部分を強調していけば、さまざまな事象について考えやすくなります。
+
+これは何か外からの情報を受け取る時にだけ使えるテクニックではなく、自分の内からメッセージを伝える際にも有効です。
+
+この作業はとてもシンプルですが、シンプルにまとめようとすればするほど、この作業が難しいことを体感できます。この作業を繰り返すことで、**物事の本質を見極めるスキルも養われます**。
+
+ということで今日は「**重要な部分を目立たせるための技術**」というお話でした。

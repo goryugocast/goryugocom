@@ -15,7 +15,6 @@ series_name: ""
 series_emoji: ""
 series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

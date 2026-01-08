@@ -15,7 +15,6 @@ series_emoji: "\U0001F48E"
 series_code: obs
 topic: ['Obsidian', 'Graph View', 'モチベーション']
 ---
-
 ## メモ・原稿
 
 #ks/💎 
