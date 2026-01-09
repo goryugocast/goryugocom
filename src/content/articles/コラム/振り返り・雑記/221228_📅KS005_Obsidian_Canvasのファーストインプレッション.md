@@ -1,10 +1,15 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - Obsidian Canvas
+  - 思考整理
+  - 文字起こし
+  - コミュニティ
+  - 活動報告
 topic_code: rev
 title: Obsidian Canvasのファーストインプレッション
 subtitle: "\U0001F4C5005 今月の振り返りと来年以降やりたいことの話"
-description: null
+description: 'Obsidianに正式リリースされたCanvas機能のファーストインプレッションを報告。ノートを並べて思考を整理するその感覚を「これはよい」と評価し、プラグインによる拡張性への期待を語る。また、Whisper.cppを使った動画の文字起こしによるセミナーアーカイブの充実化、KDP本制作の報告、そして「もくもく会」のようなコミュニティイベント企画への意欲など、2022年の活動を振り返りつつ、2023年以降の展望を述べます。'
 url: 'https://knowledgestuck.substack.com/p/obsidian-canvas'
 date_published: 2022-12-28T00:00:00.000Z
 audience: everyone
@@ -17,7 +22,7 @@ draft_link: null
 series_name: その他
 series_emoji: "\U0001F4C5"
 series_code: other
-category: 振り返り
+category: "コラム/振り返り・雑記"
 ---
 ## メモ・原稿
 

@@ -1,10 +1,14 @@
 ---
 project: ks
-topic: ワークシートアップデート
+topic:
+  - Obsidian
+  - git
+  - データ同期
+  - iPad
 topic_code: upd
 title: Obsidianのデータをgitで管理する方法とそのメリット
 subtitle: "\U0001F527001 ObsidianのデータをiPadではiA Writerで編集する"
-description: null
+description: '手書きが苦手だった筆者が、iPadとApple Pencilを使いこなすための「コツ」を解説。また、中期的な外出時にMacなしで仕事をするための環境構築として、Obsidianのデータをgitで管理し、iPadのiA Writerで編集する具体的な方法とそのメリットを紹介します。'
 url: 'https://knowledgestuck.substack.com/p/obsidiangit'
 date_published: 2022-09-12T00:00:00.000Z
 audience: only_paid
@@ -16,7 +20,7 @@ draft_link: null
 series_name: その他
 series_emoji: "\U0001F527"
 series_code: other
-category: 技術・ノウハウ
+category: "デジタルノート/整理術・タスク管理"
 ---
 ## メモ・原稿
 

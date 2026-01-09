@@ -1,10 +1,16 @@
 ---
 project: ks
-topic: 振り返り
-topic_code: rev
+topic:
+  - Substack Notes
+  - Obsidian Publish
+  - 読書術
+  - 情報整理
+  - 振り返り
+series_code: other
+category: "コラム/振り返り・雑記"
 title: ニュースレターをObsidian Publishで整理
 subtitle: "\U0001F4C5009 permalinkでページ固定を行う"
-description: null
+description: 'SubstackのNotes機能にTwitterとは異なる「閉じてないけど変な人は集まりにくそう」な可能性を見出しつつ、Obsidian Publishでの連載記事一覧や過去コンテンツの整理に注力。特にパーマリンク設定によるリンク切れ防止の重要性を指摘します。また、読書術が「まず読んで、それからメモを取る」という「二度読み」へと変化したことを報告し、多読よりも深く読む読書への移行とその思考過程を解説します。'
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish-26f'
 date_published: 2023-05-01T00:00:00.000Z
 audience: everyone

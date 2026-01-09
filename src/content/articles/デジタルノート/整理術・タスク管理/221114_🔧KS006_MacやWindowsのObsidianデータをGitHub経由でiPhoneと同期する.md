@@ -1,10 +1,15 @@
 ---
 project: ks
-topic: ワークシートアップデート
+topic:
+  - Obsidian
+  - GitHub
+  - データ同期
+  - モバイル
+  - 設定
 topic_code: upd
 title: MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
 subtitle: "\U0001F527006 WorkingCopy経由でiA Writerをメインエディタにする"
-description: null
+description: 'MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する具体的な設定方法を解説。GitHub Desktopを使ったPC側の設定から、Working Copyアプリを使ったiPhoneでのデータ読み書き、さらにiA Writerでの編集までを網羅。この方法のメリットとして、Obsidian Syncの不安定さからの解放や、いつでもすぐにファイルを編集できる「即時性」を挙げ、手動同期による記録意識の向上も強調します。'
 url: 'https://knowledgestuck.substack.com/p/macwindowsobsidiangithubiphone'
 date_published: 2022-11-14T00:00:00.000Z
 audience: everyone
@@ -16,7 +21,7 @@ draft_link: null
 series_name: その他
 series_emoji: "\U0001F527"
 series_code: other
-category: 技術・ノウハウ
+category: "デジタルノート/整理術・タスク管理"
 ---
 ## メモ・原稿
 

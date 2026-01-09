@@ -1,10 +1,15 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - Obsidian
+  - 仕事術
+  - ノートツール
+  - ナレッジスタック
+  - 振り返り
 topic_code: rev
 title: Obsidian仕事術の萌芽
 subtitle: "\U0001F4C5002 最近の活動報告とショートコンテンツ"
-description: null
+description: 'ナレッジスタックの有料プラン開始から2ヶ月を振り返り、当初のプレッシャーから解放され、執筆活動に余裕が生まれたことを報告。Obsidianのバージョン1.0リリースを機に、実践的な「Obsidian仕事術」の確立と共有を目指すとともに、Tanaなどの新しいノートツールを積極的に試す姿勢についても言及します。'
 url: 'https://knowledgestuck.substack.com/p/obsidian-508'
 date_published: 2022-10-30T00:00:00.000Z
 audience: everyone
@@ -14,7 +19,7 @@ draft_link: null
 series_name: その他
 series_emoji: "\U0001F4C5"
 series_code: other
-category: 振り返り
+category: "コラム/振り返り・雑記"
 ---
 ## メモ・原稿
 

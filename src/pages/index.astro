@@ -6,11 +6,32 @@ const articles = await getCollection('articles');
 const glossary = await getCollection('topic');
 const atomicNotes = await getCollection('atomic-notes');
 
+// Extract summary section from markdown body
+function extractSummary(body: string): string {
+  // Find the "## 概要" section
+  const summaryMatch = body.match(/##\s*概要\s*\n([\s\S]*?)(?=\n##[^#]|$)/);
+  if (!summaryMatch) return '';
+  return summaryMatch[1].trim();
+}
+
+// Remove summary section from body
+function removeSummaryFromBody(body: string): string {
+  // Remove everything from the first heading (# title) to the end of "## 概要" section
+  const withoutSummary = body.replace(/^#\s+[^\n]+\n+##\s*概要\s*\n[\s\S]*?(?=\n##[^#])/m, '');
+  return withoutSummary.trim();
+}
+
 // Render all notes to get HTML content
 const renderedNotes = await Promise.all(
   atomicNotes.map(async (note) => {
     const { Content } = await note.render();
-    return { ...note, Content };
+    const summary = extractSummary(note.body);
+    const bodyWithoutSummary = removeSummaryFromBody(note.body);
+
+    // Render body without summary
+    const { Content: BodyContent } = await note.render();
+
+    return { ...note, Content, summary, bodyWithoutSummary, BodyContent };
   })
 );
 
@@ -427,6 +448,26 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         color: var(--color-text-secondary);
         font-size: 0.8rem;
         font-weight: 500;
+      }
+
+      .clear-filter-btn {
+        padding: 6px 14px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: rgba(255, 59, 48, 0.1);
+        color: #ff3b30;
+        cursor: pointer;
+        transition: 0.3s;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        margin-left: auto;
+      }
+
+      .clear-filter-btn:hover {
+        background: rgba(255, 59, 48, 0.2);
+        transform: translateY(-1px);
       }
 
       /* Article list - compact */
@@ -870,6 +911,20 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
 
       .note-body-preview a:hover {
         text-decoration: underline;
+      }
+
+      .wiki-link {
+        color: var(--accent);
+        text-decoration: none;
+        background: rgba(0, 122, 255, 0.08);
+        padding: 1px 4px;
+        border-radius: 3px;
+        transition: all 0.15s ease;
+      }
+
+      .wiki-link:hover {
+        background: rgba(0, 122, 255, 0.15);
+        text-decoration: none;
       }
 
       .glossary-section-title {
@@ -1370,6 +1425,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       <div class="result-header" id="result-header">
         <h2 id="current-filter-title">動画</h2>
         <div class="result-count" id="result-count">{processedVideos.length} 件</div>
+        <button class="clear-filter-btn hidden" id="clear-filter-btn">✕ フィルターをクリア</button>
       </div>
 
       <!-- Video list -->
@@ -1573,9 +1629,8 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       <!-- Atomic Notes list -->
       <div class="article-list hidden" id="notes-list">
         {sortedAtomicNotes.map((note, index) => {
-          // 本文から要約を生成（最初の150文字）
-          const summary = note.data.description ||
-            note.body.slice(0, 150).replace(/^#+\s/gm, '').replace(/\n/g, ' ').trim() + '...';
+          // Use extracted summary from "## 概要" section
+          const summary = note.summary || note.data.description || '';
 
           return (
             <div
@@ -1602,7 +1657,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
                 <div class="article-toggle-icon">▼</div>
               </div>
 
-              {/* 展開時に表示される本文プレビュー */}
+              {/* 展開時に表示される本文プレビュー（概要セクションを除く） */}
               <div class="note-details">
                 <div class="note-body-preview">
                   <note.Content />
@@ -1621,6 +1676,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       let currentGlossaryCategory = 'all';
       let currentNoteTopic = 'all';
       let currentSort = 'newest';
+      let activeNoteFilter = null; // 特定のノートだけを表示するフィルター
 
       const videoList = document.getElementById('video-list');
       const articleList = document.getElementById('article-list');
@@ -1738,15 +1794,22 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
             const categoryMatch = currentGlossaryCategory === 'all' || category === currentGlossaryCategory;
             isVisible = categoryMatch;
           } else if (currentMode === 'notes') {
-            const topicsStr = card.dataset.topics || '[]';
-            let topics = [];
-            try {
-              topics = JSON.parse(topicsStr);
-            } catch (e) {
-              console.error('Error parsing topics:', topicsStr);
+            // Check if there's an active note filter
+            if (activeNoteFilter) {
+              const cardTitle = (card.dataset.title || '').toLowerCase();
+              const filterTitle = activeNoteFilter.toLowerCase();
+              isVisible = cardTitle === filterTitle;
+            } else {
+              const topicsStr = card.dataset.topics || '[]';
+              let topics = [];
+              try {
+                topics = JSON.parse(topicsStr);
+              } catch (e) {
+                console.error('Error parsing topics:', topicsStr);
+              }
+              const topicMatch = currentNoteTopic === 'all' || topics.includes(currentNoteTopic);
+              isVisible = topicMatch;
             }
-            const topicMatch = currentNoteTopic === 'all' || topics.includes(currentNoteTopic);
-            isVisible = topicMatch;
           }
 
           card.classList.toggle('hidden', !isVisible);
@@ -1797,7 +1860,11 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         } else if (currentMode === 'glossary') {
           title = currentGlossaryCategory === 'all' ? '用語集' : currentGlossaryCategory;
         } else if (currentMode === 'notes') {
-          title = currentNoteTopic === 'all' ? 'アトミックノート' : currentNoteTopic;
+          if (activeNoteFilter) {
+            title = `📌 ${activeNoteFilter}`;
+          } else {
+            title = currentNoteTopic === 'all' ? 'アトミックノート' : currentNoteTopic;
+          }
         }
 
         filterTitle.textContent = title;
@@ -1822,6 +1889,9 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           currentMode = btn.dataset.mainFilter;
           // Reset category child filter when switching modes
           currentCategoryChild = '';
+          // Clear active note filter
+          activeNoteFilter = null;
+          document.getElementById('clear-filter-btn').classList.add('hidden');
           updateUI();
         });
       });
@@ -1893,10 +1963,45 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         const seminarItem = (e.target as HTMLElement).closest('.seminar-section-item');
         const relatedLink = (e.target as HTMLElement).closest('.glossary-related-item a');
         const noteBodyLink = (e.target as HTMLElement).closest('.note-body-preview a');
+        const wikiLink = (e.target as HTMLElement).closest('.wiki-link');
+
+        // Handle wiki link clicks
+        if (wikiLink) {
+          e.preventDefault();
+          const noteSlug = wikiLink.getAttribute('data-note-slug');
+          if (noteSlug) {
+            // Set active note filter
+            activeNoteFilter = noteSlug;
+            // Switch to notes tab
+            currentMode = 'notes';
+            // Update UI to show only this note
+            updateUI();
+            // Show clear filter button
+            document.getElementById('clear-filter-btn').classList.remove('hidden');
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Expand the note card
+            setTimeout(() => {
+              const noteCard = document.querySelector(`#notes-list .article-card:not(.hidden)`);
+              if (noteCard) {
+                noteCard.classList.add('expanded');
+                noteCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 100);
+          }
+          return;
+        }
 
         if (card && !readMoreBtn && !seminarItem && !relatedLink && !noteBodyLink) {
           card.classList.toggle('expanded');
         }
+      });
+
+      // Clear filter button
+      document.getElementById('clear-filter-btn').addEventListener('click', () => {
+        activeNoteFilter = null;
+        document.getElementById('clear-filter-btn').classList.add('hidden');
+        updateUI();
       });
 
       // Hash-based navigation for notes
@@ -1942,23 +2047,72 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       window.addEventListener('hashchange', handleHashChange);
       window.addEventListener('DOMContentLoaded', handleHashChange);
 
-      // Set all links in note body to open in new tab
+      // Remove summary section from note body preview
+      function removeSummaryFromNotePreview() {
+        const notePreviews = document.querySelectorAll('#notes-list .note-body-preview');
+        notePreviews.forEach(preview => {
+          // Find all h2 elements
+          const h2Elements = preview.querySelectorAll('h2');
+          for (let i = 0; i < h2Elements.length; i++) {
+            const h2 = h2Elements[i];
+            // Check if this is the "概要" heading
+            if (h2.textContent.trim() === '概要') {
+              // Remove everything from the first h1 (title) to the end of this section
+              let currentElement = preview.firstElementChild;
+              const elementsToRemove = [];
+
+              // Remove title (h1) if it exists
+              while (currentElement && currentElement.tagName !== 'H2') {
+                elementsToRemove.push(currentElement);
+                currentElement = currentElement.nextElementSibling;
+              }
+
+              // Remove the "概要" h2
+              if (currentElement && currentElement.textContent.trim() === '概要') {
+                elementsToRemove.push(currentElement);
+                currentElement = currentElement.nextElementSibling;
+
+                // Remove content until next h2
+                while (currentElement && currentElement.tagName !== 'H2') {
+                  elementsToRemove.push(currentElement);
+                  currentElement = currentElement.nextElementSibling;
+                }
+              }
+
+              // Actually remove the elements
+              elementsToRemove.forEach(el => el.remove());
+              break;
+            }
+          }
+        });
+      }
+
+      // Set all links in note body to open in new tab (except wiki links)
       function setNoteLinksToNewTab() {
         const noteBodyLinks = document.querySelectorAll('.note-body-preview a');
         noteBodyLinks.forEach(link => {
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer');
+          // Don't modify wiki links
+          if (!link.classList.contains('wiki-link')) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
         });
       }
 
       // Call on initial load
-      window.addEventListener('DOMContentLoaded', setNoteLinksToNewTab);
+      window.addEventListener('DOMContentLoaded', () => {
+        removeSummaryFromNotePreview();
+        setNoteLinksToNewTab();
+      });
 
       // Also call when cards are expanded (in case content is dynamically loaded)
       const originalUpdateUI = updateUI;
       updateUI = function() {
         originalUpdateUI();
-        setTimeout(setNoteLinksToNewTab, 100);
+        setTimeout(() => {
+          removeSummaryFromNotePreview();
+          setNoteLinksToNewTab();
+        }, 100);
       };
     </script>
   </body>

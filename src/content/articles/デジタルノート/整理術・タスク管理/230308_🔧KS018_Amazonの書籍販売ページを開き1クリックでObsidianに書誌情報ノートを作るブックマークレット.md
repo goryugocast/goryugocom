@@ -1,10 +1,15 @@
 ---
 project: ks
-topic: ワークシートアップデート
+topic:
+  - ChatGPT
+  - プログラミング
+  - ブックマークレット
+  - Obsidian
+  - AI活用
 topic_code: upd
 title: Amazonの書籍販売ページを開き1クリックでObsidianに書誌情報ノートを作るブックマークレット
 subtitle: "\U0001F527018ChatGPTで日曜プログラミングの生産性は何百倍にもアップした"
-description: null
+description: 'Amazonの書籍販売ページから1クリックでObsidianに書誌情報ノートを作成するブックマークレットを、ChatGPTの支援を受けて開発した経緯を解説。ChatGPTがプログラミング言語の「翻訳」やエラーメッセージの解決に貢献し、日曜プログラマーの生産性を飛躍的に高めることを示す。また、AIとの対話を通じた「心的安全性が担保された環境」での試行錯誤が、体系的な知識欲に繋がり、プログラミング学習の新たなアプローチとなる可能性を提示します。'
 url: 'https://knowledgestuck.substack.com/p/amazon1obsidian'
 date_published: 2023-03-08T00:00:00.000Z
 audience: everyone
@@ -17,7 +22,7 @@ draft_link: null
 series_name: その他
 series_emoji: "\U0001F527"
 series_code: other
-category: 技術・ノウハウ
+category: "デジタルノート/整理術・タスク管理"
 ---
 ## メモ・原稿
 

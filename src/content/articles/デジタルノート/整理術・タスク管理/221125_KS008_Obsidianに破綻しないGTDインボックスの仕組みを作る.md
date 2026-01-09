@@ -1,10 +1,15 @@
 ---
 project: ks
-topic: Obsidian Tips
+topic:
+  - Obsidian
+  - GTD
+  - Spaced Repetition
+  - インボックス
+  - タスク管理
 topic_code: obs
 title: Obsidianに破綻しないGTDインボックスの仕組みを作る
 subtitle: "\U0001F914\U0001F4AD008 Spaced Repetitionを使ったノート整理の応用"
-description: null
+description: 'GTD（Getting Things Done）のインボックス処理における課題、特に「適切な処理の難しさ」と「無限に増える『いつかやりたいこと』リストの管理」に対し、ObsidianのSpaced Repetitionプラグインを活用した解決策を提示。インボックスや「いつかやりたいこと」をSpaced Repetitionの分散学習システムに乗せることで、破綻なく定期的に振り返り、精神的な安定と効率的な情報処理を実現する方法を解説する。'
 url: 'https://knowledgestuck.substack.com/p/obsidian-gtd'
 date_published: 2022-11-25T00:00:00.000Z
 audience: everyone
@@ -16,7 +21,7 @@ draft_link: null
 series_name: アトミックシンキング
 series_emoji: "\U0001F914"
 series_code: atomic
-category: 入門
+category: "デジタルノート/整理術・タスク管理"
 ---
 ## メモ・原稿
 
