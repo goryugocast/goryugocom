@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
+import { ViewTransitions } from 'astro:transitions';
+import GlossaryCard from '../components/GlossaryCard.astro';
 
 const videos = await getCollection('videos');
 const articles = await getCollection('articles');
@@ -120,7 +122,7 @@ sortedArticles.forEach(article => {
 });
 const parentSeries = Object.keys(seriesHierarchy).sort();
 
-// Get glossary categories
+// Get glossary categories and render content
 const glossaryByCategory: Record<string, typeof glossary> = {};
 glossary.forEach(term => {
   const category = term.data.category;
@@ -130,6 +132,14 @@ glossary.forEach(term => {
   glossaryByCategory[category].push(term);
 });
 const glossaryCategories = Object.keys(glossaryByCategory).sort();
+
+// Render glossary content for WikiLinks
+const renderedGlossary = await Promise.all(
+  glossary.map(async (term) => {
+    const { Content } = await term.render();
+    return { ...term, Content };
+  })
+);
 
 // Sort atomic notes by prefix (if available) or title
 const sortedAtomicNotes = renderedNotes.sort((a, b) => {
@@ -149,6 +159,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=M+PLUS+Rounded+1c:wght@300;500&display=swap" rel="stylesheet">
+    <ViewTransitions />
     <style>
       :root {
         --bg-gradient: linear-gradient(135deg, #f2f2f7 0%, #ffffff 100%);
@@ -809,19 +820,48 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       /* Glossary list */
+      .glossary-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+      }
+
+      .glossary-card-wrapper {
+        opacity: 0;
+        animation: fadeInUp 0.4s ease-out forwards;
+      }
+
       /* Glossary details - hidden by default, shown when expanded */
       .glossary-details {
         margin-top: var(--spacing-md);
-        padding-top: var(--spacing-md);
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding: var(--spacing-md);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: var(--radius-lg);
         display: none;
         opacity: 0;
         transition: opacity 0.3s ease;
       }
 
-      .article-card.expanded .glossary-details {
+      .glossary-card-wrapper.expanded .glossary-details {
         display: block;
         opacity: 1;
+      }
+
+      /* Glossary content styling for WikiLinks */
+      .glossary-card-wrapper :global(.glossary-links p) {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .glossary-card-wrapper :global(.glossary-links h1),
+      .glossary-card-wrapper :global(.glossary-links h2),
+      .glossary-card-wrapper :global(.glossary-links h3),
+      .glossary-card-wrapper :global(.glossary-links ul),
+      .glossary-card-wrapper :global(.glossary-links ol),
+      .glossary-card-wrapper :global(.glossary-links li) {
+        display: none;
       }
 
       /* Note details - hidden by default, shown when expanded */
@@ -1402,11 +1442,34 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         <!-- Notes filter list -->
         <div class="filter-list-section" id="notes-filter-list">
           <div class="filter-buttons">
-            <button class="filter-button active" data-filter-type="note-topic" data-filter-value="all">
+            <button class="filter-button active" data-filter-type="note-type" data-filter-value="all">
               すべて
               <span class="filter-count">{sortedAtomicNotes.length}</span>
             </button>
-            {/* TODO: Add topic filters for notes if needed */}
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="principle">
+              Principle
+              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'principle').length}</span>
+            </button>
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="method">
+              Method
+              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'method').length}</span>
+            </button>
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="insight">
+              Insight
+              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'insight').length}</span>
+            </button>
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="technique">
+              Technique
+              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'technique').length}</span>
+            </button>
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="definition">
+              Definition
+              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'definition').length}</span>
+            </button>
+            <button class="filter-button" data-filter-type="note-type" data-filter-value="unknown">
+              未分類
+              <span class="filter-count">{sortedAtomicNotes.filter(n => !n.data.note_type).length}</span>
+            </button>
           </div>
         </div>
 
@@ -1533,38 +1596,36 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       </div>
 
       <!-- Glossary list -->
-      <div class="article-list hidden" id="glossary-list">
-        {glossary.map((term, index) => {
+      <div class="glossary-list hidden" id="glossary-list">
+        {renderedGlossary.map((term, index) => {
           const relatedVideos = processedVideos.filter(v => v.data.topic === term.data.topic_id);
           const relatedArticles = sortedArticles.filter(a => a.data.topic === term.data.topic_id);
           const relatedNotes = sortedAtomicNotes.filter(n => n.data.topic?.includes(term.data.topic_id));
           const recommendedArticles = term.data.recommended_articles || [];
 
           return (
-            <article
-              class="article-card"
+            <div
+              class="glossary-card-wrapper"
               data-category={term.data.category}
               style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
               data-date="0"
             >
-              <div class="article-header">
-                <div class="article-content">
-                  <div class="article-meta">
-                    <span class="series-badge">📖 {term.data.category}</span>
-                  </div>
-                  <div class="article-title">{term.data.title}</div>
-                  <div class="article-description">
-                    {term.data.description}
-                  </div>
-                </div>
-                <div class="article-toggle-icon">▼</div>
-              </div>
+              <GlossaryCard
+                title={term.data.title}
+                slug={term.slug}
+                yomikata={term.data.yomikata}
+                aliases={term.data.aliases}
+                category={term.data.category}
+                description={term.data.description}
+              >
+                <term.Content />
+              </GlossaryCard>
 
               {/* 展開時に表示される詳細コンテンツ */}
               <div class="glossary-details">
                 {recommendedArticles.length > 0 && (
                   <div class="glossary-recommended">
-                    <h4 class="glossary-section-title">📌 おすすめ記事</h4>
+                    <h4 class="glossary-section-title">おすすめ記事</h4>
                     <ul class="glossary-recommended-list">
                       {recommendedArticles.map(articleId => {
                         const article = sortedArticles.find(a => a.id.includes(articleId));
@@ -1580,48 +1641,50 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
                   </div>
                 )}
 
-                <div class="glossary-related">
-                  <h4 class="glossary-section-title">📚 関連コンテンツ <span class="glossary-related-count">({relatedVideos.length + relatedArticles.length + relatedNotes.length}件)</span></h4>
-                  <div class="glossary-related-articles">
-                    {relatedVideos.map(video => (
-                      <div class="glossary-related-item">
-                        <a href={video.data.url} target="_blank" rel="noopener noreferrer">
-                          <span class="glossary-related-title">🎥 {video.data.title}</span>
-                          <span class="glossary-related-date">
-                            {new Date(video.data.date_published).toLocaleDateString('ja-JP', {
-                              year: 'numeric',
-                              month: '2-digit',
-                              day: '2-digit'
-                            })}
-                          </span>
-                        </a>
-                      </div>
-                    ))}
-                    {relatedArticles.map(article => (
-                      <div class="glossary-related-item">
-                        <a href={article.data.url} target="_blank" rel="noopener noreferrer">
-                          <span class="glossary-related-title">📄 {article.data.title}</span>
-                          <span class="glossary-related-date">
-                            {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
-                              year: 'numeric',
-                              month: '2-digit',
-                              day: '2-digit'
-                            })}
-                          </span>
-                        </a>
-                      </div>
-                    ))}
-                    {relatedNotes.map(note => (
-                      <div class="glossary-related-item">
-                        <a href={`#note/${note.slug}`}>
-                          <span class="glossary-related-title">📝 {note.data.title}</span>
-                        </a>
-                      </div>
-                    ))}
+                {(relatedVideos.length + relatedArticles.length + relatedNotes.length) > 0 && (
+                  <div class="glossary-related">
+                    <h4 class="glossary-section-title">関連コンテンツ <span class="glossary-related-count">({relatedVideos.length + relatedArticles.length + relatedNotes.length}件)</span></h4>
+                    <div class="glossary-related-articles">
+                      {relatedVideos.map(video => (
+                        <div class="glossary-related-item">
+                          <a href={video.data.url} target="_blank" rel="noopener noreferrer">
+                            <span class="glossary-related-title">🎥 {video.data.title}</span>
+                            <span class="glossary-related-date">
+                              {new Date(video.data.date_published).toLocaleDateString('ja-JP', {
+                                year: 'numeric',
+                                month: '2-digit',
+                                day: '2-digit'
+                              })}
+                            </span>
+                          </a>
+                        </div>
+                      ))}
+                      {relatedArticles.map(article => (
+                        <div class="glossary-related-item">
+                          <a href={article.data.url} target="_blank" rel="noopener noreferrer">
+                            <span class="glossary-related-title">📄 {article.data.title}</span>
+                            <span class="glossary-related-date">
+                              {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
+                                year: 'numeric',
+                                month: '2-digit',
+                                day: '2-digit'
+                              })}
+                            </span>
+                          </a>
+                        </div>
+                      ))}
+                      {relatedNotes.map(note => (
+                        <div class="glossary-related-item">
+                          <a href={`#note/${note.slug}`}>
+                            <span class="glossary-related-title">📝 {note.data.title}</span>
+                          </a>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
-            </article>
+            </div>
           );
         })}
       </div>
@@ -1637,6 +1700,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
               class="article-card"
               style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
               data-topics={JSON.stringify(note.data.topic || [])}
+              data-note-type={note.data.note_type || 'unknown'}
               data-title={(note.data.title || note.slug || '').toLowerCase()}
               data-date="0"
               data-slug={note.slug}
@@ -1645,6 +1709,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
                 <div class="article-content">
                   <div class="article-meta">
                     {note.data.prefix && <span class="series-badge">📝 {note.data.prefix}</span>}
+                    {note.data.note_type && <span class="article-topic" style="margin-right: 4px; background: rgba(0,0,0,0.05); color: #666;">{note.data.note_type}</span>}
                     {Array.isArray(note.data.topic) && note.data.topic.map(t => (
                       <span class="article-topic" style="margin-right: 4px;">{t}</span>
                     ))}
@@ -1672,73 +1737,292 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
     <script>
       let currentMode = 'videos';
       let currentVideoSeries = 'all';
-      let currentCategoryChild = ''; // サブカテゴリフィルター（digital-note, lifestyle, column, contributions用）
+      let currentCategoryChild = '';
       let currentGlossaryCategory = 'all';
       let currentNoteTopic = 'all';
+      let currentNoteType = 'all';
       let currentSort = 'newest';
-      let activeNoteFilter = null; // 特定のノートだけを表示するフィルター
+      let activeNoteFilter = null;
 
-      const videoList = document.getElementById('video-list');
-      const articleList = document.getElementById('article-list');
-      const glossaryList = document.getElementById('glossary-list');
-      const notesList = document.getElementById('notes-list');
-      const emptyState = document.getElementById('empty-state');
-      const resultCount = document.getElementById('result-count');
-      const filterTitle = document.getElementById('current-filter-title');
-      const sortSegmentedControl = document.getElementById('sort-segmented-control');
-      const bulkToggleBtn = document.getElementById('bulk-toggle-btn');
+      // DOM Elements (re-queried on page load)
+      let videoList, articleList, glossaryList, notesList, emptyState, resultCount, filterTitle, sortSegmentedControl, bulkToggleBtn;
+      let floatingControls;
+      let filterLists = {};
+      let modeLists = {};
 
-      const modeLists = {
-        videos: videoList,
-        'digital-note': articleList,
-        lifestyle: articleList,
-        column: articleList,
-        contributions: articleList,
-        glossary: glossaryList,
-        notes: notesList
-      };
+      function initElements() {
+        videoList = document.getElementById('video-list');
+        articleList = document.getElementById('article-list');
+        glossaryList = document.getElementById('glossary-list');
+        notesList = document.getElementById('notes-list');
+        emptyState = document.getElementById('empty-state');
+        resultCount = document.getElementById('result-count');
+        filterTitle = document.getElementById('current-filter-title');
+        sortSegmentedControl = document.getElementById('sort-segmented-control');
+        bulkToggleBtn = document.getElementById('bulk-toggle-btn');
+        floatingControls = document.getElementById('floating-controls');
 
-      const filterLists = {
-        videos: document.getElementById('videos-filter-list'),
-        'digital-note': document.getElementById('digital-note-filter-list'),
-        lifestyle: document.getElementById('lifestyle-filter-list'),
-        column: document.getElementById('column-filter-list'),
-        contributions: document.getElementById('contributions-filter-list'),
-        glossary: document.getElementById('glossary-filter-list'),
-        notes: document.getElementById('notes-filter-list')
-      };
+        modeLists = {
+          videos: videoList,
+          'digital-note': articleList,
+          lifestyle: articleList,
+          column: articleList,
+          contributions: articleList,
+          glossary: glossaryList,
+          notes: notesList
+        };
 
-      // Permanent Sticky Bar
-      const floatingControls = document.getElementById('floating-controls');
-      const scrollThreshold = 150;
+        filterLists = {
+          videos: document.getElementById('videos-filter-list'),
+          'digital-note': document.getElementById('digital-note-filter-list'),
+          lifestyle: document.getElementById('lifestyle-filter-list'),
+          column: document.getElementById('column-filter-list'),
+          contributions: document.getElementById('contributions-filter-list'),
+          glossary: document.getElementById('glossary-filter-list'),
+          notes: document.getElementById('notes-filter-list')
+        };
+      }
 
-      window.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
+      // Restore state from sessionStorage
+      function restoreState() {
+        const savedMode = sessionStorage.getItem('portal_currentMode');
+        if (savedMode) currentMode = savedMode;
+        // Restore other filters if needed, but mode is most important for "Back" button
+      }
 
-        if (currentScrollY > scrollThreshold) {
-          floatingControls.classList.add('visible');
-        } else {
-          floatingControls.classList.remove('visible');
+      // Save state to sessionStorage
+      function saveState() {
+        sessionStorage.setItem('portal_currentMode', currentMode);
+      }
+
+      // Permanent Sticky Bar Logic (needs re-attaching)
+      function initScrollListener() {
+        const scrollThreshold = 150;
+        const handleScroll = () => {
+          if (!floatingControls) return;
+          const currentScrollY = window.scrollY;
+          if (currentScrollY > scrollThreshold) {
+            floatingControls.classList.add('visible');
+          } else {
+            floatingControls.classList.remove('visible');
+          }
+        };
+        window.removeEventListener('scroll', handleScroll); // Clean up old if any
+        window.addEventListener('scroll', handleScroll);
+      } // End of attachEventListeners
+
+      function toggleBulkExpand() {
+        const currentList = modeLists[currentMode];
+        const visibleCards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden), .glossary-card-wrapper:not(.hidden)'));
+        const anyExpanded = visibleCards.some(card => card.classList.contains('expanded'));
+
+        visibleCards.forEach(card => {
+          card.classList.toggle('expanded', !anyExpanded);
+        });
+
+        updateBulkToggleVisibility();
+      }
+
+      // Global Click Listener (Delegate) - persistent across page transitions so keep outside
+      document.addEventListener('click', (e) => {
+        const card = (e.target).closest('.article-card');
+        const glossaryCardWrapper = (e.target).closest('.glossary-card-wrapper');
+        const readMoreBtn = (e.target).closest('.read-more-btn');
+        const seminarItem = (e.target).closest('.seminar-section-item');
+        const relatedLink = (e.target).closest('.glossary-related-item a');
+        const noteBodyLink = (e.target).closest('.note-body-preview a');
+        const wikiLink = (e.target).closest('.wiki-link');
+        const glossaryLink = (e.target).closest('.glossary-links a');
+
+        // Handle wiki link clicks
+        if (wikiLink) {
+          e.preventDefault();
+          const noteSlug = wikiLink.getAttribute('data-note-slug');
+          if (noteSlug) {
+            activeNoteFilter = noteSlug;
+            currentMode = 'notes';
+            updateUI();
+            document.getElementById('clear-filter-btn').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+              const noteCard = document.querySelector(`#notes-list .article-card:not(.hidden)`);
+              if (noteCard) {
+                noteCard.classList.add('expanded');
+                noteCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 100);
+          }
+          return;
+        }
+
+        if (card && !readMoreBtn && !seminarItem && !relatedLink && !noteBodyLink) {
+          card.classList.toggle('expanded');
+        }
+
+        if (glossaryCardWrapper && !glossaryLink && !relatedLink) {
+          glossaryCardWrapper.classList.toggle('expanded');
+          updateBulkToggleVisibility();
         }
       });
-      window.addEventListener('DOMContentLoaded', () => {
+
+      // Hash-based navigation for notes
+      function handleHashChange() {
+        const hash = window.location.hash;
+        if (!hash) return;
+
+        const match = hash.match(/^#note\/(.+)$/);
+        if (!match) return;
+
+        const slug = match[1];
+        currentMode = 'notes';
         updateUI();
-      });
+
+        setTimeout(() => {
+          const noteCard = document.querySelector(`[data-slug="${slug}"]`);
+          if (noteCard) {
+            noteCard.classList.add('expanded');
+            noteCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      }
+
+      // Remove summary section from note body preview
+      function removeSummaryFromNotePreview() {
+        const notePreviews = document.querySelectorAll('#notes-list .note-body-preview');
+        notePreviews.forEach(preview => {
+          const h2Elements = preview.querySelectorAll('h2');
+          for (let i = 0; i < h2Elements.length; i++) {
+            const h2 = h2Elements[i];
+            if (h2.textContent.trim() === '概要') {
+              let currentElement = preview.firstElementChild;
+              const elementsToRemove = [];
+              while (currentElement && currentElement.tagName !== 'H2') {
+                elementsToRemove.push(currentElement);
+                currentElement = currentElement.nextElementSibling;
+              }
+              if (currentElement && currentElement.textContent.trim() === '概要') {
+                elementsToRemove.push(currentElement);
+                currentElement = currentElement.nextElementSibling;
+                while (currentElement && currentElement.tagName !== 'H2') {
+                  elementsToRemove.push(currentElement);
+                  currentElement = currentElement.nextElementSibling;
+                }
+              }
+              elementsToRemove.forEach(el => el.remove());
+              break;
+            }
+          }
+        });
+      }
+
+      function setNoteLinksToNewTab() {
+        const noteBodyLinks = document.querySelectorAll('.note-body-preview a');
+        noteBodyLinks.forEach(link => {
+          if (!link.classList.contains('wiki-link')) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          }
+        });
+      }
+
+      function attachEventListeners() {
+        // Main Mode Switch
+        document.querySelectorAll('.main-filter-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentMode = btn.dataset.mainFilter;
+            saveState();
+            currentCategoryChild = '';
+            activeNoteFilter = null;
+            const clearBtn = document.getElementById('clear-filter-btn');
+            if (clearBtn) clearBtn.classList.add('hidden');
+            updateUI();
+          });
+        });
+
+        // Video Filters
+        document.querySelectorAll('[data-filter-type="video-series"]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('[data-filter-type="video-series"]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentVideoSeries = btn.dataset.filterValue;
+            filterContent();
+          });
+        });
+
+        // Category Child Filters
+        document.querySelectorAll('[data-filter-type="category-child"]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filterList = btn.closest('.filter-list-section');
+            if (filterList) {
+              filterList.querySelectorAll('[data-filter-type="category-child"]').forEach(b => b.classList.remove('active'));
+            }
+            btn.classList.add('active');
+            currentCategoryChild = btn.dataset.filterChild;
+            filterContent();
+          });
+        });
+
+        // Glossary Filters
+        document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentGlossaryCategory = btn.dataset.filterValue;
+            filterContent();
+          });
+        });
+
+        // Note Type Filters
+        document.querySelectorAll('[data-filter-type="note-type"]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            document.querySelectorAll('[data-filter-type="note-type"]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentNoteType = btn.dataset.filterValue;
+            filterContent();
+          });
+        });
+
+        // Sort Control
+        document.querySelectorAll('.segmented-control-option').forEach(option => {
+          option.addEventListener('click', () => {
+            currentSort = option.dataset.sort;
+            updateUI();
+          });
+        });
+
+        // Bulk Toggle
+        const bulkBtn = document.getElementById('bulk-toggle-btn');
+        if (bulkBtn) bulkBtn.addEventListener('click', toggleBulkExpand);
+        const floatingBulkBtn = document.getElementById('floating-bulk-toggle-btn');
+        if (floatingBulkBtn) floatingBulkBtn.addEventListener('click', toggleBulkExpand);
+        
+        // Clear Filter
+        const clearBtn = document.getElementById('clear-filter-btn');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                activeNoteFilter = null;
+                clearBtn.classList.add('hidden');
+                updateUI();
+            });
+        }
+      }
 
       function updateUI() {
         // Show/hide lists - article modes share the same list
         const articleModes = ['digital-note', 'lifestyle', 'column', 'contributions'];
         const isArticleMode = articleModes.includes(currentMode);
 
-        videoList.classList.toggle('hidden', currentMode !== 'videos');
-        articleList.classList.toggle('hidden', !isArticleMode);
-        glossaryList.classList.toggle('hidden', currentMode !== 'glossary');
-        notesList.classList.toggle('hidden', currentMode !== 'notes');
+        if (videoList) videoList.classList.toggle('hidden', currentMode !== 'videos');
+        if (articleList) articleList.classList.toggle('hidden', !isArticleMode);
+        if (glossaryList) glossaryList.classList.toggle('hidden', currentMode !== 'glossary');
+        if (notesList) notesList.classList.toggle('hidden', currentMode !== 'notes');
 
         // Show/hide filter lists
         Object.keys(filterLists).forEach(mode => {
-          filterLists[mode].classList.toggle('hidden', mode !== currentMode);
-          filterLists[mode].classList.toggle('visible', mode === currentMode);
+          if (filterLists[mode]) {
+            filterLists[mode].classList.toggle('hidden', mode !== currentMode);
+            filterLists[mode].classList.toggle('visible', mode === currentMode);
+          }
         });
 
         // Update main buttons (both header and floating)
@@ -1761,8 +2045,9 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function filterContent() {
+        if (!modeLists[currentMode]) return;
         const currentList = modeLists[currentMode];
-        const cards = Array.from(currentList.querySelectorAll('.article-card, .glossary-card'));
+        const cards = Array.from(currentList.querySelectorAll('.article-card, .glossary-card-wrapper'));
         let visibleCount = 0;
 
         // Mode to parent folder mapping
@@ -1800,15 +2085,10 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
               const filterTitle = activeNoteFilter.toLowerCase();
               isVisible = cardTitle === filterTitle;
             } else {
-              const topicsStr = card.dataset.topics || '[]';
-              let topics = [];
-              try {
-                topics = JSON.parse(topicsStr);
-              } catch (e) {
-                console.error('Error parsing topics:', topicsStr);
-              }
-              const topicMatch = currentNoteTopic === 'all' || topics.includes(currentNoteTopic);
-              isVisible = topicMatch;
+              // Note Type Filter
+              const noteType = card.dataset.noteType || 'unknown';
+              const typeMatch = currentNoteType === 'all' || noteType === currentNoteType;
+              isVisible = typeMatch;
             }
           }
 
@@ -1816,8 +2096,8 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           if (isVisible) visibleCount++;
         });
 
-        emptyState.classList.toggle('hidden', visibleCount > 0);
-        resultCount.textContent = `${visibleCount} 件`;
+        if (emptyState) emptyState.classList.toggle('hidden', visibleCount > 0);
+        if (resultCount) resultCount.textContent = `${visibleCount} 件`;
 
         // Update Title
         updateTitle();
@@ -1834,13 +2114,15 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       function updateBulkToggleVisibility() {
         const articleModes = ['digital-note', 'lifestyle', 'column', 'contributions'];
         const hasExpandableCards = currentMode === 'videos' || articleModes.includes(currentMode) || currentMode === 'glossary' || currentMode === 'notes';
-        bulkToggleBtn.classList.toggle('hidden', !hasExpandableCards);
+        if (bulkToggleBtn) bulkToggleBtn.classList.toggle('hidden', !hasExpandableCards);
         const floatingBulkBtn = document.getElementById('floating-bulk-toggle-btn');
         if (floatingBulkBtn) floatingBulkBtn.classList.toggle('hidden', !hasExpandableCards);
 
-        const anyExpanded = Array.from(modeLists[currentMode].querySelectorAll('.article-card.expanded')).length > 0;
-        bulkToggleBtn.textContent = anyExpanded ? '📁 すべて閉じる' : '📂 すべて開く';
-        if (floatingBulkBtn) floatingBulkBtn.textContent = anyExpanded ? '📁' : '📂';
+        if (modeLists[currentMode]) {
+          const anyExpanded = Array.from(modeLists[currentMode].querySelectorAll('.article-card.expanded, .glossary-card-wrapper.expanded')).length > 0;
+          if (bulkToggleBtn) bulkToggleBtn.textContent = anyExpanded ? '📁 すべて閉じる' : '📂 すべて開く';
+          if (floatingBulkBtn) floatingBulkBtn.textContent = anyExpanded ? '📁' : '📂';
+        }
       }
 
       function updateTitle() {
@@ -1863,16 +2145,26 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           if (activeNoteFilter) {
             title = `📌 ${activeNoteFilter}`;
           } else {
-            title = currentNoteTopic === 'all' ? 'アトミックノート' : currentNoteTopic;
+            const noteTypeNames = {
+              'all': 'アトミックノート',
+              'principle': '原理・原則 (Principle)',
+              'method': '手法・方法論 (Method)',
+              'insight': '洞察・視点 (Insight)',
+              'technique': '技術・コツ (Technique)',
+              'definition': '定義 (Definition)',
+              'unknown': '未分類'
+            };
+            title = noteTypeNames[currentNoteType] || currentNoteType;
           }
         }
 
-        filterTitle.textContent = title;
+        if (filterTitle) filterTitle.textContent = title;
       }
 
       function sortContent() {
+        if (!modeLists[currentMode]) return;
         const currentList = modeLists[currentMode];
-        const cards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden)'));
+        const cards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden), .glossary-card-wrapper:not(.hidden)'));
 
         cards.sort((a, b) => {
           const dateA = parseInt(a.dataset.date || '0');
@@ -1883,237 +2175,23 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         cards.forEach(card => currentList.appendChild(card));
       }
 
-      // Main Mode Switch
-      document.querySelectorAll('.main-filter-button').forEach(btn => {
-        btn.addEventListener('click', () => {
-          currentMode = btn.dataset.mainFilter;
-          // Reset category child filter when switching modes
-          currentCategoryChild = '';
-          // Clear active note filter
-          activeNoteFilter = null;
-          document.getElementById('clear-filter-btn').classList.add('hidden');
-          updateUI();
-        });
-      });
-
-      // Video Filters
-      document.querySelectorAll('[data-filter-type="video-series"]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('[data-filter-type="video-series"]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentVideoSeries = btn.dataset.filterValue;
-          filterContent();
-        });
-      });
-
-      // Category Child Filters (for article category modes)
-      document.querySelectorAll('[data-filter-type="category-child"]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          // Get all buttons in the same filter list
-          const parent = btn.dataset.filterParent;
-          const filterList = btn.closest('.filter-list-section');
-          if (filterList) {
-            filterList.querySelectorAll('[data-filter-type="category-child"]').forEach(b => b.classList.remove('active'));
-          }
-
-          btn.classList.add('active');
-          currentCategoryChild = btn.dataset.filterChild;
-          filterContent();
-        });
-      });
-
-      // Glossary Filters
-      document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          currentGlossaryCategory = btn.dataset.filterValue;
-          filterContent();
-        });
-      });
-
-
-      document.querySelectorAll('.segmented-control-option').forEach(option => {
-        option.addEventListener('click', () => {
-          const value = (option as HTMLElement).dataset.sort;
-          currentSort = value;
-          updateUI();
-        });
-      });
-
-      function toggleBulkExpand() {
-        const currentList = modeLists[currentMode];
-        const visibleCards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden)'));
-        const anyExpanded = visibleCards.some(card => card.classList.contains('expanded'));
-        
-        visibleCards.forEach(card => {
-          card.classList.toggle('expanded', !anyExpanded);
-        });
-        
-        updateBulkToggleVisibility();
-      }
-
-      bulkToggleBtn.addEventListener('click', toggleBulkExpand);
-      document.getElementById('floating-bulk-toggle-btn').addEventListener('click', toggleBulkExpand);
-
-      // Card Interaction
-      document.addEventListener('click', (e) => {
-        const card = (e.target as HTMLElement).closest('.article-card');
-        const readMoreBtn = (e.target as HTMLElement).closest('.read-more-btn');
-        const seminarItem = (e.target as HTMLElement).closest('.seminar-section-item');
-        const relatedLink = (e.target as HTMLElement).closest('.glossary-related-item a');
-        const noteBodyLink = (e.target as HTMLElement).closest('.note-body-preview a');
-        const wikiLink = (e.target as HTMLElement).closest('.wiki-link');
-
-        // Handle wiki link clicks
-        if (wikiLink) {
-          e.preventDefault();
-          const noteSlug = wikiLink.getAttribute('data-note-slug');
-          if (noteSlug) {
-            // Set active note filter
-            activeNoteFilter = noteSlug;
-            // Switch to notes tab
-            currentMode = 'notes';
-            // Update UI to show only this note
-            updateUI();
-            // Show clear filter button
-            document.getElementById('clear-filter-btn').classList.remove('hidden');
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            // Expand the note card
-            setTimeout(() => {
-              const noteCard = document.querySelector(`#notes-list .article-card:not(.hidden)`);
-              if (noteCard) {
-                noteCard.classList.add('expanded');
-                noteCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-            }, 100);
-          }
-          return;
-        }
-
-        if (card && !readMoreBtn && !seminarItem && !relatedLink && !noteBodyLink) {
-          card.classList.toggle('expanded');
-        }
-      });
-
-      // Clear filter button
-      document.getElementById('clear-filter-btn').addEventListener('click', () => {
-        activeNoteFilter = null;
-        document.getElementById('clear-filter-btn').classList.add('hidden');
-        updateUI();
-      });
-
-      // Hash-based navigation for notes
-      function handleHashChange() {
-        const hash = window.location.hash;
-        console.log('Hash changed:', hash);
-        if (!hash) return;
-
-        // Parse hash like #note/slug
-        const match = hash.match(/^#note\/(.+)$/);
-        if (!match) {
-          console.log('Hash does not match #note/ pattern');
-          return;
-        }
-
-        const slug = match[1];
-        console.log('Looking for note with slug:', slug);
-
-        // Switch to notes tab
-        currentMode = 'notes';
+      // Initialize on page load
+      document.addEventListener('astro:page-load', () => {
+        initElements();
+        restoreState();
+        initScrollListener();
+        attachEventListeners();
         updateUI();
 
-        // Find the note card
-        setTimeout(() => {
-          const noteCard = document.querySelector(`[data-slug="${slug}"]`);
-          console.log('Found note card:', noteCard);
+        // Listen for hash changes
+        window.removeEventListener('hashchange', handleHashChange);
+        window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
 
-          if (noteCard) {
-            // Expand the card
-            noteCard.classList.add('expanded');
-
-            // Scroll to the card
-            noteCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          } else {
-            // Debug: show all available slugs
-            const allNoteCards = document.querySelectorAll('#notes-list [data-slug]');
-            console.log('Available note slugs:', Array.from(allNoteCards).map(card => card.getAttribute('data-slug')));
-          }
-        }, 100);
-      }
-
-      // Listen for hash changes
-      window.addEventListener('hashchange', handleHashChange);
-      window.addEventListener('DOMContentLoaded', handleHashChange);
-
-      // Remove summary section from note body preview
-      function removeSummaryFromNotePreview() {
-        const notePreviews = document.querySelectorAll('#notes-list .note-body-preview');
-        notePreviews.forEach(preview => {
-          // Find all h2 elements
-          const h2Elements = preview.querySelectorAll('h2');
-          for (let i = 0; i < h2Elements.length; i++) {
-            const h2 = h2Elements[i];
-            // Check if this is the "概要" heading
-            if (h2.textContent.trim() === '概要') {
-              // Remove everything from the first h1 (title) to the end of this section
-              let currentElement = preview.firstElementChild;
-              const elementsToRemove = [];
-
-              // Remove title (h1) if it exists
-              while (currentElement && currentElement.tagName !== 'H2') {
-                elementsToRemove.push(currentElement);
-                currentElement = currentElement.nextElementSibling;
-              }
-
-              // Remove the "概要" h2
-              if (currentElement && currentElement.textContent.trim() === '概要') {
-                elementsToRemove.push(currentElement);
-                currentElement = currentElement.nextElementSibling;
-
-                // Remove content until next h2
-                while (currentElement && currentElement.tagName !== 'H2') {
-                  elementsToRemove.push(currentElement);
-                  currentElement = currentElement.nextElementSibling;
-                }
-              }
-
-              // Actually remove the elements
-              elementsToRemove.forEach(el => el.remove());
-              break;
-            }
-          }
-        });
-      }
-
-      // Set all links in note body to open in new tab (except wiki links)
-      function setNoteLinksToNewTab() {
-        const noteBodyLinks = document.querySelectorAll('.note-body-preview a');
-        noteBodyLinks.forEach(link => {
-          // Don't modify wiki links
-          if (!link.classList.contains('wiki-link')) {
-            link.setAttribute('target', '_blank');
-            link.setAttribute('rel', 'noopener noreferrer');
-          }
-        });
-      }
-
-      // Call on initial load
-      window.addEventListener('DOMContentLoaded', () => {
+        // Note content fixes
         removeSummaryFromNotePreview();
         setNoteLinksToNewTab();
       });
-
-      // Also call when cards are expanded (in case content is dynamically loaded)
-      const originalUpdateUI = updateUI;
-      updateUI = function() {
-        originalUpdateUI();
-        setTimeout(() => {
-          removeSummaryFromNotePreview();
-          setNoteLinksToNewTab();
-        }, 100);
-      };
     </script>
   </body>
 </html>

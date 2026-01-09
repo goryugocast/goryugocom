@@ -1,0 +1,392 @@
+---
+import { getCollection } from 'astro:content';
+import { ViewTransitions } from 'astro:transitions';
+import AtomicNoteCard from '../../components/AtomicNoteCard.astro';
+
+export async function getStaticPaths() {
+  const glossary = await getCollection('topic');
+  const allNotes = await getCollection('atomic-notes');
+
+  // 本文からノートへのWikiLinkを抽出
+  function extractNoteLinks(body: string): string[] {
+    const wikiLinkRegex = /\[\[([^\]]+)\]\]/g;
+    const links: string[] = [];
+    let match;
+
+    while ((match = wikiLinkRegex.exec(body)) !== null) {
+      links.push(match[1].trim());
+    }
+
+    return links;
+  }
+
+  return glossary.map((term) => {
+    // 本文からノートへのリンクを抽出
+    const noteLinks = extractNoteLinks(term.body || '');
+
+    // リンクされたノートを取得
+    const linkedNotes = noteLinks.map(slug => {
+      const note = allNotes.find(n =>
+        n.slug === slug ||
+        n.data.title === slug
+      );
+      return note ? { slug, note } : { slug, note: null };
+    });
+
+    return {
+      params: { slug: term.slug },
+      props: { term, linkedNotes },
+    };
+  });
+}
+
+const { term, linkedNotes } = Astro.props;
+const { Content } = await term.render();
+
+// カテゴリごとの色設定
+const categoryColors: Record<string, string> = {
+  tool: '#007aff',
+  method: '#34c759',
+  concept: '#5856d6',
+  principle: '#ff9500',
+  default: '#8e8e93',
+};
+const badgeColor = categoryColors[term.data.category] || categoryColors.default;
+
+// ノートがあるかどうか
+const hasNotes = linkedNotes.some(ln => ln.note !== null);
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{term.data.title} | ごりゅご.com 用語集</title>
+    <meta name="description" content={term.data.description} />
+    <meta property="og:title" content={`${term.data.title} | ごりゅご.com 用語集`} />
+    <meta property="og:description" content={term.data.description} />
+    <meta property="og:type" content="article" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=M+PLUS+Rounded+1c:wght@300;500&display=swap" rel="stylesheet">
+    <ViewTransitions />
+    <style>
+      :root {
+        --bg-gradient: linear-gradient(135deg, #f2f2f7 0%, #ffffff 100%);
+        --glass-bg: rgba(255, 255, 255, 0.4);
+        --glass-border: rgba(255, 255, 255, 0.6);
+        --text-main: #1c1c1e;
+        --text-secondary: #3a3a3c;
+        --text-tertiary: #8e8e93;
+        --accent: #007aff;
+        --spacing-xs: 4px;
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 32px;
+        --radius-lg: 20px;
+        --radius-xl: 24px;
+        --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        --blur: 12px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Quicksand', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #e0e5ec;
+        color: var(--text-main);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .blob {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: -1;
+        opacity: 0.8;
+        animation: float 10s infinite alternate;
+      }
+      .blob-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #ffafbd; }
+      .blob-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: #2193b0; animation-delay: -5s; }
+
+      @keyframes float {
+        0% { transform: translate(0, 0); }
+        100% { transform: translate(30px, 50px); }
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: var(--spacing-lg);
+        transition: opacity 0.2s;
+      }
+
+      .back-link:hover {
+        opacity: 0.7;
+      }
+
+      .glossary-page-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-xl);
+        padding: 2rem;
+        box-shadow: var(--shadow-glass);
+      }
+
+      .glossary-header {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .header-main {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .category-badge {
+        padding: 6px 12px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+
+      .term-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      .yomikata {
+        font-size: 1rem;
+        color: var(--text-tertiary);
+        font-weight: 400;
+      }
+
+      .aliases {
+        font-size: 0.9rem;
+        color: var(--text-tertiary);
+        margin-top: var(--spacing-sm);
+      }
+
+      .alias-label {
+        font-weight: 600;
+        color: var(--text-secondary);
+      }
+
+      .description {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--text-secondary);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .content-section {
+        margin-top: var(--spacing-lg);
+      }
+
+      .section-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin-bottom: var(--spacing-md);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .glossary-content {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: var(--text-secondary);
+      }
+
+      .glossary-content h1,
+      .glossary-content h2,
+      .glossary-content h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .glossary-content p {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .glossary-content ul,
+      .glossary-content ol {
+        margin-left: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .glossary-content li {
+        margin-bottom: var(--spacing-xs);
+      }
+
+      /* カスタム要素(atomic-note-embed)を非表示 */
+      .glossary-content atomic-note-embed {
+        display: none;
+      }
+
+      /* WikiLink styling - Pill buttons */
+      .glossary-content a.link-glossary {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
+        color: var(--accent);
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 2px;
+        transition: all 0.2s ease;
+      }
+
+      .glossary-content a.link-glossary:hover {
+        background: linear-gradient(135deg, rgba(0, 122, 255, 0.2) 0%, rgba(88, 86, 214, 0.2) 100%);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+      }
+
+      .glossary-content a.link-external {
+        display: inline-block;
+        background: rgba(52, 199, 89, 0.1);
+        color: #34c759;
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 2px;
+        transition: all 0.2s ease;
+      }
+
+      .glossary-content a.link-external::after {
+        content: ' ↗';
+        font-size: 0.8em;
+      }
+
+      .glossary-content a.link-external:hover {
+        background: rgba(52, 199, 89, 0.2);
+        transform: translateY(-1px);
+      }
+
+      /* Notes section */
+      .notes-section {
+        margin-top: var(--spacing-xl);
+        padding-top: var(--spacing-lg);
+        border-top: 2px solid rgba(88, 86, 214, 0.2);
+      }
+
+      .notes-section-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin-bottom: var(--spacing-lg);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .notes-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        .glossary-page-card {
+          padding: 1.5rem;
+          border-radius: var(--radius-lg);
+        }
+
+        .term-title {
+          font-size: 1.5rem;
+        }
+
+        .description {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+      <a href="/" class="back-link">← 用語集に戻る</a>
+
+      <article class="glossary-page-card" transition:name={`glossary-card-${term.slug}`}>
+        <header class="glossary-header">
+          <div class="header-main">
+            <span class="category-badge" style={`background: ${badgeColor}15; color: ${badgeColor};`}>
+              {term.data.category}
+            </span>
+            <h1 class="term-title">{term.data.title}</h1>
+            {term.data.yomikata && <span class="yomikata">({term.data.yomikata})</span>}
+          </div>
+          {term.data.aliases && term.data.aliases.length > 0 && (
+            <div class="aliases">
+              <span class="alias-label">aka:</span> {term.data.aliases.join(', ')}
+            </div>
+          )}
+        </header>
+
+        <p class="description">{term.data.description}</p>
+
+        <div class="content-section">
+          <h2 class="section-title">詳細</h2>
+          <div class="glossary-content">
+            <Content />
+          </div>
+        </div>
+
+        {hasNotes && (
+          <div class="notes-section">
+            <h2 class="notes-section-title">関連ノート</h2>
+            <div class="notes-list">
+              {linkedNotes.map(({ slug, note }) => (
+                note ? (
+                  <AtomicNoteCard slug={note.slug} title={note.data.title || slug} />
+                ) : null
+              ))}
+            </div>
+          </div>
+        )}
+      </article>
+    </div>
+  </body>
+</html>
