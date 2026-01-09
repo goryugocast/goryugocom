@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIの待ち時間の有効活用
 topic:
-  - Gemini CLI
-  - AI活用
-  - 時間管理
+- Gemini CLI
+- AI活用
+- 時間管理
+note_type: method
 ---
 
 # Gemini CLIの待ち時間の有効活用

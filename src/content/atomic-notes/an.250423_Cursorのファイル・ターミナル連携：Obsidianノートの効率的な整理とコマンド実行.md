@@ -1,12 +1,13 @@
 ---
 project: an
 title: Cursorのファイル・ターミナル連携：Obsidianノートの効率的な整理とコマンド実行
-prefix: 
+prefix: null
 topic:
-  - Cursor
-  - Obsidian
-  - ファイル管理
-source_article: "ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる"
+- Cursor
+- Obsidian
+- ファイル管理
+source_article: ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる
+note_type: technique
 ---
 
 # Cursorのファイル・ターミナル連携：Obsidianノートの効率的な整理とコマンド実行

@@ -1,11 +1,12 @@
 ---
 title: リンク済み画像をSelect linkedで選択して公開する
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - 画像管理
-  - 効率化
+- Obsidian
+- ObsidianPublish
+- 画像管理
+- 効率化
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # リンク済み画像をSelect linkedで選択して公開する

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianのフォルダ構成とノートの分類
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - フォルダ構成
-  - ノート術
-source_article: "ks.220929_KS003_アトミックシンキング用のObsidianの全体像とフォルダ構成"
+- Obsidian
+- フォルダ構成
+- ノート術
+source_article: ks.220929_KS003_アトミックシンキング用のObsidianの全体像とフォルダ構成
+note_type: method
 ---
 
 # Obsidianのフォルダ構成とノートの分類

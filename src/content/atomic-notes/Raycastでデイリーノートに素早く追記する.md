@@ -1,12 +1,13 @@
 ---
 project: an
 title: Raycastでデイリーノートに素早く追記する
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - daily-note
-  - tool
-  - raycast
+- obsidian
+- daily-note
+- tool
+- raycast
+note_type: method
 ---
 
 # Raycastでデイリーノートに素早く追記する

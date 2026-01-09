@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianのトピックノートとは：リンクベースの情報整理術
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - トピックノート
-  - 情報整理
-source_article: "ks.220612_Obsidianのノートをまとめるノート「トピックノート」"
+- Obsidian
+- トピックノート
+- 情報整理
+source_article: ks.220612_Obsidianのノートをまとめるノート「トピックノート」
+note_type: method
 ---
 
 # Obsidianのトピックノートとは：リンクベースの情報整理術

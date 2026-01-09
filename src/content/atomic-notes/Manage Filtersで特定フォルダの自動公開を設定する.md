@@ -1,10 +1,11 @@
 ---
 title: Manage Filtersで特定フォルダの自動公開を設定する
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - 自動化
+- Obsidian
+- ObsidianPublish
+- 自動化
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # Manage Filtersで特定フォルダの自動公開を設定する

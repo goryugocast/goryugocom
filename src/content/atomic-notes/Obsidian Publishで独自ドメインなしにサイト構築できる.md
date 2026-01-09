@@ -1,10 +1,11 @@
 ---
 title: Obsidian Publishで独自ドメインなしにサイト構築できる
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - ウェブサイト構築
+- Obsidian
+- ObsidianPublish
+- ウェブサイト構築
 source: Obsidian Publishのはじめかた
+note_type: principle
 ---
 
 # Obsidian Publishで独自ドメインなしにサイト構築できる

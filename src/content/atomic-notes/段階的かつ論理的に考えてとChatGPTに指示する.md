@@ -1,11 +1,12 @@
 ---
 project: an
 title: 段階的かつ論理的に考えてとChatGPTに指示する
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - workflow
-  - テクニック
+- ChatGPT活用
+- workflow
+- テクニック
+note_type: method
 ---
 
 # 段階的かつ論理的に考えてとChatGPTに指示する

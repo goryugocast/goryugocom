@@ -3,12 +3,13 @@ title: Baseはポチポチ操作でコード不要の直感的フィルタリン
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Base
-  - UI/UX
-  - プラグイン
+- Obsidian
+- Base
+- UI/UX
+- プラグイン
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: technique
 ---
 
 ## 概要

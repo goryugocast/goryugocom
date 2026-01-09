@@ -2,9 +2,10 @@
 project: an
 title: AI生成コンテンツのバージョン管理
 topic:
-  - Gemini CLI
-  - AI
-  - バージョン管理
+- Gemini CLI
+- AI
+- バージョン管理
+note_type: method
 ---
 
 # AI生成コンテンツのバージョン管理

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian活用における「順番」の重要性
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 整理
-  - 効率
-source_article: "ks.230526_Obsidianの整理は「順番」が重要"
+- Obsidian
+- 整理
+- 効率
+source_article: ks.230526_Obsidianの整理は「順番」が重要
+note_type: insight
 ---
 
 # Obsidian活用における「順番」の重要性

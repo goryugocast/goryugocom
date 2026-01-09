@@ -2,9 +2,10 @@
 project: an
 title: Baseファイルを埋め込む利点と使い分け
 topic:
-  - Obsidian
-  - Bases
-  - ワークフロー
+- Obsidian
+- Bases
+- ワークフロー
+note_type: method
 ---
 
 # Baseファイルを埋め込む利点と使い分け

@@ -1,12 +1,13 @@
 ---
 project: an
 title: 日記に「絵」を添える：新しい視点と記憶の定着
-prefix: 
+prefix: null
 topic:
-  - 日記
-  - 記憶術
-  - 自己成長
-source_article: "ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由"
+- 日記
+- 記憶術
+- 自己成長
+source_article: ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由
+note_type: insight
 ---
 
 # 日記に「絵」を添える：新しい視点と記憶の定着

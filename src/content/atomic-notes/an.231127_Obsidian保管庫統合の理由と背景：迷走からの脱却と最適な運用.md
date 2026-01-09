@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian保管庫統合の理由と背景：迷走からの脱却と最適な運用
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 保管庫
-  - 運用
-source_article: "ks.231127_Obsidianの保管庫を1つにまとめた"
+- Obsidian
+- 保管庫
+- 運用
+source_article: ks.231127_Obsidianの保管庫を1つにまとめた
+note_type: method
 ---
 
 # Obsidian保管庫統合の理由と背景：迷走からの脱却と最適な運用

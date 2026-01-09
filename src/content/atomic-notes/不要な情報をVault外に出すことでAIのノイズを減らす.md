@@ -1,9 +1,10 @@
 ---
 tags:
-  - AI活用
-  - Vault管理
-  - ノイズ削減
+- AI活用
+- Vault管理
+- ノイズ削減
 created: 2025-01-02
+note_type: method
 ---
 
 # 不要な情報をVault外に出すことでAIのノイズを減らす

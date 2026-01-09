@@ -1,10 +1,11 @@
 ---
 project: an
 title: Obsidianでハイライトするだけで穴埋め問題を作る
-prefix:
+prefix: null
 topic:
-  - workflow
-  - plugin
+- workflow
+- plugin
+note_type: method
 ---
 
 # Obsidianでハイライトするだけで穴埋め問題を作る

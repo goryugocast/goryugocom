@@ -2,9 +2,10 @@
 project: an
 title: スマホでObsidian Publishを更新する
 topic:
-  - Obsidian
-  - モバイル
-  - Obsidian Publish
+- Obsidian
+- モバイル
+- Obsidian Publish
+note_type: method
 ---
 
 # スマホでObsidian Publishを更新する

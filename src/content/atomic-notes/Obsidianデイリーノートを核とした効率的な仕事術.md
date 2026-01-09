@@ -1,13 +1,14 @@
 ---
 project: an
 title: Obsidianデイリーノートを核とした効率的な仕事術
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - デイリーノート
-  - 仕事術
-  - 効率化
-source_article: "ks.221207_🔧KS009_Obsidian_デイリーノート仕事術"
+- Obsidian
+- デイリーノート
+- 仕事術
+- 効率化
+source_article: ks.221207_🔧KS009_Obsidian_デイリーノート仕事術
+note_type: method
 ---
 
 # Obsidianデイリーノートを核とした効率的な仕事術

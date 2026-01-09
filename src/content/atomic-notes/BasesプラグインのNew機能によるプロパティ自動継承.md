@@ -2,8 +2,9 @@
 project: an
 title: BasesプラグインのNew機能によるプロパティ自動継承
 topic:
-  - Bases
-  - plugin
+- Bases
+- plugin
+note_type: method
 ---
 
 Basesプラグインの強力な機能の一つが、`New`ボタンから新規ノートを作成した際に、データベースのフィルター条件を新しいノートのプロパティに自動で引き継いでくれる点である。

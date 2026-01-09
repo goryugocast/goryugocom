@@ -1,13 +1,14 @@
 ---
 project: an
 title: Whisper.cppを活用した動画の文字起こし
-prefix: ""
+prefix: ''
 topic:
-  - Whisper.cpp
-  - 文字起こし
-  - ポッドキャスト
-  - 学習
-source_article: "ks.221228_📅KS005_Obsidian_Canvasのファーストインプレッション"
+- Whisper.cpp
+- 文字起こし
+- ポッドキャスト
+- 学習
+source_article: ks.221228_📅KS005_Obsidian_Canvasのファーストインプレッション
+note_type: method
 ---
 
 # Whisper.cppを活用した動画の文字起こし

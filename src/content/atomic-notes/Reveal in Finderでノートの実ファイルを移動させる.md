@@ -1,9 +1,10 @@
 ---
 tags:
-  - Vault管理
-  - ファイル操作
-  - Obsidian機能
+- Vault管理
+- ファイル操作
+- Obsidian機能
 created: 2025-01-02
+note_type: method
 ---
 
 # Reveal in Finderでノートの実ファイルを移動させる

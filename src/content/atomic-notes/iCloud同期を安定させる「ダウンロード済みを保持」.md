@@ -1,12 +1,13 @@
 ---
 project: an
 title: iCloud同期を安定させる「ダウンロード済みを保持」
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - モバイル
-  - トラブルシューティング
-source_article: "ks.251226_Obsidianを「スマホで上手く使う」ための設定のコツ"
+- Obsidian
+- モバイル
+- トラブルシューティング
+source_article: ks.251226_Obsidianを「スマホで上手く使う」ための設定のコツ
+note_type: method
 ---
 
 # iCloud同期を安定させる「ダウンロード済みを保持」

@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTで第一歩を聞いて方向性を掴む
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - 学習方法
-  - workflow
+- ChatGPT活用
+- 学習方法
+- workflow
+note_type: method
 ---
 
 # ChatGPTで第一歩を聞いて方向性を掴む

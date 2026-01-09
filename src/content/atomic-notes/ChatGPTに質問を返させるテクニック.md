@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTに質問を返させるテクニック
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - workflow
-  - テクニック
+- ChatGPT活用
+- workflow
+- テクニック
+note_type: method
 ---
 
 # ChatGPTに質問を返させるテクニック

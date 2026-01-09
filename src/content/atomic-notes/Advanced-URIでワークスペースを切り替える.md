@@ -1,11 +1,12 @@
 ---
 project: an
 title: Advanced URIでワークスペースを切り替える
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - 仕事術
-source_article: "ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る"
+- Obsidian
+- 仕事術
+source_article: ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る
+note_type: method
 ---
 
 # Advanced URIでワークスペースを切り替える

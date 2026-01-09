@@ -1,13 +1,14 @@
 ---
 project: an
 title: AIとの対話を通じた思考の整理
-prefix: ""
+prefix: ''
 topic:
-  - ChatGPT
-  - 思考整理
-  - AI協業
-  - 執筆
-source_article: "ks.230219_🔧KS017_ChatGPTでどれだけの「文章サポート」ができるのか"
+- ChatGPT
+- 思考整理
+- AI協業
+- 執筆
+source_article: ks.230219_🔧KS017_ChatGPTでどれだけの「文章サポート」ができるのか
+note_type: method
 ---
 
 # AIとの対話を通じた思考の整理

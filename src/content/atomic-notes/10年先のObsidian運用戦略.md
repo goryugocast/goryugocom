@@ -2,9 +2,10 @@
 project: an
 title: 10年先のObsidian運用戦略
 topic:
-  - Obsidian
-  - 長期運用
-  - 変化対応
+- Obsidian
+- 長期運用
+- 変化対応
+note_type: insight
 ---
 
 # 10年先のObsidian運用戦略

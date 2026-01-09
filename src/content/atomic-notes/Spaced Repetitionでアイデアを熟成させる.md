@@ -2,9 +2,10 @@
 project: an
 title: Spaced Repetitionでアイデアを熟成させる
 topic:
-  - Spaced Repetition
-  - 思考法
-  - アイデア創出
+- Spaced Repetition
+- 思考法
+- アイデア創出
+note_type: method
 ---
 
 # Spaced Repetitionでアイデアを熟成させる

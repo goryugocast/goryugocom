@@ -1,11 +1,12 @@
 ---
 project: an
 title: 一行ずつコメントをつけてとChatGPTに依頼する
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - workflow
+- ChatGPT活用
+- プログラミング入門
+- workflow
+note_type: method
 ---
 
 # 一行ずつコメントをつけてとChatGPTに依頼する

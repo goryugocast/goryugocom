@@ -1,12 +1,13 @@
 ---
 project: an
 title: 情報収集とツールの選び方：短期的ハマりへの対応
-prefix: 
+prefix: null
 topic:
-  - 情報収集
-  - ツール選択
-  - 効率
-source_article: "ks.230727_Obsidianを使わないメモ整理の例"
+- 情報収集
+- ツール選択
+- 効率
+source_article: ks.230727_Obsidianを使わないメモ整理の例
+note_type: technique
 ---
 
 # 情報収集とツールの選び方：短期的ハマりへの対応

@@ -1,12 +1,13 @@
 ---
 project: an
 title: タスクをアトミック化する重要性：Logseqで「書く」ことから始める具体化
-prefix: 
+prefix: null
 topic:
-  - タスク管理
-  - アトミック思考
-  - Logseq
-source_article: "ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術"
+- タスク管理
+- アトミック思考
+- Logseq
+source_article: ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術
+note_type: insight
 ---
 
 # タスクをアトミック化する重要性：Logseqで「書く」ことから始める具体化

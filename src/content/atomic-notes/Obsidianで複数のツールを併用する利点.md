@@ -1,9 +1,10 @@
 ---
 project: an
 title: Obsidianで複数のツールを併用する利点
-prefix:
+prefix: null
 topic:
-  - workflow
+- workflow
+note_type: method
 ---
 
 Obsidian一つですべてを完結させようとせず、用途に応じて他のツールも併用する方が効率的。現代のコンピュータなら、複数のアプリを同時に動かしても問題ない。

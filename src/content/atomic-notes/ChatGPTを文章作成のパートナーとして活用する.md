@@ -1,13 +1,14 @@
 ---
 project: an
 title: ChatGPTを文章作成のパートナーとして活用する
-prefix: ""
+prefix: ''
 topic:
-  - ChatGPT
-  - 文章作成
-  - 執筆
-  - AI協業
-source_article: "ks.230219_🔧KS017_ChatGPTでどれだけの「文章サポート」ができるのか"
+- ChatGPT
+- 文章作成
+- 執筆
+- AI協業
+source_article: ks.230219_🔧KS017_ChatGPTでどれだけの「文章サポート」ができるのか
+note_type: method
 ---
 
 # ChatGPTを文章作成のパートナーとして活用する

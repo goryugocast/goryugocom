@@ -3,6 +3,7 @@ title: DataViewでシリーズの過去と未来のノートを一覧表示す�
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:23:38
+note_type: method
 ---
 
 # DataViewでシリーズの過去と未来のノートを一覧表示する

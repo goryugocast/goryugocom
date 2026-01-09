@@ -1,10 +1,11 @@
 ---
 project: an
 title: draftタグによる未完成ノートの管理
-prefix:
+prefix: null
 topic:
-  - workflow
-  - tool
+- workflow
+- tool
+note_type: method
 ---
 
 # draftタグによる未完成ノートの管理

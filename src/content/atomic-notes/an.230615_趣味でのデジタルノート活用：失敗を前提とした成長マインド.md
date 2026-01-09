@@ -1,12 +1,13 @@
 ---
 project: an
 title: 趣味でのデジタルノート活用：失敗を前提とした成長マインド
-prefix: 
+prefix: null
 topic:
-  - 趣味
-  - 自己成長
-  - 学習
-source_article: "ks.230615_目的を見失わないようにするためのデイリーノート"
+- 趣味
+- 自己成長
+- 学習
+source_article: ks.230615_目的を見失わないようにするためのデイリーノート
+note_type: principle
 ---
 
 # 趣味でのデジタルノート活用：失敗を前提とした成長マインド

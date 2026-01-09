@@ -2,9 +2,10 @@
 project: an
 title: Zettelkastenとプロジェクト管理の連携
 topic:
-  - Zettelkasten
-  - プロジェクト管理
-  - 思考法
+- Zettelkasten
+- プロジェクト管理
+- 思考法
+note_type: insight
 ---
 
 # Zettelkastenとプロジェクト管理の連携

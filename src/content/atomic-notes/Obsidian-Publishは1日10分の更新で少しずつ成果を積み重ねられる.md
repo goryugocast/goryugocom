@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidian Publishは1日10分の更新で少しずつ成果を積み重ねられる
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - 仕事術
-source_article: "ks.230215_📖1日10分の小さな成果を積み重ねて大きなものを作る"
+- Obsidian
+- 仕事術
+source_article: ks.230215_📖1日10分の小さな成果を積み重ねて大きなものを作る
+note_type: method
 ---
 
 # Obsidian Publishは1日10分の更新で少しずつ成果を積み重ねられる

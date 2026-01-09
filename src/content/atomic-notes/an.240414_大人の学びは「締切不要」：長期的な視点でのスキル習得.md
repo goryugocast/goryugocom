@@ -1,12 +1,13 @@
 ---
 project: an
 title: 大人の学びは「締切不要」：長期的な視点でのスキル習得
-prefix: 
+prefix: null
 topic:
-  - 学び
-  - 継続学習
-  - 時間管理
-source_article: "ks.240414_大人の学び方を変える趣味理論のすすめ"
+- 学び
+- 継続学習
+- 時間管理
+source_article: ks.240414_大人の学び方を変える趣味理論のすすめ
+note_type: insight
 ---
 
 # 大人の学びは「締切不要」：長期的な視点でのスキル習得

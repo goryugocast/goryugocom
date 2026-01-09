@@ -2,9 +2,10 @@
 project: an
 title: Johnny Decimalをサイドバーに表示する
 topic:
-  - Johnny Decimal
-  - Obsidian
-  - UI/UX
+- Johnny Decimal
+- Obsidian
+- UI/UX
+note_type: method
 ---
 
 # Johnny Decimalをサイドバーに表示する

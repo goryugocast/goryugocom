@@ -2,9 +2,10 @@
 project: an
 title: Cursorによるリピートタスクのアーカイブ自動化
 topic:
-  - Cursor
-  - 自動化
-  - タスク管理
+- Cursor
+- 自動化
+- タスク管理
+note_type: method
 ---
 
 # Cursorによるリピートタスクのアーカイブ自動化

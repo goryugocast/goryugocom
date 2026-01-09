@@ -1,9 +1,10 @@
 ---
 project: an
 title: Note Composerでノートをリンクごとマージする
-prefix:
+prefix: null
 topic:
-  - plugin
+- plugin
+note_type: method
 ---
 
 Note Composerプラグインのマージ機能を使うと、複数のノートを統合するときに、他のノートからのリンクも自動的に更新される。

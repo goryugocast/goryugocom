@@ -1,8 +1,9 @@
 ---
-title: "Spaced Repetitionで現実的な「いつかやるリスト」を実現する"
+title: Spaced Repetitionで現実的な「いつかやるリスト」を実現する
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:29:37
+note_type: method
 ---
 
 # Spaced Repetitionで現実的な「いつかやるリスト」を実現する

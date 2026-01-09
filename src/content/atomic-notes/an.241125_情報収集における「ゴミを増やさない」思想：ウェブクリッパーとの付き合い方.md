@@ -1,12 +1,13 @@
 ---
 project: an
 title: 情報収集における「ゴミを増やさない」思想：ウェブクリッパーとの付き合い方
-prefix: 
+prefix: null
 topic:
-  - 情報収集
-  - ウェブクリッパー
-  - 効率化
-source_article: "ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る"
+- 情報収集
+- ウェブクリッパー
+- 効率化
+source_article: ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る
+note_type: insight
 ---
 
 # 情報収集における「ゴミを増やさない」思想：ウェブクリッパーとの付き合い方

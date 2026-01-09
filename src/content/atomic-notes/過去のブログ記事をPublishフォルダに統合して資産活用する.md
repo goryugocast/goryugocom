@@ -2,16 +2,17 @@
 title: 過去のブログ記事をPublishフォルダに統合して資産活用する
 description: 既存ブログの記事をObsidian Publishに集約し、新たな視点で提供
 aliases:
-  - 記事の再利用
-  - Publishへの移行
-  - コンテンツ資産化
+- 記事の再利用
+- Publishへの移行
+- コンテンツ資産化
 tags:
-  - Obsidian
-  - Publish
-  - ブログ運営
-  - コンテンツマーケティング
+- Obsidian
+- Publish
+- ブログ運営
+- コンテンツマーケティング
 topics:
-  - Obsidianの全技術
+- Obsidianの全技術
+note_type: method
 ---
 
 過去に別プラットフォームで書いたブログ記事をObsidian Publishフォルダに集約することで、既存コンテンツを新たな価値として提供し直すことができる。

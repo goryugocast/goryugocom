@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianとたすくまの役割分担：思考を伴うタスクと自動化されたルーティン
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - たすくま
-  - タスク管理
-source_article: "ks.250211_Obsidianとたすくまを使ったタスク管理"
+- Obsidian
+- たすくま
+- タスク管理
+source_article: ks.250211_Obsidianとたすくまを使ったタスク管理
+note_type: method
 ---
 
 # Obsidianとたすくまの役割分担：思考を伴うタスクと自動化されたルーティン

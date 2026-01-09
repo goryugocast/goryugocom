@@ -2,16 +2,17 @@
 title: Obsidian SyncはiCloudの不安定性を補完する代替手段である
 description: クラウド同期の課題を解決するObsidian公式のSync機能
 aliases:
-  - Obsidian Syncの役割
-  - iCloud代替
-  - 同期の信頼性
+- Obsidian Syncの役割
+- iCloud代替
+- 同期の信頼性
 tags:
-  - Obsidian
-  - Sync
-  - クラウド同期
-  - モバイル対応
+- Obsidian
+- Sync
+- クラウド同期
+- モバイル対応
 topics:
-  - Obsidianの全技術
+- Obsidianの全技術
+note_type: insight
 ---
 
 Obsidian Syncは、iCloudなどの汎用クラウド同期が不安定な場合の有力な代替手段である。

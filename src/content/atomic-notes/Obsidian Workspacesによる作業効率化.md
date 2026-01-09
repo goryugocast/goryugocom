@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Workspacesによる作業効率化
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Workspaces
-  - 生産性
-source_article: "ks.220929_KS003_アトミックシンキング用のObsidianの全体像とフォルダ構成"
+- Obsidian
+- Workspaces
+- 生産性
+source_article: ks.220929_KS003_アトミックシンキング用のObsidianの全体像とフォルダ構成
+note_type: method
 ---
 
 # Obsidian Workspacesによる作業効率化

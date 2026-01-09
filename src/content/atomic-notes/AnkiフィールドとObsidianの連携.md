@@ -1,13 +1,14 @@
 ---
 project: an
 title: AnkiフィールドとObsidianの連携
-prefix: ""
+prefix: ''
 topic:
-  - Anki
-  - Obsidian
-  - 設定
-  - データ連携
-source_article: "ks.221221_🔧KS011_Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る"
+- Anki
+- Obsidian
+- 設定
+- データ連携
+source_article: ks.221221_🔧KS011_Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る
+note_type: insight
 ---
 
 # AnkiフィールドとObsidianの連携

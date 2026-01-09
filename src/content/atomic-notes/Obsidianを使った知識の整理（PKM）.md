@@ -2,9 +2,10 @@
 project: an
 title: Obsidianを使った知識の整理（PKM）
 topic:
-  - Obsidian
-  - 知識管理
-  - 読書術
+- Obsidian
+- 知識管理
+- 読書術
+note_type: method
 ---
 
 # Obsidianを使った知識の整理（PKM）

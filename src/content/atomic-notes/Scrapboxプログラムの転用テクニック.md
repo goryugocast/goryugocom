@@ -1,12 +1,13 @@
 ---
 project: an
 title: Scrapboxプログラムの転用テクニック
-prefix:
+prefix: null
 topic:
-  - workflow
-  - tool
-  - javascript
-  - bookmarklet
+- workflow
+- tool
+- javascript
+- bookmarklet
+note_type: technique
 ---
 
 # Scrapboxプログラムの転用テクニック

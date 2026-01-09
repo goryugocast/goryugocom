@@ -1,12 +1,13 @@
 ---
 project: an
 title: Advanced URIの2つの重要ポイント
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - workflow
+- obsidian
+- tool
+- advanced-uri
+- workflow
+note_type: technique
 ---
 
 # Advanced URIの2つの重要ポイント

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Dataviewでフロントマターとインラインフィールドを活用する
-prefix:
+prefix: null
 topic:
-  - dataview
-  - obsidian
-  - metadata
-  - tool
+- dataview
+- obsidian
+- metadata
+- tool
+note_type: method
 ---
 
 # Dataviewでフロントマターとインラインフィールドを活用する

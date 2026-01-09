@@ -1,9 +1,10 @@
 ---
 tags:
-  - Note Refactor
-  - Obsidian設定
-  - レビュー運用
+- Note Refactor
+- Obsidian設定
+- レビュー運用
 created: 2025-01-02
+note_type: method
 ---
 
 # 切り出し時に自動的にreviewタグを付与する設定

@@ -1,12 +1,13 @@
 ---
 project: an
 title: やる気がない時のためのモチベーション維持術
-prefix: 
+prefix: null
 topic:
-  - モチベーション
-  - 継続
-  - 記録
-source_article: "ks.250714_長い時間の練習は、すればするほど下手になる"
+- モチベーション
+- 継続
+- 記録
+source_article: ks.250714_長い時間の練習は、すればするほど下手になる
+note_type: method
 ---
 
 # やる気がない時のためのモチベーション維持術

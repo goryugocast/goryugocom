@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIでAIと対話しながらルールを改善
 topic:
-  - Gemini CLI
-  - AI
-  - プロンプトエンジニアリング
+- Gemini CLI
+- AI
+- プロンプトエンジニアリング
+note_type: principle
 ---
 
 # Gemini CLIでAIと対話しながらルールを改善

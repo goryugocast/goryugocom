@@ -5,6 +5,7 @@ category: 同期・データ管理
 series: Obsidianの全技術
 episode: obv10
 source: ks.251226_Obsidianを「スマホで上手く使う」ための設定のコツ
+note_type: insight
 ---
 
 ## 比較表

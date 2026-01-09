@@ -2,9 +2,10 @@
 project: an
 title: PDFテンプレートを活用した手書きノート術
 topic:
-  - 手書き
-  - PDF
-  - テンプレート
+- 手書き
+- PDF
+- テンプレート
+note_type: method
 ---
 
 # PDFテンプレートを活用した手書きノート術

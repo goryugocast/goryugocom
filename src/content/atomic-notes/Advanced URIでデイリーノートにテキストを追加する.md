@@ -1,12 +1,13 @@
 ---
 project: an
 title: Advanced URIでデイリーノートにテキストを追加する
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - plugin
-  - automation
-  - bookmarklet
+- obsidian
+- plugin
+- automation
+- bookmarklet
+note_type: method
 ---
 
 # Advanced URIでデイリーノートにテキストを追加する

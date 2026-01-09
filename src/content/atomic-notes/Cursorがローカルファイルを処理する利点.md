@@ -2,9 +2,10 @@
 project: an
 title: Cursorがローカルファイルを処理する利点
 topic:
-  - Cursor
-  - AI
-  - ワークフロー
+- Cursor
+- AI
+- ワークフロー
+note_type: technique
 ---
 
 # Cursorがローカルファイルを処理する利点

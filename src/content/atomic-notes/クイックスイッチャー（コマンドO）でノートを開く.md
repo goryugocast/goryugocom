@@ -2,9 +2,10 @@
 project: an
 title: クイックスイッチャー（コマンドO）でノートを開く
 topic:
-  - Obsidian
-  - 検索
-  - ワークフロー
+- Obsidian
+- 検索
+- ワークフロー
+note_type: method
 ---
 
 # クイックスイッチャー（コマンドO）でノートを開く

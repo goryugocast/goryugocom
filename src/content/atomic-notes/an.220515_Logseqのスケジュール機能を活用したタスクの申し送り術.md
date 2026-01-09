@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqのスケジュール機能を活用したタスクの申し送り術
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - スケジュール
-  - タスク管理
-source_article: "ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術"
+- Logseq
+- スケジュール
+- タスク管理
+source_article: ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術
+note_type: method
 ---
 
 # Logseqのスケジュール機能を活用したタスクの申し送り術

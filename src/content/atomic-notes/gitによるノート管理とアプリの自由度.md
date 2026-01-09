@@ -1,13 +1,14 @@
 ---
 project: an
 title: gitによるノート管理とアプリの自由度
-prefix: ""
+prefix: ''
 topic:
-  - Git
-  - Obsidian
-  - データ管理
-  - アプリケーション
-source_article: "ks.220912_🔧KS001_Obsidianのデータをgitで管理する方法とそのメリット"
+- Git
+- Obsidian
+- データ管理
+- アプリケーション
+source_article: ks.220912_🔧KS001_Obsidianのデータをgitで管理する方法とそのメリット
+note_type: insight
 ---
 
 # gitによるノート管理とアプリの自由度

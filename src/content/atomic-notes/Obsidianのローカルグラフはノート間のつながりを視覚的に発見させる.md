@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianのローカルグラフはノート間のつながりを視覚的に発見させる
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Graph
-  - リンク
-source_article: "ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定"
+- Obsidian
+- Graph
+- リンク
+source_article: ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定
+note_type: method
 ---
 
 # Obsidianのローカルグラフはノート間のつながりを視覚的に発見させる

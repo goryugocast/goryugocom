@@ -2,9 +2,10 @@
 project: an
 title: Drafts：手書きメモアプリの活用
 topic:
-  - Drafts
-  - 手書き
-  - 読書メモ
+- Drafts
+- 手書き
+- 読書メモ
+note_type: method
 ---
 
 # Drafts：手書きメモアプリの活用

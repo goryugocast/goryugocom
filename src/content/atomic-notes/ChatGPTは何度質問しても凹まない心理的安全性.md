@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTは何度質問しても凹まない心理的安全性
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - concept
-  - 学習方法
+- ChatGPT活用
+- concept
+- 学習方法
+note_type: insight
 ---
 
 # ChatGPTは何度質問しても凹まない心理的安全性

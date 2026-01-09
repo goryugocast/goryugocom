@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidianの4分割画面で情報を俯瞰する
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - UI/UX
-source_article: "ks.231226_🎙KS001_超整理法的Obsidian整理術"
+- Obsidian
+- UI/UX
+source_article: ks.231226_🎙KS001_超整理法的Obsidian整理術
+note_type: method
 ---
 
 # Obsidianの4分割画面で情報を俯瞰する

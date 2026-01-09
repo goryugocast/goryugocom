@@ -1,11 +1,12 @@
 ---
 project: an
 title: AIの活用スキルは試行錯誤と経験の積み重ねでしか習得できない
-prefix: ""
+prefix: ''
 topic:
-  - AI
-  - 学習法
-source_article: "ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める"
+- AI
+- 学習法
+source_article: ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める
+note_type: principle
 ---
 
 # AIの活用スキルは試行錯誤と経験の積み重ねでしか習得できない

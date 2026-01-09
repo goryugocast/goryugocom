@@ -1,9 +1,10 @@
 ---
 project: an
 title: Backlinksのunlinked mentionsで潜在的な関連を発見する
-prefix:
+prefix: null
 topic:
-  - workflow
+- workflow
+note_type: method
 ---
 
 Backlinksプラグインの「Unlinked mentions」機能は、リンクされていないがノートタイトルと同じテキストが含まれている箇所を検出する。

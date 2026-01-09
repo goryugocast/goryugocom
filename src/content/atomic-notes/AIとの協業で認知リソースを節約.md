@@ -2,9 +2,10 @@
 project: an
 title: AIとの協業で認知リソースを節約
 topic:
-  - AI活用
-  - 効率化
-  - 認知科学
+- AI活用
+- 効率化
+- 認知科学
+note_type: method
 ---
 
 # AIとの協業で認知リソースを節約

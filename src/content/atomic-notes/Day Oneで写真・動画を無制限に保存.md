@@ -1,11 +1,12 @@
 ---
 project: an
 title: Day Oneで写真・動画を無制限に保存
-prefix:
+prefix: null
 topic:
-  - journal
-  - tool
-  - day-one
+- journal
+- tool
+- day-one
+note_type: method
 ---
 
 # Day Oneで写真・動画を無制限に保存

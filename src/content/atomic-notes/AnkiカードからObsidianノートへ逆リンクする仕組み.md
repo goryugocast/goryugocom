@@ -1,11 +1,12 @@
 ---
 project: an
 title: AnkiカードからObsidianノートへ逆リンクする仕組み
-prefix:
+prefix: null
 topic:
-  - workflow
-  - plugin
-  - anki
+- workflow
+- plugin
+- anki
+note_type: method
 ---
 
 # AnkiカードからObsidianノートへ逆リンクする仕組み

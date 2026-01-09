@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPT時代でも学習は必要だが手を出しやすくなった
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - 学習方法
-  - concept
+- ChatGPT活用
+- 学習方法
+- concept
+note_type: method
 ---
 
 # ChatGPT時代でも学習は必要だが手を出しやすくなった

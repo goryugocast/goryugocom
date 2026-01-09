@@ -1,11 +1,12 @@
 ---
 project: an
 title: Apple Journalへの期待と柔軟性
-prefix:
+prefix: null
 topic:
-  - journal
-  - tool
-  - future
+- journal
+- tool
+- future
+note_type: insight
 ---
 
 # Apple Journalへの期待と柔軟性

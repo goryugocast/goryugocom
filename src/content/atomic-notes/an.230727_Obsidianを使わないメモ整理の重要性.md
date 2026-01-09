@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianを使わないメモ整理の重要性
-prefix: 
+prefix: null
 topic:
-  - メモ整理
-  - ツール活用
-  - 情報収集
-source_article: "ks.230727_Obsidianを使わないメモ整理の例"
+- メモ整理
+- ツール活用
+- 情報収集
+source_article: ks.230727_Obsidianを使わないメモ整理の例
+note_type: insight
 ---
 
 # Obsidianを使わないメモ整理の重要性

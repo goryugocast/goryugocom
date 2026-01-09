@@ -1,11 +1,12 @@
 ---
 project: an
 title: JavaScriptかPythonを学ぶべき理由
-prefix:
+prefix: null
 topic:
-  - プログラミング入門
-  - JavaScript
-  - Python
+- プログラミング入門
+- JavaScript
+- Python
+note_type: principle
 ---
 
 # JavaScriptかPythonを学ぶべき理由

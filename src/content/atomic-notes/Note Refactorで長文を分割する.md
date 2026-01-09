@@ -1,11 +1,12 @@
 ---
 project: an
 title: Note Refactorで長文を分割する
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - plugin
-  - atomic-thinking
+- obsidian
+- plugin
+- atomic-thinking
+note_type: method
 ---
 
 # Note Refactorで長文を分割する

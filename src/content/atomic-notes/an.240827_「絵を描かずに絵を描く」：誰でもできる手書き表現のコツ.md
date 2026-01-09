@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「絵を描かずに絵を描く」：誰でもできる手書き表現のコツ
-prefix: 
+prefix: null
 topic:
-  - 手書き
-  - 表現
-  - スキル習得
-source_article: "ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由"
+- 手書き
+- 表現
+- スキル習得
+source_article: ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由
+note_type: technique
 ---
 
 # 「絵を描かずに絵を描く」：誰でもできる手書き表現のコツ

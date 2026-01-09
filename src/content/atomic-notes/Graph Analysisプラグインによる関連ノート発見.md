@@ -1,10 +1,11 @@
 ---
 project: an
 title: Graph Analysisプラグインによる関連ノート発見
-prefix:
+prefix: null
 topic:
-  - plugin
-  - tool
+- plugin
+- tool
+note_type: insight
 ---
 
 # Graph Analysisプラグインによる関連ノート発見

@@ -1,13 +1,14 @@
 ---
 project: an
 title: ObsidianとTaskChuteの併用戦略
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - TaskChute
-  - タスク管理
-  - 知識管理
-source_article: "ks.240902_🎙KS240902_現状をメタ的に把握するためにObsidianを使う"
+- Obsidian
+- TaskChute
+- タスク管理
+- 知識管理
+source_article: ks.240902_🎙KS240902_現状をメタ的に把握するためにObsidianを使う
+note_type: insight
 ---
 
 # ObsidianとTaskChuteの併用戦略

@@ -1,13 +1,14 @@
 ---
 project: an
 title: AI時代における知識習得の重要性
-prefix: ""
+prefix: ''
 topic:
-  - AI
-  - 知識
-  - 学習
-  - 情報リテラシー
-source_article: "ks.230308_🔧KS018_Amazonの書籍販売ページを開き1クリックでObsidianに書誌情報ノートを作るブックマークレット"
+- AI
+- 知識
+- 学習
+- 情報リテラシー
+source_article: ks.230308_🔧KS018_Amazonの書籍販売ページを開き1クリックでObsidianに書誌情報ノートを作るブックマークレット
+note_type: insight
 ---
 
 # AI時代における知識習得の重要性

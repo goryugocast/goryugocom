@@ -2,9 +2,10 @@
 project: an
 title: AIに意図を伝えるルールファイルの育成
 topic:
-  - Cursor
-  - AI
-  - 育成
+- Cursor
+- AI
+- 育成
+note_type: principle
 ---
 
 # AIに意図を伝えるルールファイルの育成

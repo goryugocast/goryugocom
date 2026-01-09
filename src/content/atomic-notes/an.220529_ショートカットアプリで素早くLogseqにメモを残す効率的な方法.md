@@ -1,12 +1,13 @@
 ---
 project: an
 title: ショートカットアプリでLogseqに素早くメモを残す効率的な方法
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - ショートカットアプリ
-  - メモ
-source_article: "ks.220529_ショートカットアプリで素早くLogseqにメモを残す"
+- Logseq
+- ショートカットアプリ
+- メモ
+source_article: ks.220529_ショートカットアプリで素早くLogseqにメモを残す
+note_type: method
 ---
 
 # ショートカットアプリでLogseqに素早くメモを残す効率的な方法

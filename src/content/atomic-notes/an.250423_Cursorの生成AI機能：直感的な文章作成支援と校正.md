@@ -1,12 +1,13 @@
 ---
 project: an
 title: Cursorの生成AI機能：直感的な文章作成支援と校正
-prefix: 
+prefix: null
 topic:
-  - Cursor
-  - 生成AI
-  - 執筆支援
-source_article: "ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる"
+- Cursor
+- 生成AI
+- 執筆支援
+source_article: ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる
+note_type: method
 ---
 
 # Cursorの生成AI機能：直感的な文章作成支援と校正

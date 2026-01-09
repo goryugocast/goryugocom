@@ -3,11 +3,12 @@ title: Obsidianはローカルの純粋なファイルシステムである強�
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - ファイルシステム
-  - プラットフォーム独立性
+- Obsidian
+- ファイルシステム
+- プラットフォーム独立性
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: technique
 ---
 
 ## 概要

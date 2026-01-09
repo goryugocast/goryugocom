@@ -2,9 +2,10 @@
 project: an
 title: Dataviewで自動タスクリストを作成
 topic:
-  - Obsidian
-  - Dataview
-  - 自動化
+- Obsidian
+- Dataview
+- 自動化
+note_type: method
 ---
 
 # Dataviewで自動タスクリストを作成

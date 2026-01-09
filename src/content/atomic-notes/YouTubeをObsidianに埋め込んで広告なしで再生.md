@@ -1,11 +1,12 @@
 ---
 project: an
 title: YouTubeをObsidianに埋め込んで広告なしで再生
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - youtube
+- obsidian
+- tool
+- youtube
+note_type: technique
 ---
 
 # YouTubeをObsidianに埋め込んで広告なしで再生

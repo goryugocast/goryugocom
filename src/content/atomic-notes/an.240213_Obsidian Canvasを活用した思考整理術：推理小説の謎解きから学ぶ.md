@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Canvasを活用した思考整理術：推理小説の謎解きから学ぶ
-prefix: 
+prefix: null
 topic:
-  - Obsidian Canvas
-  - 思考整理
-  - 謎解き
-source_article: "ks.240213_謎解きの続きはObsidianで"
+- Obsidian Canvas
+- 思考整理
+- 謎解き
+source_article: ks.240213_謎解きの続きはObsidianで
+note_type: method
 ---
 
 # Obsidian Canvasを活用した思考整理術：推理小説の謎解きから学ぶ

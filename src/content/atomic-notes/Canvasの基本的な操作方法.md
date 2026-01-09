@@ -2,9 +2,10 @@
 project: an
 title: Canvasの基本的な操作方法
 topic:
-  - Obsidian
-  - Canvas
-  - チュートリアル
+- Obsidian
+- Canvas
+- チュートリアル
+note_type: method
 ---
 
 # Canvasの基本的な操作方法

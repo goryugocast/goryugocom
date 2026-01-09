@@ -1,12 +1,13 @@
 ---
 project: an
 title: 知識と身体化のアプローチ：実践的なギター学習法
-prefix: 
+prefix: null
 topic:
-  - ギター
-  - 学習
-  - 身体化
-source_article: "ks.230703_脳筋な学習では自分が求めることができるようにならない"
+- ギター
+- 学習
+- 身体化
+source_article: ks.230703_脳筋な学習では自分が求めることができるようにならない
+note_type: method
 ---
 
 # 知識と身体化のアプローチ：実践的なギター学習法

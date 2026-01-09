@@ -1,12 +1,13 @@
 ---
 project: an
 title: ショートカットアプリでグラフィカルなアプリリンクを自動生成する方法
-prefix: 
+prefix: null
 topic:
-  - ショートカットアプリ
-  - Obsidian
-  - 効率化
-source_article: "ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る"
+- ショートカットアプリ
+- Obsidian
+- 効率化
+source_article: ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る
+note_type: method
 ---
 
 # ショートカットアプリでグラフィカルなアプリリンクを自動生成する方法

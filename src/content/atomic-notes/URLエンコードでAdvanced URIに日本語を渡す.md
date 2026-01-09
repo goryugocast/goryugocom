@@ -1,12 +1,13 @@
 ---
 project: an
 title: URLエンコードでAdvanced URIに日本語を渡す
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - technical
+- obsidian
+- tool
+- advanced-uri
+- technical
+note_type: method
 ---
 
 # URLエンコードでAdvanced URIに日本語を渡す

@@ -1,9 +1,10 @@
 ---
 project: an
 title: Quick switcherとCommand paletteの使い分け
-prefix:
+prefix: null
 topic:
-  - workflow
+- workflow
+note_type: method
 ---
 
 Obsidianをキーボードだけで素早く操作するには、Quick switcherとCommand paletteの2つを使いこなすことが重要。

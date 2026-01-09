@@ -1,9 +1,10 @@
 ---
 project: an
 title: ショートカット設定をJSONファイルで共有する
-prefix:
+prefix: null
 topic:
-  - tool
+- tool
+note_type: method
 ---
 
 Obsidianのキーボードショートカット設定は、`.obsidian/hotkeys.json`というファイルに保存されている。このファイルをコピーすれば、別の環境でも同じショートカット設定を再現できる。

@@ -1,11 +1,12 @@
 ---
 title: DataViewはPublishで表示されないため手動で整理する
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - DataView
-  - 制約と対応
+- Obsidian
+- ObsidianPublish
+- DataView
+- 制約と対応
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # DataViewはPublishで表示されないため手動で整理する

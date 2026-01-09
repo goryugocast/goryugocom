@@ -2,9 +2,10 @@
 project: an
 title: 手書きとObsidian連携のワークフロー構築
 topic:
-  - Obsidian
-  - 手書き
-  - ワークフロー
+- Obsidian
+- 手書き
+- ワークフロー
+note_type: method
 ---
 
 # 手書きとObsidian連携のワークフロー構築

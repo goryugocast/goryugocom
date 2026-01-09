@@ -2,9 +2,10 @@
 project: an
 title: AIを部下のように育て、レビューする
 topic:
-  - AI活用
-  - 育成
-  - マインドセット
+- AI活用
+- 育成
+- マインドセット
+note_type: method
 ---
 
 # AIを部下のように育て、レビューする

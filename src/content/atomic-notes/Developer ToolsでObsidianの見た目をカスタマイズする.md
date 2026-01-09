@@ -1,9 +1,10 @@
 ---
 project: an
 title: Developer ToolsでObsidianの見た目をカスタマイズする
-prefix:
+prefix: null
 topic:
-  - tool
+- tool
+note_type: method
 ---
 
 ObsidianはChromiumベースのアプリケーションなので、ブラウザと同じようにDeveloper Toolsを使って見た目をカスタマイズできる。

@@ -2,9 +2,10 @@
 project: an
 title: Obsidianテンプレート作成へのCanvas活用
 topic:
-  - Obsidian
-  - Canvas
-  - プロジェクト管理
+- Obsidian
+- Canvas
+- プロジェクト管理
+note_type: method
 ---
 
 # Obsidianテンプレート作成へのCanvas活用

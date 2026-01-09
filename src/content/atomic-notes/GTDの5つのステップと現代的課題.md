@@ -1,12 +1,13 @@
 ---
 project: an
 title: GTDの5つのステップと現代的課題
-prefix:
+prefix: null
 topic:
-  - gtd
-  - task-management
-  - concept
-  - productivity
+- gtd
+- task-management
+- concept
+- productivity
+note_type: insight
 ---
 
 # GTDの5つのステップと現代的課題

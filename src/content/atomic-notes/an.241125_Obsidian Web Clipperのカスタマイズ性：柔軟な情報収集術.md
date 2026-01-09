@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Web Clipperのカスタマイズ性：柔軟な情報収集術
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Web Clipper
-  - 情報収集
-source_article: "ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る"
+- Obsidian
+- Web Clipper
+- 情報収集
+source_article: ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る
+note_type: method
 ---
 
 # Obsidian Web Clipperのカスタマイズ性：柔軟な情報収集術

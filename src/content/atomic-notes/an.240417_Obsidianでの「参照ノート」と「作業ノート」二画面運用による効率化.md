@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianでの「参照ノート」と「作業ノート」二画面運用による効率化
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 効率化
-  - ノート術
-source_article: "ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方"
+- Obsidian
+- 効率化
+- ノート術
+source_article: ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方
+note_type: method
 ---
 
 # Obsidianでの「参照ノート」と「作業ノート」二画面運用による効率化

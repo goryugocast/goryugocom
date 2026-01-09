@@ -2,8 +2,9 @@
 project: an
 title: Basesのフィルター機能でデータベースを絞り込む
 topic:
-  - Bases
-  - plugin
+- Bases
+- plugin
+note_type: method
 ---
 
 Basesプラグインでは、フィルター機能を使ってノートを条件で絞り込むことができる。例えば、`people: goryugo`というフィルターを設定すれば、特定の人物に関連する打ち合わせ履歴や関連ノートを一覧表示できる。

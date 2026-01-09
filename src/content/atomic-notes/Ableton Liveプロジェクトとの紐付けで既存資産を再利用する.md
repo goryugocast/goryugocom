@@ -3,12 +3,13 @@ title: Ableton Liveプロジェクトとの紐付けで既存資産を再利用�
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Ableton Live
-  - ファイル管理
-  - 音楽制作
+- Obsidian
+- Ableton Live
+- ファイル管理
+- 音楽制作
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: method
 ---
 
 ## 概要

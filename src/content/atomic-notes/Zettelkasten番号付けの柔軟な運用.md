@@ -2,9 +2,10 @@
 project: an
 title: Zettelkasten番号付けの柔軟な運用
 topic:
-  - Zettelkasten
-  - 知識管理
-  - 思考法
+- Zettelkasten
+- 知識管理
+- 思考法
+note_type: method
 ---
 
 # Zettelkasten番号付けの柔軟な運用

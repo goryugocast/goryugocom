@@ -3,12 +3,13 @@ title: Baseのインライン作成機能で別ファイルを不要にする
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Base
-  - プラグイン
-  - データベース
+- Obsidian
+- Base
+- プラグイン
+- データベース
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: method
 ---
 
 ## 概要

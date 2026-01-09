@@ -1,12 +1,13 @@
 ---
 project: an
 title: DataviewとAdvanced URIの組み合わせ
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - dataview
+- obsidian
+- tool
+- advanced-uri
+- dataview
+note_type: technique
 ---
 
 # DataviewとAdvanced URIの組み合わせ

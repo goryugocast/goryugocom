@@ -1,13 +1,14 @@
 ---
 project: an
 title: Obsidianデイリーノートと自作ショートカットの活用
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - デイリーノート
-  - ショートカット
-  - モバイルワークフロー
-source_article: "ks.221109_📅KS003_デイリーノートに追記、デイリーノートをワンタップで開く2つのショートカット"
+- Obsidian
+- デイリーノート
+- ショートカット
+- モバイルワークフロー
+source_article: ks.221109_📅KS003_デイリーノートに追記、デイリーノートをワンタップで開く2つのショートカット
+note_type: method
 ---
 
 # Obsidianデイリーノートと自作ショートカットの活用

@@ -2,9 +2,10 @@
 project: an
 title: 推理小説の情報をCanvasで整理する
 topic:
-  - Obsidian
-  - Canvas
-  - 読書術
+- Obsidian
+- Canvas
+- 読書術
+note_type: method
 ---
 
 # 推理小説の情報をCanvasで整理する

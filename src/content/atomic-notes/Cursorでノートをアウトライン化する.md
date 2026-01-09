@@ -2,9 +2,10 @@
 project: an
 title: Cursorでノートをアウトライン化する
 topic:
-  - Cursor
-  - Obsidian
-  - 情報整理
+- Cursor
+- Obsidian
+- 情報整理
+note_type: method
 ---
 
 # Cursorでノートをアウトライン化する

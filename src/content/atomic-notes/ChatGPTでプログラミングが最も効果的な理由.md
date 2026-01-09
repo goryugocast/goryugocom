@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTでプログラミングが最も効果的な理由
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - concept
+- ChatGPT活用
+- プログラミング入門
+- concept
+note_type: insight
 ---
 
 # ChatGPTでプログラミングが最も効果的な理由

@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「ふわっと上がるリマインド」：数に圧倒されないタスク管理術
-prefix: 
+prefix: null
 topic:
-  - タスク管理
-  - リマインド
-  - 効率化
-source_article: "ks.250211_Obsidianとたすくまを使ったタスク管理"
+- タスク管理
+- リマインド
+- 効率化
+source_article: ks.250211_Obsidianとたすくまを使ったタスク管理
+note_type: method
 ---
 
 # 「ふわっと上がるリマインド」：数に圧倒されないタスク管理術

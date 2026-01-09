@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesを使った動的なタスク管理
 topic:
-  - Obsidian
-  - Bases
-  - タスク管理
+- Obsidian
+- Bases
+- タスク管理
+note_type: method
 ---
 
 # Obsidian Basesを使った動的なタスク管理

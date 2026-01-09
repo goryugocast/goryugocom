@@ -1,12 +1,13 @@
 ---
 project: an
 title: Substack Notesの可能性と限界
-prefix: ""
+prefix: ''
 topic:
-  - Substack Notes
-  - SNS
-  - コミュニティ
-source_article: "ks.230501_📅KS009_ニュースレターをObsidian_Publishで整理"
+- Substack Notes
+- SNS
+- コミュニティ
+source_article: ks.230501_📅KS009_ニュースレターをObsidian_Publishで整理
+note_type: insight
 ---
 
 # Substack Notesの可能性と限界

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Spaced Repetitionを活用したタスクの柔軟な進め方
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - タスク管理
-source_article: "ks.250211_Obsidianとたすくまを使ったタスク管理"
+- Obsidian
+- Spaced Repetition
+- タスク管理
+source_article: ks.250211_Obsidianとたすくまを使ったタスク管理
+note_type: method
 ---
 
 # Obsidian Spaced Repetitionを活用したタスクの柔軟な進め方

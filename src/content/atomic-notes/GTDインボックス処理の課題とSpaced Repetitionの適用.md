@@ -1,13 +1,14 @@
 ---
 project: an
 title: GTDインボックス処理の課題とSpaced Repetitionの適用
-prefix: ""
+prefix: ''
 topic:
-  - GTD
-  - タスク管理
-  - Spaced Repetition
-  - インボックス
-source_article: "ks.221125_KS008_Obsidianに破綻しないGTDインボックスの仕組みを作る"
+- GTD
+- タスク管理
+- Spaced Repetition
+- インボックス
+source_article: ks.221125_KS008_Obsidianに破綻しないGTDインボックスの仕組みを作る
+note_type: insight
 ---
 
 # GTDインボックス処理の課題とSpaced Repetitionの適用

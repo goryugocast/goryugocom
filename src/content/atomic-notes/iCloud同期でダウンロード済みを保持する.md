@@ -2,9 +2,10 @@
 project: an
 title: iCloud同期でダウンロード済みを保持する
 topic:
-  - Obsidian
-  - モバイル
-  - 同期
+- Obsidian
+- モバイル
+- 同期
+note_type: method
 ---
 
 # iCloud同期でダウンロード済みを保持する

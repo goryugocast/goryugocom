@@ -2,16 +2,17 @@
 title: Publish current fileコマンドで高速更新が実現する
 description: モバイルで開いているノートを素早く公開できるコマンド
 aliases:
-  - 高速Publish術
-  - スマホからの更新
-  - 単一ファイル公開
+- 高速Publish術
+- スマホからの更新
+- 単一ファイル公開
 tags:
-  - Obsidian
-  - Publish
-  - モバイル
-  - コマンド
+- Obsidian
+- Publish
+- モバイル
+- コマンド
 topics:
-  - Obsidianの全技術
+- Obsidianの全技術
+note_type: method
 ---
 
 「Publish current file」はObsidian Publishで開いているノートのみを素早く公開できるコマンドである。

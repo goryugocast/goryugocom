@@ -2,9 +2,10 @@
 project: an
 title: Cursorのルールファイルとは何か
 topic:
-  - Cursor
-  - AI
-  - 自動化
+- Cursor
+- AI
+- 自動化
+note_type: principle
 ---
 
 # Cursorのルールファイルとは何か

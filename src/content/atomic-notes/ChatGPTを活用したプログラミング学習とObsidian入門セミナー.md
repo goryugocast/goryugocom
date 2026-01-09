@@ -1,13 +1,14 @@
 ---
 project: an
 title: ChatGPTを活用したプログラミング学習とObsidian入門セミナー
-prefix: ""
+prefix: ''
 topic:
-  - ChatGPT
-  - プログラミング学習
-  - Obsidian
-  - セミナー
-source_article: "ks.230322_📅KS007_文字数を揃えることによる書きやすさとバランスのよさ"
+- ChatGPT
+- プログラミング学習
+- Obsidian
+- セミナー
+source_article: ks.230322_📅KS007_文字数を揃えることによる書きやすさとバランスのよさ
+note_type: method
 ---
 
 # ChatGPTを活用したプログラミング学習とObsidian入門セミナー

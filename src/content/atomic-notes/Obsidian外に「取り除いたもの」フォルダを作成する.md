@@ -1,9 +1,10 @@
 ---
 tags:
-  - Vault管理
-  - ファイル操作
-  - ノート削除
+- Vault管理
+- ファイル操作
+- ノート削除
 created: 2025-01-02
+note_type: method
 ---
 
 # Obsidian外に「取り除いたもの」フォルダを作成する

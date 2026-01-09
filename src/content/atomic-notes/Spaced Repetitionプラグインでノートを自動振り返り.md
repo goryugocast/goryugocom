@@ -1,13 +1,14 @@
 ---
 project: an
 title: Spaced Repetitionプラグインでノートを自動振り返り
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - spaced-repetition
-  - workflow
-  - plugin
+- obsidian
+- tool
+- spaced-repetition
+- workflow
+- plugin
+note_type: method
 ---
 
 # Spaced Repetitionプラグインでノートを自動振り返り

@@ -1,15 +1,16 @@
 ---
 project: an
 title: iPadとApple Pencilを最高の「思考ツール」として活用する
-prefix: 
+prefix: null
 topic:
-  - iPad
-  - Apple Pencil
-  - デジタルツール
-  - 学習方法
-  - 読書
-  - 思考法
-source_article: "ks.250813_なぜ私たちは書かないと考えられないのか"
+- iPad
+- Apple Pencil
+- デジタルツール
+- 学習方法
+- 読書
+- 思考法
+source_article: ks.250813_なぜ私たちは書かないと考えられないのか
+note_type: method
 ---
 
 # iPadとApple Pencilを最高の「思考ツール」として活用する

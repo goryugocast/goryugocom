@@ -2,9 +2,10 @@
 project: an
 title: デジタルノートの進化とAIの影響
 topic:
-  - デジタルノート
-  - AI
-  - 知識管理
+- デジタルノート
+- AI
+- 知識管理
+note_type: insight
 ---
 
 # デジタルノートの進化とAIの影響

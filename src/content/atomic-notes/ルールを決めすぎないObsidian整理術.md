@@ -1,11 +1,12 @@
 ---
 project: an
 title: ルールを決めすぎないObsidian整理術
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - 整理術
-source_article: "ks.231226_🎙KS001_超整理法的Obsidian整理術"
+- Obsidian
+- 整理術
+source_article: ks.231226_🎙KS001_超整理法的Obsidian整理術
+note_type: principle
 ---
 
 # ルールを決めすぎないObsidian整理術

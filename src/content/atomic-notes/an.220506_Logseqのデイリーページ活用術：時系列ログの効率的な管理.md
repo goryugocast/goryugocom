@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqのデイリーページ活用術：時系列ログの効率的な管理
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - デイリーページ
-  - ログ管理
-source_article: "ks.220506_ローカルの汎用ファイルを扱うことのメリット"
+- Logseq
+- デイリーページ
+- ログ管理
+source_article: ks.220506_ローカルの汎用ファイルを扱うことのメリット
+note_type: method
 ---
 
 # Logseqのデイリーページ活用術：時系列ログの効率的な管理

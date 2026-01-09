@@ -2,9 +2,10 @@
 project: an
 title: アナログカレンダーをCanvasで作成する
 topic:
-  - Obsidian
-  - Canvas
-  - タスク管理
+- Obsidian
+- Canvas
+- タスク管理
+note_type: method
 ---
 
 # アナログカレンダーをCanvasで作成する

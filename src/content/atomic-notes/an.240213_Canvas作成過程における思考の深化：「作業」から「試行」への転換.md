@@ -1,12 +1,13 @@
 ---
 project: an
 title: Canvas作成過程における思考の深化：「作業」から「試行」への転換
-prefix: 
+prefix: null
 topic:
-  - Obsidian Canvas
-  - 思考法
-  - 試行錯誤
-source_article: "ks.240213_謎解きの続きはObsidianで"
+- Obsidian Canvas
+- 思考法
+- 試行錯誤
+source_article: ks.240213_謎解きの続きはObsidianで
+note_type: insight
 ---
 
 # Canvas作成過程における思考の深化：「作業」から「試行」への転換

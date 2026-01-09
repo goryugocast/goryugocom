@@ -1,12 +1,13 @@
 ---
 project: an
 title: Note Refactorプラグインでノートをアトミックに分割する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - プラグイン
-  - アトミックシンキング
-source_article: "ks.210318_💎Obsidianを便利にするプラグイン"
+- Obsidian
+- プラグイン
+- アトミックシンキング
+source_article: ks.210318_💎Obsidianを便利にするプラグイン
+note_type: method
 ---
 
 # Note Refactorプラグインでノートをアトミックに分割する

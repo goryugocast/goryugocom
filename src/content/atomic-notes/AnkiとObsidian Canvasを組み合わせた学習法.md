@@ -1,13 +1,14 @@
 ---
 project: an
 title: AnkiとObsidian Canvasを組み合わせた学習法
-prefix: ""
+prefix: ''
 topic:
-  - Anki
-  - Obsidian
-  - Canvas
-  - 学習法
-source_article: "ks.240207_🎙KS004_Obsdian_Canvasを使って理解に横方向の広がりを作る"
+- Anki
+- Obsidian
+- Canvas
+- 学習法
+source_article: ks.240207_🎙KS004_Obsdian_Canvasを使って理解に横方向の広がりを作る
+note_type: method
 ---
 
 # AnkiとObsidian Canvasを組み合わせた学習法

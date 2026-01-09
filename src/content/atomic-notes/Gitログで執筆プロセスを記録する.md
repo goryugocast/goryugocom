@@ -1,11 +1,12 @@
 ---
 project: an
 title: Gitログで執筆プロセスを記録する
-prefix:
+prefix: null
 topic:
-  - git
-  - writing
-  - workflow
+- git
+- writing
+- workflow
+note_type: method
 ---
 
 # Gitログで執筆プロセスを記録する

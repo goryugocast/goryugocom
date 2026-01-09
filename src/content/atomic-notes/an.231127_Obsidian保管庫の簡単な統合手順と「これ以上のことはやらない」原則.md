@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian保管庫の簡単な統合手順と「これ以上のことはやらない」原則
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 保管庫
-  - 効率化
-source_article: "ks.231127_Obsidianの保管庫を1つにまとめた"
+- Obsidian
+- 保管庫
+- 効率化
+source_article: ks.231127_Obsidianの保管庫を1つにまとめた
+note_type: principle
 ---
 
 # Obsidian保管庫の簡単な統合手順と「これ以上のことはやらない」原則

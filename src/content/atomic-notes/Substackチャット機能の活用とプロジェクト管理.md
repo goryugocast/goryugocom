@@ -1,13 +1,14 @@
 ---
 project: an
 title: Substackチャット機能の活用とプロジェクト管理
-prefix: ""
+prefix: ''
 topic:
-  - Substack
-  - チャット機能
-  - プロジェクト管理
-  - コミュニケーション
-source_article: "ks.221109_📅KS003_デイリーノートに追記、デイリーノートをワンタップで開く2つのショートカット"
+- Substack
+- チャット機能
+- プロジェクト管理
+- コミュニケーション
+source_article: ks.221109_📅KS003_デイリーノートに追記、デイリーノートをワンタップで開く2つのショートカット
+note_type: method
 ---
 
 # Substackチャット機能の活用とプロジェクト管理

@@ -2,9 +2,10 @@
 project: an
 title: 設定ファイルの分離でMacとiPhoneを最適化
 topic:
-  - Obsidian
-  - モバイル
-  - 設定
+- Obsidian
+- モバイル
+- 設定
+note_type: method
 ---
 
 # 設定ファイルの分離でMacとiPhoneを最適化

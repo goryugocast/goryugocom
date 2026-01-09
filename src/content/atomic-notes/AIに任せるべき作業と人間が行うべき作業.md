@@ -2,9 +2,10 @@
 project: an
 title: AIに任せるべき作業と人間が行うべき作業
 topic:
-  - AI活用
-  - ワークフロー
-  - 意思決定
+- AI活用
+- ワークフロー
+- 意思決定
+note_type: principle
 ---
 
 # AIに任せるべき作業と人間が行うべき作業

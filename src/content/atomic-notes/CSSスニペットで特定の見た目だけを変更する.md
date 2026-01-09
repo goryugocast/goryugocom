@@ -1,9 +1,10 @@
 ---
 project: an
 title: CSSスニペットで特定の見た目だけを変更する
-prefix:
+prefix: null
 topic:
-  - tool
+- tool
+note_type: method
 ---
 
 Obsidianのテーマ全体は気に入っているが、一部分だけ変更したい場合、CSSスニペット機能を使うと便利。

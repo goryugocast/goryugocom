@@ -1,13 +1,14 @@
 ---
 project: an
 title: Spaced Repetitionで「緊急ではないが重要なこと」を管理する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - GTD
-  - 仕事術
-source_article: "ks.220322_💎「緊急ではない重要なこと」を進めるためのObsidianを使った仕事術・ノート術"
+- Obsidian
+- Spaced Repetition
+- GTD
+- 仕事術
+source_article: ks.220322_💎「緊急ではない重要なこと」を進めるためのObsidianを使った仕事術・ノート術
+note_type: principle
 ---
 
 # Spaced Repetitionで「緊急ではないが重要なこと」を管理する

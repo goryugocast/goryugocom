@@ -1,15 +1,16 @@
 ---
 project: an
 title: 電子書籍制作におけるChatGPTの多角的な活用事例
-prefix: 
+prefix: null
 topic:
-  - ChatGPT
-  - 電子書籍
-  - 執筆
-  - KDP
-  - プロジェクト管理
-  - AI活用
-source_article: "ks.250824_💡🧠生成AIと考える技術とは？"
+- ChatGPT
+- 電子書籍
+- 執筆
+- KDP
+- プロジェクト管理
+- AI活用
+source_article: ks.250824_💡🧠生成AIと考える技術とは？
+note_type: insight
 ---
 
 # 電子書籍制作におけるChatGPTの多角的な活用事例

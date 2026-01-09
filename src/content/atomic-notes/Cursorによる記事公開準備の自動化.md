@@ -2,9 +2,10 @@
 project: an
 title: Cursorによる記事公開準備の自動化
 topic:
-  - Cursor
-  - 自動化
-  - 執筆ワークフロー
+- Cursor
+- 自動化
+- 執筆ワークフロー
+note_type: method
 ---
 
 # Cursorによる記事公開準備の自動化

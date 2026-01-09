@@ -2,9 +2,10 @@
 project: an
 title: Johnny DecimalをObsidianで運用する利点
 topic:
-  - Johnny Decimal
-  - Obsidian
-  - 情報整理
+- Johnny Decimal
+- Obsidian
+- 情報整理
+note_type: method
 ---
 
 # Johnny DecimalをObsidianで運用する利点

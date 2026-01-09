@@ -2,9 +2,10 @@
 project: an
 title: Obsidian以外のノートツールを活用する意義
 topic:
-  - Obsidian
-  - ツール
-  - 比較
+- Obsidian
+- ツール
+- 比較
+note_type: insight
 ---
 
 # Obsidian以外のノートツールを活用する意義

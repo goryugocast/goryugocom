@@ -2,9 +2,10 @@
 project: an
 title: Johnny Decimalの予約番号（00-09）の活用
 topic:
-  - Johnny Decimal
-  - 情報整理
-  - Obsidian
+- Johnny Decimal
+- 情報整理
+- Obsidian
+note_type: method
 ---
 
 # Johnny Decimalの予約番号（00-09）の活用

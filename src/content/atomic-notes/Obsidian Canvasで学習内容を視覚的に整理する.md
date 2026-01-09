@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Canvasで学習内容を視覚的に整理する
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Canvas
-  - 学習法
-source_article: "ks.240207_🎙KS004_Obsdian_Canvasを使って理解に横方向の広がりを作る"
+- Obsidian
+- Canvas
+- 学習法
+source_article: ks.240207_🎙KS004_Obsdian_Canvasを使って理解に横方向の広がりを作る
+note_type: method
 ---
 
 # Obsidian Canvasで学習内容を視覚的に整理する

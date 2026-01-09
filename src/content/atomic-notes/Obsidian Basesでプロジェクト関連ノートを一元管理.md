@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesでプロジェクト関連ノートを一元管理
 topic:
-  - Obsidian
-  - Bases
-  - プロジェクト管理
+- Obsidian
+- Bases
+- プロジェクト管理
+note_type: method
 ---
 
 # Obsidian Basesでプロジェクト関連ノートを一元管理

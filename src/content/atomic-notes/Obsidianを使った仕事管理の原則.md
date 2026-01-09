@@ -2,9 +2,10 @@
 project: an
 title: Obsidianを使った仕事管理の原則
 topic:
-  - Obsidian
-  - 仕事術
-  - タスク管理
+- Obsidian
+- 仕事術
+- タスク管理
+note_type: principle
 ---
 
 # Obsidianを使った仕事管理の原則

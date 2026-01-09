@@ -1,12 +1,13 @@
 ---
 project: an
 title: 個人利用におけるGitの価値
-prefix: ""
+prefix: ''
 topic:
-  - Git
-  - バージョン管理
-  - 記録
-source_article: "ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか"
+- Git
+- バージョン管理
+- 記録
+source_article: ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか
+note_type: insight
 ---
 
 # 個人利用におけるGitの価値

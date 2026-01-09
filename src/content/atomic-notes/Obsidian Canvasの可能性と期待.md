@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Canvasの可能性と期待
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian Canvas
-  - 思考整理
-  - 知識管理
-source_article: "ks.221228_📅KS005_Obsidian_Canvasのファーストインプレッション"
+- Obsidian Canvas
+- 思考整理
+- 知識管理
+source_article: ks.221228_📅KS005_Obsidian_Canvasのファーストインプレッション
+note_type: insight
 ---
 
 # Obsidian Canvasの可能性と期待

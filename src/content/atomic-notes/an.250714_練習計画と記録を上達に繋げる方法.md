@@ -1,12 +1,13 @@
 ---
 project: an
 title: 練習計画と記録を上達に繋げる方法
-prefix: 
+prefix: null
 topic:
-  - 学習
-  - 効率
-  - 計画
-source_article: "ks.250714_長い時間の練習は、すればするほど下手になる"
+- 学習
+- 効率
+- 計画
+source_article: ks.250714_長い時間の練習は、すればするほど下手になる
+note_type: method
 ---
 
 # 練習計画と記録を上達に繋げる方法

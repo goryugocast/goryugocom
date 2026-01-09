@@ -2,9 +2,10 @@
 project: an
 title: AIの「平均値」出力からの脱却
 topic:
-  - Gemini CLI
-  - AI
-  - 創造性
+- Gemini CLI
+- AI
+- 創造性
+note_type: insight
 ---
 
 # AIの「平均値」出力からの脱却

@@ -1,8 +1,9 @@
 ---
-title: "`#review`タグで後の振り返りを容易にする"
+title: '`#review`タグで後の振り返りを容易にする'
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:29:03
+note_type: method
 ---
 
 # `#review`タグで後の振り返りを容易にする

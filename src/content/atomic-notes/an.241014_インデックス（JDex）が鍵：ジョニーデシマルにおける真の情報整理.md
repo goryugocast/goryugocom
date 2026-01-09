@@ -1,12 +1,13 @@
 ---
 project: an
 title: インデックス（JDex）が鍵：ジョニーデシマルにおける真の情報整理
-prefix: 
+prefix: null
 topic:
-  - ジョニーデシマル
-  - 情報整理
-  - メタデータ
-source_article: "ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について"
+- ジョニーデシマル
+- 情報整理
+- メタデータ
+source_article: ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について
+note_type: method
 ---
 
 # インデックス（JDex）が鍵：ジョニーデシマルにおける真の情報整理

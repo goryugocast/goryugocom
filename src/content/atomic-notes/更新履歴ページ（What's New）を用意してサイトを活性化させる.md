@@ -1,11 +1,12 @@
 ---
 title: 更新履歴ページ（What's New）を用意してサイトを活性化させる
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - サイト運営
-  - コンテンツ管理
+- Obsidian
+- ObsidianPublish
+- サイト運営
+- コンテンツ管理
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # 更新履歴ページ（What's New）を用意してサイトを活性化させる

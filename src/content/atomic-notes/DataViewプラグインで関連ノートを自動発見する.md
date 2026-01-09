@@ -2,9 +2,10 @@
 project: ks
 title: DataViewプラグインで関連ノートを自動発見する
 topic:
-  - Obsidian
-  - プラグイン
-  - データベース
+- Obsidian
+- プラグイン
+- データベース
+note_type: method
 ---
 
 # DataViewプラグインで関連ノートを自動発見する

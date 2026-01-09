@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「わかる」から「できる」へ：Obsidianで思考と学びを深める最終目標
-prefix: 
+prefix: null
 topic:
-  - 学習
-  - 習慣化
-  - 思考
-source_article: "ks.230518_ゼロから始めるObsidian再入門"
+- 学習
+- 習慣化
+- 思考
+source_article: ks.230518_ゼロから始めるObsidian再入門
+note_type: method
 ---
 
 # 「わかる」から「できる」へ：Obsidianで思考と学びを深める最終目標

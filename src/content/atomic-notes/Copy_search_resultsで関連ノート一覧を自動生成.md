@@ -2,9 +2,10 @@
 topic: Obsidianの全技術
 topic_code: obv
 tags:
-  - Obsidian
-  - 知的生産
-  - トピックノート
+- Obsidian
+- 知的生産
+- トピックノート
+note_type: method
 ---
 
 # Copy search results：関連ノート一覧を自動生成

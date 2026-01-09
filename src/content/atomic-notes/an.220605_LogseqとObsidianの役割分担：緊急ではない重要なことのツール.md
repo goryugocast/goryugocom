@@ -1,12 +1,13 @@
 ---
 project: an
 title: LogseqとObsidianの役割分担：緊急ではない重要なことのツール
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Logseq
-  - GTD
-source_article: "ks.220605_Obsidianは緊急ではない重要なことを行うツール"
+- Obsidian
+- Logseq
+- GTD
+source_article: ks.220605_Obsidianは緊急ではない重要なことを行うツール
+note_type: technique
 ---
 
 # LogseqとObsidianの役割分担：緊急ではない重要なことのツール

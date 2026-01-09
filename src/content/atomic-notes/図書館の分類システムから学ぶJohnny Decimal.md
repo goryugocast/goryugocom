@@ -2,9 +2,10 @@
 project: an
 title: 図書館の分類システムから学ぶJohnny Decimal
 topic:
-  - Johnny Decimal
-  - 情報整理
-  - 知識管理
+- Johnny Decimal
+- 情報整理
+- 知識管理
+note_type: insight
 ---
 
 # 図書館の分類システムから学ぶJohnny Decimal

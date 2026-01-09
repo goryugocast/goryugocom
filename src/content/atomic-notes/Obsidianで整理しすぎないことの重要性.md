@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidianで整理しすぎないことの重要性
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - workflow
-  - principle
+- obsidian
+- workflow
+- principle
+note_type: insight
 ---
 
 # Obsidianで整理しすぎないことの重要性

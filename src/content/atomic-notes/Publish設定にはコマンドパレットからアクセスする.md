@@ -1,10 +1,11 @@
 ---
 title: Publish設定にはコマンドパレットからアクセスする
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - 設定管理
+- Obsidian
+- ObsidianPublish
+- 設定管理
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # Publish設定にはコマンドパレットからアクセスする

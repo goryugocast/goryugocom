@@ -1,11 +1,12 @@
 ---
 project: an
 title: Note Refactorプラグインの活用法
-prefix:
+prefix: null
 topic:
-  - tool
-  - plugin
-  - obsidian
+- tool
+- plugin
+- obsidian
+note_type: technique
 ---
 
 # Note Refactorプラグインの活用法

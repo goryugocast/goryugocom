@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianの横スライドタブとワークスペース活用術：効率的な複数ページ操作
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - UI
-  - 効率化
-source_article: "ks.241017_Obsidian 1.7のアップデートで起動時間が高速化"
+- Obsidian
+- UI
+- 効率化
+source_article: ks.241017_Obsidian 1.7のアップデートで起動時間が高速化
+note_type: technique
 ---
 
 # Obsidianの横スライドタブとワークスペース活用術：効率的な複数ページ操作

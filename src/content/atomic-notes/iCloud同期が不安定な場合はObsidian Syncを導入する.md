@@ -1,11 +1,12 @@
 ---
 title: iCloud同期が不安定な場合はObsidian Syncを導入する
 tags:
-  - Obsidian
-  - 同期
-  - インフラ
-  - 運用管理
+- Obsidian
+- 同期
+- インフラ
+- 運用管理
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # iCloud同期が不安定な場合はObsidian Syncを導入する

@@ -3,11 +3,12 @@ title: Baseプラグインのフィルター機能で認知負荷を軽減
 topic: Obsidianの全技術
 date: 2025-11-27
 tags:
-  - RINK
-  - Base
-  - 認知負荷
-  - Obsidian
+- RINK
+- Base
+- 認知負荷
+- Obsidian
 source: 251127_🪄現状のRINKシステムとその運用例
+note_type: method
 ---
 
 # Baseプラグインのフィルター機能で認知負荷を軽減

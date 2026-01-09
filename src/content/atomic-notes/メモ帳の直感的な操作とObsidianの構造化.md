@@ -2,9 +2,10 @@
 project: an
 title: メモ帳の直感的な操作とObsidianの構造化
 topic:
-  - メモ帳
-  - Obsidian
-  - 効率化
+- メモ帳
+- Obsidian
+- 効率化
+note_type: technique
 ---
 
 # メモ帳の直感的な操作とObsidianの構造化

@@ -2,9 +2,10 @@
 project: an
 title: Dataviewのクエリをカスタマイズする
 topic:
-  - Obsidian
-  - Dataview
-  - 自動化
+- Obsidian
+- Dataview
+- 自動化
+note_type: method
 ---
 
 # Dataviewのクエリをカスタマイズする

@@ -1,12 +1,13 @@
 ---
 project: an
 title: saveworkspaceでワークスペースを自動保存
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - workspace
+- obsidian
+- tool
+- advanced-uri
+- workspace
+note_type: method
 ---
 
 # saveworkspaceでワークスペースを自動保存

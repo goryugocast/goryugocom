@@ -1,12 +1,13 @@
 ---
 project: an
 title: 完璧な整理は不可能：Obsidianで「大事な3割のノート」に集中する戦略
-prefix: 
+prefix: null
 topic:
-  - ノート整理
-  - 効率化
-  - 思考法
-source_article: "ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法"
+- ノート整理
+- 効率化
+- 思考法
+source_article: ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
+note_type: method
 ---
 
 # 完璧な整理は不可能：Obsidianで「大事な3割のノート」に集中する戦略

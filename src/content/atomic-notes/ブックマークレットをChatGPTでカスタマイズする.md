@@ -1,12 +1,13 @@
 ---
 project: an
 title: ブックマークレットをChatGPTでカスタマイズする
-prefix:
+prefix: null
 topic:
-  - tool
-  - chatgpt
-  - bookmarklet
-  - javascript
+- tool
+- chatgpt
+- bookmarklet
+- javascript
+note_type: method
 ---
 
 # ブックマークレットをChatGPTでカスタマイズする

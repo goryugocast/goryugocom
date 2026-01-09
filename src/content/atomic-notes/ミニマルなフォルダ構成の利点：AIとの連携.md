@@ -2,9 +2,10 @@
 project: an
 title: ミニマルなフォルダ構成の利点：AIとの連携
 topic:
-  - Obsidian
-  - フォルダ構成
-  - AI
+- Obsidian
+- フォルダ構成
+- AI
+note_type: insight
 ---
 
 # ミニマルなフォルダ構成の利点：AIとの連携

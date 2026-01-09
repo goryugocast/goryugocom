@@ -1,11 +1,12 @@
 ---
 project: an
 title: Advanced URIはObsidianを外部から操作するプラグイン
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - プラグイン
-source_article: "ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る"
+- Obsidian
+- プラグイン
+source_article: ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る
+note_type: method
 ---
 
 # Advanced URIはObsidianを外部から操作するプラグイン

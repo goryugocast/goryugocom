@@ -2,9 +2,10 @@
 project: an
 title: AIの育成：上司と部下の関係性
 topic:
-  - Gemini CLI
-  - AI活用
-  - 育成
+- Gemini CLI
+- AI活用
+- 育成
+note_type: method
 ---
 
 # AIの育成：上司と部下の関係性

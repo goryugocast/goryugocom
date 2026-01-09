@@ -2,9 +2,10 @@
 topic: Obsidianの全技術
 topic_code: obv
 tags:
-  - Obsidian
-  - 検索機能
-  - UI/UX
+- Obsidian
+- 検索機能
+- UI/UX
+note_type: method
 ---
 
 # Obsidian検索：検索ウィンドウの表示オプション設定

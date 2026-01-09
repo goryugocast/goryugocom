@@ -1,11 +1,12 @@
 ---
 title: Obsidian Syncで同期フォルダやファイルタイプを細かく設定できる
 tags:
-  - Obsidian
-  - 同期
-  - 設定管理
-  - インフラ
+- Obsidian
+- 同期
+- 設定管理
+- インフラ
 source: Obsidian Publishのはじめかた
+note_type: principle
 ---
 
 # Obsidian Syncで同期フォルダやファイルタイプを細かく設定できる

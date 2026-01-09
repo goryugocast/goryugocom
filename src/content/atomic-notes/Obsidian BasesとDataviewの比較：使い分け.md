@@ -2,9 +2,10 @@
 project: an
 title: Obsidian BasesとDataviewの比較：使い分け
 topic:
-  - Obsidian
-  - Bases
-  - Dataview
+- Obsidian
+- Bases
+- Dataview
+note_type: method
 ---
 
 # Obsidian BasesとDataviewの比較：使い分け

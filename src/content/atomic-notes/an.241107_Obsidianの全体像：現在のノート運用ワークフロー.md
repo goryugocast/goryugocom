@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianの全体像：現在のノート運用ワークフロー
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - ノート運用
-  - ワークフロー
-source_article: "ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する"
+- Obsidian
+- ノート運用
+- ワークフロー
+source_article: ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する
+note_type: method
 ---
 
 # Obsidianの全体像：現在のノート運用ワークフロー

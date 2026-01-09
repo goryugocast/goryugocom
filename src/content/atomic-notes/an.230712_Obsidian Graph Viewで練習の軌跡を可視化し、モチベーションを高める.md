@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Graph Viewで練習の軌跡を可視化し、モチベーションを高める
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Graph View
-  - モチベーション
-source_article: "ks.230712_Graph Viewをモチベーションアップのために活用する"
+- Obsidian
+- Graph View
+- モチベーション
+source_article: ks.230712_Graph Viewをモチベーションアップのために活用する
+note_type: method
 ---
 
 # Obsidian Graph Viewで練習の軌跡を可視化し、モチベーションを高める

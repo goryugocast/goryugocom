@@ -2,9 +2,10 @@
 project: an
 title: 思考錯誤しながらCanvasで理解を深める
 topic:
-  - Obsidian
-  - Canvas
-  - 学習法
+- Obsidian
+- Canvas
+- 学習法
+note_type: method
 ---
 
 # 思考錯誤しながらCanvasで理解を深める

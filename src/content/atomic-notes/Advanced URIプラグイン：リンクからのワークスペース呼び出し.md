@@ -2,9 +2,10 @@
 project: an
 title: Advanced URIプラグイン：リンクからのワークスペース呼び出し
 topic:
-  - Obsidian
-  - Advanced URI
-  - ワークフロー
+- Obsidian
+- Advanced URI
+- ワークフロー
+note_type: technique
 ---
 
 # Advanced URIプラグイン：リンクからのワークスペース呼び出し

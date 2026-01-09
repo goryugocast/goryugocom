@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIを執筆パートナーとして活用
 topic:
-  - Gemini CLI
-  - AI
-  - 執筆ワークフロー
+- Gemini CLI
+- AI
+- 執筆ワークフロー
+note_type: method
 ---
 
 # Gemini CLIを執筆パートナーとして活用

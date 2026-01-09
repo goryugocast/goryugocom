@@ -2,9 +2,10 @@
 project: an
 title: ObsidianからCursorを呼び出すショートカット
 topic:
-  - Obsidian
-  - Cursor
-  - 効率化
+- Obsidian
+- Cursor
+- 効率化
+note_type: technique
 ---
 
 # ObsidianからCursorを呼び出すショートカット

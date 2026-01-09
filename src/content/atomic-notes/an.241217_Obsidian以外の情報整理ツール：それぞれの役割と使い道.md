@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian以外の情報整理ツール：それぞれの役割と使い道
-prefix: 
+prefix: null
 topic:
-  - 情報整理
-  - ツール連携
-  - ワークフロー
-source_article: "ks.241217_情報整理に活用するObsidian以外のツール"
+- 情報整理
+- ツール連携
+- ワークフロー
+source_article: ks.241217_情報整理に活用するObsidian以外のツール
+note_type: technique
 ---
 
 # Obsidian以外の情報整理ツール：それぞれの役割と使い道

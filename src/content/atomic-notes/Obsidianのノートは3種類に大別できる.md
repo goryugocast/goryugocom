@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianのノートは3種類に大別できる
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - ノート術
-  - 分類
-source_article: "ks.210617_💎Obsidianで使うノートの分類"
+- Obsidian
+- ノート術
+- 分類
+source_article: ks.210617_💎Obsidianで使うノートの分類
+note_type: principle
 ---
 
 # Obsidianのノートは3種類に大別できる

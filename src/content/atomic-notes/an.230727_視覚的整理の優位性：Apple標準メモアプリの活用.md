@@ -1,12 +1,13 @@
 ---
 project: an
 title: 視覚的整理の優位性：Apple標準メモアプリの活用
-prefix: 
+prefix: null
 topic:
-  - メモ整理
-  - 視覚化
-  - ツール活用
-source_article: "ks.230727_Obsidianを使わないメモ整理の例"
+- メモ整理
+- 視覚化
+- ツール活用
+source_article: ks.230727_Obsidianを使わないメモ整理の例
+note_type: method
 ---
 
 # 視覚的整理の優位性：Apple標準メモアプリの活用

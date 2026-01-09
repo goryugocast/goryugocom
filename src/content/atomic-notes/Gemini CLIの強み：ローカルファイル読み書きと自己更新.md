@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIの強み：ローカルファイル読み書きと自己更新
 topic:
-  - Gemini CLI
-  - AI
-  - 自動化
+- Gemini CLI
+- AI
+- 自動化
+note_type: technique
 ---
 
 # Gemini CLIの強み：ローカルファイル読み書きと自己更新

@@ -1,11 +1,12 @@
 ---
 project: an
 title: Taskumaでタスク管理を継続
-prefix:
+prefix: null
 topic:
-  - tool
-  - productivity
-  - taskuma
+- tool
+- productivity
+- taskuma
+note_type: method
 ---
 
 # Taskumaでタスク管理を継続

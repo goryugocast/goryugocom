@@ -2,8 +2,9 @@
 project: an
 title: タスク管理アプリではなくObsidianでレビューする理由
 topic:
-  - Obsidian
-  - タスク管理
+- Obsidian
+- タスク管理
+note_type: method
 ---
 
 Spaced Repetitionによるレビューシステムは、単なるタスク管理アプリでは意味がなく、Obsidianのようなノートツールで実践することに真価がある。タスク管理アプリでは、タスクを見返すことはできても、そこに書き込みをしたり、関連する他のノートへリンクを張ったりすることができない。

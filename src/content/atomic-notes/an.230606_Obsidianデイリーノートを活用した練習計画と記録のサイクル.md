@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianデイリーノートを活用した練習計画と記録のサイクル
-prefix: 
+prefix: null
 topic:
-  - デイリーノート
-  - 計画
-  - 記録
-source_article: "ks.230606_Obsidianで最初に重視するのはデイリーノート"
+- デイリーノート
+- 計画
+- 記録
+source_article: ks.230606_Obsidianで最初に重視するのはデイリーノート
+note_type: method
 ---
 
 # Obsidianデイリーノートを活用した練習計画と記録のサイクル

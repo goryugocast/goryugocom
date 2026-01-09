@@ -3,6 +3,7 @@ title: Cmd/Ctrl + Dでデイリーノートを素早く作成する
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:02:15
+note_type: method
 ---
 
 # Cmd/Ctrl + Dでデイリーノートを素早く作成する

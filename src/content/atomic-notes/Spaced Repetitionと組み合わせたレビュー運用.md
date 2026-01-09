@@ -1,9 +1,10 @@
 ---
 tags:
-  - SRS
-  - レビュー運用
-  - システム設計
+- SRS
+- レビュー運用
+- システム設計
 created: 2025-01-02
+note_type: method
 ---
 
 # Spaced Repetitionと組み合わせたレビュー運用

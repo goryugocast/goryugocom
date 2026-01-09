@@ -1,12 +1,13 @@
 ---
 project: an
 title: デイリーノートを活用した「整理しない」上達戦略
-prefix: 
+prefix: null
 topic:
-  - デイリーノート
-  - 整理
-  - 効率
-source_article: "ks.230615_目的を見失わないようにするためのデイリーノート"
+- デイリーノート
+- 整理
+- 効率
+source_article: ks.230615_目的を見失わないようにするためのデイリーノート
+note_type: method
 ---
 
 # デイリーノートを活用した「整理しない」上達戦略

@@ -2,11 +2,12 @@
 title: Graph Analysisプラグインの活用方法
 description: Adamic/Adar指標による意外な関連発見
 tags:
-  - Obsidian
-  - プラグイン
-  - ノート関連性
+- Obsidian
+- プラグイン
+- ノート関連性
 related:
-  - 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+- 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+note_type: method
 ---
 
 ## 概要

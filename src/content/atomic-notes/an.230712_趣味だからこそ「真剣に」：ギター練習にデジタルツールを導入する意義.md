@@ -1,12 +1,13 @@
 ---
 project: an
 title: 趣味だからこそ「真剣に」：ギター練習にデジタルツールを導入する意義
-prefix: 
+prefix: null
 topic:
-  - 趣味
-  - デジタルツール
-  - モチベーション
-source_article: "ks.230712_Graph Viewをモチベーションアップのために活用する"
+- 趣味
+- デジタルツール
+- モチベーション
+source_article: ks.230712_Graph Viewをモチベーションアップのために活用する
+note_type: method
 ---
 
 # 趣味だからこそ「真剣に」：ギター練習にデジタルツールを導入する意義

@@ -1,9 +1,10 @@
 ---
 project: an
 title: Page previewの表示条件を場所ごとに設定する
-prefix:
+prefix: null
 topic:
-  - workflow
+- workflow
+note_type: method
 ---
 
 Obsidianのページプレビュー機能は、リンクにカーソルを合わせたときの挙動を、画面の場所ごとに細かく設定できる。

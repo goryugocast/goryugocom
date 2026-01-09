@@ -1,9 +1,10 @@
 ---
 project: an
 title: Obsidianを英語設定で使うメリット
-prefix:
+prefix: null
 topic:
-  - tool
+- tool
+note_type: insight
 ---
 
 Obsidianは日本語化されているが、あえて英語設定で使うメリットが2つある。

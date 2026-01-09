@@ -2,9 +2,10 @@
 project: an
 title: 安心感が得られるSpaced Repetitionの運用
 topic:
-  - Spaced Repetition
-  - 心理学
-  - ストレス軽減
+- Spaced Repetition
+- 心理学
+- ストレス軽減
+note_type: method
 ---
 
 # 安心感が得られるSpaced Repetitionの運用

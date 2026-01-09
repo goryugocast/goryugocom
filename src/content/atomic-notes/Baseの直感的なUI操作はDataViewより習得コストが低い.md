@@ -3,13 +3,14 @@ title: Baseの直感的なUI操作はDataViewより習得コストが低い
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Base
-  - DataView
-  - UI/UX
-  - プラグイン比較
+- Obsidian
+- Base
+- DataView
+- UI/UX
+- プラグイン比較
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: technique
 ---
 
 ## 概要

@@ -3,11 +3,12 @@ title: Spaced Repetitionプラグインはインクリメンタル・ライテ�
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Spaced Repetition
-  - インクリメンタル・ライティング
+- Obsidian
+- Spaced Repetition
+- インクリメンタル・ライティング
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: technique
 ---
 
 ## 概要

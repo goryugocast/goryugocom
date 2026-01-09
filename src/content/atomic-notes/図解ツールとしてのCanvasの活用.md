@@ -2,9 +2,10 @@
 project: an
 title: 図解ツールとしてのCanvasの活用
 topic:
-  - Obsidian
-  - Canvas
-  - 図解
+- Obsidian
+- Canvas
+- 図解
+note_type: method
 ---
 
 # 図解ツールとしてのCanvasの活用

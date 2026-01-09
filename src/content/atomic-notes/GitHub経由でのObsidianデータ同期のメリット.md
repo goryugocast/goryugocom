@@ -1,13 +1,14 @@
 ---
 project: an
 title: GitHub経由でのObsidianデータ同期のメリット
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - GitHub
-  - データ同期
-  - ワークフロー
-source_article: "ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する"
+- Obsidian
+- GitHub
+- データ同期
+- ワークフロー
+source_article: ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
+note_type: insight
 ---
 
 # GitHub経由でのObsidianデータ同期のメリット

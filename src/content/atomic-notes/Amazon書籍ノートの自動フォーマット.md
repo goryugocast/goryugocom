@@ -1,12 +1,13 @@
 ---
 project: an
 title: Amazon書籍ノートの自動フォーマット
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - workflow
-  - bookmarklet
-  - reading
+- obsidian
+- workflow
+- bookmarklet
+- reading
+note_type: method
 ---
 
 # Amazon書籍ノートの自動フォーマット

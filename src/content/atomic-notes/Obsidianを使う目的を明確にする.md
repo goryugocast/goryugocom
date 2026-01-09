@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidianを使う目的を明確にする
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - principle
-  - workflow
+- obsidian
+- principle
+- workflow
+note_type: method
 ---
 
 # Obsidianを使う目的を明確にする

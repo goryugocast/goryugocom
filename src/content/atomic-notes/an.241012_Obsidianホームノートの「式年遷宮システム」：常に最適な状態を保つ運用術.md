@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianホームノートの「式年遷宮システム」：常に最適な状態を保つ運用術
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - ホームノート
-  - 運用
-source_article: "ks.241012_ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける"
+- Obsidian
+- ホームノート
+- 運用
+source_article: ks.241012_ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける
+note_type: method
 ---
 
 # Obsidianホームノートの「式年遷宮システム」：常に最適な状態を保つ運用術

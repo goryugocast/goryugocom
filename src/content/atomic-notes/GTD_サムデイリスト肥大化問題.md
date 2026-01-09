@@ -4,6 +4,7 @@ topic: Obsidianの全技術
 topic_code: obv
 source: 250918_Spaced Repetitionプラグイン
 category: レビュー習慣
+note_type: insight
 ---
 
 # GTDのサムデイリスト肥大化問題をプラグインで解決

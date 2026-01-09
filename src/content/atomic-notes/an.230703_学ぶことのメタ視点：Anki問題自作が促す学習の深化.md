@@ -1,12 +1,13 @@
 ---
 project: an
 title: 学ぶことのメタ視点：Anki問題自作が促す学習の深化
-prefix: 
+prefix: null
 topic:
-  - 学習
-  - メタ学習
-  - Anki
-source_article: "ks.230703_脳筋な学習では自分が求めることができるようにならない"
+- 学習
+- メタ学習
+- Anki
+source_article: ks.230703_脳筋な学習では自分が求めることができるようにならない
+note_type: insight
 ---
 
 # 学ぶことのメタ視点：Anki問題自作が促す学習の深化

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Web Clipperの設定方法と活用例：Amazon書誌情報とYouTube動画
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Web Clipper
-  - 活用例
-source_article: "ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る"
+- Obsidian
+- Web Clipper
+- 活用例
+source_article: ks.241125_Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る
+note_type: method
 ---
 
 # Obsidian Web Clipperの設定方法と活用例：Amazon書誌情報とYouTube動画

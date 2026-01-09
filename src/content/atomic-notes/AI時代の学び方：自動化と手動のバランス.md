@@ -2,9 +2,10 @@
 project: an
 title: AI時代の学び方：自動化と手動のバランス
 topic:
-  - AI
-  - 学習法
-  - 効率化
+- AI
+- 学習法
+- 効率化
+note_type: method
 ---
 
 # AI時代の学び方：自動化と手動のバランス

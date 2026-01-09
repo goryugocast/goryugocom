@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianとメモ帳アプリの最適な使い分け戦略
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - メモ整理
-  - ツール活用
-source_article: "ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る"
+- Obsidian
+- メモ整理
+- ツール活用
+source_article: ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る
+note_type: method
 ---
 
 # Obsidianとメモ帳アプリの最適な使い分け戦略

@@ -1,12 +1,13 @@
 ---
 project: an
 title: モバイル環境でのAdvanced URI活用
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - workflow
-  - advanced-uri
-  - mobile
+- obsidian
+- workflow
+- advanced-uri
+- mobile
+note_type: method
 ---
 
 # モバイル環境でのAdvanced URI活用

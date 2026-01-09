@@ -1,13 +1,14 @@
 ---
 project: an
 title: GitHubを通じたプロジェクト公開と協働
-prefix: ""
+prefix: ''
 topic:
-  - GitHub
-  - プロジェクト管理
-  - コミュニティ
-  - オープンソース
-source_article: "ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか"
+- GitHub
+- プロジェクト管理
+- コミュニティ
+- オープンソース
+source_article: ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか
+note_type: insight
 ---
 
 # GitHubを通じたプロジェクト公開と協働

@@ -1,12 +1,13 @@
 ---
 project: an
 title: GitHubドキュメントで利用可能なキーを確認する
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - documentation
+- obsidian
+- tool
+- advanced-uri
+- documentation
+note_type: method
 ---
 
 # GitHubドキュメントで利用可能なキーを確認する

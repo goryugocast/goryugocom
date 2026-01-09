@@ -1,15 +1,16 @@
 ---
 project: an
 title: AnkiのFSRS機能：忘却曲線を最適化し、効率的な学習を支援
-prefix: 
+prefix: null
 topic:
-  - Anki
-  - 学習ツール
-  - 効率化
-  - 記憶術
-  - 語学学習
-  - FSRS
-source_article: "ks.250907_♂少しずつだと間違えないから気分よく続けられる"
+- Anki
+- 学習ツール
+- 効率化
+- 記憶術
+- 語学学習
+- FSRS
+source_article: ks.250907_♂少しずつだと間違えないから気分よく続けられる
+note_type: method
 ---
 
 # AnkiのFSRS機能：忘却曲線を最適化し、効率的な学習を支援

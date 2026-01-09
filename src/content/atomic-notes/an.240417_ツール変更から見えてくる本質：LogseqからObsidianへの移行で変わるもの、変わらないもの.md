@@ -1,12 +1,13 @@
 ---
 project: an
 title: ツール変更から見えてくる本質：LogseqからObsidianへの移行で変わるもの、変わらないもの
-prefix: 
+prefix: null
 topic:
-  - ツール論
-  - ノート術
-  - 効率化
-source_article: "ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方"
+- ツール論
+- ノート術
+- 効率化
+source_article: ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方
+note_type: technique
 ---
 
 # ツール変更から見えてくる本質：LogseqからObsidianへの移行で変わるもの、変わらないもの

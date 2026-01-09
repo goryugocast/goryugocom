@@ -1,12 +1,13 @@
 ---
 project: an
 title: Dataviewで表示件数を制限して情報過多を防ぐ
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - dataview
-  - workflow
-  - tool
+- obsidian
+- dataview
+- workflow
+- tool
+note_type: method
 ---
 
 # Dataviewで表示件数を制限して情報過多を防ぐ

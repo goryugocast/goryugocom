@@ -2,9 +2,10 @@
 project: an
 title: 読書メモをCanvasで視覚化する
 topic:
-  - Obsidian
-  - Canvas
-  - 読書術
+- Obsidian
+- Canvas
+- 読書術
+note_type: method
 ---
 
 # 読書メモをCanvasで視覚化する

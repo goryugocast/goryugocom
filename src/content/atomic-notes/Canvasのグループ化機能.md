@@ -2,9 +2,10 @@
 project: an
 title: Canvasのグループ化機能
 topic:
-  - Obsidian
-  - Canvas
-  - 整理術
+- Obsidian
+- Canvas
+- 整理術
+note_type: technique
 ---
 
 # Canvasのグループ化機能

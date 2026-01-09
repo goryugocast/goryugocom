@@ -1,11 +1,12 @@
 ---
 project: an
 title: AIは未来予測や一般的なアドバイスよりも具体性の高い質問で真価を発揮する
-prefix: ""
+prefix: ''
 topic:
-  - AI
-  - 質問力
-source_article: "ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める"
+- AI
+- 質問力
+source_article: ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める
+note_type: method
 ---
 
 # AIは未来予測や一般的なアドバイスよりも具体性の高い質問で真価を発揮する

@@ -1,13 +1,14 @@
 ---
 project: an
 title: Spaced Repetitionによる「いつかやりたいこと」リストの管理
-prefix: ""
+prefix: ''
 topic:
-  - Spaced Repetition
-  - GTD
-  - タスク管理
-  - 振り返り
-source_article: "ks.221125_KS008_Obsidianに破綻しないGTDインボックスの仕組みを作る"
+- Spaced Repetition
+- GTD
+- タスク管理
+- 振り返り
+source_article: ks.221125_KS008_Obsidianに破綻しないGTDインボックスの仕組みを作る
+note_type: method
 ---
 
 # Spaced Repetitionによる「いつかやりたいこと」リストの管理

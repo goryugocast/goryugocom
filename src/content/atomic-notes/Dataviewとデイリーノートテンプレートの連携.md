@@ -1,13 +1,14 @@
 ---
 project: an
 title: Dataviewとデイリーノートテンプレートの連携
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Dataview
-  - デイリーノート
-  - テンプレート
-source_article: "ks.221120_🔧KS007_ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する"
+- Obsidian
+- Dataview
+- デイリーノート
+- テンプレート
+source_article: ks.221120_🔧KS007_ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する
+note_type: insight
 ---
 
 # Dataviewとデイリーノートテンプレートの連携

@@ -1,13 +1,14 @@
 ---
 project: an
 title: ChatGPTによるプログラミング支援と学習
-prefix: ""
+prefix: ''
 topic:
-  - ChatGPT
-  - プログラミング
-  - AI活用
-  - 学習
-source_article: "ks.230308_🔧KS018_Amazonの書籍販売ページを開き1クリックでObsidianに書誌情報ノートを作るブックマークレット"
+- ChatGPT
+- プログラミング
+- AI活用
+- 学習
+source_article: ks.230308_🔧KS018_Amazonの書籍販売ページを開き1クリックでObsidianに書誌情報ノートを作るブックマークレット
+note_type: method
 ---
 
 # ChatGPTによるプログラミング支援と学習

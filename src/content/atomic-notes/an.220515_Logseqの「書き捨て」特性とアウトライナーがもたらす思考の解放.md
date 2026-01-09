@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqの「書き捨て」特性とアウトライナーがもたらす思考の解放
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - アウトライナー
-  - 思考整理
-source_article: "ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術"
+- Logseq
+- アウトライナー
+- 思考整理
+source_article: ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術
+note_type: insight
 ---
 
 # Logseqの「書き捨て」特性とアウトライナーがもたらす思考の解放

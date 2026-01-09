@@ -1,11 +1,12 @@
 ---
 project: an
 title: 既存プログラムの改造をChatGPTに依頼する方法
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - workflow
+- ChatGPT活用
+- プログラミング入門
+- workflow
+note_type: method
 ---
 
 # 既存プログラムの改造をChatGPTに依頼する方法

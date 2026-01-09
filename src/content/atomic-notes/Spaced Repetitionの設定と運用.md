@@ -1,12 +1,13 @@
 ---
 project: an
 title: Spaced Repetitionの設定と運用
-prefix:
+prefix: null
 topic:
-  - tool
-  - obsidian
-  - plugin
-  - review
+- tool
+- obsidian
+- plugin
+- review
+note_type: method
 ---
 
 # Spaced Repetitionの設定と運用

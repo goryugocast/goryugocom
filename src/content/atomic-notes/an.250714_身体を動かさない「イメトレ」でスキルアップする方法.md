@@ -1,12 +1,13 @@
 ---
 project: an
 title: 身体を動かさない「イメトレ」でスキルアップする方法
-prefix: 
+prefix: null
 topic:
-  - イメトレ
-  - 学習
-  - 効率
-source_article: "ks.250714_長い時間の練習は、すればするほど下手になる"
+- イメトレ
+- 学習
+- 効率
+source_article: ks.250714_長い時間の練習は、すればするほど下手になる
+note_type: method
 ---
 
 # 身体を動かさない「イメトレ」でスキルアップする方法

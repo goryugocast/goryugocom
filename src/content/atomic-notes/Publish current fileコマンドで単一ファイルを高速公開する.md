@@ -1,11 +1,12 @@
 ---
 title: Publish current fileコマンドで単一ファイルを高速公開する
 tags:
-  - Obsidian
-  - ObsidianPublish
-  - モバイル対応
-  - 効率化
+- Obsidian
+- ObsidianPublish
+- モバイル対応
+- 効率化
 source: Obsidian Publishのはじめかた
+note_type: method
 ---
 
 # Publish current fileコマンドで単一ファイルを高速公開する

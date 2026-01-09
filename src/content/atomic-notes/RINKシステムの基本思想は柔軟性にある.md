@@ -3,10 +3,11 @@ title: RINKシステムの基本思想は柔軟性にある
 topic: Obsidianの全技術
 date: 2025-11-27
 tags:
-  - RINK
-  - 知識管理
-  - Obsidian
+- RINK
+- 知識管理
+- Obsidian
 source: 251127_🪄現状のRINKシステムとその運用例
+note_type: principle
 ---
 
 # RINKシステムの基本思想は柔軟性にある

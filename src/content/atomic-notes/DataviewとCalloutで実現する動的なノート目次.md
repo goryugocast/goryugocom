@@ -1,14 +1,15 @@
 ---
 project: an
 title: DataviewとCalloutで実現する動的なノート目次
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Dataview
-  - Callout
-  - ノート整理
-  - カスタマイズ
-source_article: "ks.250611_ノートをつなげて整理するRINKシステム"
+- Obsidian
+- Dataview
+- Callout
+- ノート整理
+- カスタマイズ
+source_article: ks.250611_ノートをつなげて整理するRINKシステム
+note_type: method
 ---
 
 # DataviewとCalloutで実現する動的なノート目次

@@ -2,9 +2,10 @@
 project: an
 title: AIが自身の指示文を自己更新する仕組み
 topic:
-  - Gemini CLI
-  - AI
-  - プロンプトエンジニアリング
+- Gemini CLI
+- AI
+- プロンプトエンジニアリング
+note_type: insight
 ---
 
 # AIが自身の指示文を自己更新する仕組み

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian活用における「無駄」の重要性とリアルな変化の過程
-prefix: 
+prefix: null
 topic:
-  - 効率
-  - 試行錯誤
-  - カスタマイズ
-source_article: "ks.230518_ゼロから始めるObsidian再入門"
+- 効率
+- 試行錯誤
+- カスタマイズ
+source_article: ks.230518_ゼロから始めるObsidian再入門
+note_type: insight
 ---
 
 # Obsidian活用における「無駄」の重要性とリアルな変化の過程

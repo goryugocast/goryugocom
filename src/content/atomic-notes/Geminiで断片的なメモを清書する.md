@@ -2,9 +2,10 @@
 project: an
 title: Geminiで断片的なメモを清書する
 topic:
-  - AI活用
-  - メモ管理
-  - 執筆効率化
+- AI活用
+- メモ管理
+- 執筆効率化
+note_type: method
 ---
 
 # Geminiで断片的なメモを清書する

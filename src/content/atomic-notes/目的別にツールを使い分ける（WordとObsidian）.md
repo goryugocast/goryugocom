@@ -1,12 +1,13 @@
 ---
 project: an
 title: 目的別にツールを使い分ける（WordとObsidian）
-prefix: ""
+prefix: ''
 topic:
-  - ツール術
-  - Word
-  - Obsidian
-source_article: "ks.240124_🎙KS003_Wordを愛する人間がObsidianも愛してしまった物語"
+- ツール術
+- Word
+- Obsidian
+source_article: ks.240124_🎙KS003_Wordを愛する人間がObsidianも愛してしまった物語
+note_type: method
 ---
 
 # 目的別にツールを使い分ける（WordとObsidian）

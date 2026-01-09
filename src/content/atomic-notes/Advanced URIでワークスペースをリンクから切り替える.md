@@ -1,12 +1,13 @@
 ---
 project: an
 title: Advanced URIでワークスペースをリンクから切り替える
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - plugin
-  - workspace
-  - workflow
+- obsidian
+- plugin
+- workspace
+- workflow
+note_type: method
 ---
 
 # Advanced URIでワークスペースをリンクから切り替える

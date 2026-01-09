@@ -1,12 +1,13 @@
 ---
 project: an
 title: Dataviewで未完了タスクを一覧表示する
-prefix:
+prefix: null
 topic:
-  - dataview
-  - task-management
-  - obsidian
-  - tool
+- dataview
+- task-management
+- obsidian
+- tool
+note_type: method
 ---
 
 # Dataviewで未完了タスクを一覧表示する

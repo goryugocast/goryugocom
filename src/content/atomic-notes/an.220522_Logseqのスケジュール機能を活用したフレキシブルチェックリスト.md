@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqのスケジュール機能を活用したフレキシブルチェックリスト
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - スケジュール
-  - チェックリスト
-source_article: "ks.220522_Logseqのデイリーページに書いている内容のまとめ"
+- Logseq
+- スケジュール
+- チェックリスト
+source_article: ks.220522_Logseqのデイリーページに書いている内容のまとめ
+note_type: method
 ---
 
 # Logseqのスケジュール機能を活用したフレキシブルチェックリスト

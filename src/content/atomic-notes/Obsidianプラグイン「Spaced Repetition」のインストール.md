@@ -2,9 +2,10 @@
 project: an
 title: Obsidianプラグイン「Spaced Repetition」のインストール
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - プラグイン
+- Obsidian
+- Spaced Repetition
+- プラグイン
+note_type: technique
 ---
 
 # Obsidianプラグイン「Spaced Repetition」のインストール

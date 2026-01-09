@@ -1,13 +1,14 @@
 ---
 project: an
 title: Dataviewによる動的なタスクとノートの表示
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Dataview
-  - タスク管理
-  - ノート整理
-source_article: "ks.221207_🔧KS009_Obsidian_デイリーノート仕事術"
+- Obsidian
+- Dataview
+- タスク管理
+- ノート整理
+source_article: ks.221207_🔧KS009_Obsidian_デイリーノート仕事術
+note_type: insight
 ---
 
 # Dataviewによる動的なタスクとノートの表示

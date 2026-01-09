@@ -1,12 +1,13 @@
 ---
 project: an
 title: 紙の手帳がもたらす心の余白：メンタルヘルス改善の日記術
-prefix: 
+prefix: null
 topic:
-  - 日記
-  - メンタルヘルス
-  - アナログ
-source_article: "ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由"
+- 日記
+- メンタルヘルス
+- アナログ
+source_article: ks.240827_DayOneを使いながらさらに紙の日記帳も使う理由
+note_type: method
 ---
 
 # 紙の手帳がもたらす心の余白：メンタルヘルス改善の日記術

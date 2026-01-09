@@ -3,11 +3,12 @@ title: 生成AIでプレフィックスを一括変更する
 topic: Obsidianの全技術
 date: 2025-11-27
 tags:
-  - RINK
-  - 生成AI
-  - 自動化
-  - プレフィックス
+- RINK
+- 生成AI
+- 自動化
+- プレフィックス
 source: 251127_🪄現状のRINKシステムとその運用例
+note_type: method
 ---
 
 # 生成AIでプレフィックスを一括変更する

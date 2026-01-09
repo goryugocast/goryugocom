@@ -3,12 +3,13 @@ title: Baseの複数ビュー機能で年度別や条件別の切り替えがで
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - Base
-  - プラグイン
-  - ビュー管理
+- Obsidian
+- Base
+- プラグイン
+- ビュー管理
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: principle
 ---
 
 ## 概要

@@ -2,9 +2,10 @@
 project: an
 title: フロントマターの重要性：AIが理解しやすいメタデータ
 topic:
-  - Obsidian
-  - AI
-  - メタデータ
+- Obsidian
+- AI
+- メタデータ
+note_type: insight
 ---
 
 # フロントマターの重要性：AIが理解しやすいメタデータ

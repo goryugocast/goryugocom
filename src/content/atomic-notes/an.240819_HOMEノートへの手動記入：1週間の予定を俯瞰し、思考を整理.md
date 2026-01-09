@@ -1,12 +1,13 @@
 ---
 project: an
 title: HOMEノートへの手動記入：1週間の予定を俯瞰し、思考を整理
-prefix: 
+prefix: null
 topic:
-  - HOMEノート
-  - 予定管理
-  - 思考整理
-source_article: "ks.240819_HOMEノートを使った予定の管理"
+- HOMEノート
+- 予定管理
+- 思考整理
+source_article: ks.240819_HOMEノートを使った予定の管理
+note_type: method
 ---
 
 # HOMEノートへの手動記入：1週間の予定を俯瞰し、思考を整理

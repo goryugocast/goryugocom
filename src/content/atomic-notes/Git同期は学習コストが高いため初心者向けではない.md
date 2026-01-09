@@ -1,11 +1,12 @@
 ---
 title: Git同期は学習コストが高いため初心者向けではない
 tags:
-  - Obsidian
-  - 同期
-  - Git
-  - インフラ
+- Obsidian
+- 同期
+- Git
+- インフラ
 source: Obsidian Publishのはじめかた
+note_type: principle
 ---
 
 # Git同期は学習コストが高いため初心者向けではない

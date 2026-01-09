@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesは情報の「倉庫」ではない
 topic:
-  - Obsidian
-  - Bases
-  - 知識管理
+- Obsidian
+- Bases
+- 知識管理
+note_type: principle
 ---
 
 # Obsidian Basesは情報の「倉庫」ではない

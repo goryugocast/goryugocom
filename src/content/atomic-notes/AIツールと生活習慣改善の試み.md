@@ -1,13 +1,14 @@
 ---
 project: an
 title: AIツールと生活習慣改善の試み
-prefix: ""
+prefix: ''
 topic:
-  - AIツール
-  - ChatGPT
-  - 生活習慣
-  - 自己改善
-source_article: "ks.230131_📅KS006_自分が求めているもの、楽しいものに直接お金を支払う健全さ"
+- AIツール
+- ChatGPT
+- 生活習慣
+- 自己改善
+source_article: ks.230131_📅KS006_自分が求めているもの、楽しいものに直接お金を支払う健全さ
+note_type: technique
 ---
 
 # AIツールと生活習慣改善の試み

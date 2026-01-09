@@ -2,9 +2,10 @@
 project: an
 title: Obsidianを使ったスキル獲得のプロセス
 topic:
-  - Obsidian
-  - スキル習得
-  - 学習法
+- Obsidian
+- スキル習得
+- 学習法
+note_type: method
 ---
 
 # Obsidianを使ったスキル獲得のプロセス

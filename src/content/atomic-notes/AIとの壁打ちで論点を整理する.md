@@ -2,9 +2,10 @@
 project: an
 title: AIとの壁打ちで論点を整理する
 topic:
-  - AI活用
-  - 思考整理
-  - ライティング
+- AI活用
+- 思考整理
+- ライティング
+note_type: method
 ---
 
 # AIとの壁打ちで論点を整理する

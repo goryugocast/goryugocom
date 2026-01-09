@@ -2,9 +2,10 @@
 project: an
 title: Callout機能：詳細を隠してノートを短くする
 topic:
-  - Obsidian
-  - Callout
-  - ノート整理
+- Obsidian
+- Callout
+- ノート整理
+note_type: method
 ---
 
 # Callout機能：詳細を隠してノートを短くする

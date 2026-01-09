@@ -1,11 +1,12 @@
 ---
 project: an
 title: GPT-3.5 TurboとGPT-4の使い分け
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - tool
-  - principle
+- ChatGPT活用
+- tool
+- principle
+note_type: method
 ---
 
 # GPT-3.5 TurboとGPT-4の使い分け

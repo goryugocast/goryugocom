@@ -1,12 +1,13 @@
 ---
 project: an
 title: LogseqからObsidianへ：デイリーノート運用の一本化戦略
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Logseq
-  - デイリーノート
-source_article: "ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方"
+- Obsidian
+- Logseq
+- デイリーノート
+source_article: ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方
+note_type: insight
 ---
 
 # LogseqからObsidianへ：デイリーノート運用の一本化戦略

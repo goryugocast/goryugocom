@@ -2,9 +2,10 @@
 project: an
 title: 生成AI時代のノート術：AIを敵にせず仲間にする
 topic:
-  - AI活用
-  - ノート術
-  - 協業
+- AI活用
+- ノート術
+- 協業
+note_type: method
 ---
 
 # 生成AI時代のノート術：AIを敵にせず仲間にする

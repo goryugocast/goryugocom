@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIとは：コマンドラインAIの可能性
 topic:
-  - Gemini CLI
-  - AI
-  - コマンドライン
+- Gemini CLI
+- AI
+- コマンドライン
+note_type: insight
 ---
 
 # Gemini CLIとは：コマンドラインAIの可能性

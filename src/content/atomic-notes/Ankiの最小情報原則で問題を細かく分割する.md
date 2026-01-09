@@ -1,11 +1,12 @@
 ---
 project: an
 title: Ankiの最小情報原則で問題を細かく分割する
-prefix:
+prefix: null
 topic:
-  - concept
-  - tool
-  - anki
+- concept
+- tool
+- anki
+note_type: principle
 ---
 
 # Ankiの最小情報原則で問題を細かく分割する

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Spaced Repetitionと雑務枠：効率化は「遊ぶ時間」のために
-prefix: 
+prefix: null
 topic:
-  - Spaced Repetition
-  - タスク管理
-  - 効率化
-source_article: "ks.250216_自分がやれていることを基準にしてやることを決めていく"
+- Spaced Repetition
+- タスク管理
+- 効率化
+source_article: ks.250216_自分がやれていることを基準にしてやることを決めていく
+note_type: method
 ---
 
 # Spaced Repetitionと雑務枠：効率化は「遊ぶ時間」のために

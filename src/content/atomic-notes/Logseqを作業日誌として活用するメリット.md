@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqを作業日誌として活用するメリット
-prefix: ""
+prefix: ''
 topic:
-  - Logseq
-  - 作業日誌
-  - タスク管理
-source_article: "ks.220915_KS002_Logseqでの作業日誌の残し方"
+- Logseq
+- 作業日誌
+- タスク管理
+source_article: ks.220915_KS002_Logseqでの作業日誌の残し方
+note_type: insight
 ---
 
 # Logseqを作業日誌として活用するメリット

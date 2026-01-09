@@ -1,12 +1,13 @@
 ---
 project: an
 title: Cursorのルールファイル：指示書の作成と再帰的実行によるワークフローの自動化
-prefix: 
+prefix: null
 topic:
-  - Cursor
-  - 自動化
-  - ワークフロー
-source_article: "ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる"
+- Cursor
+- 自動化
+- ワークフロー
+source_article: ks.250423_CursorとObsidianを連携して執筆やファイル整理に役立てる
+note_type: principle
 ---
 
 # Cursorのルールファイル：指示書の作成と再帰的実行によるワークフローの自動化

@@ -1,12 +1,13 @@
 ---
 project: an
 title: Windowsでもランチャーツールで同じことができる
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - workflow
-  - windows
+- obsidian
+- tool
+- workflow
+- windows
+note_type: principle
 ---
 
 # Windowsでもランチャーツールで同じことができる

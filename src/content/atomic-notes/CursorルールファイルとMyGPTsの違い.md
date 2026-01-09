@@ -2,9 +2,10 @@
 project: an
 title: CursorルールファイルとMyGPTsの違い
 topic:
-  - Cursor
-  - MyGPTs
-  - AI
+- Cursor
+- MyGPTs
+- AI
+note_type: principle
 ---
 
 # CursorルールファイルとMyGPTsの違い

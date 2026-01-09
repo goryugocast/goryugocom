@@ -1,12 +1,13 @@
 ---
 project: an
 title: エイリアスはバックリンクの「Unlinked Mentions」を強化する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - エイリアス
-  - バックリンク
-source_article: "ks.210323_💎Linking_Your_Thinkingを使いやすくするために重要なObsidianのエイリアス機能"
+- Obsidian
+- エイリアス
+- バックリンク
+source_article: ks.210323_💎Linking_Your_Thinkingを使いやすくするために重要なObsidianのエイリアス機能
+note_type: method
 ---
 
 # エイリアスはバックリンクの「Unlinked Mentions」を強化する

@@ -1,12 +1,13 @@
 ---
 project: an
 title: 紙の手帳、iA Writer、たすくま：目的に応じた情報収集と記録の最適化
-prefix: 
+prefix: null
 topic:
-  - 情報収集
-  - 記録
-  - ツール活用
-source_article: "ks.241217_情報整理に活用するObsidian以外のツール"
+- 情報収集
+- 記録
+- ツール活用
+source_article: ks.241217_情報整理に活用するObsidian以外のツール
+note_type: method
 ---
 
 # 紙の手帳、iA Writer、たすくま：目的に応じた情報収集と記録の最適化

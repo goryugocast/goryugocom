@@ -2,9 +2,10 @@
 project: an
 title: 自分に合ったJohnny Decimalを構築する
 topic:
-  - Johnny Decimal
-  - 情報整理
-  - 自己管理
+- Johnny Decimal
+- 情報整理
+- 自己管理
+note_type: method
 ---
 
 # 自分に合ったJohnny Decimalを構築する

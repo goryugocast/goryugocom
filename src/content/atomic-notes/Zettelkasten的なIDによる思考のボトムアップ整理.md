@@ -1,15 +1,16 @@
 ---
 project: an
 title: Zettelkasten的なIDによる思考のボトムアップ整理
-prefix: 
+prefix: null
 topic:
-  - Zettelkasten
-  - 知識管理
-  - 思考法
-  - 整理術
-  - ボトムアップ
-  - ナンバリング
-source_article: "ks.250611_ノートをつなげて整理するRINKシステム"
+- Zettelkasten
+- 知識管理
+- 思考法
+- 整理術
+- ボトムアップ
+- ナンバリング
+source_article: ks.250611_ノートをつなげて整理するRINKシステム
+note_type: method
 ---
 
 # Zettelkasten的なIDによる思考のボトムアップ整理

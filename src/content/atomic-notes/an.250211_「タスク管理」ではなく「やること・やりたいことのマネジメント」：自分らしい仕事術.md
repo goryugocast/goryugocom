@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「タスク管理」ではなく「やること・やりたいことのマネジメント」：自分らしい仕事術
-prefix: 
+prefix: null
 topic:
-  - タスク管理
-  - マネジメント
-  - 仕事術
-source_article: "ks.250211_Obsidianとたすくまを使ったタスク管理"
+- タスク管理
+- マネジメント
+- 仕事術
+source_article: ks.250211_Obsidianとたすくまを使ったタスク管理
+note_type: method
 ---
 
 # 「タスク管理」ではなく「やること・やりたいことのマネジメント」：自分らしい仕事術

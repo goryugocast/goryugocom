@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian起動時間のボトルネック：iCloud同期の問題と最適化
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 同期
-  - パフォーマンス
-source_article: "ks.241017_Obsidian 1.7のアップデートで起動時間が高速化"
+- Obsidian
+- 同期
+- パフォーマンス
+source_article: ks.241017_Obsidian 1.7のアップデートで起動時間が高速化
+note_type: method
 ---
 
 # Obsidian起動時間のボトルネック：iCloud同期の問題と最適化

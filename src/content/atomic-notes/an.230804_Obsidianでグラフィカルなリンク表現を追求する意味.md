@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianでグラフィカルなリンク表現を追求する意味
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 視覚化
-  - 効率化
-source_article: "ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る"
+- Obsidian
+- 視覚化
+- 効率化
+source_article: ks.230804_ショートカットアプリでグラフィカルなアプリリンクを作る
+note_type: method
 ---
 
 # Obsidianでグラフィカルなリンク表現を追求する意味

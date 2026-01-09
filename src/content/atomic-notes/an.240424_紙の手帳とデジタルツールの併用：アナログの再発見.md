@@ -1,12 +1,13 @@
 ---
 project: an
 title: 紙の手帳とデジタルツールの併用：アナログの再発見
-prefix: 
+prefix: null
 topic:
-  - アナログ
-  - デジタル
-  - 情報整理
-source_article: "ks.240424_『たいていのことは20時間で習得できる』の実践"
+- アナログ
+- デジタル
+- 情報整理
+source_article: ks.240424_『たいていのことは20時間で習得できる』の実践
+note_type: technique
 ---
 
 # 紙の手帳とデジタルツールの併用：アナログの再発見

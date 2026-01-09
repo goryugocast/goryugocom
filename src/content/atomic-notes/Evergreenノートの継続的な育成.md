@@ -2,9 +2,10 @@
 project: an
 title: Evergreenノートの継続的な育成
 topic:
-  - Evergreenノート
-  - Spaced Repetition
-  - ノート術
+- Evergreenノート
+- Spaced Repetition
+- ノート術
+note_type: method
 ---
 
 # Evergreenノートの継続的な育成

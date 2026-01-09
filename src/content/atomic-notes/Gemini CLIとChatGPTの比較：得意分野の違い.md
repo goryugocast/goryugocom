@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIとChatGPTの比較：得意分野の違い
 topic:
-  - Gemini CLI
-  - ChatGPT
-  - AI
+- Gemini CLI
+- ChatGPT
+- AI
+note_type: insight
 ---
 
 # Gemini CLIとChatGPTの比較：得意分野の違い

@@ -1,11 +1,12 @@
 ---
 project: an
 title: Advanced URIとブックマークレットでAmazon書誌情報ノートをワンクリック作成
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - ブックマークレット
-source_article: "ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る"
+- Obsidian
+- ブックマークレット
+source_article: ks.230420_🔧ObsidianにワンクリックでAmazon書誌情報ページを作る
+note_type: method
 ---
 
 # Advanced URIとブックマークレットでAmazon書誌情報ノートをワンクリック作成

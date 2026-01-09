@@ -2,15 +2,16 @@
 title: Manage Filtersで自動公開の対象フォルダを設定できる
 description: Obsidian PublishのManage Filters機能で、特定フォルダ配下に追加されたファイルを自動で公開対象にする
 aliases:
-  - フォルダの自動公開設定
-  - Manage Filters機能
-  - Publish自動化
+- フォルダの自動公開設定
+- Manage Filters機能
+- Publish自動化
 tags:
-  - Obsidian
-  - Publish
-  - 自動化
+- Obsidian
+- Publish
+- 自動化
 topics:
-  - Obsidianの全技術
+- Obsidianの全技術
+note_type: principle
 ---
 
 Manage Filtersは、Obsidian Publishで特定フォルダ内のファイルを自動的に公開対象に含める機能である。

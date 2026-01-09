@@ -2,9 +2,10 @@
 project: an
 title: AIを新入社員のように育成する
 topic:
-  - AI活用
-  - マインドセット
-  - 育成
+- AI活用
+- マインドセット
+- 育成
+note_type: method
 ---
 
 # AIを新入社員のように育成する

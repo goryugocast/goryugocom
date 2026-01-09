@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianにおける「いきなり完成形を真似しない」戦略
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 学習
-  - 効率
-source_article: "ks.230526_Obsidianの整理は「順番」が重要"
+- Obsidian
+- 学習
+- 効率
+source_article: ks.230526_Obsidianの整理は「順番」が重要
+note_type: insight
 ---
 
 # Obsidianにおける「いきなり完成形を真似しない」戦略

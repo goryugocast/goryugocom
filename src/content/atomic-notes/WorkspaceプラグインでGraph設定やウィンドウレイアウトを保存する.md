@@ -1,12 +1,13 @@
 ---
 project: an
 title: WorkspaceプラグインでGraph設定やウィンドウレイアウトを保存する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - プラグイン
-  - ワークフロー
-source_article: "ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定"
+- Obsidian
+- プラグイン
+- ワークフロー
+source_article: ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定
+note_type: method
 ---
 
 # WorkspaceプラグインでGraph設定やウィンドウレイアウトを保存する

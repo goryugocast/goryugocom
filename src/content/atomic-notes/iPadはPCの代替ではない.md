@@ -1,12 +1,13 @@
 ---
 project: an
 title: iPadはPCの代替ではない
-prefix: ""
+prefix: ''
 topic:
-  - iPad
-  - ワークフロー
-  - 思考法
-source_article: "ks.220912_🔧KS001_Obsidianのデータをgitで管理する方法とそのメリット"
+- iPad
+- ワークフロー
+- 思考法
+source_article: ks.220912_🔧KS001_Obsidianのデータをgitで管理する方法とそのメリット
+note_type: principle
 ---
 
 # iPadはPCの代替ではない

@@ -1,12 +1,13 @@
 ---
 project: an
 title: ObsidianとLogseqのデータ運用戦略：連携から分離へ
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - Obsidian
-  - データ運用
-source_article: "ks.220529_ショートカットアプリで素早くLogseqにメモを残す"
+- Logseq
+- Obsidian
+- データ運用
+source_article: ks.220529_ショートカットアプリで素早くLogseqにメモを残す
+note_type: insight
 ---
 
 # ObsidianとLogseqのデータ運用戦略：連携から分離へ

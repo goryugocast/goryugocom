@@ -1,12 +1,13 @@
 ---
 project: an
 title: ObsidianとLogseqの併用戦略：ローカルファイル活用のメリット
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Logseq
-  - ローカルファイル
-source_article: "ks.220506_ローカルの汎用ファイルを扱うことのメリット"
+- Obsidian
+- Logseq
+- ローカルファイル
+source_article: ks.220506_ローカルの汎用ファイルを扱うことのメリット
+note_type: insight
 ---
 
 # ObsidianとLogseqの併用戦略：ローカルファイル活用のメリット

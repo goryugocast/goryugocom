@@ -2,9 +2,10 @@
 project: an
 title: Gemini CLIによるコンテンツ要約と分析
 topic:
-  - Gemini CLI
-  - AI
-  - 要約
+- Gemini CLI
+- AI
+- 要約
+note_type: insight
 ---
 
 # Gemini CLIによるコンテンツ要約と分析

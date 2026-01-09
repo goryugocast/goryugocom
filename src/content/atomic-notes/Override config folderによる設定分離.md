@@ -2,8 +2,9 @@
 project: an
 title: Override config folderによる設定分離
 topic:
-  - Obsidian
-  - デバイス管理
+- Obsidian
+- デバイス管理
+note_type: insight
 ---
 
 PCとモバイルでObsidianの挙動を変えたい場合、`Override config folder`設定を使うことで、デバイスごとに異なる設定フォルダを指定できる。例えば、iPhoneでは`.iPhone`、iPadでは`.iPad`、Macでは`.Mac`といった名前を設定することで、それぞれ独立した設定を維持できる。

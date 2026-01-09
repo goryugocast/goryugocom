@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesによる「センスメイキング」の促進
 topic:
-  - Obsidian
-  - Bases
-  - 思考法
+- Obsidian
+- Bases
+- 思考法
+note_type: insight
 ---
 
 # Obsidian Basesによる「センスメイキング」の促進

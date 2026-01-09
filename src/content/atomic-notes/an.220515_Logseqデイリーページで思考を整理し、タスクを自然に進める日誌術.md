@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqデイリーページで思考を整理し、タスクを自然に進める日誌術
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - デイリーページ
-  - タスク管理
-source_article: "ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術"
+- Logseq
+- デイリーページ
+- タスク管理
+source_article: ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術
+note_type: method
 ---
 
 # Logseqデイリーページで思考を整理し、タスクを自然に進める日誌術

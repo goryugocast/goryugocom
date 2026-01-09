@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian保管庫の分割・統合：意思決定の基準とシンプルな運用
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 保管庫
-  - 意思決定
-source_article: "ks.231127_Obsidianの保管庫を1つにまとめた"
+- Obsidian
+- 保管庫
+- 意思決定
+source_article: ks.231127_Obsidianの保管庫を1つにまとめた
+note_type: method
 ---
 
 # Obsidian保管庫の分割・統合：意思決定の基準とシンプルな運用

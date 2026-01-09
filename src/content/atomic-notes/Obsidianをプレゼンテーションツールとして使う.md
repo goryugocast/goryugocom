@@ -1,10 +1,11 @@
 ---
 project: an
 title: Obsidianをプレゼンテーションツールとして使う
-prefix:
+prefix: null
 topic:
-  - workflow
-  - tool
+- workflow
+- tool
+note_type: technique
 ---
 
 # Obsidianをプレゼンテーションツールとして使う

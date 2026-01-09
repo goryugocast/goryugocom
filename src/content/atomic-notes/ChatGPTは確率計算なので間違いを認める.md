@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTは確率計算なので間違いを認める
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - concept
-  - principle
+- ChatGPT活用
+- concept
+- principle
+note_type: method
 ---
 
 # ChatGPTは確率計算なので間違いを認める

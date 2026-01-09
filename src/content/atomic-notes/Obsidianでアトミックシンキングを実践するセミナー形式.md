@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidianでアトミックシンキングを実践するセミナー形式
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - アトミックシンキング
-source_article: "ks.230827_KS010 タスクとプロジェクトをどう区別するか"
+- Obsidian
+- アトミックシンキング
+source_article: ks.230827_KS010 タスクとプロジェクトをどう区別するか
+note_type: method
 ---
 
 # Obsidianでアトミックシンキングを実践するセミナー形式

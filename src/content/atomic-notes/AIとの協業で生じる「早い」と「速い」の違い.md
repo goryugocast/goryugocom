@@ -2,9 +2,10 @@
 project: an
 title: AIとの協業で生じる「早い」と「速い」の違い
 topic:
-  - AI活用
-  - 効率化
-  - 思考法
+- AI活用
+- 効率化
+- 思考法
+note_type: insight
 ---
 
 # AIとの協業で生じる「早い」と「速い」の違い

@@ -1,11 +1,12 @@
 ---
 project: an
 title: Advanced URIで一発でノートを作る
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - plugin
-  - productivity
+- obsidian
+- plugin
+- productivity
+note_type: method
 ---
 
 # Advanced URIで一発でノートを作る

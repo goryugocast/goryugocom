@@ -1,12 +1,13 @@
 ---
 project: an
 title: テンプレートにAdvanced URIリンクを組み込む
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - workflow
-  - advanced-uri
-  - template
+- obsidian
+- workflow
+- advanced-uri
+- template
+note_type: technique
 ---
 
 # テンプレートにAdvanced URIリンクを組み込む

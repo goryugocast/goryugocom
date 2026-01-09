@@ -1,12 +1,13 @@
 ---
 project: an
 title: Dataviewでデイリーノートテンプレートに動的リストを埋め込む
-prefix:
+prefix: null
 topic:
-  - dataview
-  - daily-note
-  - template
-  - workflow
+- dataview
+- daily-note
+- template
+- workflow
+note_type: method
 ---
 
 # Dataviewでデイリーノートテンプレートに動的リストを埋め込む

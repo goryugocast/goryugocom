@@ -1,12 +1,13 @@
 ---
 project: an
 title: iPhoneでのObsidian最適化：快適なモバイル利用が促す記録と予定管理
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - iPhone
-  - 効率化
-source_article: "ks.241113_ホームノートの入れ替えることで自然に1週間の振り返りができる"
+- Obsidian
+- iPhone
+- 効率化
+source_article: ks.241113_ホームノートの入れ替えることで自然に1週間の振り返りができる
+note_type: method
 ---
 
 # iPhoneでのObsidian最適化：快適なモバイル利用が促す記録と予定管理

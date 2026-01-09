@@ -3,12 +3,13 @@ title: GTDのサムデイリストとしてSpaced Repetitionを活用する
 topic_code: obv
 topic: Obsidianの全技術
 tags:
-  - Obsidian
-  - GTD
-  - Spaced Repetition
-  - タスク管理
+- Obsidian
+- GTD
+- Spaced Repetition
+- タスク管理
 related_seminars:
-  - 250911_Obsidian Basesの活用可能性を考える
+- 250911_Obsidian Basesの活用可能性を考える
+note_type: method
 ---
 
 ## 概要

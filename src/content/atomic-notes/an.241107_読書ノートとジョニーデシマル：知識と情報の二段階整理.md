@@ -1,12 +1,13 @@
 ---
 project: an
 title: 読書ノートとジョニーデシマル：知識と情報の二段階整理
-prefix: 
+prefix: null
 topic:
-  - 読書
-  - 情報整理
-  - ジョニーデシマル
-source_article: "ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する"
+- 読書
+- 情報整理
+- ジョニーデシマル
+source_article: ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する
+note_type: method
 ---
 
 # 読書ノートとジョニーデシマル：知識と情報の二段階整理

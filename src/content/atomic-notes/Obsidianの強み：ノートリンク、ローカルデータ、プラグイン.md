@@ -2,9 +2,10 @@
 project: an
 title: Obsidianの強み：ノートリンク、ローカルデータ、プラグイン
 topic:
-  - Obsidian
-  - 特徴
-  - 機能
+- Obsidian
+- 特徴
+- 機能
+note_type: technique
 ---
 
 # Obsidianの強み：ノートリンク、ローカルデータ、プラグイン

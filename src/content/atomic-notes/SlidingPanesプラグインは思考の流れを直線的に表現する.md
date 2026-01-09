@@ -1,12 +1,13 @@
 ---
 project: an
 title: Sliding Panesプラグインは思考の流れを直線的に表現する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - プラグイン
-  - UI
-source_article: "ks.210318_💎Obsidianを便利にするプラグイン"
+- Obsidian
+- プラグイン
+- UI
+source_article: ks.210318_💎Obsidianを便利にするプラグイン
+note_type: method
 ---
 
 # Sliding Panesプラグインは思考の流れを直線的に表現する

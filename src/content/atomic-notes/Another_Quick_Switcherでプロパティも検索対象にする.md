@@ -1,9 +1,10 @@
 ---
 topic: Another Quick Switcher活用
 tags:
-  - プラグイン
-  - 検索
-  - クイックスイッチャー
+- プラグイン
+- 検索
+- クイックスイッチャー
+note_type: method
 ---
 
 # Another Quick Switcherでプロパティも検索対象にする

@@ -1,11 +1,12 @@
 ---
 project: an
 title: KDPで良い本を書く人を増やしたい
-prefix:
+prefix: null
 topic:
-  - writing
-  - community
-  - kdp
+- writing
+- community
+- kdp
+note_type: method
 ---
 
 # KDPで良い本を書く人を増やしたい

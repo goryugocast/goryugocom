@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqのエイリアス機能：日本語の表記揺れ問題を解決する
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - エイリアス
-  - 日本語処理
-source_article: "ks.220529_ショートカットアプリで素早くLogseqにメモを残す"
+- Logseq
+- エイリアス
+- 日本語処理
+source_article: ks.220529_ショートカットアプリで素早くLogseqにメモを残す
+note_type: method
 ---
 
 # Logseqのエイリアス機能：日本語の表記揺れ問題を解決する

@@ -1,12 +1,13 @@
 ---
 project: an
 title: 設定変更もAdvanced URIで自動化できる
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
-  - workflow
+- obsidian
+- tool
+- advanced-uri
+- workflow
+note_type: principle
 ---
 
 # 設定変更もAdvanced URIで自動化できる

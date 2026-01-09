@@ -1,11 +1,12 @@
 ---
 project: an
 title: VSCodeでChatGPTを組み合わせた質問テクニック
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - workflow
+- ChatGPT活用
+- プログラミング入門
+- workflow
+note_type: method
 ---
 
 # VSCodeでChatGPTを組み合わせた質問テクニック

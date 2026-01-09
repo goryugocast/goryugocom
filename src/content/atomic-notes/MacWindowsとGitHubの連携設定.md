@@ -1,13 +1,14 @@
 ---
 project: an
 title: MacWindowsとGitHubの連携設定
-prefix: ""
+prefix: ''
 topic:
-  - GitHub
-  - Obsidian
-  - 設定
-  - データ同期
-source_article: "ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する"
+- GitHub
+- Obsidian
+- 設定
+- データ同期
+source_article: ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
+note_type: method
 ---
 
 # Mac/WindowsとGitHubの連携設定

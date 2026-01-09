@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - ノート整理
-  - 効率化
-source_article: "ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法"
+- Obsidian
+- ノート整理
+- 効率化
+source_article: ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
+note_type: method
 ---
 
 # Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法

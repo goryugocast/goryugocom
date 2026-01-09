@@ -2,9 +2,10 @@
 project: ks
 title: 変則3ペイン構成でObsidianを構築する
 topic:
-  - Obsidian
-  - レイアウト
-  - UIデザイン
+- Obsidian
+- レイアウト
+- UIデザイン
+note_type: method
 ---
 
 # 変則3ペイン構成でObsidianを構築する

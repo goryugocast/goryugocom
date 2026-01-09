@@ -1,9 +1,10 @@
 ---
 tags:
-  - Note Refactor
-  - Obsidian
-  - ノート管理
+- Note Refactor
+- Obsidian
+- ノート管理
 created: 2025-01-02
+note_type: method
 ---
 
 # Note Refactorで選択範囲を新ノートとして切り出す

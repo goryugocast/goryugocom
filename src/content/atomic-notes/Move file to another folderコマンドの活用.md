@@ -1,10 +1,11 @@
 ---
 project: an
 title: Move file to another folderコマンドの活用
-prefix:
+prefix: null
 topic:
-  - tool
-  - workflow
+- tool
+- workflow
+note_type: method
 ---
 
 # Move file to another folderコマンドの活用

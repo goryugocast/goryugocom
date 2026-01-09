@@ -2,9 +2,10 @@
 project: an
 title: Canvasのスムーズな操作性
 topic:
-  - Obsidian
-  - Canvas
-  - UI/UX
+- Obsidian
+- Canvas
+- UI/UX
+note_type: technique
 ---
 
 # Canvasのスムーズな操作性

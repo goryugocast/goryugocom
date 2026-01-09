@@ -1,12 +1,13 @@
 ---
 project: an
 title: ObsidianとLogseqの役割分担：成果物と過程の効率的な使い分け
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Logseq
-  - 役割分担
-source_article: "ks.220506_ローカルの汎用ファイルを扱うことのメリット"
+- Obsidian
+- Logseq
+- 役割分担
+source_article: ks.220506_ローカルの汎用ファイルを扱うことのメリット
+note_type: method
 ---
 
 # ObsidianとLogseqの役割分担：成果物と過程の効率的な使い分け

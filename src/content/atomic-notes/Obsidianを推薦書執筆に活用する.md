@@ -1,11 +1,12 @@
 ---
 project: an
 title: Obsidianを推薦書執筆に活用する
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - 執筆
-source_article: "ks.231226_🎙KS001_超整理法的Obsidian整理術"
+- Obsidian
+- 執筆
+source_article: ks.231226_🎙KS001_超整理法的Obsidian整理術
+note_type: method
 ---
 
 # Obsidianを推薦書執筆に活用する

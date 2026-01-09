@@ -3,6 +3,7 @@ title: テンプレート機能ではなくDuplicate機能を使う理由
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:19:53
+note_type: method
 ---
 
 # テンプレート機能ではなくDuplicate機能を使う理由

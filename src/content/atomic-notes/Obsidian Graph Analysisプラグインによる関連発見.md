@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Graph Analysisプラグインによる関連発見
 topic:
-  - Obsidian
-  - グラフ分析
-  - 知識発見
+- Obsidian
+- グラフ分析
+- 知識発見
+note_type: insight
 ---
 
 # Obsidian Graph Analysisプラグインによる関連発見

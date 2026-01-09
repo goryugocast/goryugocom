@@ -1,11 +1,12 @@
 ---
 project: an
 title: Ankiで画像を積極的に活用する効果
-prefix:
+prefix: null
 topic:
-  - tool
-  - workflow
-  - anki
+- tool
+- workflow
+- anki
+note_type: method
 ---
 
 # Ankiで画像を積極的に活用する効果

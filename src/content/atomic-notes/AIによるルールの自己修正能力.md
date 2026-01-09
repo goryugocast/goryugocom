@@ -2,9 +2,10 @@
 project: an
 title: AIによるルールの自己修正能力
 topic:
-  - Cursor
-  - AI
-  - 自律性
+- Cursor
+- AI
+- 自律性
+note_type: principle
 ---
 
 # AIによるルールの自己修正能力

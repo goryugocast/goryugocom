@@ -3,6 +3,7 @@ title: PCの前での作業と打ち合わせを左右で分ける
 source: 250821_実例を見ながらデイリーノートの基本を学ぶ
 source_url: https://knowledgestuck.substack.com/p/b10
 timestamp: 00:06:06
+note_type: method
 ---
 
 # PCの前での作業と打ち合わせを左右で分ける

@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTのようなAIを使いこなすにはAI質問力を鍛えることが重要である
-prefix: ""
+prefix: ''
 topic:
-  - AI
-  - 質問力
-source_article: "ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める"
+- AI
+- 質問力
+source_article: ks.230116_🔧ChatGPTに毎日質問してAI質問力を高める
+note_type: principle
 ---
 
 # ChatGPTのようなAIを使いこなすにはAI質問力を鍛えることが重要である

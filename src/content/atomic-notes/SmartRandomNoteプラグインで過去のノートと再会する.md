@@ -1,12 +1,13 @@
 ---
 project: an
 title: Smart Random Noteプラグインで過去のノートと再会する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - プラグイン
-  - セレンディピティ
-source_article: "ks.210318_💎Obsidianを便利にするプラグイン"
+- Obsidian
+- プラグイン
+- セレンディピティ
+source_article: ks.210318_💎Obsidianを便利にするプラグイン
+note_type: method
 ---
 
 # Smart Random Noteプラグインで過去のノートと再会する

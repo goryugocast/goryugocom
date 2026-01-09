@@ -1,9 +1,10 @@
 ---
 topic: フロントマター・プロパティ管理
 tags:
-  - Obsidian
-  - Base
-  - 動的クエリ
+- Obsidian
+- Base
+- 動的クエリ
+note_type: technique
 ---
 
 # Baseプラグインのthis.queriesで動的フィルタリング

@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesで読書リストを視覚化する
 topic:
-  - Obsidian
-  - Bases
-  - 読書管理
+- Obsidian
+- Bases
+- 読書管理
+note_type: method
 ---
 
 # Obsidian Basesで読書リストを視覚化する

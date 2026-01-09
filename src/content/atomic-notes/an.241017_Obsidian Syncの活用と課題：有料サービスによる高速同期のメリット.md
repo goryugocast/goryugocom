@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Syncの活用と課題：有料サービスによる高速同期のメリット
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 同期
-  - 有料サービス
-source_article: "ks.241017_Obsidian 1.7のアップデートで起動時間が高速化"
+- Obsidian
+- 同期
+- 有料サービス
+source_article: ks.241017_Obsidian 1.7のアップデートで起動時間が高速化
+note_type: insight
 ---
 
 # Obsidian Syncの活用と課題：有料サービスによる高速同期のメリット

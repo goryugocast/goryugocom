@@ -2,9 +2,10 @@
 project: an
 title: AIに特定の文体を学習させる方法
 topic:
-  - Gemini CLI
-  - AI
-  - プロンプトエンジニアリング
+- Gemini CLI
+- AI
+- プロンプトエンジニアリング
+note_type: method
 ---
 
 # AIに特定の文体を学習させる方法

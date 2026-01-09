@@ -2,9 +2,10 @@
 project: an
 title: Canvasのグリッドが思考を整理する
 topic:
-  - Obsidian
-  - Canvas
-  - UI/UX
+- Obsidian
+- Canvas
+- UI/UX
+note_type: method
 ---
 
 # Canvasのグリッドが思考を整理する

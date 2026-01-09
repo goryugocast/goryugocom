@@ -2,8 +2,9 @@
 project: an
 title: Properties viewプラグインによるイージーモード編集
 topic:
-  - Obsidian
-  - plugin
+- Obsidian
+- plugin
+note_type: insight
 ---
 
 Obsidianでプロパティを編集する方法には、大きく分けて2つのアプローチがある。一つはソースモードで直接YAMLを手書きする「ハードコア派」のやり方。もう一つが、`Properties view`コアプラグインを有効にしてGUIで編集する「イージーモード」である。

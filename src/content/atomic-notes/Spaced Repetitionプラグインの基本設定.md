@@ -2,9 +2,10 @@
 project: an
 title: Spaced Repetitionプラグインの基本設定
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - 設定
+- Obsidian
+- Spaced Repetition
+- 設定
+note_type: method
 ---
 
 # Spaced Repetitionプラグインの基本設定

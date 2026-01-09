@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian初期設定：最小限のフォルダとルールの導入
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - 設定
-  - 効率
-source_article: "ks.230526_Obsidianの整理は「順番」が重要"
+- Obsidian
+- 設定
+- 効率
+source_article: ks.230526_Obsidianの整理は「順番」が重要
+note_type: principle
 ---
 
 # Obsidian初期設定：最小限のフォルダとルールの導入

@@ -2,9 +2,10 @@
 project: an
 title: Johnny Decimalとは：数字による情報整理術
 topic:
-  - Johnny Decimal
-  - 情報整理
-  - 整理術
+- Johnny Decimal
+- 情報整理
+- 整理術
+note_type: method
 ---
 
 # Johnny Decimalとは：数字による情報整理術

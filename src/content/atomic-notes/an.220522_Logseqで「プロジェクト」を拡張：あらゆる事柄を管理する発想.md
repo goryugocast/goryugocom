@@ -1,12 +1,13 @@
 ---
 project: an
 title: Logseqで「プロジェクト」を拡張：あらゆる事柄を管理する発想
-prefix: 
+prefix: null
 topic:
-  - Logseq
-  - プロジェクト管理
-  - 思考法
-source_article: "ks.220522_Logseqのデイリーページに書いている内容のまとめ"
+- Logseq
+- プロジェクト管理
+- 思考法
+source_article: ks.220522_Logseqのデイリーページに書いている内容のまとめ
+note_type: method
 ---
 
 # Logseqで「プロジェクト」を拡張：あらゆる事柄を管理する発想

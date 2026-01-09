@@ -2,9 +2,10 @@
 topic: Obsidianの全技術
 topic_code: obv
 tags:
-  - Obsidian
-  - プラグイン比較
-  - 運用設計
+- Obsidian
+- プラグイン比較
+- 運用設計
+note_type: method
 ---
 
 # Basesプラグインと検索機能の使い分け

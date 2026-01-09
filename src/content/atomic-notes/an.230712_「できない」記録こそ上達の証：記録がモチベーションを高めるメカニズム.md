@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「できない」記録こそ上達の証：記録がモチベーションを高めるメカニズム
-prefix: 
+prefix: null
 topic:
-  - モチベーション
-  - 記録
-  - 学習
-source_article: "ks.230712_Graph Viewをモチベーションアップのために活用する"
+- モチベーション
+- 記録
+- 学習
+source_article: ks.230712_Graph Viewをモチベーションアップのために活用する
+note_type: method
 ---
 
 # 「できない」記録こそ上達の証：記録がモチベーションを高めるメカニズム

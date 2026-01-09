@@ -1,11 +1,12 @@
 ---
 project: an
 title: Advanced URIの基本構造はキーと値の組み合わせ
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - tool
-  - advanced-uri
+- obsidian
+- tool
+- advanced-uri
+note_type: technique
 ---
 
 # Advanced URIの基本構造はキーと値の組み合わせ

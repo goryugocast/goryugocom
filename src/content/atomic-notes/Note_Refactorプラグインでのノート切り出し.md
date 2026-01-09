@@ -2,11 +2,12 @@
 title: Note Refactorプラグインでのノート切り出し
 description: reviewタグを自動付与し未来のレビュー対象化
 tags:
-  - Obsidian
-  - Note-Refactor
-  - ノート管理
+- Obsidian
+- Note-Refactor
+- ノート管理
 related:
-  - 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+- 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+note_type: technique
 ---
 
 ## 概要

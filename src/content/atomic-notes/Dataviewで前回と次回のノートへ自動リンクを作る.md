@@ -1,12 +1,13 @@
 ---
 project: an
 title: Dataviewで前回と次回のノートへ自動リンクを作る
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - dataview
-  - tool
-  - workflow
+- obsidian
+- dataview
+- tool
+- workflow
+note_type: method
 ---
 
 # Dataviewで前回と次回のノートへ自動リンクを作る

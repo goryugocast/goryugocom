@@ -2,9 +2,10 @@
 project: an
 title: Discordをメモの一時保管場所として活用する
 topic:
-  - メモ管理
-  - Discord
-  - ライフハック
+- メモ管理
+- Discord
+- ライフハック
+note_type: method
 ---
 
 # Discordをメモの一時保管場所として活用する

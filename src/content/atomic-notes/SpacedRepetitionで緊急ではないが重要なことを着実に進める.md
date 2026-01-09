@@ -1,12 +1,13 @@
 ---
 project: an
 title: Spaced Repetitionで「緊急ではないが重要なこと」を着実に進める
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - GTD
-source_article: "230124_🔧KS014_ノートタイトルの工夫だけでもノートの使い勝手は大きく変わる"
+- Obsidian
+- Spaced Repetition
+- GTD
+source_article: 230124_🔧KS014_ノートタイトルの工夫だけでもノートの使い勝手は大きく変わる
+note_type: principle
 ---
 
 # Spaced Repetitionで「緊急ではないが重要なこと」を着実に進める

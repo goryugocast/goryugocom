@@ -2,9 +2,10 @@
 project: an
 title: Cursorによる記事のカテゴリー分け自動化
 topic:
-  - Cursor
-  - 自動化
-  - 情報整理
+- Cursor
+- 自動化
+- 情報整理
+note_type: method
 ---
 
 # Cursorによる記事のカテゴリー分け自動化

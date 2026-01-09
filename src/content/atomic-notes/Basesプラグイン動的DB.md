@@ -4,6 +4,7 @@ topic: Obsidianの全技術
 topic_code: obv
 source: 250918_Spaced Repetitionプラグイン
 category: Basesプラグイン
+note_type: technique
 ---
 
 # BasesプラグインでノートにDynamicDatabaseを構築

@@ -2,15 +2,16 @@
 title: Publish設定はコマンドパレットからアクセスする
 description: Obsidian PublishはUIのプラグイン設定ではなく、コマンドパレット経由でアクセス
 aliases:
-  - Publish設定の場所
-  - コマンドパレット経由の設定
-  - PublishUIの罠
+- Publish設定の場所
+- コマンドパレット経由の設定
+- PublishUIの罠
 tags:
-  - Obsidian
-  - Publish
-  - 設定方法
+- Obsidian
+- Publish
+- 設定方法
 topics:
-  - Obsidianの全技術
+- Obsidianの全技術
+note_type: method
 ---
 
 Obsidian Publishの設定にアクセスする際、多くのユーザーがサイドバーのプラグイン設定を探すが、実際にはコマンドパレットを使う必要がある。

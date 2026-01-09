@@ -2,11 +2,12 @@
 title: Spaced Repetitionプラグインの実践的活用法
 description: ノートを長期的に育てるための中核機能
 tags:
-  - Obsidian
-  - Spaced-Repetition
-  - レビュー
+- Obsidian
+- Spaced-Repetition
+- レビュー
 related:
-  - 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+- 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+note_type: technique
 ---
 
 ## 概要

@@ -1,12 +1,13 @@
 ---
 project: an
 title: デイリーノートの運用変更がObsidian保管庫統合にもたらした影響
-prefix: 
+prefix: null
 topic:
-  - デイリーノート
-  - Obsidian
-  - 運用
-source_article: "ks.231127_Obsidianの保管庫を1つにまとめた"
+- デイリーノート
+- Obsidian
+- 運用
+source_article: ks.231127_Obsidianの保管庫を1つにまとめた
+note_type: insight
 ---
 
 # デイリーノートの運用変更がObsidian保管庫統合にもたらした影響

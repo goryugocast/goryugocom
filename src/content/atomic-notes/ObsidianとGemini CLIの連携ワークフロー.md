@@ -2,9 +2,10 @@
 project: an
 title: ObsidianとGemini CLIの連携ワークフロー
 topic:
-  - Gemini CLI
-  - Obsidian
-  - ワークフロー
+- Gemini CLI
+- Obsidian
+- ワークフロー
+note_type: method
 ---
 
 # ObsidianとGemini CLIの連携ワークフロー

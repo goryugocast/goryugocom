@@ -2,9 +2,10 @@
 project: an
 title: 過去のブログ記事をPublishフォルダに集約する
 topic:
-  - Obsidian Publish
-  - ブログ運営
-  - コンテンツ再利用
+- Obsidian Publish
+- ブログ運営
+- コンテンツ再利用
+note_type: method
 ---
 
 # 過去のブログ記事をPublishフォルダに集約する

@@ -2,9 +2,10 @@
 project: an
 title: DataViewはPublishで表示されない制約
 topic:
-  - Obsidian Publish
-  - DataView
-  - 情報整理
+- Obsidian Publish
+- DataView
+- 情報整理
+note_type: insight
 ---
 
 # DataViewはPublishで表示されない制約

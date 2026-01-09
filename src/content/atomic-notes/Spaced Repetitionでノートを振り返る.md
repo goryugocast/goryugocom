@@ -2,9 +2,10 @@
 project: an
 title: Spaced Repetitionでノートを振り返る
 topic:
-  - Spaced Repetition
-  - ノート術
-  - 効率化
+- Spaced Repetition
+- ノート術
+- 効率化
+note_type: method
 ---
 
 # Spaced Repetitionでノートを振り返る

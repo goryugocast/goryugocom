@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesの2つの作成方法：ファイルと埋め込み
 topic:
-  - Obsidian
-  - Bases
-  - 運用
+- Obsidian
+- Bases
+- 運用
+note_type: method
 ---
 
 # Obsidian Basesの2つの作成方法：ファイルと埋め込み

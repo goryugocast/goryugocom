@@ -2,9 +2,10 @@
 project: an
 title: プロセスを重視するCanvasの使い方
 topic:
-  - Obsidian
-  - Canvas
-  - 思考法
+- Obsidian
+- Canvas
+- 思考法
+note_type: method
 ---
 
 # プロセスを重視するCanvasの使い方

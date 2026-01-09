@@ -2,9 +2,10 @@
 project: an
 title: 手書きの記録をOCRでテキスト化し検索性を高める
 topic:
-  - 手書き
-  - OCR
-  - 検索性
+- 手書き
+- OCR
+- 検索性
+note_type: method
 ---
 
 # 手書きの記録をOCRでテキスト化し検索性を高める

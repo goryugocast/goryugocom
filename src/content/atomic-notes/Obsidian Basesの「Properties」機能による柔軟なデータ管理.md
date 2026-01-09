@@ -2,9 +2,10 @@
 project: an
 title: Obsidian Basesの「Properties」機能による柔軟なデータ管理
 topic:
-  - Obsidian
-  - Bases
-  - メタデータ
+- Obsidian
+- Bases
+- メタデータ
+note_type: method
 ---
 
 # Obsidian Basesの「Properties」機能による柔軟なデータ管理

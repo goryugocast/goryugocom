@@ -2,9 +2,10 @@
 project: an
 title: Publishのコンテンツブロックを再利用する
 topic:
-  - Obsidian Publish
-  - 効率化
-  - コンテンツ管理
+- Obsidian Publish
+- 効率化
+- コンテンツ管理
+note_type: method
 ---
 
 # Publishのコンテンツブロックを再利用する

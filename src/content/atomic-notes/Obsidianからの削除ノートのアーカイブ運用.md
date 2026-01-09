@@ -2,9 +2,10 @@
 project: an
 title: Obsidianからの削除ノートのアーカイブ運用
 topic:
-  - Obsidian
-  - 知識管理
-  - 断捨離
+- Obsidian
+- 知識管理
+- 断捨離
+note_type: method
 ---
 
 # Obsidianからの削除ノートのアーカイブ運用

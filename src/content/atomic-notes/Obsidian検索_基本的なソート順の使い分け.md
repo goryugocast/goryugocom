@@ -2,9 +2,10 @@
 topic: Obsidianの全技術
 topic_code: obv
 tags:
-  - Obsidian
-  - 検索機能
-  - 効率化
+- Obsidian
+- 検索機能
+- 効率化
+note_type: method
 ---
 
 # Obsidian検索：基本的なソート順の使い分け

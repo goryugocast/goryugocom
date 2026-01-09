@@ -1,12 +1,13 @@
 ---
 project: an
 title: デジタルノートにおける保存と管理のバランス：デイリーノートの活用
-prefix: 
+prefix: null
 topic:
-  - デイリーノート
-  - 情報整理
-  - 管理
-source_article: "ks.230727_Obsidianを使わないメモ整理の例"
+- デイリーノート
+- 情報整理
+- 管理
+source_article: ks.230727_Obsidianを使わないメモ整理の例
+note_type: method
 ---
 
 # デジタルノートにおける保存と管理のバランス：デイリーノートの活用

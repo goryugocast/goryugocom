@@ -2,9 +2,10 @@
 project: an
 title: Canvasでのカレンダーの動的な管理
 topic:
-  - Obsidian
-  - Canvas
-  - タスク管理
+- Obsidian
+- Canvas
+- タスク管理
+note_type: method
 ---
 
 # Canvasでのカレンダーの動的な管理

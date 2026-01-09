@@ -4,6 +4,7 @@ topic: Obsidianの全技術
 topic_code: obv
 source: 250918_Spaced Repetitionプラグイン
 category: Basesプラグイン
+note_type: method
 ---
 
 # Newボタンでフィルター条件を自動引き継ぎする仕組み

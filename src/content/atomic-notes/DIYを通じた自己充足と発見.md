@@ -1,12 +1,13 @@
 ---
 project: an
 title: DIYを通じた自己充足と発見
-prefix: ""
+prefix: ''
 topic:
-  - DIY
-  - 自己充足
-  - 幸福ライフハック
-source_article: "ks.230508_📅KS010_🤔自分と向き合って楽しむ、人生の新しいスタイル"
+- DIY
+- 自己充足
+- 幸福ライフハック
+source_article: ks.230508_📅KS010_🤔自分と向き合って楽しむ、人生の新しいスタイル
+note_type: insight
 ---
 
 # DIYを通じた自己充足と発見

@@ -2,9 +2,10 @@
 project: an
 title: Obsidianを使った持続可能な仕事術
 topic:
-  - 仕事術
-  - 効率化
-  - 記録術
+- 仕事術
+- 効率化
+- 記録術
+note_type: method
 ---
 
 # Obsidianを使った持続可能な仕事術

@@ -1,10 +1,11 @@
 ---
 project: an
 title: Toggle bulletコマンドの活用
-prefix:
+prefix: null
 topic:
-  - tool
-  - workflow
+- tool
+- workflow
+note_type: method
 ---
 
 # Toggle bulletコマンドの活用

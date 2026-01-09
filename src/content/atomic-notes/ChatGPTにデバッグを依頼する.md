@@ -1,11 +1,12 @@
 ---
 project: an
 title: ChatGPTにデバッグを依頼する
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - workflow
+- ChatGPT活用
+- プログラミング入門
+- workflow
+note_type: method
 ---
 
 # ChatGPTにデバッグを依頼する

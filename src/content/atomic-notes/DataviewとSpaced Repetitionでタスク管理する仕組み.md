@@ -1,13 +1,14 @@
 ---
 project: an
 title: DataviewとSpaced Repetitionでタスク管理する仕組み
-prefix:
+prefix: null
 topic:
-  - task-management
-  - obsidian
-  - dataview
-  - spaced-repetition
-  - tool
+- task-management
+- obsidian
+- dataview
+- spaced-repetition
+- tool
+note_type: method
 ---
 
 # DataviewとSpaced Repetitionでタスク管理する仕組み

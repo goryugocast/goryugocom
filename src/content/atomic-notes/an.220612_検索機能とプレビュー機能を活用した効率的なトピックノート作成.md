@@ -1,12 +1,13 @@
 ---
 project: an
 title: 検索機能とプレビュー機能を活用した効率的なトピックノート作成
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - トピックノート
-  - 検索
-source_article: "ks.220612_Obsidianのノートをまとめるノート「トピックノート」"
+- Obsidian
+- トピックノート
+- 検索
+source_article: ks.220612_Obsidianのノートをまとめるノート「トピックノート」
+note_type: method
 ---
 
 # 検索機能とプレビュー機能を活用した効率的なトピックノート作成

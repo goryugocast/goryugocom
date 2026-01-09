@@ -2,11 +2,12 @@
 title: Baseプラグインで専用リストを作成
 description: 特定プロジェクトのノート群を俯瞰
 tags:
-  - Obsidian
-  - Base
-  - 可視化
+- Obsidian
+- Base
+- 可視化
 related:
-  - 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+- 251030_🪄Spaced Repetitionでのレビューを実例と共にじっくり解説
+note_type: method
 ---
 
 ## 概要

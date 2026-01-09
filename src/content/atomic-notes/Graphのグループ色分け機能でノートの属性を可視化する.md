@@ -1,12 +1,13 @@
 ---
 project: an
 title: Graphのグループ色分け機能でノートの属性を可視化する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Graph
-  - 可視化
-source_article: "ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定"
+- Obsidian
+- Graph
+- 可視化
+source_article: ks.210313_💎ObsidianのGraph機能を使いこなしていい感じにする設定
+note_type: method
 ---
 
 # Graphのグループ色分け機能でノートの属性を可視化する

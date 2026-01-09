@@ -1,12 +1,13 @@
 ---
 project: an
 title: 共同執筆におけるGitHub活用の重要性
-prefix: ""
+prefix: ''
 topic:
-  - GitHub
-  - 共同執筆
-  - プロジェクト管理
-source_article: "ks.221201_🔧KS008_GitHubを使って複数人での原稿管理するときのコツ"
+- GitHub
+- 共同執筆
+- プロジェクト管理
+source_article: ks.221201_🔧KS008_GitHubを使って複数人での原稿管理するときのコツ
+note_type: insight
 ---
 
 # 共同執筆におけるGitHub活用の重要性

@@ -1,12 +1,13 @@
 ---
 project: an
 title: ObsidianとWorkflowyの使い分け
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Workflowy
-  - ツール術
-source_article: "ks.240108_🎙KS002_オリジナルを生み出すのではなく、オリジナルな組み合わせを見つける"
+- Obsidian
+- Workflowy
+- ツール術
+source_article: ks.240108_🎙KS002_オリジナルを生み出すのではなく、オリジナルな組み合わせを見つける
+note_type: method
 ---
 
 # ObsidianとWorkflowyの使い分け

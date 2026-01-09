@@ -1,11 +1,12 @@
 ---
 project: an
 title: 生成AIはアイデアを高速でプロトタイプする強力なツールとなる
-prefix: 
+prefix: null
 topic:
-  - AI
-  - プロトタイピング
-source_article: "ks.260101_📅2025年12月の振り返り"
+- AI
+- プロトタイピング
+source_article: ks.260101_📅2025年12月の振り返り
+note_type: insight
 ---
 
 # 生成AIはアイデアを高速でプロトタイプする強力なツールとなる

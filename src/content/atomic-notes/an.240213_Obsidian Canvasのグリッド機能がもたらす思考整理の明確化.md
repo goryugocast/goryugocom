@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidian Canvasのグリッド機能がもたらす思考整理の明確化
-prefix: 
+prefix: null
 topic:
-  - Obsidian Canvas
-  - 思考整理
-  - 視覚化
-source_article: "ks.240213_謎解きの続きはObsidianで"
+- Obsidian Canvas
+- 思考整理
+- 視覚化
+source_article: ks.240213_謎解きの続きはObsidianで
+note_type: insight
 ---
 
 # Obsidian Canvasのグリッド機能がもたらす思考整理の明確化

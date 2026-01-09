@@ -2,9 +2,10 @@
 project: an
 title: Obsidianと手書きツールのハイブリッド運用
 topic:
-  - Obsidian
-  - 手書き
-  - 効率化
+- Obsidian
+- 手書き
+- 効率化
+note_type: method
 ---
 
 # Obsidianと手書きツールのハイブリッド運用

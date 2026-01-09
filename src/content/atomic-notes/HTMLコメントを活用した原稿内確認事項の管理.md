@@ -1,13 +1,14 @@
 ---
 project: an
 title: HTMLコメントを活用した原稿内確認事項の管理
-prefix: ""
+prefix: ''
 topic:
-  - 原稿管理
-  - KDP
-  - 執筆
-  - コメント機能
-source_article: "ks.221201_🔧KS008_GitHubを使って複数人での原稿管理するときのコツ"
+- 原稿管理
+- KDP
+- 執筆
+- コメント機能
+source_article: ks.221201_🔧KS008_GitHubを使って複数人での原稿管理するときのコツ
+note_type: method
 ---
 
 # HTMLコメントを活用した原稿内確認事項の管理

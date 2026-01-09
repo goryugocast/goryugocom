@@ -70,6 +70,7 @@ const atomicNotes = defineCollection({
     description: z.string().optional(),
     related: z.array(z.string()).optional(),
     created: z.string().or(z.date()).optional(),
+    note_type: z.enum(['principle', 'method', 'insight', 'technique', 'definition']).optional(),
   }),
 });
 

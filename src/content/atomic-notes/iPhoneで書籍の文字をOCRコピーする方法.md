@@ -1,10 +1,11 @@
 ---
 project: an
 title: iPhoneで書籍の文字をOCRコピーする方法
-prefix:
+prefix: null
 topic:
-  - tool
-  - workflow
+- tool
+- workflow
+note_type: method
 ---
 
 # iPhoneで書籍の文字をOCRコピーする方法

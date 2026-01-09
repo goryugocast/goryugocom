@@ -2,9 +2,10 @@
 project: ks
 title: 生成AIを使ったノート活用で知識獲得を加速させる
 topic:
-  - Obsidian
-  - 生成AI
-  - 学習方法
+- Obsidian
+- 生成AI
+- 学習方法
+note_type: method
 ---
 
 # 生成AIを使ったノート活用で知識獲得を加速させる

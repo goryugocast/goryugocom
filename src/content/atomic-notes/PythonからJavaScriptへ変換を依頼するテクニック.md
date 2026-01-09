@@ -1,11 +1,12 @@
 ---
 project: an
 title: PythonからJavaScriptへ変換を依頼するテクニック
-prefix:
+prefix: null
 topic:
-  - ChatGPT活用
-  - プログラミング入門
-  - workflow
+- ChatGPT活用
+- プログラミング入門
+- workflow
+note_type: method
 ---
 
 # PythonからJavaScriptへ変換を依頼するテクニック

@@ -1,12 +1,13 @@
 ---
 project: an
 title: 「自分のこと」と「自分で作ったもの」に焦点を当てる情報整理術
-prefix: 
+prefix: null
 topic:
-  - 情報整理
-  - 自己管理
-  - 効率化
-source_article: "ks.241217_情報整理に活用するObsidian以外のツール"
+- 情報整理
+- 自己管理
+- 効率化
+source_article: ks.241217_情報整理に活用するObsidian以外のツール
+note_type: method
 ---
 
 # 「自分のこと」と「自分で作ったもの」に焦点を当てる情報整理術

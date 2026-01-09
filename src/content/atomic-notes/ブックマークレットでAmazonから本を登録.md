@@ -1,11 +1,12 @@
 ---
 project: an
 title: ブックマークレットでAmazonから本を登録
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - bookmarklet
-  - reading
+- obsidian
+- bookmarklet
+- reading
+note_type: method
 ---
 
 # ブックマークレットでAmazonから本を登録

@@ -1,12 +1,13 @@
 ---
 project: an
 title: デジタルノートにおける「探す」行為の罠と効率化の秘訣
-prefix: 
+prefix: null
 topic:
-  - ノート整理
-  - 効率化
-  - 思考法
-source_article: "ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法"
+- ノート整理
+- 効率化
+- 思考法
+source_article: ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
+note_type: method
 ---
 
 # デジタルノートにおける「探す」行為の罠と効率化の秘訣

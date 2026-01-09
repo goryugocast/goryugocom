@@ -2,9 +2,10 @@
 project: an
 title: Spaced Repetitionのキーボードショートカット設定
 topic:
-  - Obsidian
-  - Spaced Repetition
-  - 効率化
+- Obsidian
+- Spaced Repetition
+- 効率化
+note_type: method
 ---
 
 # Spaced Repetitionのキーボードショートカット設定

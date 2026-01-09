@@ -1,10 +1,11 @@
 ---
 project: an
 title: Spaced Repetitionプラグインの設定と使い方
-prefix:
+prefix: null
 topic:
-  - plugin
-  - tool
+- plugin
+- tool
+note_type: technique
 ---
 
 # Spaced Repetitionプラグインの設定と使い方

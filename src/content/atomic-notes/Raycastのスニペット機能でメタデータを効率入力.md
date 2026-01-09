@@ -1,10 +1,11 @@
 ---
 project: an
 title: Raycastのスニペット機能でメタデータを効率入力
-prefix:
+prefix: null
 topic:
-  - tool
-  - workflow
+- tool
+- workflow
+note_type: method
 ---
 
 # Raycastのスニペット機能でメタデータを効率入力

@@ -1,13 +1,14 @@
 ---
 project: an
 title: DataviewによるObsidian HOMEノートの最適化
-prefix: ""
+prefix: ''
 topic:
-  - Obsidian
-  - Dataview
-  - ホーム画面
-  - タスク管理
-source_article: "ks.221120_🔧KS007_ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する"
+- Obsidian
+- Dataview
+- ホーム画面
+- タスク管理
+source_article: ks.221120_🔧KS007_ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する
+note_type: method
 ---
 
 # DataviewによるObsidian HOMEノートの最適化

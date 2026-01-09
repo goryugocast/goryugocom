@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianホームノート運用における「技術継承」の視点：式年遷宮からの学び
-prefix: 
+prefix: null
 topic:
-  - ホームノート
-  - 運用
-  - スキル習得
-source_article: "ks.241012_ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける"
+- ホームノート
+- 運用
+- スキル習得
+source_article: ks.241012_ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける
+note_type: insight
 ---
 
 # Obsidianホームノート運用における「技術継承」の視点：式年遷宮からの学び

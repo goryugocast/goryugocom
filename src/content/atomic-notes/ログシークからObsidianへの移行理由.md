@@ -1,12 +1,13 @@
 ---
 project: an
 title: ログシークからObsidianへの移行理由
-prefix:
+prefix: null
 topic:
-  - obsidian
-  - daily-note
-  - workflow
-  - concept
+- obsidian
+- daily-note
+- workflow
+- concept
+note_type: insight
 ---
 
 # ログシークからObsidianへの移行理由

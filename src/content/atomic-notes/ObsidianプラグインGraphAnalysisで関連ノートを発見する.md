@@ -1,12 +1,13 @@
 ---
 project: an
 title: Obsidianプラグイン「Graph Analysis」で関連ノートを発見する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - プラグイン
-  - 執筆術
-source_article: "220907_📖KS001_本作りの素材集めをする"
+- Obsidian
+- プラグイン
+- 執筆術
+source_article: 220907_📖KS001_本作りの素材集めをする
+note_type: method
 ---
 
 # Obsidianプラグイン「Graph Analysis」で関連ノートを発見する

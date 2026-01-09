@@ -1,12 +1,13 @@
 ---
 project: an
 title: Local Graphはアウトライン作成時の関連ノート発見器として機能する
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - Graph
-  - アウトライン
-source_article: "ks.210505_💎ObsidianのGraph機能_便利な使い方"
+- Obsidian
+- Graph
+- アウトライン
+source_article: ks.210505_💎ObsidianのGraph機能_便利な使い方
+note_type: method
 ---
 
 # Local Graphはアウトライン作成時の関連ノート発見器として機能する

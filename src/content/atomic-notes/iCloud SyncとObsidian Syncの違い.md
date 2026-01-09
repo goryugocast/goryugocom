@@ -2,9 +2,10 @@
 project: an
 title: iCloud SyncとObsidian Syncの違い
 topic:
-  - Obsidian
-  - 同期
-  - モバイル
+- Obsidian
+- 同期
+- モバイル
+note_type: insight
 ---
 
 # iCloud SyncとObsidian Syncの違い

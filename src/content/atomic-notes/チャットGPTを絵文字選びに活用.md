@@ -2,9 +2,10 @@
 project: an
 title: チャットGPTを絵文字選びに活用
 topic:
-  - AI活用
-  - タスク管理
-  - 命名規則
+- AI活用
+- タスク管理
+- 命名規則
+note_type: method
 ---
 
 # チャットGPTを絵文字選びに活用

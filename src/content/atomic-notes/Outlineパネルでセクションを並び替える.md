@@ -1,9 +1,10 @@
 ---
 project: an
 title: Outlineパネルでセクションを並び替える
-prefix:
+prefix: null
 topic:
-  - workflow
+- workflow
+note_type: method
 ---
 
 Obsidianのアウトライン機能では、見出し（H1、H2など）をドラッグ&ドロップで並び替えることができる。セクション全体が移動するため、長い文章の構成を素早く変更できる。

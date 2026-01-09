@@ -1,12 +1,13 @@
 ---
 project: an
 title: クイックスイッチャーとデイリーノートを活用した情報管理
-prefix: 
+prefix: null
 topic:
-  - Obsidian
-  - クイックスイッチャー
-  - デイリーノート
-source_article: "ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法"
+- Obsidian
+- クイックスイッチャー
+- デイリーノート
+source_article: ks.240328_Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
+note_type: method
 ---
 
 # クイックスイッチャーとデイリーノートを活用した情報管理
