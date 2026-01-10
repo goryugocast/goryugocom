@@ -258,6 +258,51 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         flex-wrap: wrap;
       }
 
+      .main-filter-buttons.level-1 {
+        gap: var(--spacing-md);
+      }
+
+      .main-filter-buttons.level-1 .main-filter-button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+      }
+
+      /* Level 2: Article Category Navigation */
+      .article-category-buttons {
+        display: flex;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+        flex-wrap: wrap;
+        padding: var(--spacing-sm) 0;
+      }
+
+      .article-category-buttons.hidden {
+        display: none;
+      }
+
+      .category-button {
+        padding: 0.6rem 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.3);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: inherit;
+      }
+
+      .category-button:hover {
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .category-button.active {
+        background: var(--accent);
+        color: white;
+        border-color: var(--accent);
+      }
+
       .main-filter-button {
         padding: 0.8rem 1.5rem;
         border: 1px solid #fff;
@@ -538,6 +583,27 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         margin-bottom: 0;
         gap: 4px;
         flex-wrap: wrap;
+      }
+
+      .floating-controls .article-category-buttons {
+        margin-bottom: 0;
+        gap: 4px;
+        padding: 0;
+      }
+
+      .floating-controls .article-category-buttons.hidden {
+        display: none;
+      }
+
+      .floating-controls .category-button {
+        padding: 4px 10px;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+      }
+
+      .floating-controls .category-button.active {
+        background: rgba(0, 122, 255, 0.2);
       }
 
       .floating-controls .main-filter-button {
@@ -1316,13 +1382,15 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
     <div class="floating-controls" id="floating-controls">
       <div class="floating-container">
         <div class="main-filter-buttons">
-          <button class="main-filter-button active" data-main-filter="videos" title="動画">🎥</button>
-          <button class="main-filter-button" data-main-filter="digital-note" title="デジタルノート">💻</button>
-          <button class="main-filter-button" data-main-filter="lifestyle" title="ライフスタイル・学習">📚</button>
-          <button class="main-filter-button" data-main-filter="column" title="コラム">✍️</button>
-          <button class="main-filter-button" data-main-filter="contributions" title="寄稿記事">👥</button>
-          <button class="main-filter-button" data-main-filter="glossary" title="用語集">📖</button>
-          <button class="main-filter-button" data-main-filter="notes" title="ノート">📝</button>
+          <button class="main-filter-button active" data-main-filter="glossary" title="用語集">📖</button>
+          <button class="main-filter-button" data-main-filter="articles" title="記事一覧">📄</button>
+        </div>
+        <div class="article-category-buttons floating-level-2 hidden" id="floating-article-category-nav">
+          <button class="category-button active" data-article-category="videos" title="動画">🎥</button>
+          <button class="category-button" data-article-category="digital-note" title="デジタルノート">💻</button>
+          <button class="category-button" data-article-category="lifestyle" title="ライフスタイル">📚</button>
+          <button class="category-button" data-article-category="column" title="コラム">✍️</button>
+          <button class="category-button" data-article-category="contributions" title="寄稿記事">👥</button>
         </div>
         <div class="controls-section">
           <div class="segmented-control" id="floating-sort-control">
@@ -1339,15 +1407,19 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         <h1 class="site-title">Knowledge Stack</h1>
 
 
-        <!-- Main filter buttons - horizontal -->
-        <div class="main-filter-buttons">
-          <button class="main-filter-button active" data-main-filter="videos">🎥 動画</button>
-          <button class="main-filter-button" data-main-filter="digital-note">💻 デジタルノート</button>
-          <button class="main-filter-button" data-main-filter="lifestyle">📚 ライフスタイル・学習</button>
-          <button class="main-filter-button" data-main-filter="column">✍️ コラム</button>
-          <button class="main-filter-button" data-main-filter="contributions">👥 寄稿記事</button>
-          <button class="main-filter-button" data-main-filter="glossary">📖 用語集</button>
-          <button class="main-filter-button" data-main-filter="notes">📝 ノート</button>
+        <!-- Level 1: Main Navigation -->
+        <div class="main-filter-buttons level-1">
+          <button class="main-filter-button active" data-main-filter="glossary">用語集</button>
+          <button class="main-filter-button" data-main-filter="articles">記事一覧</button>
+        </div>
+
+        <!-- Level 2: Article Categories (hidden by default) -->
+        <div class="article-category-buttons level-2 hidden" id="article-category-nav">
+          <button class="category-button active" data-article-category="videos">🎥 動画</button>
+          <button class="category-button" data-article-category="digital-note">💻 デジタルノート</button>
+          <button class="category-button" data-article-category="lifestyle">📚 ライフスタイル</button>
+          <button class="category-button" data-article-category="column">✍️ コラム</button>
+          <button class="category-button" data-article-category="contributions">👥 寄稿記事</button>
         </div>
 
         <!-- Videos filter list -->
@@ -1439,39 +1511,8 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           </div>
         </div>
 
-        <!-- Notes filter list -->
-        <div class="filter-list-section" id="notes-filter-list">
-          <div class="filter-buttons">
-            <button class="filter-button active" data-filter-type="note-type" data-filter-value="all">
-              すべて
-              <span class="filter-count">{sortedAtomicNotes.length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="principle">
-              Principle
-              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'principle').length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="method">
-              Method
-              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'method').length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="insight">
-              Insight
-              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'insight').length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="technique">
-              Technique
-              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'technique').length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="definition">
-              Definition
-              <span class="filter-count">{sortedAtomicNotes.filter(n => n.data.note_type === 'definition').length}</span>
-            </button>
-            <button class="filter-button" data-filter-type="note-type" data-filter-value="unknown">
-              未分類
-              <span class="filter-count">{sortedAtomicNotes.filter(n => !n.data.note_type).length}</span>
-            </button>
-          </div>
-        </div>
+        <!-- Notes filter list (Hidden - internal links only) -->
+        <div class="filter-list-section hidden" id="notes-filter-list" style="display: none;"></div>
 
         <!-- Controls -->
         <div class="controls-section">
@@ -1496,8 +1537,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         {processedVideos.map((video, index) => (
           <article
             class="article-card"
-            style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
-            data-series={video.data.series_name}
+                        data-series={video.data.series_name}
             data-title={(video.data.title || '').toLowerCase()}
             data-date={new Date(video.data.date_published).getTime()}
           >
@@ -1555,8 +1595,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           return (
             <article
               class="article-card"
-              style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
-              data-series-parent={parent}
+                            data-series-parent={parent}
               data-series-child={child || ''}
               data-title={(article.data.title || '').toLowerCase()}
               data-date={new Date(article.data.date_published).getTime()}
@@ -1607,8 +1646,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
             <div
               class="glossary-card-wrapper"
               data-category={term.data.category}
-              style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
-              data-date="0"
+                            data-date="0"
             >
               <GlossaryCard
                 title={term.data.title}
@@ -1698,8 +1736,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           return (
             <div
               class="article-card"
-              style={`animation-delay: ${0.1 + (index % 10) * 0.04}s`}
-              data-topics={JSON.stringify(note.data.topic || [])}
+                            data-topics={JSON.stringify(note.data.topic || [])}
               data-note-type={note.data.note_type || 'unknown'}
               data-title={(note.data.title || note.slug || '').toLowerCase()}
               data-date="0"
@@ -1735,7 +1772,8 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
     </div>
 
     <script>
-      let currentMode = 'videos';
+      let currentMode = 'glossary'; // Default to glossary
+      let currentArticleCategory = 'videos'; // Level 2 default
       let currentVideoSeries = 'all';
       let currentCategoryChild = '';
       let currentGlossaryCategory = 'all';
@@ -1762,16 +1800,19 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         bulkToggleBtn = document.getElementById('bulk-toggle-btn');
         floatingControls = document.getElementById('floating-controls');
 
+        // Article category lists map (Level 2)
         modeLists = {
+          glossary: glossaryList,
+          articles: null, // Container mode
           videos: videoList,
           'digital-note': articleList,
           lifestyle: articleList,
           column: articleList,
           contributions: articleList,
-          glossary: glossaryList,
           notes: notesList
         };
 
+        // Level 3 filters
         filterLists = {
           videos: document.getElementById('videos-filter-list'),
           'digital-note': document.getElementById('digital-note-filter-list'),
@@ -1812,7 +1853,9 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       } // End of attachEventListeners
 
       function toggleBulkExpand() {
-        const currentList = modeLists[currentMode];
+        const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
+        const currentList = modeLists[actualMode];
+        if (!currentList) return;
         const visibleCards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden), .glossary-card-wrapper:not(.hidden)'));
         const anyExpanded = visibleCards.some(card => card.classList.contains('expanded'));
 
@@ -1926,7 +1969,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function attachEventListeners() {
-        // Main Mode Switch
+        // Level 1: Main Mode Switch (Glossary / Articles)
         document.querySelectorAll('.main-filter-button').forEach(btn => {
           btn.addEventListener('click', () => {
             currentMode = btn.dataset.mainFilter;
@@ -1935,6 +1978,15 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
             activeNoteFilter = null;
             const clearBtn = document.getElementById('clear-filter-btn');
             if (clearBtn) clearBtn.classList.add('hidden');
+            updateUI();
+          });
+        });
+
+        // Level 2: Article Category Switch
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentArticleCategory = btn.dataset.articleCategory;
+            currentCategoryChild = '';
             updateUI();
           });
         });
@@ -2008,34 +2060,48 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function updateUI() {
-        // Show/hide lists - article modes share the same list
-        const articleModes = ['digital-note', 'lifestyle', 'column', 'contributions'];
-        const isArticleMode = articleModes.includes(currentMode);
+        // Determine actual display mode
+        const isArticlesMode = currentMode === 'articles';
+        const actualMode = isArticlesMode ? currentArticleCategory : currentMode;
+        const articleCategories = ['videos', 'digital-note', 'lifestyle', 'column', 'contributions'];
+        const isArticleCategory = articleCategories.includes(actualMode);
 
-        if (videoList) videoList.classList.toggle('hidden', currentMode !== 'videos');
-        if (articleList) articleList.classList.toggle('hidden', !isArticleMode);
-        if (glossaryList) glossaryList.classList.toggle('hidden', currentMode !== 'glossary');
-        if (notesList) notesList.classList.toggle('hidden', currentMode !== 'notes');
+        // Show/hide lists based on actual mode
+        if (videoList) videoList.classList.toggle('hidden', actualMode !== 'videos');
+        if (articleList) articleList.classList.toggle('hidden', !['digital-note', 'lifestyle', 'column', 'contributions'].includes(actualMode));
+        if (glossaryList) glossaryList.classList.toggle('hidden', actualMode !== 'glossary');
+        if (notesList) notesList.classList.toggle('hidden', actualMode !== 'notes');
 
-        // Show/hide filter lists
+        // Show/hide Level 2 navigation (article categories)
+        const articleCategoryNavs = document.querySelectorAll('.article-category-buttons');
+        articleCategoryNavs.forEach(nav => {
+          nav.classList.toggle('hidden', !isArticlesMode);
+        });
+
+        // Show/hide Level 3 filter lists
         Object.keys(filterLists).forEach(mode => {
           if (filterLists[mode]) {
-            filterLists[mode].classList.toggle('hidden', mode !== currentMode);
-            filterLists[mode].classList.toggle('visible', mode === currentMode);
+            const showFilter = isArticlesMode ? (mode === currentArticleCategory) : (mode === currentMode);
+            filterLists[mode].classList.toggle('hidden', !showFilter);
+            filterLists[mode].classList.toggle('visible', showFilter);
           }
         });
 
-        // Update main buttons (both header and floating)
+        // Update Level 1 main buttons
         document.querySelectorAll('.main-filter-button').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.mainFilter === currentMode);
         });
 
-        // Update sort controls (both header and floating)
+        // Update Level 2 category buttons
+        document.querySelectorAll('.category-button').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.articleCategory === currentArticleCategory);
+        });
+
+        // Update sort controls
         document.querySelectorAll('.segmented-control-option').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.sort === currentSort);
         });
 
-        // Update slider position
         document.querySelectorAll('.segmented-control').forEach(control => {
           control.setAttribute('data-value', currentSort);
         });
@@ -2045,8 +2111,10 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function filterContent() {
-        if (!modeLists[currentMode]) return;
-        const currentList = modeLists[currentMode];
+        // Use actualMode for articles
+        const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
+        if (!modeLists[actualMode]) return;
+        const currentList = modeLists[actualMode];
         const cards = Array.from(currentList.querySelectorAll('.article-card, .glossary-card-wrapper'));
         let visibleCount = 0;
 
@@ -2061,24 +2129,24 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         cards.forEach(card => {
           let isVisible = false;
 
-          if (currentMode === 'videos') {
+          if (actualMode === 'videos') {
             const series = card.dataset.series;
             const seriesMatch = currentVideoSeries === 'all' || series === currentVideoSeries;
             isVisible = seriesMatch;
-          } else if (modeToParent[currentMode]) {
+          } else if (modeToParent[actualMode]) {
             // Article category modes
             const parent = card.dataset.seriesParent;
             const child = card.dataset.seriesChild;
-            const expectedParent = modeToParent[currentMode];
+            const expectedParent = modeToParent[actualMode];
 
             const parentMatch = parent === expectedParent;
             const childMatch = currentCategoryChild === '' || child === currentCategoryChild;
             isVisible = parentMatch && childMatch;
-          } else if (currentMode === 'glossary') {
+          } else if (actualMode === 'glossary') {
             const category = card.dataset.category;
             const categoryMatch = currentGlossaryCategory === 'all' || category === currentGlossaryCategory;
             isVisible = categoryMatch;
-          } else if (currentMode === 'notes') {
+          } else if (actualMode === 'notes') {
             // Check if there's an active note filter
             if (activeNoteFilter) {
               const cardTitle = (card.dataset.title || '').toLowerCase();
@@ -2103,7 +2171,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         updateTitle();
 
         // Sort if applicable
-        if (currentMode !== 'glossary') {
+        if (actualMode !== 'glossary') {
           sortContent();
         }
 
@@ -2112,14 +2180,15 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function updateBulkToggleVisibility() {
+        const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
         const articleModes = ['digital-note', 'lifestyle', 'column', 'contributions'];
-        const hasExpandableCards = currentMode === 'videos' || articleModes.includes(currentMode) || currentMode === 'glossary' || currentMode === 'notes';
+        const hasExpandableCards = actualMode === 'videos' || articleModes.includes(actualMode) || actualMode === 'glossary' || actualMode === 'notes';
         if (bulkToggleBtn) bulkToggleBtn.classList.toggle('hidden', !hasExpandableCards);
         const floatingBulkBtn = document.getElementById('floating-bulk-toggle-btn');
         if (floatingBulkBtn) floatingBulkBtn.classList.toggle('hidden', !hasExpandableCards);
 
-        if (modeLists[currentMode]) {
-          const anyExpanded = Array.from(modeLists[currentMode].querySelectorAll('.article-card.expanded, .glossary-card-wrapper.expanded')).length > 0;
+        if (modeLists[actualMode]) {
+          const anyExpanded = Array.from(modeLists[actualMode].querySelectorAll('.article-card.expanded, .glossary-card-wrapper.expanded')).length > 0;
           if (bulkToggleBtn) bulkToggleBtn.textContent = anyExpanded ? '📁 すべて閉じる' : '📂 すべて開く';
           if (floatingBulkBtn) floatingBulkBtn.textContent = anyExpanded ? '📁' : '📂';
         }
@@ -2127,6 +2196,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
 
       function updateTitle() {
         let title = '';
+        const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
         const modeToTitle = {
           'digital-note': 'デジタルノート',
           'lifestyle': 'ライフスタイル・学習',
@@ -2134,14 +2204,14 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           'contributions': '寄稿記事'
         };
 
-        if (currentMode === 'videos') {
+        if (actualMode === 'videos') {
           title = currentVideoSeries === 'all' ? 'すべての動画' : currentVideoSeries;
-        } else if (modeToTitle[currentMode]) {
+        } else if (modeToTitle[actualMode]) {
           // Article category modes
-          title = currentCategoryChild ? `${modeToTitle[currentMode]} / ${currentCategoryChild}` : modeToTitle[currentMode];
-        } else if (currentMode === 'glossary') {
+          title = currentCategoryChild ? `${modeToTitle[actualMode]} / ${currentCategoryChild}` : modeToTitle[actualMode];
+        } else if (actualMode === 'glossary') {
           title = currentGlossaryCategory === 'all' ? '用語集' : currentGlossaryCategory;
-        } else if (currentMode === 'notes') {
+        } else if (actualMode === 'notes') {
           if (activeNoteFilter) {
             title = `📌 ${activeNoteFilter}`;
           } else {
@@ -2162,8 +2232,9 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       }
 
       function sortContent() {
-        if (!modeLists[currentMode]) return;
-        const currentList = modeLists[currentMode];
+        const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
+        if (!modeLists[actualMode]) return;
+        const currentList = modeLists[actualMode];
         const cards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden), .glossary-card-wrapper:not(.hidden)'));
 
         cards.sort((a, b) => {

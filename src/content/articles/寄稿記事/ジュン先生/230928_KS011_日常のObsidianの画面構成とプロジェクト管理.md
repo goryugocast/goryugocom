@@ -10,9 +10,6 @@ date_published: 2023-09-28T00:00:00.000Z
 audience: only_paid
 cover_image: >-
   https://substackcdn.com/image/fetch/$s_!OqA4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe87f6399-5a18-48a4-8f14-f36093209cf4_3180x2384.png
-tags:
-  - Obsidian
-  - review
 draft_link: null
 series_name: 寄稿記事
 series_emoji: "\U0001F964"
@@ -26,7 +23,7 @@ category: ジュン先生
 
 ### 🥤011 プロジェクト、ウィークリー、デイリーの同時表示
 
-https://substack.com/@kodawarihttps://substack.com/@kodawariSep 28, 2023∙ Paid92Sharehttps://substackcdn.com/image/fetch/$s_!WSTD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe3d86de-8065-4982-aa8b-8e83e4221659_1920x300.jpeg生きることにこだわりを。魚住惇です。
+生きることにこだわりを。魚住惇です。
 
 前回の配信では、激務だった時のデイリーノートを紹介しました。そして、デイリーノートを使っていくうちに、複数のデイリーノートをまたぐようなタスクのことをプロジェクトと呼ぶことについても触れました。
 
@@ -42,24 +39,65 @@ https://substack.com/@kodawarihttps://substack.com/@kodawariSep 28, 2023∙ Paid
 
 ## 画面構成
 
-https://substackcdn.com/image/fetch/$s_!OqA4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe87f6399-5a18-48a4-8f14-f36093209cf4_3180x2384.png前々回くらいに見せたスクショと同じものです。僕はiPadでObsidianを使う際は、まずこのワークスペースを使っています。使う、作業している、というよりかは「生活している」に近いです。Obsidianを開くとまずこの画面が出る。ホーム画面のような感覚です。
+[
+
+![](https://substackcdn.com/image/fetch/$s_!OqA4!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe87f6399-5a18-48a4-8f14-f36093209cf4_3180x2384.png)
+
+
+
+](https://substackcdn.com/image/fetch/$s_!OqA4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe87f6399-5a18-48a4-8f14-f36093209cf4_3180x2384.png)
+
+前々回くらいに見せたスクショと同じものです。僕はiPadでObsidianを使う際は、まずこのワークスペースを使っています。使う、作業している、というよりかは「生活している」に近いです。Obsidianを開くとまずこの画面が出る。ホーム画面のような感覚です。
 
 左から
 
-プロジェクトノート
-
+- プロジェクトノート
+    
 - ウィークリーノート
-
+    
 - デイリーノート
-
+    
 - カレンダー
+    
 
 の順番に表示させています。スクショでは真ん中の画面がks08になっていますが、いつもここにはウィークリーノートを表示させています。
 
 プロジェクトノートだけをもう少し詳しく見てみましょう。これが別の日のタイミングで撮った、プロジェクトノートだけのスクショです。
 
-## Keep reading with a 7-day free trial
+[
 
-Subscribe to ナレッジスタック to keep reading this post and get 7 days of free access to the full post archives.
+![](https://substackcdn.com/image/fetch/$s_!qwyu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12ce3428-7871-451b-b3a4-93694457e64f_2033x2615.jpeg)
 
-https://knowledgestuck.substack.com/subscribe?simple=true&next=https%3A%2F%2Fknowledgestuck.substack.com%2Fp%2Fdailynote011&utm_source=paywall-free-trial&utm_medium=web&utm_content=137289226&coupon=1d0c686bhttps://substack.com/sign-in?redirect=%2Fp%2Fdailynote011&for_pub=knowledgestuck&change_user=falsehttps://substack.com/@kodawariA guest post byhttps://substack.com/@kodawari?utm_campaign=guest_post_bio&utm_medium=web愛知県立高等学校情報科の教諭。HHKBケーキの人 http://bit.ly/2Zezmfg、『教師のiPad仕事術』と『逆境に負けない　学校DX物語』の著者📖、勤務校にTeamsとロイロノート、ScanSnapを5台導入した学校DX推進者、職員室での通り名は「もはや業者」 ※勤務中はNotes投稿しませんhttps://kodawari.substack.com/subscribe?
+
+
+](https://substackcdn.com/image/fetch/$s_!qwyu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12ce3428-7871-451b-b3a4-93694457e64f_2033x2615.jpeg)
+
+プロジェクト管理と聞くと小難しい印象があるかもしれませんが、僕がやってる手法はかなり単純です。こんな単純な仕組みをどうやってさも意味あり気に語るのか悩むくらいです。
+
+このプロジェクトノートの使い方を一言で言うなら、「プロジェクト名ごとにノートを作って、それらのノートリンクを見出しにしてる」くらいです。ただこれだけでは伝わりきれない部分があると思うので、その上でこだわっている部分について順番に語っていきます。
+
+### 見出し名のノートを作ってる
+
+まず、僕がプロジェクトノートと呼んでいるノートは、一言で言うとメモ付きリンク集です。今抱えているプロジェクトの一覧できるようにしています。
+
+そのプロジェクト名のノートの中には、原稿だったり、そのプロジェクトを進める上で必要な条件だったり、情報収集した内容などがまとまっています。そのプロジェクトについて進めていくときに開きます。
+
+じゃあスクショにあるような見出しの下にある文章はというと、そのプロジェクトを進めたときに思いついたメモや、進捗状況を簡単にまとめたものです。どこまでやったとか、次はどこから再開するとか。直近で起こった出来事などを簡単にまとめて書いてます。
+
+見出しリンク集だけでも良いかもしれませんが、長くならない程度にメモを残しておくことで、プロジェクトノートを上から下までざっと目を通していくだけで、どのプロジェクトがどの程度進んでいるかがざっくり把握できます。もしその中で気になったプロジェクトがあればノートを開くはずなので、ここはどんな状況なのかが大まかに把握できれば良いんですよ。
+
+### 見出しの数字の命名規則
+
+ノートリンクとして設定しているのは、年月の4桁数字＋プロジェクト名という規則で命名している案件ごとのノートです。あ、中には西暦の数字4桁をそのまま使っているものもありますね。この辺りはざっくりで良いやと考えています。
+
+だって、2023という数字を見たら、20年の23月だって思うんじゃなくて、2023年って思うじゃないですか。でもそれが2310って書いてあったら、僕なら西暦2310年とは読みません。23年の10月だなって判断します。要するに、読んだ人がわかれば良いんですよ。この場合は誰かに見せずに自分だけが扱うノートなので、自分がその数字を見て何を意味しているのかが把握できるのなら、もうそれで良いじゃないですか。
+
+ここに使う数字は、プロジェクトに取り組んでいる時期を表すものにしています。あとで見返したときに、「この頃にやっていたプロジェクトかぁ」と思えるようにです。ただし、具体的な締め切りが設定されていたとしても、その日付をそのままファイル名にはしません。年月日を2桁ずつ、合計6桁の数値で表現したり、西暦＋月日で合計8桁で表現してみた時期もありましたが、情報が細かすぎてごちゃごちゃしてるなと感じたので辞めました。
+
+ファイル名に使う数値を敢えて4桁に制限することで、同じ時期にどれくらいのプロジェクトが同時進行で動いているのかがわかります。これくらいざっくりしていた方が余計な情報がなくスッキリしていて、今抱えていること全体を見通しやすくなるんですよ。
+
+さて、魚住がやってるプロジェクトノートの仕組みは、意外と単純だったと思います。なんとなく付けた年月の数字と名前を付けた各プロジェクトのノートと、それらをまとめるプロジェクトノート本体。たったのそれだけです。
+
+でもこれを実際に運用していくときは、手作業多めでやってます。ごりゅごさんがSpeaced Repetitionプラグインで工夫されているような部分も、僕の場合は手動です。そんなに大したことじゃないんですけどね。
+
+今回は体裁的な部分を中心に説明しました。次回はこれをどうやって作業しながら、各々のプロジェクトを進めているのかについて、説明したいと思います。お楽しみに！

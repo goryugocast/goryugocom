@@ -52,6 +52,8 @@ const topic = defineCollection({
   schema: z.object({
     topic_id: z.string(),
     title: z.string(),
+    yomikata: z.string().optional(), // 読み仮名
+    aliases: z.array(z.string()).optional(), // 別名 (Obsidian標準)
     category: z.string(),
     description: z.string(),
     recommended_articles: z.array(z.string()).optional(),
