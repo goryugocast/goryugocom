@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 1年のテーマを決めて適切な間隔でテーマを振り返る
 subtitle: "\U0001F48E毎日振り返るのは多すぎるが月一では少なすぎる場合にどうするか"
 description: null
@@ -11,10 +10,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!cTlK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7efa2e04-0d10-4080-a52b-77fe33640090_1314x1128.png
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

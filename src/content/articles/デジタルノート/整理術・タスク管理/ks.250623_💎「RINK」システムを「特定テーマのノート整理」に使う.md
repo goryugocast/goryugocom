@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 「RINK」システムを「特定テーマのノート整理」に使う
 subtitle: "\U0001F48E「トピックノート」の悩みの多くはRINKで解決するかもしれない"
 description: null
@@ -11,10 +10,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!RD-F!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29e95528-7a8e-44c5-9fd5-b652151dd012_1326x2590.png
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 ```base

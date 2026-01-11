@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidian Tips
-topic_code: obs
 title: Obsidianに破綻しないGTDインボックスの仕組みを作る
 subtitle: "\U0001F914\U0001F4AD008 Spaced Repetitionを使ったノート整理の応用"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: アトミックシンキング
-series_emoji: "\U0001F914"
-series_code: atomic
 category: 入門
 ---
-
 ## メモ・原稿
 
 #ks/🤔💭 `= this.file.frontmatter.url`

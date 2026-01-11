@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 地味だけど便利が多い iCloud+ の機能
 subtitle: goryugo.comをObsidian Publishに移転して、メールはiCloud+を使う
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/📅  

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: Obsidianのデイリーノートを使ってフリーライティングする
 subtitle: "\U0001F4D8✍️002 1日10分間を「考える」時間にする"
 description: null
@@ -13,11 +12,8 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001F4D8"
-series_code: obv
 category: 実践編
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📘✍️ 
 `= this.file.frontmatter.url`

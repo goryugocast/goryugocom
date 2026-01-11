@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianの整理は「順番」が重要
 subtitle: "\U0001F48E002 細かな構造を先に決めてはいけない"
 description: Obsidian整理の鍵は「順番」。使い始めは構造を固めず、ノートが集まってからボトムアップで「ゆるく」構築するのが重要。他人の完成形を真似せず、自分に最適化された使い方を見つけるプロセスを解説。
@@ -13,11 +12,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', '整理', '効率']
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

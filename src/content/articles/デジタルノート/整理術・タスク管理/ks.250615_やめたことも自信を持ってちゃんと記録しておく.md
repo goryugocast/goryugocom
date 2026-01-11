@@ -6,7 +6,6 @@ topic:
   - 手放す
   - 選択
   - 音楽
-topic_code: rev
 title: やめたことも自信を持ってちゃんと記録しておく
 subtitle: "\U0001F4C5好きなことをやるために、好き度がちょっと足りないものを少し手放した"
 description: >-
@@ -18,11 +17,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!uwE9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69037453-4d8e-4843-9a4a-0606e2c9f68b_5712x4284.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 ```dataview
 LIST

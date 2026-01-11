@@ -15,10 +15,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 # 「緊急ではない重要なこと」を進めるためのObsidianを使った仕事術・ノート術

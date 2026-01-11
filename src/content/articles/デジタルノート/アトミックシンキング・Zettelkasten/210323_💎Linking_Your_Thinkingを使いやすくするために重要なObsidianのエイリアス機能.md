@@ -15,10 +15,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 # 💎Linking Your Thinkingを使いやすくするために重要なObsidianのエイリアス機能

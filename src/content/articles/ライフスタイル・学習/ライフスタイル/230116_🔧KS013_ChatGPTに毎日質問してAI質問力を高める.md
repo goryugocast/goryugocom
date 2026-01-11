@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: ChatGPTに毎日質問してAI質問力を高める
 subtitle: "\U0001F527013 わからないことは数をこなして勘所を掴む"
 description: "ChatGPTに毎日質問する習慣を通じて、『AI質問力』を高める試みを公開。AIの得意分野を見極め、効果的な質問を導き出すために試行錯誤する過程を詳述。未来予測や一般的なコツの質問では期待外れな回答が多い一方、長い文章の要約やプログラミングに関する質問でAIの真価を発揮することを発見。人間の創造性を助けるツールとしてのAIの可能性を語る。"
@@ -14,11 +13,8 @@ tags:
   - AI
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/🔧 `= this.file.frontmatter.url`
 

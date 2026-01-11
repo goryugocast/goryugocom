@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: アーカイブ
-topic_code: ach
 title: Obsidianと手書きツールの得意なところを組み合わせて使う
 subtitle: 『アトミック・シンキング』実践セミナー040 動画アーカイブ
 description: Obsidianと手書きツールを組み合わせた「ハイブリッドノート術」を解説。思考と整理のフェーズでツールを使い分け、柔軟で継続可能なワークフローを構築する方法を提案します。
@@ -15,11 +14,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. ハイブリッドノート術の提唱 - デジタルと手書きの融合](https://knowledgestuck.substack.com/p/ks040?timestamp=0)
 **時間**: 00:00:00 ～

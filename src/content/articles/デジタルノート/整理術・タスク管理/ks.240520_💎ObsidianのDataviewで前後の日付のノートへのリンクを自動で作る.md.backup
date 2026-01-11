@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ObsidianのDataviewで前後の日付のノートへのリンクを自動で作る
 subtitle: "\U0001F48Eノートのコピーを繰り返すことで仕事の精度が自然に上がる"
 description: null
@@ -14,10 +13,7 @@ tags:
   - Dataview
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

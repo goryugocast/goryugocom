@@ -68,17 +68,15 @@ function extractSeminarSections(body: string): Array<{ title: string; time: stri
 
 // Process videos (Seminars and Obsidianの全技術)
 const processedVideos = videos.map((video) => {
-  const hasStructuredSections = video.data.series_name === 'セミナー' || video.data.series_name === 'Obsidianの全技術';
-  let sections = [];
+  const folderName = video.id.split('/')[0];
+  const seriesName = video.data.series_name || folderName;
+  const sections = video.body ? extractSeminarSections(video.body) : [];
 
-  if (hasStructuredSections && video.body) {
-    sections = extractSeminarSections(video.body);
-    if (video.data.series_name === 'Obsidianの全技術') {
-      console.log('Obsidianの全技術:', video.data.title, 'sections:', sections.length);
-    }
+  if (seriesName === 'Obsidianの全技術') {
+    console.log('Obsidianの全技術:', video.data.title, 'sections:', sections.length);
   }
 
-  return { ...video, sections, hasStructuredSections };
+  return { ...video, data: { ...video.data, series_name: seriesName }, sections };
 }).sort((a, b) => {
   const dateA = new Date(a.data.date_published);
   const dateB = new Date(b.data.date_published);

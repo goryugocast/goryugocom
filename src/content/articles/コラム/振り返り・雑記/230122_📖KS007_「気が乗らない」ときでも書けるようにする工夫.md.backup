@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: 「気が乗らない」ときでも書けるようにする工夫
 subtitle: "\U0001F4D6✍️007 30点で書いた原稿のサンプル"
 description: null
@@ -10,11 +9,8 @@ date_published: 2023-01-22T00:00:00.000Z
 audience: only_paid
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4D6"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/📖✍️  `= this.file.frontmatter.url`

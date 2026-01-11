@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F48E 生成AIを使って「思考」を深める方法"
 subtitle: 生成AIと一緒に考えるために必要な視点とは
 description: null
@@ -14,11 +13,8 @@ tags:
   - AI
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
 ---
-
 ## メモ・原稿
 
 ```base

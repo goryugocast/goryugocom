@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianで最初に重視するのはデイリーノート
 subtitle: "\U0001F48E003 デイリーノートを100日間がっつり使ってみる"
 description: Obsidianのデイリーノートを活用し、ギター練習の計画と記録を通じて上達を実感し、モチベーションを維持する方法を解説。テンプレート改善に注力し、整理よりも実践を重視。
@@ -12,11 +11,8 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', 'デイリーノート', '習慣化']
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

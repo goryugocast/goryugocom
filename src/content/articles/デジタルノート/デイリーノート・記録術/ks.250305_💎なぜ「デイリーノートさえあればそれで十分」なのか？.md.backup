@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'デイリーノート', 'ノート術']
-topic_code: obs
 title: なぜ「デイリーノートさえあればそれで十分」なのか？
 subtitle: "\U0001F48Eアトミック・シンキング実践ワークシートより抜粋"
 description: Obsidianのデイリーノート活用術。フォルダ整理やキーワード検索の非効率性を指摘し、日付を基準に全てのメモをデイリーノートに集約するシンプルかつ強力な整理法を提唱。書くことで考える第一歩。
@@ -11,10 +10,7 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

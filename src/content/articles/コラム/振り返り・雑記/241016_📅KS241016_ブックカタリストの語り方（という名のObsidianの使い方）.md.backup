@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: ブックカタリストの語り方（という名のObsidianの使い方）
 subtitle: "\U0001F4C5イベント案内と今後の記事の方向性のアンケート"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 # ブックカタリストの語り方（という名のObsidianの使い方）

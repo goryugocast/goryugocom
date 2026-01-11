@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: ノートに紙を貼る習慣をはじめた
 subtitle: しょうもないことで盛り上がることこそが人生を楽しむ秘訣なのではないか
 description: null
@@ -14,10 +13,7 @@ tags:
   - 習慣
 draft_link: null
 series_name: ライフスタイル
-series_emoji: "\U0001F9D8"
-series_code: life
 ---
-
 ## メモ・原稿
 
 # ノートに紙を貼る習慣をはじめた

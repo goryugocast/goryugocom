@@ -1,13 +1,11 @@
 ---
 topic: Obsidianの全技術
-topic_code: obv
 tags:
 - Obsidian
 - 知的生産
 - トピックノート
 note_type: method
 ---
-
 # Copy search results：関連ノート一覧を自動生成
 
 Obsidianの最強の機能の一つ「Copy search results」は、検索結果に表示されたノート群へのリンクを一瞬でクリップボードにコピーできます。この機能がなければ手作業で一つ一つリンクを集める必要があり、トピックノート作成の効率は大きく異なります。

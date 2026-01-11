@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ゼロから始めるObsidian再入門
 subtitle: "\U0001F48E001 新しく作った保管庫を使ってリアルなObsidian活用事例を紹介"
 description: Obsidianをゼロから再構築する過程を共有。ツールの「最終形」だけでなく、試行錯誤のリアルなプロセスを見せることで、自分に最適な活用法を見つけるヒントを提供します。
@@ -11,11 +10,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', '入門', '情報整理']
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

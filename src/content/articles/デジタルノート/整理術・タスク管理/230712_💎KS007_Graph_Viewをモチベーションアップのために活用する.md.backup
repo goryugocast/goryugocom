@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Graph Viewをモチベーションアップのために活用する
 subtitle: "\U0001F48E007 ギター練習の視覚化が楽しい"
 description: ObsidianのGraph Viewでギター練習を視覚化し、過去の練習履歴を振り返ることでモチベーションを維持。長期的な練習継続に役立つ活用法を紹介。
@@ -11,11 +10,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!k4GJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F86414f87-405b-49c8-be49-68fad5003efa_1658x1501.jpeg
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 topic: ['Obsidian', 'Graph View', 'モチベーション']
 ---
-
 ## メモ・原稿
 
 #ks/💎 

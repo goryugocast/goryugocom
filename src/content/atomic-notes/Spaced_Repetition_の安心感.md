@@ -1,11 +1,9 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 source: 250918_Spaced Repetitionプラグイン
 category: レビュー習慣
 ---
-
 # Spaced Repetitionの安心感「忘れていいという許容」
 
 ## 概要

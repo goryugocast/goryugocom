@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Podcast
-topic_code: pod
 title: LogseqをやめてObsidianに完全移行してからの変化
 subtitle: "\U0001F399008 習慣的でない行動はすべて「考えている」と捉えれば安心できる"
 description: null
@@ -13,11 +12,8 @@ tags:
   - 習慣
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F399"
-series_code: other
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastLogseqをやめてObsidianに完全移行してからの変化21- 1×0:00Current time: 0:00 / Total time: -1:28:42-1:28:42Audio playback is not supported on your browser. Please upgrade.## LogseqをやめてObsidianに完全移行してからの変化

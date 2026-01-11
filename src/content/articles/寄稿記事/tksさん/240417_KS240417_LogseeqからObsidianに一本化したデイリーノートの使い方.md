@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'Logseq', 'デイリーノート']
-topic_code: tks
 title: LogseeqからObsidianに一本化したデイリーノートの使い方
 subtitle: "\U0001FABA参照ノートはDataviewでうまく自動化する"
 description: Obsidianでのデイリーノート活用術。Logseqから一本化し、タスク、作業記録、思考メモを統合。参照ノートと並行利用で効率的な情報整理と作業を実現。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: contribution
 ---
-
 ## メモ・原稿
 
 # LogseeqからObsidianに一本化したデイリーノートの使い方

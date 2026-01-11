@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: Obsidian、どうやって使ってる？
 subtitle: "\U0001F4C5018 Podcastでいろんな人のいろんな事例を紹介したい！"
 description: null
@@ -13,11 +12,8 @@ tags:
   - Podcast
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📅  
 `= this.file.frontmatter.url`

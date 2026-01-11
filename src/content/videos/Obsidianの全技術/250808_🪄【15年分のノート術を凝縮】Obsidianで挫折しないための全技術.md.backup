@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: 【15年分のノート術を凝縮】Obsidianで挫折しないための全技術
 subtitle: "\U0001FA84理念と実践のバランスを取り手を動かして学んでいく"
 description: null
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
 ---
-
 ## セミナー構成
 
 ### [1. 思考のコックピットとしてのObsidianレイアウト](https://knowledgestuck.substack.com/p/15obsidian?timestamp=0)

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: Obsidianで実践するアトミックシンキング
 subtitle: "\U0001F4D8✍️000 9月からそうした内容を充実させていきます"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001F4D8"
-series_code: obv
 category: 実践編
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📘✍️ `= this.file.frontmatter.url`
 

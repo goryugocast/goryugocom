@@ -6,7 +6,6 @@ topic:
   - タスク管理
   - ワークフロー
   - Dataview
-topic_code: obs
 title: Obsidian Basesを使ったタスク管理の実例
 subtitle: "\U0001F48Eタスク管理用ノート＋サンプルタスクノート2種"
 description: >-
@@ -21,10 +20,7 @@ tags:
   - Bases
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 

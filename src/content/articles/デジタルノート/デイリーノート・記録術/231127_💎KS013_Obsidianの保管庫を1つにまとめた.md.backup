@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianの保管庫を1つにまとめた
 subtitle: "\U0001F48E013 保管庫を合体したり分けたりすることは簡単に実行できる"
 description: ごりゅごがObsidianの日常用とギター練習用保管庫を1つに再統合。デイリーノートの使い方が変わり、分割の必要がなくなったため。統合の理由と簡単な方法を解説し、特別な理由がなければ保管庫は1つが良いと提唱。
@@ -13,11 +12,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', '保管庫', '整理']
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

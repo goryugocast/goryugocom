@@ -1,13 +1,11 @@
 ---
 topic: Obsidianの全技術
-topic_code: obv
 tags:
 - Obsidian
 - 検索機能
 - UI/UX
 note_type: method
 ---
-
 # Obsidian検索：検索ウィンドウの表示オプション設定
 
 検索ウィンドウ右上のギア（設定）アイコンから、検索結果の表示方法をカスタマイズできます。初心者には「全て表示」が学習効率と使いやすさの観点から推奨されます。

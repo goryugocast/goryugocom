@@ -6,7 +6,6 @@ topic:
   - 書籍
   - 執筆
   - iPad
-topic_code: rev
 title: なぜ私たちは「書かないと」考えられないのか？
 subtitle: "\U0001F4C5『書いて考える技術』から学ぶ思考の進め方"
 description: >-
@@ -19,11 +18,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 

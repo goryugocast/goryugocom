@@ -1,14 +1,12 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Obsidianの全文検索速度が情報整理の前提を変えた
 tags:
   - Obsidian
   - 全文検索
   - テクノロジー
 ---
-
 # Obsidianの全文検索速度が情報整理の前提を変えた
 
 ## 概要

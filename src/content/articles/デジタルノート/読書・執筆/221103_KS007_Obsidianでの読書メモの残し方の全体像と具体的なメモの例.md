@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: アーカイブ
-topic_code: ach
 title: Obsidianでの読書メモの残し方の全体像と具体的なメモの例
 subtitle: "\U0001F914\U0001F4AD007 『アトミック・シンキング』実践セミナー2補足解説 2-1"
 description: null
@@ -16,11 +15,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: アトミックシンキング
-series_emoji: "\U0001F914"
-series_code: atomic
 category: 入門
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/🤔💭 `= this.file.frontmatter.url`
 

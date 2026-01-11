@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: Obsidianを使って身体的スキルを言語化して学ぶ
 subtitle: "\U0001F4C5023 飲み会開催の連絡もあります"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

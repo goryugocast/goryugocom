@@ -6,7 +6,6 @@ topic:
   - 仕事術
   - Dataview
   - ショートカット
-topic_code: upd
 title: Obsidian デイリーノート仕事術
 subtitle: "\U0001F527009 デイリーノートになにを書くか、どう運用するか"
 description: 'Obsidianのデイリーノートを核とした効率的な仕事術を解説。Workspaceを活用した目次案作成モードや、Dataviewによる動的なタスク・ノート整理、Spaced Repetitionとの連携、Raycastと自作ショートカットを用いた高速メモなど、自身の作業負荷を軽減しつつ、記録意識を高めるための具体的な手法を紹介。画面分割やタブ運用の工夫についても言及し、記録を「手間なく継続する」ためのヒントを提供します。'
@@ -20,11 +19,8 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: "デジタルノート/デイリーノート・記録術"
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📖✍️  `= this.file.frontmatter.url`
 

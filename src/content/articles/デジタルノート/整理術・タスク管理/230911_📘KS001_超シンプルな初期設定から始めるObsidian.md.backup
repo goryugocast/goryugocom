@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 超シンプルな初期設定から始めるObsidian
 subtitle: "\U0001F4D8✍️001 アトミック・シンキング実践のための超基本的なObsidian設定"
 description: null
@@ -15,11 +14,8 @@ tags:
   - 読書
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001F4D8"
-series_code: obv
 category: 実践編
 ---
-
 ## メモ・原稿
 
 #ks/📘✍️ 

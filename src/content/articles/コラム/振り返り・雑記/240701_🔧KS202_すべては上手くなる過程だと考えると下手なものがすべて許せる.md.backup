@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: すべては上手くなる過程だと考えると下手なものがすべて許せる
 subtitle: "\U0001F5272024年6月の絵の練習の歴史"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!iM3A!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa599f6f-a368-4d06-a2e0-34241640ac0d_1024x768.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

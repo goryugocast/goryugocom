@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidianでの本の作り方
 subtitle: 大きな原稿を作るときに「目次ノート」を活用する
 description: null
@@ -15,10 +14,7 @@ tags:
   - 読書
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 # Obsidianでの本の作り方

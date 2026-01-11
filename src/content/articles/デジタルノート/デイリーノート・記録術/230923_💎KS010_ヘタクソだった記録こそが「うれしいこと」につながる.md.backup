@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ヘタクソだった記録こそが「うれしいこと」につながる
 subtitle: "\U0001F48E010 正直者が得をするデイリーノート"
 description: 「ヘタクソだった記録こそが「うれしいこと」につながる」というテーマで、ごりゅごさんがObsidianのデイリーノートを活用したギター練習の継続術を解説。過去の記録が上達を実感させ、練習を楽しく続ける秘訣だと語ります。
@@ -13,11 +12,8 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', '記録', 'モチベーション']
 ---
-
 ## メモ・原稿
 
 #ks/💎 

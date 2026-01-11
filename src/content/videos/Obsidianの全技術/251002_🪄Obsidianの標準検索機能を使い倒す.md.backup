@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Obsidianの標準検索機能を使い倒す
 subtitle: "\U0001FA84Obsidianの全技術5"
 description: null
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
 ---
-
 ## セミナー構成
 
 ### [1. 前回の振り返りと今回のテーマ：標準検索機能](https://knowledgestuck.substack.com/p/obv5?timestamp=20)

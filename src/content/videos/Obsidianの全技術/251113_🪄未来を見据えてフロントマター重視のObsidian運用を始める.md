@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: 未来を見据えてフロントマター重視のObsidian運用を始める
 subtitle: "\U0001FA84Obsidianの全技術8"
 description: Obsidianの全技術シリーズ第8回。AI時代の到来で、その重要性が増す「フロントマター（プロパティ）」の活用法を徹底解説。Baseプラグインと連携した関連情報の自動集約、AIやターミナルでの扱いやすさを考慮した新しいファイル命名規則、検索体験を拡張するAnother Quick Switcherプラグインの導入まで、Obsidianを知的生産の強力なハブへと進化させるための実践的なテクニックを紹介します。
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. なぜ今、フロントマターが重要なのか - デイリーノートとフロントマターへの注力](https://knowledgestuck.substack.com/p/obv8?timestamp=43)
 **時間**: 00:00:43 ～

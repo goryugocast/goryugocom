@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidian Canvasについて
 subtitle: 『アトミック・シンキング』実践セミナー019 動画アーカイブ
 description: Obsidianの図解ツール「Canvas」の可能性を探る実践セミナー。マインドマップとは一線を画すその本質は、既存のObsidianノートという「資産」を直接活用できる点にあります。推理小説の情報整理のような成功例と、目的が曖昧で失敗した事例を比較しながら、思考の整理だけでなく「情報の整理」ツールとしての使い方を解説。図解が苦手な人でも、趣味のデータ整理など簡単なことから始めることで、ツールの強力さを実感できるヒントが満載です。
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. イントロダクションとCanvasの概要](https://knowledgestuck.substack.com/p/ks019?timestamp=0)
 **時間**: 00:00:00 ～

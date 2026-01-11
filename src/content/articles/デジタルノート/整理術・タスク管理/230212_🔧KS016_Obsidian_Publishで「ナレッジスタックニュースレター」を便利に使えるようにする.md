@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: Obsidian Publishで「ナレッジスタックニュースレター」を便利に使えるようにする
 subtitle: "\U0001F527016 整理が難しい「ブログ」の整理にObsidian Publishを補助として活用する"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/🔧 `= this.file.frontmatter.url`

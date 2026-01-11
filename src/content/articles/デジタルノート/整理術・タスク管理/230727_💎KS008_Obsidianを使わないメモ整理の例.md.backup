@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianを使わないメモ整理の例
 subtitle: "\U0001F48E008 なんでもかんでもObsidianが正しいわけではない"
 description: 著者はObsidianを使わず、Apple標準メモアプリでウェブ調査時の情報を視覚的に整理する例を紹介。多くのメモにはObsidianが適しているが、短期的な情報収集にはメモアプリの視覚的整理能力が優れていると解説。
@@ -13,11 +12,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', 'メモ整理', 'アナログ']
 ---
-
 ## メモ・原稿
 
 #ks/💎 

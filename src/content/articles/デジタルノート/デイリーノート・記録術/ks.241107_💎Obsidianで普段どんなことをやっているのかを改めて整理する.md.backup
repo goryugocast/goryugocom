@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'ノート運用', 'ワークフロー']
-topic_code: obs
 title: Obsidianで普段どんなことをやっているのかを改めて整理する
 subtitle: "\U0001F48E今までと変わらないところと新しく変わってきたところの整理"
 description: goryugo outlines their current Obsidian workflow, including daily/weekly notes, reading notes, Johnny.Decimal for organizing life logs and hobbies, work notes, and Obsidian Publish for a curated homepage.
@@ -11,10 +10,7 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

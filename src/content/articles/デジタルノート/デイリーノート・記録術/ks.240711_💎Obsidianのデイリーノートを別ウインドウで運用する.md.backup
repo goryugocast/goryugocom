@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianのデイリーノートを別ウインドウで運用する
 subtitle: "\U0001F48Eウインドウが分かれるだけで圧倒的に柔軟な運用が出来るようになった"
 description: null
@@ -14,10 +13,7 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

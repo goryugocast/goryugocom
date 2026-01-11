@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: GitHubを使って複数人での原稿管理するときのコツ
 subtitle: "\U0001F527008 ごりゅごファミリーから新しい本『iPad Workers Apple Pencilで使いこなす次世代型ノートアプリ』が発売されます"
 description: null
@@ -14,11 +13,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/🔧 

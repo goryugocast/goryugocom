@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Good判定で先送り、Hardは明日やるに設定しない
 tags:
 - Obsidian
@@ -9,7 +8,6 @@ tags:
 - 運用ルール
 note_type: principle
 ---
-
 # Good判定で先送り、Hardは明日やるに設定しない
 
 ## 概要

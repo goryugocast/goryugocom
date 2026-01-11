@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: アナログ情報をデジタルで管理する
 subtitle: "\U0001F48EObsidianでこれまでのノートの中身を把握できるようにする"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

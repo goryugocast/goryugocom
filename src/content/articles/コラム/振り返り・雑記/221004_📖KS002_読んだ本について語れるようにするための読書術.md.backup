@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 読んだ本について語れるようにするための読書術
 subtitle: "\U0001F4D6✍️002 アトミック・読書術の「はじめに」 ver.1"
 description: "次作『読んだ本について語れるようにするための読書術』の構想を語る。読んだ冊数ではなく、本の内容を人に語れるようになることを目指す。読書体験を言語化し、記録することで、本同士のつながりを発見し、一冊から得られる体験を増幅させる。かつて『サピエンス全史』のすごさを語れなかった経験から、Podcastなどを通じて体得した『本について語る技術』をまとめる。"
@@ -14,11 +13,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4D6"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/📖✍️  `= this.file.frontmatter.url`

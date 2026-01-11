@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 『アトミック・シンキング』の続編『アトミック・リーディング』を発売します
 subtitle: "\U0001F4C5発売日は去年と同じ8月11日"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!uBZ1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa405447b-348e-43f7-96bf-cb0bcadfa228_1163x1658.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅  

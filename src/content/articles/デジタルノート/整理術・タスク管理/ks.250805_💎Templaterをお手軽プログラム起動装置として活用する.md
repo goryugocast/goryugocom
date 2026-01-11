@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Templaterをお手軽プログラム起動装置として活用する
 subtitle: "\U0001F48EWebClipperとTemplaterをアフィリエイトに活用するアイデア"
 description: null
@@ -11,10 +10,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!xsnh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0bda4c0a-c5bd-4c67-93cd-b78d8c2bd1f6_480x394.gif
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 ```dataview

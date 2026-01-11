@@ -1,14 +1,12 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Spaced Repetitionは「忘れるため」「仕分けのため」に使う
 tags:
   - Obsidian
   - Spaced Repetition
   - 本質的役割
 ---
-
 # Spaced Repetitionは「忘れるため」「仕分けのため」に使う
 
 ## 概要

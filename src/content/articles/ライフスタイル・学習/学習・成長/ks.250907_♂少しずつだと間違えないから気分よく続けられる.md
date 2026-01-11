@@ -6,7 +6,6 @@ topic:
   - ライフスタイル
   - 語学学習
   - Anki
-topic_code: gro
 title: 少しずつだと間違えないから気分よく続けられる
 subtitle: "\U0001F331スナック学習の影響で中国語を学んで得られた発見"
 description: >-
@@ -17,10 +16,7 @@ audience: everyone
 draft_link: null
 tags: []
 series_name: ライフスタイル
-series_emoji: "\U0001F9D8"
-series_code: life
 ---
-
 ## メモ・原稿
 
 

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 長く続けるためには無理しないで続けられる自分なりのペースを見つける
 subtitle: "\U0001F5272024年8月の絵の練習の歴史"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!6s2n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d80a984-0332-478a-9d77-e03e57c94ac0_768x1024.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

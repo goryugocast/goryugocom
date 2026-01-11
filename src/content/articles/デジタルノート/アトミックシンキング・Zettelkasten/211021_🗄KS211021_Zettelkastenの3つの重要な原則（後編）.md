@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F5C4Zettelkastenの3つの重要な原則（後編）"
 subtitle: 自分の言葉で書く、他のカードにリンクする
 description: null
@@ -13,11 +12,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: アトミックシンキング
-series_emoji: "\U0001F331"
-series_code: atomic
 category: 実践・事例
 ---
-
 ## メモ・原稿
 
 # 🗄Zettelkastenの3つの重要な原則（後編）

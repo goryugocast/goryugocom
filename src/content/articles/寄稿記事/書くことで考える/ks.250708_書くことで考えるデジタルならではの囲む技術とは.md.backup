@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F48E 書くことで考える：デジタルならではの囲む技術とは？"
 subtitle: 四角で囲むだけじゃない、デジタルならではのまとめ方
 description: null
@@ -14,11 +13,8 @@ draft_link: null
 tags:
   - review
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）

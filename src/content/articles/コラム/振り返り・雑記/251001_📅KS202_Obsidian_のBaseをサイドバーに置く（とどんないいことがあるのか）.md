@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: Obsidian のBaseをサイドバーに置く（とどんないいことがあるのか）
 subtitle: "\U0001F4C52025年9月の振り返り"
 description: null
@@ -13,11 +12,8 @@ tags:
   - 振り返り
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 ```base

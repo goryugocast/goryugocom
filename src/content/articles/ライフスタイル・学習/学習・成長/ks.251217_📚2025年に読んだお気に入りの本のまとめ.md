@@ -4,7 +4,6 @@ topic:
   - 読書
   - 書評
   - おすすめ本
-topic_code: hon
 title: 2025年に読んだお気に入りの本のまとめ
 subtitle: "\U0001F4DAジャンルごとに数冊で合計10冊くらい"
 description: >-
@@ -18,11 +17,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4DA"
-series_code: other
 category: 読書ノート
 ---
-
 ## メモ・原稿
 
 

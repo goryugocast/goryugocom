@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 贅沢な時間の見つけかた
 subtitle: "\U0001F4C5効率の悪い時間こそが、人生における贅沢な時間である"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!AQzw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7515e92b-2d19-4857-aaaa-c3e25d65a625_768x1024.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 ```dataview

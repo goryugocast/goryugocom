@@ -6,7 +6,6 @@ topic:
   - ライフスタイル
   - 記録
   - 学習
-topic_code: gro
 title: 少しずつにするだけで筋トレを1年続けることができた
 subtitle: "\U0001F331プリズナートレーニング1周年達成の秘訣"
 description: >-
@@ -17,10 +16,7 @@ audience: everyone
 draft_link: null
 tags: []
 series_name: ライフスタイル
-series_emoji: "\U0001F9D8"
-series_code: life
 ---
-
 ## メモ・原稿
 
 🌱 grow-habits

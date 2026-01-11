@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: ノートに紙を貼る習慣が少し進化した
 subtitle: "\U0001F4C5トラベラーズノート＋箸袋で遊ぶ"
 description: null
@@ -14,11 +13,8 @@ tags:
   - 習慣
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

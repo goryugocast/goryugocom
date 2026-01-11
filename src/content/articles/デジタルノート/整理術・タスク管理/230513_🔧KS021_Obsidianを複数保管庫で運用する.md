@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: Obsidianを複数保管庫で運用する
 subtitle: "\U0001F527021 どんなときにどういう理由で複数の保管庫を使うのか"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

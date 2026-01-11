@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: デイリーノート仕事術入門
 subtitle: 『アトミック・シンキング』実践セミナー7動画アーカイブ
 description: null
@@ -15,11 +14,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. セミナーの概要とデイリーノート仕事術の基本方針](https://knowledgestuck.substack.com/p/ks007?timestamp=0)

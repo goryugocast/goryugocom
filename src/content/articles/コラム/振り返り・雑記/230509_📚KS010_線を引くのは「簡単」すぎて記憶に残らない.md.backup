@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: 線を引くのは「簡単」すぎて記憶に残らない
 subtitle: "\U0001F4DA✍️010 書くことは「語る」ための基本練習"
 description: null
@@ -12,11 +11,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4DA"
-series_code: other
 category: 読書ノート
 ---
-
 ## メモ・原稿
 
 #ks/📔✍️ `= this.file.frontmatter.url`

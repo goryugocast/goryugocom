@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 書けない悩みを解決する30点執筆術
 subtitle: "\U0001F4D6✍️006 執筆もアトミックに分割できる"
 description: "『書けない悩み』を解決する『30点執筆術』を解説。完璧を目指さず、まず30点の出来で文章を書き出すことで、『手が止まる』状態を防ぐ。考えは書くことでまとまるという原則に基づき、構造を固めるためにまず書き、後から洗練させていくプロセスを重視。この手法は倉下忠憲氏の『バザール執筆法』の影響を受けている。"
@@ -10,11 +9,8 @@ date_published: 2023-01-11T00:00:00.000Z
 audience: only_paid
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4D6"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/📖✍️  `= this.file.frontmatter.url`

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 思考の整理ではなく思考を進めるためのZettelkasten
 subtitle: "\U0001F4C5ルールが上手く動かないCursorと掘り下げてみたら超楽しいZettelkastenの記録"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Cursor
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 ```dataview
 LIST

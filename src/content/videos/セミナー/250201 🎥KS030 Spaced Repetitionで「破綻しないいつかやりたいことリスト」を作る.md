@@ -1,10 +1,9 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Spaced Repetitionで「破綻しないいつかやりたいことリスト」を作る
 subtitle: 『アトミック・シンキング』実践セミナー030 動画アーカイブ
-description: null
+description: 増え続けるObsidianのノートをどう管理し、知識を陳腐化させないか？その答えが「Spaced Repetition（間隔反復）」プラグインにあります。本セミナーでは、このプラグインの基本的な仕組みから、GTDで破綻しがちな「いつかやりたいことリスト」を無理なく管理する方法、さらにはEvergreenノートの育成やインクリメンタルライティングへの応用まで、具体的な活用法をデモを交えて徹底解説します。
 url: 'https://knowledgestuck.substack.com/p/ks030'
 date_published: 2025-02-01T00:00:00.000Z
 audience: only_paid
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. イントロダクション - Spaced Repetitionでノートをエバーグリーンに](https://knowledgestuck.substack.com/p/ks030?timestamp=0)
 **時間**: 00:00:00 ～

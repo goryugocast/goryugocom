@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 手帳やノートなどのアナログ情報をObsidianに突っ込んでみたら想像以上にスッキリした
 subtitle: "\U0001F48Eデジタルが得意な「全体把握」を活かしたノート運用"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

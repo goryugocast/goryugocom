@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 目的に応じて使い分ける3種のデジタルメモ
 subtitle: "\U0001F48Eデイリーノート2種×メモ帳システム"
 description: null
@@ -13,10 +12,7 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

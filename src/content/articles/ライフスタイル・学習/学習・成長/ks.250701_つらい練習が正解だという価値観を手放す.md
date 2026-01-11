@@ -6,7 +6,6 @@ topic:
   - 習慣化
   - マインドセット
   - 学習
-topic_code: rev
 title: 「つらい練習が正解だ」という価値観を手放す
 subtitle: "\U0001F4C5犬の散歩よりも遅いジョギングで速くなる"
 description: >-
@@ -18,11 +17,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!94TQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3643f2b7-ac0d-4ac6-823d-f2c2c1666833_337x522.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 ```dataview
 LIST

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 「有効活用」に囚われず堂々と「もったいなく」生きる
 subtitle: "\U0001F527 効率よりも継続ができる方法を選ぶ生き方"
 description: "かつては週1回の水泳を継続できていたが、成長の鈍化や他の趣味への興味から停滞期に。筆者は、自ら課した『厳しい練習』や『もったいない病』が楽しさを奪っていると気づく。『頑張らない』で適当に泳ぐだけでも十分な満足感が得られることを発見し、効率よりも継続できる楽しさを選ぶ生き方へとシフトした経緯を語る。"
@@ -10,11 +9,8 @@ date_published: 2024-03-11T00:00:00.000Z
 audience: everyone
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/🔧  

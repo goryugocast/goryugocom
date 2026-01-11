@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidian Advanced URIの基本と活用
 subtitle: 『アトミック・シンキング』実践セミナー9動画アーカイブ
 description: Obsidianを外部アプリから自在に操作可能にする「Advanced URI」プラグインの活用法を解説するセミナー。ワークスペースの切り替え、デイリーノートへのメモ追記、ブラウザからの情報保存、Amazon書籍情報の自動取得など、具体的なブックマークレットやランチャーツールとの連携を実演。URIの基本構造からJavaScriptを使ったカスタマイズまで、日々のワークフローを劇的に効率化するテクニックを紹介します。
@@ -16,11 +15,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "🎥"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 ### [1. Advanced URIプラグイン紹介 - デイリーノート活用の鍵](https://knowledgestuck.substack.com/p/ks009?timestamp=0)
 **時間**: 00:00:00 ～ 00:03:20
 

@@ -4,7 +4,6 @@ topic:
   - Podcast
   - Obsidian
   - Word
-topic_code: pod
 title: Wordを愛する人間がObsidianも愛してしまった物語
 subtitle: "🎙KS003 新田順也さんのObsidian活用術"
 description: 「Wordを愛する人間がObsidianも愛してしまった物語」は、Wordの専門家である新田順也さんが、Wordでの執筆の課題からObsidianを導入し、プログラミング成果の整理やデイリーノート活用でその利便性に気づき、自身のワークフローに最適化していった経緯を語るポッドキャストです。
@@ -14,11 +13,8 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: Podcast
-series_emoji: "🎙"
-series_code: pod
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastWordを愛する人間がObsidianも愛してしまった物語6- 1×0:00Current time: 0:00 / Total time: -1:16:14-1:16:14Audio playback is not supported on your browser. Please upgrade.## Wordを愛する人間がObsidianも愛してしまった物語

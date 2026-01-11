@@ -5,7 +5,6 @@ topic:
   - Obsidian
   - 学び
   - Logseq
-topic_code: pod
 title: Obsidianを駆使した学びの旅路
 subtitle: "🎙005 いいだつとむさんのObsidian活用術"
 description: 「ナレッジスタック Podcast」の第5回では、いいだつとむさんがObsidianを活用した学びの旅路について語っています。読書会での発表をきっかけにObsidianを使い始め、Kindleハイライトの整理から「自分の言葉で書く」ことの重要性を発見。デイリーノートは合わず、LogseqとObsidianを使い分けることで、読書がより楽しくなったと述べています。
@@ -15,11 +14,8 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: Podcast
-series_emoji: "🎙"
-series_code: pod
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastObsidianを駆使した学びの旅路51- 1×0:00Current time: 0:00 / Total time: -1:07:43-1:07:43Audio playback is not supported on your browser. Please upgrade.## Obsidianを駆使した学びの旅路

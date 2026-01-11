@@ -1,6 +1,5 @@
 ---
 title: Baseのインライン作成機能で別ファイルを不要にする
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -11,7 +10,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: method
 ---
-
 ## 概要
 
 Base プラグインのインライン作成機能により、**別ファイルを作成することなく、その場でデータベースを構築できる**革新的なアプローチ。

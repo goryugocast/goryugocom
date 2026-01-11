@@ -6,7 +6,6 @@ topic:
   - ニュースレター
   - 情報整理
   - 振り返り
-topic_code: rev
 title: 大きなものを作りあげたり小さなものをサッとまとめるObsidian Publish
 subtitle: "\U0001F4C5007 2023年2月の振り返り"
 description: '2023年2月の活動報告として、Obsidian Publishを基盤としたコンテンツ制作・整理術を詳述。セミナー動画一覧や「デイリーノート仕事術」のような「大きな構造」を構築する一方、Amazon書誌情報ブックマークレットのような「小さなツール」もPublishでシンプルに公開。ニュースレターが「区切りある物語」を届けるのに対し、Publishは「変化し続ける知識の塊」と捉え、それぞれの強みを活かしたコンテンツ戦略を模索します。'
@@ -20,11 +19,8 @@ tags:
   - 振り返り
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: "コラム/振り返り・雑記"
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📅 `= this.file.frontmatter.url`
 

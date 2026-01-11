@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: ノートリファクターで思考の断片を育てる
 subtitle: "\U0001FA84Obsidianの全技術6"
 description: null
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
 ---
-
 ## セミナー構成
 
 ### [1. ノートリファクターの基本 - 選択範囲の切り出しと設定](https://knowledgestuck.substack.com/p/obv6?timestamp=66)

@@ -6,7 +6,6 @@ topic:
   - 執筆
   - KDP
   - AI活用
-topic_code: gst
 title: "\U0001F9E0\U0001F4A1生成AIと考える技術とは？"
 subtitle: 「書く×考える×AI」生成AIと共に思考を形にする
 description: >-
@@ -20,11 +19,8 @@ tags:
   - AI
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
----
-## メモ・原稿
+---## メモ・原稿
 
 
 ---

@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ファイルコピーを使って「繰り返し」の仕事を作り出す
 subtitle: "\U0001F48EDataviewきっかけで始めたMake a copyを活かす仕事術"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Dataview
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

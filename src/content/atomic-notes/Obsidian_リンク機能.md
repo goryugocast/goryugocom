@@ -1,12 +1,10 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 source: 250918_Spaced Repetitionプラグイン
 category: Obsidian価値
 note_type: technique
 ---
-
 # Obsidianはリンク機能でレビューシステムが成立
 
 ## 概要

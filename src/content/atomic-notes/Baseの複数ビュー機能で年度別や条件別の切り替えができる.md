@@ -1,6 +1,5 @@
 ---
 title: Baseの複数ビュー機能で年度別や条件別の切り替えができる
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -11,7 +10,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: principle
 ---
-
 ## 概要
 
 Base プラグインは複数のビュー（テーブル）を一つのBase内に持たせることで、**異なる条件での表示切り替えをタブ形式で実現**できる。

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 練習論を「書いて考える」に応用する
 subtitle: 『アトミック・シンキング』実践セミナー036 動画アーカイブ
 description: null
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. 「書いて考える」ことの難しさと練習の必要性](https://knowledgestuck.substack.com/p/ks036?timestamp=0)
 **時間**: 00:00:00 ～

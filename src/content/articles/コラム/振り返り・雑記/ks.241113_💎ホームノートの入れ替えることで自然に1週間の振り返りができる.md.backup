@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'ホームノート', '振り返り']
-topic_code: obs
 title: ホームノートの入れ替えることで自然に1週間の振り返りができる
 subtitle: "\U0001F48Eホームノート式年遷宮にライフログ的な楽しさを発見した"
 description: Obsidianでホームノートを定期的にリセットする「ホームノート式年遷宮」により、自然な週次振り返りとライフログ的な楽しさが得られる仕組みを紹介。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

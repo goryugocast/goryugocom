@@ -1,10 +1,9 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidianの得意なところを活かした活用をする
 subtitle: 『アトミック・シンキング』実践セミナー025 動画アーカイブ
-description: null
+description: 数あるノートツールの中で、なぜObsidianを選ぶのか？その答えを機能的な強みから解き明かすセミナー。Obsidianの得意技を「分解・配置・俯瞰」、目的を「理解・計画・実行」という3x3のフレームワークで整理し、具体的な活用法を解説します。読書メモを通じた知識の体系化、仕事の記録を「育てる」タスク管理術、ギター練習のようなスキル習得のプロセス管理など、Obsidianを思考と行動のマネージャーとして活用するための本質的な考え方を紹介します。
 url: 'https://knowledgestuck.substack.com/p/ks025'
 date_published: 2024-09-07T00:00:00.000Z
 audience: only_paid
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. イントロダクション - Obsidianの得意なことと活用法](https://knowledgestuck.substack.com/p/ks025?timestamp=0)
 **時間**: 00:00:00 ～

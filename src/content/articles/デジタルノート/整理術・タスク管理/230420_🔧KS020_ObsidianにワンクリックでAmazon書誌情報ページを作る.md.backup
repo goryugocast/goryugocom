@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: ObsidianにワンクリックでAmazon書誌情報ページを作る
 subtitle: "\U0001F527020 Obsidian Advanced URIは多彩な用途で役に立つ"
 description: "Obsidianのプラグイン『Advanced URI』を活用し、Amazonの書籍ページからワンクリックで書誌情報ノートを作成するブックマークレットを紹介。この仕組みは、JavaScriptを使ってページ情報を抽出し、URI経由でObsidianにノートを生成するもの。また、ワークスペースの切り替えにも応用でき、Obsidianの利便性を高める方法を解説する。"
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

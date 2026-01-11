@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', '情報整理', 'ツール連携']
-topic_code: obs
 title: 情報整理に活用するObsidian以外のツール
 subtitle: "\U0001F48E振り返ってわかる記録まみれの日々"
 description: Obsidian以外の情報整理術を紹介。Day Oneで日記、Appleメモで家族共有、紙の手帳でモチベーション維持、iA Writerでメモ、たすくまで行動記録、写真アプリで資料管理。自己関連情報に焦点。
@@ -11,10 +10,7 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

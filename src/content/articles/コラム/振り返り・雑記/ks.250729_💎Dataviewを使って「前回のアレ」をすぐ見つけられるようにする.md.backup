@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Dataviewを使って「前回のアレ」をすぐ見つけられるようにする
 subtitle: "\U0001F48Eseries設定であらゆるノートで「同じクエリ」が使える"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Dataview
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）

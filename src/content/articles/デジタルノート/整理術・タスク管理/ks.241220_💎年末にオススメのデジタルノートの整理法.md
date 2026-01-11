@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 年末にオススメのデジタルノートの整理法
 subtitle: "\U0001F48E新しい年をスッキリしたObsidianで迎える"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

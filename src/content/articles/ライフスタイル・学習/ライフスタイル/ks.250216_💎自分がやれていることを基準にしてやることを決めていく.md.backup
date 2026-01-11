@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['自己評価', 'タスク管理', '習慣化']
-topic_code: obs
 title: 自分がやれていることを基準にしてやることを決めていく
 subtitle: "\U0001F48E「やりたいこと」をいっぱいやるためのタスク管理"
 description: 自分がやれていることを基準にタスクを決め、やりたいことを多くこなすためのタスク管理術を紹介。限られた時間とエネルギーを最適に配分し、記録と記録の見直しを通じて効率的なワークフローを構築する。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

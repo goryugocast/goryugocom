@@ -6,7 +6,6 @@ topic:
   - モチベーション
   - 学習
   - 動画活用
-topic_code: obs
 title: Obsidianを使って「昨日の自分を超える為の練習」をする
 subtitle: "\U0001F48Eやったことリストはやることリストになる"
 description: >-
@@ -20,10 +19,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 
 

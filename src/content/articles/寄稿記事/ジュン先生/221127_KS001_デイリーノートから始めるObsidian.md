@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 友人(jun)の記事
-topic_code: jun
 title: デイリーノートから始めるObsidian
 subtitle: "\U0001F964001 NotePlanからObsidianへ"
 description: null
@@ -13,11 +12,8 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F964"
-series_code: contribution
 category: ジュン先生
 ---
-
 ## メモ・原稿
 
 # デイリーノートから始めるObsidian

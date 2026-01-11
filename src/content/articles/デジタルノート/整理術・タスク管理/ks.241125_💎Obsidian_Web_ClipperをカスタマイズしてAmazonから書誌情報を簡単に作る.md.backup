@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'Web Clipper', '書誌情報']
-topic_code: obs
 title: Obsidian Web ClipperをカスタマイズしてAmazonから書誌情報を簡単に作る
 subtitle: "\U0001F48Eどんなページも自分が好きな形でクリップできるのはとても便利"
 description: Obsidian Web Clipperをカスタマイズし、CSSセレクターでAmazonやサウンドハウスなどから必要な情報を効率的にクリップする方法を解説。柔軟な情報整理術を紹介いたします。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

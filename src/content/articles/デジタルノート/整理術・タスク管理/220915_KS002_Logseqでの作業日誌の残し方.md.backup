@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Logseqでの作業日誌の残し方
 subtitle: "\U0001F914\U0001F4AD002 アウトラインで残す作業記録は一覧性が高い"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!UtcY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F13ac6db0-555c-4617-9c5a-0f3709cc28dd_910x1658.jpeg
 draft_link: null
 series_name: アトミックシンキング
-series_emoji: "\U0001F914"
-series_code: atomic
 category: 入門
 ---
-
 ## メモ・原稿
 
 #ks/🤔💭 `= this.file.frontmatter.url`

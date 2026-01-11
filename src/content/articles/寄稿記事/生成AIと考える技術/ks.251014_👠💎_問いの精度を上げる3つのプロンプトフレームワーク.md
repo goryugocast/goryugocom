@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F48E 問いの精度を上げる3つのプロンプトフレームワーク"
 subtitle: 生成AIとの対話を深め、思考の精度を上げる方法
 description: null
@@ -14,11 +13,8 @@ tags:
   - AI
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
 ---
-
 ```base
 filters:
   and:

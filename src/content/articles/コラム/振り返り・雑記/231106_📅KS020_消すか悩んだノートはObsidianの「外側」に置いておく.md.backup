@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 消すか悩んだノートはObsidianの「外側」に置いておく
 subtitle: "\U0001F4C5020 近いうちにオフ会を開催したいです"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

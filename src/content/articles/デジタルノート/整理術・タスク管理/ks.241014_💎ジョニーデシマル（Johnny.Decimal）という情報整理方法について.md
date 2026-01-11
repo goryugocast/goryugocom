@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['ジョニーデシマル', '情報整理', 'Obsidian']
-topic_code: obs
 title: ジョニーデシマル（Johnny.Decimal）という情報整理方法について
 subtitle: "\U0001F48E普通のひとが普通に情報を整理するときに便利な手法＋そこから考えうる快適なノートシステムの可能性"
 description: The article discusses Johnny.Decimal, an information organization method that assigns unique IDs to life's elements using a 10-area, 10-category system. It emphasizes indexing over folder structure for comprehensive life organization, suggesting Obsidian as a powerful tool for implementation.
@@ -12,10 +11,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!0uQv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d329af8-b5af-4012-a624-dfe22307023e_1078x664.png
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

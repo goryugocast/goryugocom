@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: アトミックシンキング
-topic_code: misc
 title: Obsidianを使って自分が考えたいテーマを見つける
 subtitle: ナレッジワーカーに有効な「考えることを進めていく」ための方法論
 description: null
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 #gcom  `= this.file.frontmatter.url`

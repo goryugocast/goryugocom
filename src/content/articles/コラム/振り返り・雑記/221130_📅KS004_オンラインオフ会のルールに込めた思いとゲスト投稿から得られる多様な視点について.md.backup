@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: オンラインオフ会のルールに込めた思いとゲスト投稿から得られる多様な視点について
 subtitle: "\U0001F4C5004 月一のまとめ＆ショートコンテンツも少しずつ慣れてきました"
 description: null
@@ -10,11 +9,8 @@ date_published: 2022-11-30T00:00:00.000Z
 audience: everyone
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅 `= this.file.frontmatter.url`

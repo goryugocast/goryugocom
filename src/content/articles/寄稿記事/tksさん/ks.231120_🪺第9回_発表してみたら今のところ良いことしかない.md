@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 友人(tks)の記事
-topic_code: tks
 title: 第9回 発表してみたら今のところ良いことしかない
 subtitle: "\U0001FABA発表した時点で失敗はない"
 description: null
@@ -11,11 +10,8 @@ audience: everyone
 draft_link: null
 tags: []
 series_name: 寄稿記事
-series_emoji: "\U0001FABA"
-series_code: contribution
 category: tksさん
 ---
-
 ## メモ・原稿
 
 # 第9回 発表してみたら今のところ良いことしかない

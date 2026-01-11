@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: フォルダ分けではなくデイリーノートでノートを整理する
 subtitle: 『アトミック・シンキング』実践セミナー022 動画アーカイブ
 description: null
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. イントロダクション - 基本を固めて次に進む](https://knowledgestuck.substack.com/p/ks022?timestamp=0)

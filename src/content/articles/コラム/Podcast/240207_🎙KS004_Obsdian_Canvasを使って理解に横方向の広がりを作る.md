@@ -4,7 +4,6 @@ topic:
   - Podcast
   - Obsidian
   - Canvas
-topic_code: pod
 title: Obsdian Canvasを使って理解に横方向の広がりを作る
 subtitle: "🎙KS004 ぷーおんさんのObsidian活用術"
 description: 「ナレッジスタック」のポッドキャストで、ぷーおんさんがObsidian Canvasを使い、世界史などの新しい分野を学ぶ際に、キーワードをカード化し時系列で配置することで、知識に横方向の広がりを持たせる活用術を紹介。線形な文章では得られない理解を深める方法を解説しています。
@@ -14,11 +13,8 @@ audience: everyone
 tags: []
 draft_link: null
 series_name: Podcast
-series_emoji: "🎙"
-series_code: pod
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastObsdian Canvasを使って理解に横方向の広がりを作る312- 1×0:00Current time: 0:00 / Total time: -1:05:09-1:05:09Audio playback is not supported on your browser. Please upgrade.## Obsdian Canvasを使って理解に横方向の広がりを作る

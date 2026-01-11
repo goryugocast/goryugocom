@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: メモ帳＋Obsidianを目的に応じて使い分ける
 subtitle: "\U0001F4C5022 ノートリンクはメモ帳でも便利に使える"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 ```dataview

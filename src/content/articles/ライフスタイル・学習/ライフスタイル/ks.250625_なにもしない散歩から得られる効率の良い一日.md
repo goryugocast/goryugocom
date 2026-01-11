@@ -6,7 +6,6 @@ topic:
   - 運動
   - 健康
   - マインドセット
-topic_code: rev
 title: 「なにもしない散歩」から得られる効率の良い一日
 subtitle: "\U0001F4C5なにもしない散歩から超スロージョギングまでの道のり"
 description: >-
@@ -18,11 +17,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!MAPx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1fc51fe0-bc2f-41a3-aedc-f46fa28c0d27_1179x2556.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
----
-## メモ・原稿
+---## メモ・原稿
 
 ```dataview
 LIST

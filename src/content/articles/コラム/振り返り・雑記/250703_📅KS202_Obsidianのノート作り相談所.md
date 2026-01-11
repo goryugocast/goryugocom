@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 topic_order: 47
 title: Obsidianのノート作り相談所
 subtitle: "\U0001F4C5 2025年6月の振り返り"
@@ -14,11 +13,8 @@ tags:
   - 振り返り
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 
 ```dataview
 LIST

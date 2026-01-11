@@ -1,10 +1,9 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidian x Cursor 入門
 subtitle: 『アトミック・シンキング』実践セミナー033 動画アーカイブ
-description: null
+description: AIコードエディタ「Cursor」とObsidianを連携させ、知的生産を次のレベルへ。本セミナーでは、Cursorの強力な「ルールファイル」機能に焦点を当て、その入門的な活用法を解説します。AIが自らルールを読み込み自己修正する、他のツールとは一線を画すCursorの能力とは？Obsidianからノートを直接開き、AIと対話しながらテキストを構造化していく具体的なデモを通じて、AIを優秀なアシスタントとして「育成」し、協業するための第一歩を学びます。
 url: 'https://knowledgestuck.substack.com/p/ks033'
 date_published: 2025-05-10T00:00:00.000Z
 audience: only_paid
@@ -16,11 +15,8 @@ tags:
   - Cursor
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. Cursor入門 - Obsidian連携の可能性](https://knowledgestuck.substack.com/p/ks033?timestamp=0)
 **時間**: 00:00:00 ～

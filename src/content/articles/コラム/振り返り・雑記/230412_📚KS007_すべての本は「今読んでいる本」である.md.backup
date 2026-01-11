@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: すべての本は「今読んでいる本」である
 subtitle: "\U0001F4DA✍️007 意識が変われば結果的により多くのことを知ることができる"
 description: null
@@ -12,11 +11,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4DA"
-series_code: other
 category: 読書ノート
 ---
-
 ## メモ・原稿
 
 #ks/📔✍️ `= this.file.frontmatter.url`

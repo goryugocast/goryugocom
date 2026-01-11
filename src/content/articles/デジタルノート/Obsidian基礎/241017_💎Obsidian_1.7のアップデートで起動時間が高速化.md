@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'アップデート', 'パフォーマンス']
-topic_code: obs
 title: Obsidian 1.7のアップデートで起動時間が高速化
 subtitle: "\U0001F48E起動時間が遅い原因を自分で見つけることも可能になった"
 description: Obsidian 1.7 update speeds up mobile startup and adds a feature to identify slow startup causes. Users can now pinpoint bottlenecks like iCloud sync to optimize performance.
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

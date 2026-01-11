@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', '仕事術', 'ノート整理']
-topic_code: obs
 title: 大きな仕事は細かな区切りのノートを作って整理する
 subtitle: "\U0001F48E仕事ノートもトピックノート的に整理すればいい"
 description: null
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

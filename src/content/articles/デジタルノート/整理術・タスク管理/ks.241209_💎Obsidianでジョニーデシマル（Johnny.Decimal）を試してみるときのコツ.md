@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianでジョニーデシマル（Johnny.Decimal）を試してみるときのコツ
 subtitle: "\U0001F48E普通のひとが普通に情報を整理するときに便利な手法＋そこから考えうる快適なノートシステムの可能性"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

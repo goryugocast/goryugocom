@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'HOMEノート', '予定管理']
-topic_code: obs
 title: HOMEノートを使った予定の管理
 subtitle: "\U0001F48Eほんの数行の「今週の予定」でなにが変わるのか"
 description: Obsidianでデイリーノートのテンプレートをやめ、HOMEノートに手動で予定を書き込むことで、継続的に考えたいことや意識したいことを管理する方法を紹介。Dataviewでの自動管理に加え、手動メモでより柔軟に。
@@ -12,10 +11,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!Smp1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4be2a75f-fd2e-4eac-9dd1-b998f743bb66_1260x1668.jpeg
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

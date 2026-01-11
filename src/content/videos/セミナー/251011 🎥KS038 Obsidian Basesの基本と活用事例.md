@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: アーカイブ
-topic_code: ach
 title: Obsidian Basesの基本と活用事例
 subtitle: 『アトミック・シンキング』実践セミナー038 動画アーカイブ
 description: null
@@ -17,11 +16,8 @@ tags:
   - Bases
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. Obsidian Basesの概要と「センスメイキング」の可能性](https://knowledgestuck.substack.com/p/ks038?timestamp=0)
 **時間**: 00:00:00 ～

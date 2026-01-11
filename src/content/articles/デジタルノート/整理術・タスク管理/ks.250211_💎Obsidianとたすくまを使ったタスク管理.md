@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'たすくま', 'タスク管理']
-topic_code: obs
 title: Obsidianとたすくまを使ったタスク管理
 subtitle: "\U0001F48E2つの「やることリスト」をどうやって使い分けるのか"
 description: ごりゅごさんのタスク管理は「やること・やりたいことのマネジメント」。ObsidianのSpaced Repetitionとたすくまを使い、一般的な「タスク管理」の重いイメージを避け、自由にコントロールする独自の手法を紹介。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

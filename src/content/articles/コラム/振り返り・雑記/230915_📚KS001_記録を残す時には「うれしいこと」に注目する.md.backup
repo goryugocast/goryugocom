@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: 記録を残す時には「うれしいこと」に注目する
 subtitle: "\U0001F4DA001 『ロギング仕事術： 課題に気づく、タスクが片づく、成果が上がる』"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!ReFj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb908cedf-595e-4a37-a7cd-82be44ceb9dc_346x499.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4DA"
-series_code: other
 category: 読書ノート
 ---
-
 ## メモ・原稿
 
 #ks/📚 

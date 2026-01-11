@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'ホームノート', '情報整理']
-topic_code: obs
 title: ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける
 subtitle: "\U0001F48Eホームノート式年遷宮システム"
 description: Obsidianのホームノートを定期的に刷新する「式年遷宮システム」を提案。使いにくくなったノートを部分修正するのではなく、全体をゼロから見直し、必要なものを選び直すことで、常に最適な状態を保ち、ノート作成スキルも向上させる。
@@ -12,10 +11,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!fodY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F74f5907c-a733-4eb1-b62c-9d3ebf8f63f_465x1359.png
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

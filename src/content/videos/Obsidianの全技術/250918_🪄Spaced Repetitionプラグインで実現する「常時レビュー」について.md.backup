@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Spaced Repetitionプラグインで実現する「常時レビュー」について
 subtitle: "\U0001FA84Obsidianの全技術4"
 description: null
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
 ---
-
 ## セミナー構成
 
 ### [1. Spaced Repetitionプラグインの振り返りと効果](https://knowledgestuck.substack.com/p/spaced-repetition?timestamp=26)

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'Cursor', 'AIツール']
-topic_code: obs
 title: CursorとObsidianを連携して執筆やファイル整理に役立てる
 subtitle: "\U0001F48E指示書の作成と再帰的実行がとても楽しい"
 description: AIエディタCursorとObsidianを組み合わせ、執筆やファイル整理を革新。AIが文章作成、ファイル操作、自動化ルール生成をサポートし、生産性を向上させる。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）

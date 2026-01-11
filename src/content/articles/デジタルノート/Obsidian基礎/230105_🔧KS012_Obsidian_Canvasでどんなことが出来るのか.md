@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: Obsidian Canvasでどんなことが出来るのか
 subtitle: "\U0001F527012 Obsidian Canvasのファースインプレッションの「次」"
 description: 'Webから本文を取得できませんでした。有料記事のため、手動での確認が必要です。'
@@ -15,12 +14,9 @@ tags:
   - review
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 status: error
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 # Obsidian Canvasでどんなことが出来るのか

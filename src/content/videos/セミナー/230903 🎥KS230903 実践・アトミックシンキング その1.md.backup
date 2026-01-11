@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: 実践・アトミックシンキング その1
 subtitle: 『アトミック・シンキング』実践セミナー13動画アーカイブ
 description: null
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "🎥"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 ### [1. イントロダクション - 基本から学び直す](https://knowledgestuck.substack.com/p/ks013?timestamp=0)
 **時間**: 00:00:00 ～ 00:02:00
 

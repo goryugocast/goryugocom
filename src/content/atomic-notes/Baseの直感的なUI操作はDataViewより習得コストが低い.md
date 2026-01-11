@@ -1,6 +1,5 @@
 ---
 title: Baseの直感的なUI操作はDataViewより習得コストが低い
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -12,7 +11,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: technique
 ---
-
 ## 概要
 
 Base プラグインの最大の利点は、**UI の直感性と著しく低い習得コスト**。DataView に挫折した初心者も容易に使用可能。

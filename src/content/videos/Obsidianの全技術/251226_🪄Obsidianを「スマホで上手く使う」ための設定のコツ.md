@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Obsidianを「スマホで上手く使う」ための設定のコツ
 subtitle: 🪄Obsidianの全技術10
 date_published: 2025-12-26
@@ -11,10 +10,7 @@ tags:
   - Obsidian
   - モバイル
 series_name: Obsidianの全技術
-series_emoji: "🪄"
-series_code: obv
 ---
-
 ## セミナー構成
 
 ### [1. イントロダクションとスマホ版Obsidianの特性](https://knowledgestuck.substack.com/p/obv10?timestamp=0)

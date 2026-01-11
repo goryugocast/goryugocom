@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 友人(tks)の記事
-topic_code: tks
 title: 第8回 単語をトピックノートにするために手を加えていく
 subtitle: "\U0001FABAトピックノートはアトミックノートよりも個性が出やすい"
 description: null
@@ -13,11 +12,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: 寄稿記事
-series_emoji: "\U0001FABA"
-series_code: contribution
 category: tksさん
 ---
-
 ## メモ・原稿
 
 # 第8回 単語をトピックノートにするために手を加えていく

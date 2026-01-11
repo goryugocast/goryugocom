@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: あらゆるノートを直感的かつ網羅的に分類する10項目
 subtitle: "\U0001F48E10の分類でトピックノートを構造的にまとめる"
 description: null
@@ -11,10 +10,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!RHEn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb7fc6952-38f7-4a9e-86d7-7c1f1494e57c_1532x1386.png
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 ```base

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Podcast
-topic_code: pod
 title: Wordを愛する人間のObsidian運用方法の進化
 subtitle: "\U0001F399KS009 新田順也さんのObsidian活用術"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F399"
-series_code: other
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastWordを愛する人間のObsidian運用方法の進化21- 1×0:00Current time: 0:00 / Total time: -1:03:11-1:03:11Audio playback is not supported on your browser. Please upgrade.## Wordを愛する人間のObsidian運用方法の進化

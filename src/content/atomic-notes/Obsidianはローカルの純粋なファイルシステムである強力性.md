@@ -1,6 +1,5 @@
 ---
 title: Obsidianはローカルの純粋なファイルシステムである強力性
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -10,7 +9,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: technique
 ---
-
 ## 概要
 
 Obsidianの根幹にある最大の特徴は、**「すべてがローカルのただのファイルである」という単純さ**。

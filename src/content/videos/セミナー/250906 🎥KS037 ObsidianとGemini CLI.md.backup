@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: アーカイブ
-topic_code: ach
 title: ObsidianとGemini CLI
 subtitle: 『アトミック・シンキング』実践セミナー037 動画アーカイブ
 description: null
@@ -15,11 +14,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. Gemini CLIの紹介とChatGPTとの違い](https://knowledgestuck.substack.com/p/ks037?timestamp=0)
 **時間**: 00:00:00 ～

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: これから10年使うためのObsidian
 subtitle: 『アトミック・シンキング』実践セミナー039 動画アーカイブ
 description: null
@@ -15,11 +14,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. イントロダクション - 10年使うためのObsidian](https://knowledgestuck.substack.com/p/ks039?timestamp=0)

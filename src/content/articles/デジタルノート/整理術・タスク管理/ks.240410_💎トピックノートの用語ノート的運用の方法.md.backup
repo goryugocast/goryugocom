@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'トピックノート', '用語ノート']
-topic_code: obs
 title: トピックノートの用語ノート的運用の方法
 subtitle: "\U0001F48Eトピックノートは曖昧なものを曖昧なままで整理できる"
 description: Obsidianで用語を辞書的に定義するのではなく、多角的な視点やアイデアをまとめる「トピックノート」を活用し、曖昧な情報を整理して理解を深める方法を解説。知識の繋がりから新たな発見を促します。
@@ -12,10 +11,7 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!C_ax!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F95c464a5-6b72-48b6-a99e-5651becd33d3_1298x2340.png
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

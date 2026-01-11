@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidianでの読書メモの作り方
 subtitle: 「なにを残すといいのか」は「読書メモを残せば残すほどわかるようになる」
 description: null
@@ -15,10 +14,7 @@ tags:
   - 読書
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 # Obsidianでの読書メモの作り方

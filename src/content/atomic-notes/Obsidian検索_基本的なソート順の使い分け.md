@@ -1,13 +1,11 @@
 ---
 topic: Obsidianの全技術
-topic_code: obv
 tags:
 - Obsidian
 - 検索機能
 - 効率化
 note_type: method
 ---
-
 # Obsidian検索：基本的なソート順の使い分け
 
 Obsidianの検索結果は複数の方法でソート可能です。検索状況に応じた最適なソート順の選択が、効率的な情報検索を実現します。

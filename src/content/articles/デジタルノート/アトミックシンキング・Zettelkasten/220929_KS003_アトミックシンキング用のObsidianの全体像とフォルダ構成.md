@@ -5,7 +5,6 @@ topic:
   - アトミックシンキング
   - フォルダ構成
   - ノート術
-topic_code: gst
 title: アトミックシンキング用のObsidianの全体像とフォルダ構成
 subtitle: "\U0001F914\U0001F4AD003 『アトミック・シンキング』実践セミナー補足解説1−1"
 description: '『アトミック・シンキング』実践セミナーの補足解説として、Obsidianの全体像、Workspacesを活用した多様な用途への対応、そしてノートの保存場所（フォルダ）の分け方について詳しく解説。Zettelkastenの原則に捉われず、個人の使い方に最適化された柔軟なノート整理術を紹介する。'
@@ -19,11 +18,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: アトミックシンキング
-series_emoji: "\U0001F914"
-series_code: atomic
 category: "デジタルノート/アトミックシンキング・Zettelkasten"
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/🤔💭 `= this.file.frontmatter.url`
 

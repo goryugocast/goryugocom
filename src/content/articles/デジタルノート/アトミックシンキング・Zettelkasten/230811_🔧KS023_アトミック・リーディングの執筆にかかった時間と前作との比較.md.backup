@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: アトミック・リーディングの執筆にかかった時間と前作との比較
 subtitle: "\U0001F527023 記録を残していなかったらきっとわからなかったことがわかった"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!wb3H!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2617059-7fe3-412b-85f7-263a3990b638_1125x2436.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 [ワークスペースの保存](obsidian://advanced-uri?vault=Obsidian_local&workspace=book_atomic2&saveworkspace=true)

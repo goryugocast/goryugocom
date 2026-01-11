@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['DayOne', '日記', '紙の手帳']
-topic_code: upd
 title: DayOneを使いながらさらに紙の日記帳も使う理由
 subtitle: "\U0001F527新しいことを始めてわかったたくさんのこと"
 description: ごりゅごがDayOneと併用する紙の日記帳の意義を解説。日々の余白確保によるメンタル改善、絵を描く練習を通じた新たな視点の獲得、そして新しい挑戦がもたらす自己成長の重要性を考察します。
@@ -13,10 +12,7 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: ""
-series_emoji: ""
-series_code: other
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

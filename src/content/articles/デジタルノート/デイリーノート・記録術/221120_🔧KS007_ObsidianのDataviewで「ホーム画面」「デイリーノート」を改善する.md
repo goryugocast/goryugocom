@@ -6,7 +6,6 @@ topic:
   - デイリーノート
   - ホーム画面
   - 読書記録
-topic_code: upd
 title: ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する
 subtitle: "\U0001F527007 Dataviewを実際にどのように使っているかの事例"
 description: 'ObsidianのDataviewプラグインを活用し、HOMEノートに「今日確認したいノート」や「今週の予定と実績」などを自動表示させ、デイリーノートには「過去の今日」のノートや読了した本のリストを自動的に表示させることで、情報整理と振り返りを効率化する方法を解説。Dataviewのクエリ例も交えながら、手間なく情報を管理する「ちょっとした便利」を実現する。'
@@ -21,11 +20,8 @@ tags:
   - Dataview
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: "デジタルノート/デイリーノート・記録術"
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/🔧 `= this.file.frontmatter.url`
 

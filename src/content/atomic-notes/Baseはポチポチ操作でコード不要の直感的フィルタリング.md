@@ -1,6 +1,5 @@
 ---
 title: Baseはポチポチ操作でコード不要の直感的フィルタリング
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -11,7 +10,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: technique
 ---
-
 ## 概要
 
 Base プラグインにおける最大のUX上の強みは、**フィルター条件をUI上の直感的操作のみで設定できる**こと。

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Obsidian Basesの活用可能性を考える
 subtitle: "\U0001FA84Obsidianの全技術3 アフタートーク"
 description: Obsidianの全技術シリーズ第3回アフタートーク。今回は、Spaced RepetitionプラグインのGTD的応用から、新プラグイン「Obsidian Bases」の革新的な機能まで、よりマニアックな活用法を深掘りします。DataViewを超える直感的なUI、テンプレートの再利用性を高める隠しパラメータ、そして未来の知的生産をどう変えるか。ツールの本質を「体で」理解するプロセスと共に、Obsidianの新たな可能性を探ります。
@@ -15,10 +14,7 @@ tags:
   - Bases
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
 ---
-
 # メモ・原稿
 
 

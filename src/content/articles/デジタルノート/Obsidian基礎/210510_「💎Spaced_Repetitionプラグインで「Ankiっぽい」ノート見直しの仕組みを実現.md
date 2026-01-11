@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "💎Spaced Repetitionプラグインで「Ankiっぽい」ノート見直しの仕組みを実現"
 subtitle: 「間隔をあけて」「インクリメンタルライティング」ができるようになるプラグイン
 description: null
@@ -12,13 +11,10 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!alhe!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ff8a7436d-d351-41c9-a3f0-d73703baabec_3106x1904.jpeg
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 status: error
 tags:
   - review
 ---
-
 ## メモ・原稿
 
 ---

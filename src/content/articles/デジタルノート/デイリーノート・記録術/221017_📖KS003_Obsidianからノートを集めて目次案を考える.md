@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: Obsidianからノートを集めて目次案を考える
 subtitle: "\U0001F4D6✍️003 アウトラインを作りはいつまでも終わらないことを思い出し別の方法へ"
 description: "次作『人に語れるようにするための読書術』の執筆プロセスを公開。Obsidianからノートを集める方法を試すも、うまくまとまらず断念。過去作『アトミック・シンキング』の執筆記録を振り返り、目次案を何度も練り直していたことを思い出す。今回はその反省を活かし、目次作成に時間をかけるのではなく、まず『30点レベルの下書き』を書いて考える手法を試す。"
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4D6"
-series_code: other
 category: 技術・ノウハウ
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/📖✍️  `= this.file.frontmatter.url`
 

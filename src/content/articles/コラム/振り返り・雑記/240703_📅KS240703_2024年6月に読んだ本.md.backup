@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 2024年6月に読んだ本
 subtitle: "\U0001F4C5月に一回まとめて自分用にも役立てたい"
 description: null
@@ -14,11 +13,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

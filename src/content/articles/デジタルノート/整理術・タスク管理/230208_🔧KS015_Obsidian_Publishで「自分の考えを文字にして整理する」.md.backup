@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: Obsidian Publishで「自分の考えを文字にして整理する」
 subtitle: "\U0001F527015 今更でも何か書けることはあるのだ"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/🔧 `= this.file.frontmatter.url`

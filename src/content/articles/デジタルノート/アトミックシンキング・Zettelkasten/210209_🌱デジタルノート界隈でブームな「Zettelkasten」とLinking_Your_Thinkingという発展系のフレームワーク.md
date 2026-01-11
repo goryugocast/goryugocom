@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F331デジタルノート界隈でブームな「Zettelkasten」とLinking Your Thinkingという発展系のフレームワーク"
 subtitle: デジタルを活用したこれからの「情報カード」のあり方を考えていく
 description: null
@@ -13,11 +12,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: アトミックシンキング
-series_emoji: "\U0001F331"
-series_code: atomic
 category: 実践・事例
 ---
-
 ## メモ・原稿
 
 # 🌱デジタルノート界隈でブームな「Zettelkasten」とLinking Your Thinkingという発展系のフレームワーク

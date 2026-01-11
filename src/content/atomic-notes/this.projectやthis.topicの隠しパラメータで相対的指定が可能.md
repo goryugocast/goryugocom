@@ -1,6 +1,5 @@
 ---
 title: this.projectやthis.topicの隠しパラメータで相対的指定が可能
-topic_code: obv
 topic: Obsidianの全技術
 tags:
   - Obsidian
@@ -10,7 +9,6 @@ tags:
 related_seminars:
   - 250911_Obsidian Basesの活用可能性を考える
 ---
-
 ## 概要
 
 Base プラグインの隠しパラメータ（`this.project`、`this.topic`など）により、**相対的・動的な指定が可能**になり、テンプレートの汎用性が飛躍的に向上する。

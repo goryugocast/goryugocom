@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidianを便利に使えるノートタイトル「〜について〜したノート」
 subtitle: "\U0001F48Eタイトルの工夫で幅広い用途のノートを「1つのルール」で運用できる"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

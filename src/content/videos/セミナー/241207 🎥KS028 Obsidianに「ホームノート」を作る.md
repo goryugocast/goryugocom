@@ -1,10 +1,9 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidianに「ホームノート」を作る
 subtitle: 『アトミック・シンキング』実践セミナー028 動画アーカイブ
-description: null
+description: Obsidian仕事術シリーズ、今回は情報整理のハブとなる「ホームノート」の作り方と活用法を解説します。仕事用、生活用など、目的に応じて複数のホームノートを使い分けるという考え方や、効果的なホームノートのための3原則（見やすさ、デジタルの活用、手動での補完）を紹介。Obsidianのワークスペース機能とDataviewプラグインを組み合わせ、今日のタスクなどを自動表示させる具体的な方法も実演します。
 url: 'https://knowledgestuck.substack.com/p/ks028'
 date_published: 2024-12-07T00:00:00.000Z
 audience: only_paid
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. イントロダクション - ホームノートの概念と目的](https://knowledgestuck.substack.com/p/ks028?timestamp=0)
 **時間**: 00:00:00 ～

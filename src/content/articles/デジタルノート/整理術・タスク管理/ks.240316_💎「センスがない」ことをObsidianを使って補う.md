@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', '思考法', '効率化']
-topic_code: obs
 title: "センスがないことをObsidianを使って補う"
 subtitle: "\U0001F48Eスキルをいかに言語化してObsidianで整理していくか"
 description: Obsidianを活用し、ギターなどの身体的スキルを言語化・整理。センスに頼らず、意識的な学習と試行錯誤で上達を促進する具体的な方法と、ノート整理の重要性を解説。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

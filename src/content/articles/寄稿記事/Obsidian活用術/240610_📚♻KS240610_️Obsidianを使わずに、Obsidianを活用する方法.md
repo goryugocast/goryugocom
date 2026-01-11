@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F4DA♻️Obsidianを使わずに、Obsidianを活用する方法"
 subtitle: ショートカットアプリやChatGPTを使うことでツールに縛られない
 description: null
@@ -15,11 +14,8 @@ tags:
   - AI
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
----
-## メモ・原稿
+---## メモ・原稿
 
 # 📚♻️Obsidianを使わずに、Obsidianを活用する方法
 

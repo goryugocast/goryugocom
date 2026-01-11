@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: "\U0001F5C4Zettelkasten（ツェッテルカステン）から始まるデジタルノートの活用についてまとめていきます"
 subtitle: How to Take Smart Notes→Evergreen Note→Link Your Thinking
 description: null
@@ -13,11 +12,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: アトミックシンキング
-series_emoji: "\U0001F331"
-series_code: atomic
 category: 実践・事例
 ---
-
 ## メモ・原稿
 
 # 🗄Zettelkasten（ツェッテルカステン）から始まるデジタルノートの活用についてまとめていきます

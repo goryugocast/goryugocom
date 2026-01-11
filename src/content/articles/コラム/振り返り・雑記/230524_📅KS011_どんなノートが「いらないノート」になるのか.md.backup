@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: どんなノートが「いらないノート」になるのか
 subtitle: "\U0001F4C5011 保管庫を作って2週間で「別にいらない」と感じるノートが現れる"
 description: null
@@ -10,11 +9,8 @@ date_published: 2023-05-24T00:00:00.000Z
 audience: everyone
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅

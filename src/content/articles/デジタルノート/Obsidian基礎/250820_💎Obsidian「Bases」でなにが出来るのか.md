@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Obsidian「Bases」でなにが出来るのか
 subtitle: "\U0001F48EDataviewは難しいがBasesは直感的に情報整理が出来る"
 description: null
@@ -15,10 +14,7 @@ tags:
   - Dataview
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 ```base

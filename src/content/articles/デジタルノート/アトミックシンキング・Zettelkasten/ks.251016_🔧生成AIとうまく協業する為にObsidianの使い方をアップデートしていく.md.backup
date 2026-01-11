@@ -6,7 +6,6 @@ topic:
   - ワークシート
   - マインドセット
   - 習慣化
-topic_code: upd
 title: 生成AIとうまく協業する為にObsidianの使い方をアップデートしていく
 subtitle: "\U0001F527ワークシートのアップデートと今後の方針確認など"
 description: >-
@@ -20,11 +19,8 @@ tags:
   - AI
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 

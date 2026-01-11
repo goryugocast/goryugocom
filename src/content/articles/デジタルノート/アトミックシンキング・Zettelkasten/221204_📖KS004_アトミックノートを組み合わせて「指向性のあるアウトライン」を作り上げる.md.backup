@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: アトミックノートを組み合わせて「指向性のあるアウトライン」を作り上げる
 subtitle: "\U0001F4D6✍️004 GitHubでの原稿共有を行います"
 description: null
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!nat1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F81718dc3-198c-404f-85a8-7ba017161bba_1070x1124.png
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4D6"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 #ks/📖✍️ `= this.file.frontmatter.url`

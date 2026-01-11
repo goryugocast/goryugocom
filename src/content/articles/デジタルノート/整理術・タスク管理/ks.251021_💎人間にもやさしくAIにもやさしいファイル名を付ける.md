@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 人間にもやさしくAIにもやさしいファイル名を付ける
 subtitle: "\U0001F48Eプレフィックス＋絵文字のハイブリッド運用"
 description: null
@@ -13,10 +12,7 @@ tags:
   - AI
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ```base
 filters:
   and:

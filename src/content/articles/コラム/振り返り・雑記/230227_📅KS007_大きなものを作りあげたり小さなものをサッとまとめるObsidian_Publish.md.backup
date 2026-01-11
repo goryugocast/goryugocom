@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 大きなものを作りあげたり小さなものをサッとまとめるObsidian Publish
 subtitle: "\U0001F4C5007 2023年2月の振り返り"
 description: null
@@ -15,11 +14,8 @@ tags:
   - 振り返り
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅 `= this.file.frontmatter.url`

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ['Obsidian', 'ノート整理', '効率化']
-topic_code: obs
 title: Obsidianでのデジタルノート整理術：フォルダに頼らない効果的な方法
 subtitle: "\U0001F48Eサイドバーを使わないことで強制的に「デジタルの使い方」に慣れることができる"
 description: Obsidianでデジタルノートを整理する際、サイドバー（フォルダ）に頼らず、クイックスイッチャーやデイリーノートを活用し、慣れた操作を制限することで、ノートが増えても効率的に使えるようになる方法を提案。
@@ -13,10 +12,7 @@ cover_image: >-
 tags: []
 draft_link: null
 series_name: ""
-series_emoji: ""
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 `= this.file.frontmatter.url`
 

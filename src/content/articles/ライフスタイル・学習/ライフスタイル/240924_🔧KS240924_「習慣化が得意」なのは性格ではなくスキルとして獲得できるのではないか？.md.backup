@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 「習慣化が得意」なのは性格ではなくスキルとして獲得できるのではないか？
 subtitle: "\U0001F527生まれて始めて見つけた「やってて楽しい筋トレ」"
 description: null
@@ -14,11 +13,8 @@ tags:
   - 習慣
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

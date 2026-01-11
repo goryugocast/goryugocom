@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 本
-topic_code: hon
 title: 時間ではなく期間をかけて本を読むことで記憶に残りやすくなる
 subtitle: "\U0001F4DA✍️005 沢山の本を同時に読み進める並行読書術"
 description: null
@@ -12,11 +11,8 @@ tags:
   - 読書
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4DA"
-series_code: other
 category: 読書ノート
 ---
-
 ## メモ・原稿
 
 #ks/📔✍️ `= this.file.frontmatter.url`

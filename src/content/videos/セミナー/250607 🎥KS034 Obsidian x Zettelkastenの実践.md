@@ -1,10 +1,9 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidian x Zettelkastenの実践
 subtitle: 『アトミック・シンキング』実践セミナー034 動画アーカイブ
-description: null
+description: Zettelkasten（ツェッテルカステン）の本質を理解し、Obsidianで実践するためのセミナー。単なるメモ管理術として誤解されがちなこの手法の核心は、「思考の流れを追跡する」独自の番号付けにあります。アウトライナーやフォルダ整理との違いを明確にし、ボトムアップな知識創造を促すZettelkastenの真価を解説。ObsidianとDataviewプラグインを組み合わせ、アナログの利点である「物理的な近接性」をデジタルで再現する方法や、独自の「リンクシステム」構築の実践まで、具体的なステップを紹介します。
 url: 'https://knowledgestuck.substack.com/p/ks034'
 date_published: 2025-06-07T00:00:00.000Z
 audience: only_paid
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. ツェッテルカステンとは何か - 誤解と本質](https://knowledgestuck.substack.com/p/ks034?timestamp=0)

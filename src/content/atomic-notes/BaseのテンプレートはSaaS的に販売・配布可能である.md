@@ -1,6 +1,5 @@
 ---
 title: BaseのテンプレートはSaaS的に販売・配布可能である
-topic_code: obv
 topic: Obsidianの全技術
 tags:
   - Obsidian
@@ -10,7 +9,6 @@ tags:
 related_seminars:
   - 250911_Obsidian Basesの活用可能性を考える
 ---
-
 ## 概要
 
 Baseで構築したシステムやテンプレートは、**高い再利用性を備えているため、SaaS的なビジネスモデルで販売・配布可能**である。

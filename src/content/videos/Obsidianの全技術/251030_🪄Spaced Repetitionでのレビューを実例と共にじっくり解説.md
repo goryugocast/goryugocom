@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Obsidianの全技術
-topic_code: obv
 title: Spaced Repetitionでのレビューを実例と共にじっくり解説
 subtitle: "\U0001FA84Obsidianの全技術7"
 description: Obsidianの全技術シリーズ第7回。今回は、知的生産の心臓部「Spaced Repetition」プラグインの具体的な使い方を、実際の画面操作を通してじっくり解説。レビュー専用ワークスペースの構築、関連ノートの探索、アイデアの切り出しまで、一連のプロセスを実演します。ノートを「育て、捨てる」思想から、自身の処理能力と向き合うためのツールとしての活用法、さらにはプロジェクト単位での応用まで、Obsidianを深く使いこなすための実践的な知恵が満載です。
@@ -14,10 +13,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidianの全技術
-series_emoji: "\U0001FA84"
-series_code: obv
----
-## セミナー構成
+---## セミナー構成
 
 ### [1. イントロダクション - Spaced Repetitionプラグインの実践的活用法](https://knowledgestuck.substack.com/p/obv7?timestamp=2)
 **時間**: 00:00:02 ～

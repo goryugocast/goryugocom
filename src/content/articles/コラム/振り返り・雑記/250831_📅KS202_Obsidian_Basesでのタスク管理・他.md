@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: Obsidian Basesでのタスク管理・他
 subtitle: "\U0001F4C52025年8月の振り返り"
 description: null
@@ -16,11 +15,8 @@ tags:
   - Bases
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）

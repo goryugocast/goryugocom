@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 20時間の練習でお絵かきは習得できたのか
 subtitle: "\U0001F527絶対やらないと思ってたお絵かき練習の1ヶ月の記録"
 description: "『たいていのことは20時間で習得できる』という原則に基づき、嫌いだったお絵かきに20時間挑戦した記録を公開。手帳イラストから始め、透明水彩や万年筆画、デッサンなどを実践。見るものを模写する練習から始め、『頭の中のものを描く』のではなく『目の前にあるものを描く』ことで上達を実感。20時間で飽きずに楽しめるレベルに到達し、スキル習得の楽しさを再認識する。"
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbf2e2d74-71a5-4429-aec2-d92bd5566ed1_1024x768.jpeg
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

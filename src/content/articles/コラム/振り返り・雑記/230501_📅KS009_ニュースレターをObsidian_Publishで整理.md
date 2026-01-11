@@ -6,7 +6,6 @@ topic:
   - 読書術
   - 情報整理
   - 振り返り
-series_code: other
 category: "コラム/振り返り・雑記"
 title: ニュースレターをObsidian Publishで整理
 subtitle: "\U0001F4C5009 permalinkでページ固定を行う"
@@ -18,7 +17,6 @@ tags:
   - Obsidian
 draft_link: null
 ---
-
 ## メモ・原稿
 
 #ks/📅  `= this.file.frontmatter.url`

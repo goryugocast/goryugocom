@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: 1年のテーマを決める@2025
 subtitle: 『アトミック・シンキング』実践セミナー029
 description: null
@@ -14,11 +13,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: セミナー
-series_emoji: "\U0001F3A5"
-series_code: seminar
 category: アーカイブ
 ---
-
 ## セミナー構成
 
 ### [1. イントロダクション - 「年間テーマ」で最高の1年を](https://knowledgestuck.substack.com/p/ks029?timestamp=0)

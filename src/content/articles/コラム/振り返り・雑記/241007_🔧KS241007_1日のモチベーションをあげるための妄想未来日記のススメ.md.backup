@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 1日のモチベーションをあげるための妄想未来日記のススメ
 subtitle: "\U0001F527未来を先取りした日記にどんないいことがあるのか"
 description: null
@@ -10,11 +9,8 @@ date_published: 2024-10-07T00:00:00.000Z
 audience: only_paid
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

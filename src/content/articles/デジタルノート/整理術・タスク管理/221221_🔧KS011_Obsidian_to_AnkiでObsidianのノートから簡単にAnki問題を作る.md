@@ -6,7 +6,6 @@ topic:
   - Spaced Repetition
   - 学習
   - 知識管理
-topic_code: upd
 title: Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る
 subtitle: "\U0001F527011 ハイライトした部分を穴埋め問題にする方法"
 description: 'ObsidianのノートからAnkiの穴埋め問題（クローズテスト）を簡単に作成するための「Obsidian_to_Anki」プラグインの設定方法を解説。AnkiConnectの導入からObsidianプラグインの設定、AnkiとObsidianのフィールド一致まで、必要最低限の手順に絞って紹介。ハイライト部分を`==`で囲むだけで、分散学習ツールAnkiを使った学習効率を向上させる。'
@@ -19,11 +18,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: "デジタルノート/整理術・タスク管理"
 ---
-
 ## メモ・原稿
 
 

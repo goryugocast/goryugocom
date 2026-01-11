@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 友人(jun)の記事
-topic_code: jun
 title: 日常のObsidianの画面構成とプロジェクト管理
 subtitle: "\U0001F964011 プロジェクト、ウィークリー、デイリーの同時表示"
 description: "Obsidianでのタスク管理と画面構成について解説。過去に様々なタスク管理アプリを試しては挫折した経験から、従来のチェックボックス型タスク管理への違和感を語る。Obsidianのデイリーノートを中心に、プロジェクトノート、ウィークリーノート、カレンダーを同時表示する画面構成を紹介し、複数のデイリーノートをまたぐタスクをプロジェクトとして管理する手法を詳述する。"
@@ -12,11 +11,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!OqA4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe87f6399-5a18-48a4-8f14-f36093209cf4_3180x2384.png
 draft_link: null
 series_name: 寄稿記事
-series_emoji: "\U0001F964"
-series_code: contribution
 category: ジュン先生
 ---
-
 ## メモ・原稿
 
 # 日常のObsidianの画面構成とプロジェクト管理

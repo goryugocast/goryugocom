@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: シンプルなルールでObsidianを改めて使い始めるメリット
 subtitle: "\U0001F48E昔のノートはいつでも元に戻せることを知る"
 description: null
@@ -11,10 +10,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

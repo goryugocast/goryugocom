@@ -1,6 +1,5 @@
 ---
 title: Spaced Repetitionプラグインはインクリメンタル・ライティングの実装
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -10,7 +9,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: technique
 ---
-
 ## 概要
 
 Spaced Repetitionプラグインは、アンディ・マトゥシャック氏が提唱する「インクリメンタル・ライティング」という概念を実現するために開発されたツール。

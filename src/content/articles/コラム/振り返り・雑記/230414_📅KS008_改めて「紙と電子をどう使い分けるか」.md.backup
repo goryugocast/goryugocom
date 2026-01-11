@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 改めて「紙と電子をどう使い分けるか」
 subtitle: "\U0001F4C5008 今年のテーマを「外に出る」に設定してからの変化"
 description: null
@@ -11,11 +10,8 @@ audience: everyone
 draft_link: null
 tags: []
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 # 改めて「紙と電子をどう使い分けるか」

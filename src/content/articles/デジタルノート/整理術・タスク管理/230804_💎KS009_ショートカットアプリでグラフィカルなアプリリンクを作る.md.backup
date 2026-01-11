@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ショートカットアプリでグラフィカルなアプリリンクを作る
 subtitle: "\U0001F48E009 再びショートカットアプリに様々な活用可能性が見えてきた"
 description: 記事では、Obsidianでグラフィカルなアプリリンクを作成する方法として、Appleのショートカットアプリを活用する手法を紹介。プラグインと比較し、Markdownの簡潔さと視覚的満足度を両立する利点を解説しています。
@@ -11,11 +10,8 @@ cover_image: >-
   https://substackcdn.com/image/fetch/$s_!fKLD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feabfec56-d34e-4cc7-82b7-9c627747e376_1518x1760.jpeg
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "💎"
-series_code: obs
 topic: ['Obsidian', 'ショートカットアプリ', '効率化']
 ---
-
 ## メモ・原稿
 
 #ks/💎 

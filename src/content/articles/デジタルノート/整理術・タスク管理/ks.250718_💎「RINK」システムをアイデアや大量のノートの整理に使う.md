@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 「RINK」システムをアイデアや大量のノートの整理に使う
 subtitle: "\U0001F48ERINKでできそうなこと・やれたことの新しいアイデア集"
 description: null
@@ -12,10 +11,7 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）

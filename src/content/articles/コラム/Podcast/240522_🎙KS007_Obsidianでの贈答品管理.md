@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: Podcast
-topic_code: pod
 title: Obsidianでの贈答品管理
 subtitle: "\U0001F399007 ジュン先生のObsidianへの目覚め"
 description: null
@@ -12,11 +11,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F399"
-series_code: other
 category: Podcast
 ---
-
 ## メモ・原稿
 
 https://knowledgestuck.substack.comナレッジスタック PodcastObsidianでの贈答品管理31- 1×0:00Current time: 0:00 / Total time: -1:07:35-1:07:35Audio playback is not supported on your browser. Please upgrade.## Obsidianでの贈答品管理

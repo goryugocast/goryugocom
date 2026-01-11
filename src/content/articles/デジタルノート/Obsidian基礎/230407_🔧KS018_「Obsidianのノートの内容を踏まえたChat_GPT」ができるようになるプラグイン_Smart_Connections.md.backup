@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: 「Obsidianのノートの内容を踏まえたChat GPT」ができるようになるプラグイン Smart Connections
 subtitle: "\U0001F527018 現状はまだ難点はありつつもかなり「未来な気分」は味わえる"
 description: null
@@ -14,11 +13,8 @@ tags:
   - Obsidian
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
 ---
-
 ## メモ・原稿
 
 # 「Obsidianのノートの内容を踏まえたChat GPT」ができるようになるプラグイン Smart Connections

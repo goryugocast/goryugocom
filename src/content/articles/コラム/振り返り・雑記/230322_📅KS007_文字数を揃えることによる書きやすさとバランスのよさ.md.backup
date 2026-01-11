@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 振り返り
-topic_code: rev
 title: 文字数を揃えることによる書きやすさとバランスのよさ
 subtitle: "\U0001F4C5007 現在の進捗と4月のセミナー日程"
 description: null
@@ -12,11 +11,8 @@ tags:
   - セミナー
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F4C5"
-series_code: other
 category: 振り返り
 ---
-
 ## メモ・原稿
 
 #ks/📅  `= this.file.frontmatter.url`

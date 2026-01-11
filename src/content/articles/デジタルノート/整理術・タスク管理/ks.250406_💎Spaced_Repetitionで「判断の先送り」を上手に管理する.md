@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: Spaced Repetitionで「判断の先送り」を上手に管理する
 subtitle: "\U0001F48E間隔学習の使い道は「勉強」だけではない"
 description: null
@@ -9,10 +8,7 @@ date_published: 2025-04-06T00:00:00.000Z
 audience: everyone
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
----
-## メモ・原稿
+---## メモ・原稿
 
 ```dataview
 LIST

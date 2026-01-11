@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: ジョニーデシマルindexをObsidianの右下に置く
 subtitle: "\U0001F48E右下＋ピン留めで「すぐ見るノート」を常駐させられる"
 description: null
@@ -13,10 +12,7 @@ tags:
   - Obsidian
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: ワークシートアップデート
-topic_code: upd
 title: Obsidian Dataviewを使って同じタグの前後の記事へのリンクを作る
 subtitle: "\U0001F527005 Dataviewを仕事術に取り入れて、面倒な処理を楽にする"
 description: null
@@ -15,11 +14,8 @@ tags:
   - Dataview
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: 技術・ノウハウ
----
-## メモ・原稿
+---## メモ・原稿
 
 #ks/🔧 `= this.file.frontmatter.url`
 

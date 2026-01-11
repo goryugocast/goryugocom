@@ -1,6 +1,5 @@
 ---
 title: GTDのサムデイリストとしてSpaced Repetitionを活用する
-topic_code: obv
 topic: Obsidianの全技術
 tags:
 - Obsidian
@@ -11,7 +10,6 @@ related_seminars:
 - 250911_Obsidian Basesの活用可能性を考える
 note_type: method
 ---
-
 ## 概要
 
 Spaced Repetitionプラグインを、GTDにおける「サムデイリスト」（Some Day/Maybe List）として活用する実践的なアプローチ。

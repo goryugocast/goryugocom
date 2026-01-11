@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: その他
-topic_code: misc
 title: Obsidianのこと（を中心に色々話す）Podcastを始めます
 subtitle: 12/26 から隔週火曜日配信予定
 description: null
@@ -13,11 +12,8 @@ tags:
   - Podcast
 draft_link: null
 series_name: その他
-series_emoji: "\U0001F527"
-series_code: other
 category: Podcast
 ---
-
 ## メモ・原稿
 
 # Obsidianのこと（を中心に色々話す）Podcastを始めます

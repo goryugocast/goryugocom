@@ -1,6 +1,5 @@
 ---
 project: ks
-topic_code: obs
 title: 一見すると小さな違いであることほど大きな違いを生む
 subtitle: "\U0001F48Eホームノートのピン留めとデイリーノートを書きやすくする工夫"
 description: null
@@ -13,10 +12,7 @@ tags:
   - デイリーノート
 draft_link: null
 series_name: Obsidian Tips
-series_emoji: "\U0001F48E"
-series_code: obs
 ---
-
 ## メモ・原稿
 
 `= this.file.frontmatter.url`

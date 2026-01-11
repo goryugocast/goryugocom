@@ -1,7 +1,6 @@
 ---
 project: ks
 topic: 妻の記事
-topic_code: gst
 title: 書くことで考える：ノート術を進化させる「分ける」技術
 subtitle: デジタルノートは「分ける」を柔軟にする
 description: null
@@ -13,11 +12,8 @@ cover_image: >-
 draft_link: null
 tags: []
 series_name: 寄稿記事
-series_emoji: "\U0001F460"
-series_code: contribution
 category: haruna1221
 ---
-
 ## メモ・原稿
 
 （ここに原稿やメモを書く）
