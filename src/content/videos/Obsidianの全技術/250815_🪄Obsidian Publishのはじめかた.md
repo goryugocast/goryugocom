@@ -4,7 +4,7 @@ topic: Obsidianの全技術
 topic_code: obv
 title: Obsidian Publishのはじめかた
 subtitle: "\U0001FA84Obsidianの全技術アフタートーク"
-description: null
+description: Obsidian Publishで個人のウェブサイトを構築するための実践的なテクニックを解説。独自ドメインなしでの始め方、コマンドパレットからの設定、スマートフォンでの高速更新術、更新履歴ページの作成、Obsidian Syncの活用、サイトの回遊性を高める工夫など、ごりゅご氏が実際に使う具体的な方法を紹介します。
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish-82d'
 date_published: 2025-08-15T00:00:00.000Z
 audience: only_paid

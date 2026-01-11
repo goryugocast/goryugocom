@@ -4,7 +4,7 @@ topic: Obsidianの全技術
 topic_code: obv
 title: 未来を見据えてフロントマター重視のObsidian運用を始める
 subtitle: "\U0001FA84Obsidianの全技術8"
-description: null
+description: Obsidianの全技術シリーズ第8回。AI時代の到来で、その重要性が増す「フロントマター（プロパティ）」の活用法を徹底解説。Baseプラグインと連携した関連情報の自動集約、AIやターミナルでの扱いやすさを考慮した新しいファイル命名規則、検索体験を拡張するAnother Quick Switcherプラグインの導入まで、Obsidianを知的生産の強力なハブへと進化させるための実践的なテクニックを紹介します。
 url: 'https://knowledgestuck.substack.com/p/obv8'
 date_published: 2025-11-13T00:00:00.000Z
 audience: only_paid
