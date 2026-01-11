@@ -1274,6 +1274,62 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         display: none !important;
       }
 
+      /* Glossary Search */
+      .glossary-search-section {
+        margin-bottom: var(--spacing-md);
+        display: none;
+      }
+
+      .glossary-search-section.visible {
+        display: block;
+      }
+
+      .search-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+      }
+
+      .glossary-search-input {
+        flex: 1;
+        padding: 12px 16px 12px 40px;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: var(--text-main);
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .glossary-search-input:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.6);
+        border-color: var(--accent);
+        box-shadow: 0 4px 20px rgba(0, 122, 255, 0.15);
+      }
+
+      .glossary-search-input::placeholder {
+        color: var(--text-tertiary);
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 14px;
+        font-size: 1rem;
+        opacity: 0.5;
+      }
+
+      .search-count {
+        font-size: 0.85rem;
+        color: var(--text-tertiary);
+        white-space: nowrap;
+      }
+
       /* Seminar sections - Timeline Style */
       .seminar-sections {
         margin-top: var(--spacing-md);
@@ -1383,14 +1439,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           <button class="main-filter-button active" data-main-filter="glossary" title="用語集">📖</button>
           <button class="main-filter-button" data-main-filter="articles" title="記事一覧">📄</button>
         </div>
-        <div class="article-category-buttons floating-level-2 hidden" id="floating-article-category-nav">
-          <button class="category-button active" data-article-category="videos" title="動画">🎥</button>
-          <button class="category-button" data-article-category="digital-note" title="デジタルノート">💻</button>
-          <button class="category-button" data-article-category="lifestyle" title="ライフスタイル">📚</button>
-          <button class="category-button" data-article-category="column" title="コラム">✍️</button>
-          <button class="category-button" data-article-category="contributions" title="寄稿記事">👥</button>
-        </div>
-        <div class="controls-section">
+        <div class="controls-section floating-controls-section">
           <div class="segmented-control" id="floating-sort-control">
             <button class="segmented-control-option active" data-sort="newest" title="新しい順">🆕</button>
             <button class="segmented-control-option" data-sort="oldest" title="古い順">⏳</button>
@@ -1486,26 +1535,18 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           </div>
         </div>
 
-        <!-- Glossary filter list -->
-        <div class="filter-list-section" id="glossary-filter-list">
-          <div class="filter-buttons">
-            <button class="filter-button active" data-filter-type="glossary-category" data-filter-value="all">
-              すべて
-              <span class="filter-count">{glossary.length}</span>
-            </button>
-            {glossaryCategories.map(category => {
-              const termsInCategory = glossaryByCategory[category];
-              return (
-                <button
-                  class="filter-button"
-                  data-filter-type="glossary-category"
-                  data-filter-value={category}
-                >
-                  {category}
-                  <span class="filter-count">{termsInCategory.length}</span>
-                </button>
-              );
-            })}
+        <!-- Glossary search -->
+        <div class="glossary-search-section" id="glossary-search-section">
+          <div class="search-container">
+            <input
+              type="text"
+              id="glossary-search-input"
+              class="glossary-search-input"
+              placeholder="用語を検索..."
+              autocomplete="off"
+            />
+            <span class="search-icon">🔍</span>
+            <span class="search-count" id="glossary-search-count">{glossary.length} 件</span>
           </div>
         </div>
 
@@ -1634,95 +1675,24 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
 
       <!-- Glossary list -->
       <div class="glossary-list hidden" id="glossary-list">
-        {renderedGlossary.map((term, index) => {
-          const relatedVideos = processedVideos.filter(v => v.data.topic === term.data.topic_id);
-          const relatedArticles = sortedArticles.filter(a => a.data.topic === term.data.topic_id);
-          const relatedNotes = sortedAtomicNotes.filter(n => n.data.topic?.includes(term.data.topic_id));
-          const recommendedArticles = term.data.recommended_articles || [];
-
-          return (
-            <div
-              class="glossary-card-wrapper"
-              data-category={term.data.category}
-                            data-date="0"
-            >
-              <GlossaryCard
-                title={term.data.title}
-                slug={term.slug}
-                yomikata={term.data.yomikata}
-                aliases={term.data.aliases}
-                category={term.data.category}
-                description={term.data.description}
-              >
-                <term.Content />
-              </GlossaryCard>
-
-              {/* 展開時に表示される詳細コンテンツ */}
-              <div class="glossary-details">
-                {recommendedArticles.length > 0 && (
-                  <div class="glossary-recommended">
-                    <h4 class="glossary-section-title">おすすめ記事</h4>
-                    <ul class="glossary-recommended-list">
-                      {recommendedArticles.map(articleId => {
-                        const article = sortedArticles.find(a => a.id.includes(articleId));
-                        return article ? (
-                          <li>
-                            <a href={article.data.url} target="_blank" rel="noopener noreferrer">
-                              {article.data.title}
-                            </a>
-                          </li>
-                        ) : null;
-                      })}
-                    </ul>
-                  </div>
-                )}
-
-                {(relatedVideos.length + relatedArticles.length + relatedNotes.length) > 0 && (
-                  <div class="glossary-related">
-                    <h4 class="glossary-section-title">関連コンテンツ <span class="glossary-related-count">({relatedVideos.length + relatedArticles.length + relatedNotes.length}件)</span></h4>
-                    <div class="glossary-related-articles">
-                      {relatedVideos.map(video => (
-                        <div class="glossary-related-item">
-                          <a href={video.data.url} target="_blank" rel="noopener noreferrer">
-                            <span class="glossary-related-title">🎥 {video.data.title}</span>
-                            <span class="glossary-related-date">
-                              {new Date(video.data.date_published).toLocaleDateString('ja-JP', {
-                                year: 'numeric',
-                                month: '2-digit',
-                                day: '2-digit'
-                              })}
-                            </span>
-                          </a>
-                        </div>
-                      ))}
-                      {relatedArticles.map(article => (
-                        <div class="glossary-related-item">
-                          <a href={article.data.url} target="_blank" rel="noopener noreferrer">
-                            <span class="glossary-related-title">📄 {article.data.title}</span>
-                            <span class="glossary-related-date">
-                              {new Date(article.data.date_published).toLocaleDateString('ja-JP', {
-                                year: 'numeric',
-                                month: '2-digit',
-                                day: '2-digit'
-                              })}
-                            </span>
-                          </a>
-                        </div>
-                      ))}
-                      {relatedNotes.map(note => (
-                        <div class="glossary-related-item">
-                          <a href={`#note/${note.slug}`}>
-                            <span class="glossary-related-title">📝 {note.data.title}</span>
-                          </a>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          );
-        })}
+        {renderedGlossary.map((term) => (
+          <div
+            class="glossary-card-wrapper"
+            data-category={term.data.category}
+            data-title={term.data.title}
+            data-aliases={JSON.stringify(term.data.aliases || [])}
+            data-yomikata={term.data.yomikata || ''}
+          >
+            <GlossaryCard
+              title={term.data.title}
+              slug={term.slug}
+              yomikata={term.data.yomikata}
+              aliases={term.data.aliases}
+              category={term.data.category}
+              description={term.data.description}
+            />
+          </div>
+        ))}
       </div>
 
       <!-- Atomic Notes list -->
@@ -1774,15 +1744,15 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
       let currentArticleCategory = 'videos'; // Level 2 default
       let currentVideoSeries = 'all';
       let currentCategoryChild = '';
-      let currentGlossaryCategory = 'all';
+      let currentGlossarySearch = '';
       let currentNoteTopic = 'all';
       let currentNoteType = 'all';
       let currentSort = 'newest';
       let activeNoteFilter = null;
 
       // DOM Elements (re-queried on page load)
-      let videoList, articleList, glossaryList, notesList, emptyState, resultCount, filterTitle, sortSegmentedControl, bulkToggleBtn;
-      let floatingControls;
+      let videoList, articleList, glossaryList, notesList, emptyState, resultCount, filterTitle, sortSegmentedControl, bulkToggleBtn, controlsSection;
+      let floatingControls, glossarySearchSection, glossarySearchInput, glossarySearchCount;
       let filterLists = {};
       let modeLists = {};
 
@@ -1797,6 +1767,10 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         sortSegmentedControl = document.getElementById('sort-segmented-control');
         bulkToggleBtn = document.getElementById('bulk-toggle-btn');
         floatingControls = document.getElementById('floating-controls');
+        controlsSection = document.querySelector('.header .controls-section');
+        glossarySearchSection = document.getElementById('glossary-search-section');
+        glossarySearchInput = document.getElementById('glossary-search-input');
+        glossarySearchCount = document.getElementById('glossary-search-count');
 
         // Article category lists map (Level 2)
         modeLists = {
@@ -1817,7 +1791,6 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           lifestyle: document.getElementById('lifestyle-filter-list'),
           column: document.getElementById('column-filter-list'),
           contributions: document.getElementById('contributions-filter-list'),
-          glossary: document.getElementById('glossary-filter-list'),
           notes: document.getElementById('notes-filter-list')
         };
       }
@@ -1973,12 +1946,22 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
             currentMode = btn.dataset.mainFilter;
             saveState();
             currentCategoryChild = '';
+            currentGlossarySearch = '';
             activeNoteFilter = null;
+            if (glossarySearchInput) glossarySearchInput.value = '';
             const clearBtn = document.getElementById('clear-filter-btn');
             if (clearBtn) clearBtn.classList.add('hidden');
             updateUI();
           });
         });
+
+        // Glossary Search Input
+        if (glossarySearchInput) {
+          glossarySearchInput.addEventListener('input', (e) => {
+            currentGlossarySearch = e.target.value.toLowerCase();
+            filterGlossary();
+          });
+        }
 
         // Level 2: Article Category Switch
         document.querySelectorAll('.category-button').forEach(btn => {
@@ -2012,15 +1995,6 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
           });
         });
 
-        // Glossary Filters
-        document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(btn => {
-          btn.addEventListener('click', () => {
-            document.querySelectorAll('[data-filter-type="glossary-category"]').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentGlossaryCategory = btn.dataset.filterValue;
-            filterContent();
-          });
-        });
 
         // Note Type Filters
         document.querySelectorAll('[data-filter-type="note-type"]').forEach(btn => {
@@ -2063,6 +2037,7 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         const actualMode = isArticlesMode ? currentArticleCategory : currentMode;
         const articleCategories = ['videos', 'digital-note', 'lifestyle', 'column', 'contributions'];
         const isArticleCategory = articleCategories.includes(actualMode);
+        const isGlossaryMode = actualMode === 'glossary';
 
         // Show/hide lists based on actual mode
         if (videoList) videoList.classList.toggle('hidden', actualMode !== 'videos');
@@ -2075,6 +2050,22 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         articleCategoryNavs.forEach(nav => {
           nav.classList.toggle('hidden', !isArticlesMode);
         });
+
+        // Show/hide glossary search section
+        if (glossarySearchSection) {
+          glossarySearchSection.classList.toggle('visible', isGlossaryMode);
+        }
+
+        // Show/hide controls section (hide for glossary mode)
+        if (controlsSection) {
+          controlsSection.classList.toggle('hidden', isGlossaryMode);
+        }
+
+        // Also hide floating controls section for glossary mode
+        const floatingControlsSection = document.querySelector('.floating-controls-section');
+        if (floatingControlsSection) {
+          floatingControlsSection.classList.toggle('hidden', isGlossaryMode);
+        }
 
         // Show/hide Level 3 filter lists
         Object.keys(filterLists).forEach(mode => {
@@ -2105,7 +2096,44 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
         });
 
         // Filter and Sort
-        filterContent();
+        if (actualMode === 'glossary') {
+          filterGlossary();
+        } else {
+          filterContent();
+        }
+      }
+
+      function filterGlossary() {
+        if (!glossaryList) return;
+        const cards = Array.from(glossaryList.querySelectorAll('.glossary-card-wrapper'));
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const title = (card.dataset.title || '').toLowerCase();
+          const yomikata = (card.dataset.yomikata || '').toLowerCase();
+          let aliases = [];
+          try {
+            aliases = JSON.parse(card.dataset.aliases || '[]').map(a => a.toLowerCase());
+          } catch (e) {}
+
+          let isVisible = true;
+          if (currentGlossarySearch) {
+            const searchTerms = currentGlossarySearch.split(/\s+/).filter(t => t);
+            isVisible = searchTerms.every(term =>
+              title.includes(term) ||
+              yomikata.includes(term) ||
+              aliases.some(alias => alias.includes(term))
+            );
+          }
+
+          card.classList.toggle('hidden', !isVisible);
+          if (isVisible) visibleCount++;
+        });
+
+        if (emptyState) emptyState.classList.toggle('hidden', visibleCount > 0);
+        if (glossarySearchCount) glossarySearchCount.textContent = `${visibleCount} 件`;
+        if (resultCount) resultCount.textContent = `${visibleCount} 件`;
+        if (filterTitle) filterTitle.textContent = '用語集';
       }
 
       function filterContent() {
@@ -2140,10 +2168,6 @@ const sortedAtomicNotes = renderedNotes.sort((a, b) => {
             const parentMatch = parent === expectedParent;
             const childMatch = currentCategoryChild === '' || child === currentCategoryChild;
             isVisible = parentMatch && childMatch;
-          } else if (actualMode === 'glossary') {
-            const category = card.dataset.category;
-            const categoryMatch = currentGlossaryCategory === 'all' || category === currentGlossaryCategory;
-            isVisible = categoryMatch;
           } else if (actualMode === 'notes') {
             // Check if there's an active note filter
             if (activeNoteFilter) {

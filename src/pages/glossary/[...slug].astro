@@ -1,46 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
 import { ViewTransitions } from 'astro:transitions';
-import AtomicNoteCard from '../../components/AtomicNoteCard.astro';
 
 export async function getStaticPaths() {
   const glossary = await getCollection('topic');
-  const allNotes = await getCollection('atomic-notes');
-
-  // 本文からノートへのWikiLinkを抽出
-  function extractNoteLinks(body: string): string[] {
-    const wikiLinkRegex = /\[\[([^\]]+)\]\]/g;
-    const links: string[] = [];
-    let match;
-
-    while ((match = wikiLinkRegex.exec(body)) !== null) {
-      links.push(match[1].trim());
-    }
-
-    return links;
-  }
+  const allTopics = await getCollection('topic');
 
   return glossary.map((term) => {
-    // 本文からノートへのリンクを抽出
-    const noteLinks = extractNoteLinks(term.body || '');
-
-    // リンクされたノートを取得
-    const linkedNotes = noteLinks.map(slug => {
-      const note = allNotes.find(n =>
-        n.slug === slug ||
-        n.data.title === slug
-      );
-      return note ? { slug, note } : { slug, note: null };
-    });
+    // 関連用語を取得（同じカテゴリの他の用語）
+    const relatedTerms = allTopics
+      .filter(t => t.slug !== term.slug && t.data.category === term.data.category)
+      .slice(0, 3);
 
     return {
       params: { slug: term.slug },
-      props: { term, linkedNotes },
+      props: { term, relatedTerms },
     };
   });
 }
 
-const { term, linkedNotes } = Astro.props;
+const { term, relatedTerms } = Astro.props;
 const { Content } = await term.render();
 
 // カテゴリごとの色設定
@@ -52,9 +31,6 @@ const categoryColors: Record<string, string> = {
   default: '#8e8e93',
 };
 const badgeColor = categoryColors[term.data.category] || categoryColors.default;
-
-// ノートがあるかどうか
-const hasNotes = linkedNotes.some(ln => ln.note !== null);
 ---
 
 <html lang="ja">
@@ -66,26 +42,19 @@ const hasNotes = linkedNotes.some(ln => ln.note !== null);
     <meta property="og:title" content={`${term.data.title} | ごりゅご.com 用語集`} />
     <meta property="og:description" content={term.data.description} />
     <meta property="og:type" content="article" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=M+PLUS+Rounded+1c:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <ViewTransitions />
     <style>
       :root {
-        --bg-gradient: linear-gradient(135deg, #f2f2f7 0%, #ffffff 100%);
-        --glass-bg: rgba(255, 255, 255, 0.4);
-        --glass-border: rgba(255, 255, 255, 0.6);
-        --text-main: #1c1c1e;
-        --text-secondary: #3a3a3c;
-        --text-tertiary: #8e8e93;
+        --bg: #f8f9fc;
         --accent: #007aff;
-        --spacing-xs: 4px;
-        --spacing-sm: 8px;
-        --spacing-md: 16px;
-        --spacing-lg: 24px;
-        --spacing-xl: 32px;
-        --radius-lg: 20px;
-        --radius-xl: 24px;
-        --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
-        --blur: 12px;
+        --accent-soft: rgba(0, 122, 255, 0.08);
+        --text-main: #1d1d1f;
+        --text-sub: #636366;
+        --glass: rgba(255, 255, 255, 0.7);
+        --border: rgba(0, 0, 0, 0.05);
+        --shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+        --radius: 24px;
       }
 
       * {
@@ -95,35 +64,18 @@ const hasNotes = linkedNotes.some(ln => ln.note !== null);
       }
 
       body {
-        font-family: 'Quicksand', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #e0e5ec;
+        font-family: 'Outfit', 'Noto Sans JP', sans-serif;
+        background-color: var(--bg);
         color: var(--text-main);
-        min-height: 100vh;
+        line-height: 1.7;
+        margin: 0;
+        padding: 40px 20px;
         -webkit-font-smoothing: antialiased;
-      }
-
-      .blob {
-        position: fixed;
-        border-radius: 50%;
-        filter: blur(60px);
-        z-index: -1;
-        opacity: 0.8;
-        animation: float 10s infinite alternate;
-      }
-      .blob-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #ffafbd; }
-      .blob-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: #2193b0; animation-delay: -5s; }
-
-      @keyframes float {
-        0% { transform: translate(0, 0); }
-        100% { transform: translate(30px, 50px); }
       }
 
       .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 2rem;
       }
 
       .back-link {
@@ -134,7 +86,7 @@ const hasNotes = linkedNotes.some(ln => ln.note !== null);
         text-decoration: none;
         font-weight: 600;
         font-size: 0.9rem;
-        margin-bottom: var(--spacing-lg);
+        margin-bottom: 24px;
         transition: opacity 0.2s;
       }
 
@@ -142,251 +94,306 @@ const hasNotes = linkedNotes.some(ln => ln.note !== null);
         opacity: 0.7;
       }
 
-      .glossary-page-card {
-        background: var(--glass-bg);
-        backdrop-filter: blur(var(--blur));
-        -webkit-backdrop-filter: blur(var(--blur));
-        border: 1px solid var(--glass-border);
-        border-radius: var(--radius-xl);
-        padding: 2rem;
-        box-shadow: var(--shadow-glass);
-      }
-
-      .glossary-header {
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-lg);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      }
-
-      .header-main {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: var(--spacing-sm);
+      /* Header Section */
+      header {
+        margin-bottom: 60px;
       }
 
       .category-badge {
-        padding: 6px 12px;
-        border-radius: 10px;
+        display: inline-block;
+        padding: 4px 12px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        border-radius: 100px;
         font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.05em;
+        margin-bottom: 16px;
       }
 
-      .term-title {
-        font-size: 2rem;
+      h1 {
+        font-size: 2.5rem;
         font-weight: 700;
-        color: var(--text-main);
-        margin: 0;
+        margin: 0 0 16px 0;
         letter-spacing: -0.02em;
       }
 
-      .yomikata {
-        font-size: 1rem;
-        color: var(--text-tertiary);
-        font-weight: 400;
-      }
-
-      .aliases {
-        font-size: 0.9rem;
-        color: var(--text-tertiary);
-        margin-top: var(--spacing-sm);
-      }
-
-      .alias-label {
-        font-weight: 600;
-        color: var(--text-secondary);
-      }
-
       .description {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        color: var(--text-secondary);
-        margin-bottom: var(--spacing-lg);
+        font-size: 1.15rem;
+        color: var(--text-sub);
+        max-width: 600px;
       }
 
-      .content-section {
-        margin-top: var(--spacing-lg);
+      /* Content Hub Area */
+      .content-hub {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
       }
 
-      .section-title {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: var(--text-main);
-        margin-bottom: var(--spacing-md);
+      .content-hub > p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      h2.section-header {
+        font-size: 1.4rem;
+        margin-top: 40px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--accent-soft);
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 8px;
       }
 
+      h2.section-header::before {
+        content: "";
+        width: 4px;
+        height: 24px;
+        background: var(--accent);
+        border-radius: 4px;
+      }
+
+      /* Embedded Atomic Note */
+      .embedded-note {
+        background: white;
+        border-radius: var(--radius);
+        padding: 32px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      .embedded-note:hover {
+        transform: translateY(-2px);
+      }
+
+      .embedded-note .note-label {
+        position: absolute;
+        top: -12px;
+        right: 24px;
+        background: var(--text-main);
+        color: white;
+        padding: 2px 10px;
+        font-size: 0.7rem;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+
+      .embedded-note .note-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .embedded-note p {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .embedded-note .note-footer {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px dashed var(--border);
+        font-size: 0.85rem;
+      }
+
+      .source-link {
+        color: var(--text-sub);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        transition: color 0.2s;
+      }
+
+      .source-link:hover {
+        color: var(--accent);
+      }
+
+      /* Markdown content styling */
       .glossary-content {
-        font-size: 0.95rem;
-        line-height: 1.7;
-        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.8;
       }
 
       .glossary-content h1,
       .glossary-content h2,
       .glossary-content h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
         font-weight: 700;
-        color: var(--text-main);
-        margin-top: var(--spacing-lg);
-        margin-bottom: var(--spacing-sm);
+        margin-top: 40px;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--accent-soft);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .glossary-content h1::before,
+      .glossary-content h2::before,
+      .glossary-content h3::before {
+        content: "";
+        width: 4px;
+        height: 24px;
+        background: var(--accent);
+        border-radius: 4px;
       }
 
       .glossary-content p {
-        margin-bottom: var(--spacing-md);
+        margin-bottom: 16px;
       }
 
       .glossary-content ul,
       .glossary-content ol {
-        margin-left: var(--spacing-lg);
-        margin-bottom: var(--spacing-md);
+        margin-left: 24px;
+        margin-bottom: 16px;
       }
 
       .glossary-content li {
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: 8px;
       }
 
-      /* カスタム要素(atomic-note-embed)を非表示 */
-      .glossary-content atomic-note-embed {
-        display: none;
+      /* Related Grid */
+      .related-section {
+        margin-top: 60px;
       }
 
-      /* WikiLink styling - Pill buttons */
-      .glossary-content a.link-glossary {
-        display: inline-block;
-        background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
-        color: var(--accent);
-        padding: 4px 12px;
-        border-radius: 50px;
-        font-size: 0.9rem;
-        font-weight: 600;
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .card {
+        background: var(--glass);
+        backdrop-filter: blur(12px);
+        border: 1px solid white;
+        border-radius: var(--radius);
+        padding: 24px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
         text-decoration: none;
-        margin: 2px;
-        transition: all 0.2s ease;
+        color: inherit;
+        transition: all 0.3s ease;
       }
 
-      .glossary-content a.link-glossary:hover {
-        background: linear-gradient(135deg, rgba(0, 122, 255, 0.2) 0%, rgba(88, 86, 214, 0.2) 100%);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+      .card:hover {
+        background: white;
+        box-shadow: var(--shadow);
+        transform: translateY(-4px);
       }
 
-      .glossary-content a.link-external {
-        display: inline-block;
-        background: rgba(52, 199, 89, 0.1);
-        color: #34c759;
-        padding: 4px 12px;
-        border-radius: 50px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        text-decoration: none;
-        margin: 2px;
-        transition: all 0.2s ease;
-      }
-
-      .glossary-content a.link-external::after {
-        content: ' ↗';
-        font-size: 0.8em;
-      }
-
-      .glossary-content a.link-external:hover {
-        background: rgba(52, 199, 89, 0.2);
-        transform: translateY(-1px);
-      }
-
-      /* Notes section */
-      .notes-section {
-        margin-top: var(--spacing-xl);
-        padding-top: var(--spacing-lg);
-        border-top: 2px solid rgba(88, 86, 214, 0.2);
-      }
-
-      .notes-section-title {
-        font-size: 1.2rem;
+      .card-title {
         font-weight: 700;
-        color: var(--text-main);
-        margin-bottom: var(--spacing-lg);
+        font-size: 1rem;
+        margin-bottom: 8px;
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        justify-content: space-between;
       }
 
-      .notes-list {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-md);
+      .card-title::after {
+        content: "→";
+        opacity: 0.3;
+        transition: opacity 0.3s;
+      }
+
+      .card:hover .card-title::after {
+        opacity: 1;
+      }
+
+      .card-desc {
+        font-size: 0.85rem;
+        color: var(--text-sub);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* Subtle Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container > * {
+        animation: fadeIn 0.8s ease forwards;
       }
 
       @media (max-width: 768px) {
-        .container {
-          padding: 1rem;
+        body {
+          padding: 20px 16px;
         }
 
-        .glossary-page-card {
-          padding: 1.5rem;
-          border-radius: var(--radius-lg);
-        }
-
-        .term-title {
-          font-size: 1.5rem;
+        h1 {
+          font-size: 1.8rem;
         }
 
         .description {
           font-size: 1rem;
         }
+
+        .embedded-note {
+          padding: 20px;
+          border-radius: 16px;
+        }
+
+        .related-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          padding: 20px;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
     <div class="container">
       <a href="/" class="back-link">← 用語集に戻る</a>
 
-      <article class="glossary-page-card" transition:name={`glossary-card-${term.slug}`}>
-        <header class="glossary-header">
-          <div class="header-main">
-            <span class="category-badge" style={`background: ${badgeColor}15; color: ${badgeColor};`}>
-              {term.data.category}
-            </span>
-            <h1 class="term-title">{term.data.title}</h1>
-            {term.data.yomikata && <span class="yomikata">({term.data.yomikata})</span>}
-          </div>
-          {term.data.aliases && term.data.aliases.length > 0 && (
-            <div class="aliases">
-              <span class="alias-label">aka:</span> {term.data.aliases.join(', ')}
-            </div>
-          )}
-        </header>
-
+      <header>
+        <span class="category-badge" style={`background: ${badgeColor}15; color: ${badgeColor};`}>
+          {term.data.category}
+        </span>
+        <h1>{term.data.title}</h1>
         <p class="description">{term.data.description}</p>
+      </header>
 
-        <div class="content-section">
-          <h2 class="section-title">詳細</h2>
-          <div class="glossary-content">
-            <Content />
-          </div>
+      <div class="content-hub">
+        <div class="glossary-content">
+          <Content />
         </div>
 
-        {hasNotes && (
-          <div class="notes-section">
-            <h2 class="notes-section-title">関連ノート</h2>
-            <div class="notes-list">
-              {linkedNotes.map(({ slug, note }) => (
-                note ? (
-                  <AtomicNoteCard slug={note.slug} title={note.data.title || slug} />
-                ) : null
+        {relatedTerms.length > 0 && (
+          <div class="related-section">
+            <h2 class="section-header">関連する用語</h2>
+            <div class="related-grid">
+              {relatedTerms.map((related) => (
+                <a href={`/glossary/${related.slug}/`} class="card">
+                  <div class="card-title">{related.data.title}</div>
+                  <div class="card-desc">{related.data.description}</div>
+                </a>
               ))}
             </div>
           </div>
         )}
-      </article>
+      </div>
     </div>
   </body>
 </html>

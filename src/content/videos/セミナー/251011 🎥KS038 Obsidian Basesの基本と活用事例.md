@@ -3,7 +3,7 @@ project: ks
 topic: アーカイブ
 title: Obsidian Basesの基本と活用事例
 subtitle: 『アトミック・シンキング』実践セミナー038 動画アーカイブ
-description: null
+description: Obsidianの新機能「Bases」の基本から応用までを解説する実践セミナー。コード不要でノートの動的なリストやテーブルを作成できるBasesを、Dataviewの使いやすい代替ツールとして紹介します。視覚的な読書リストの作成や、締め切り順にタスクを自動ソートする方法、さらにはサイドバーに埋め込んで関連情報を常に表示させる高度な活用術まで、具体的なデモを交えて解説。あなたのObsidianを、より強力な「思考のハブ」へと進化させましょう。
 url: 'https://knowledgestuck.substack.com/p/ks038'
 date_published: 2025-10-11T00:00:00.000Z
 audience: only_paid

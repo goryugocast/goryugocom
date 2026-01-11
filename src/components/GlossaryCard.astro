@@ -6,36 +6,16 @@ interface Props {
   aliases?: string[];
   category: string;
   description: string;
-  categoryBadgeColor?: string;
 }
 
-const { title, slug, yomikata, aliases, category, description } = Astro.props;
-
-// カテゴリごとの色設定
-const categoryColors: Record<string, string> = {
-  tool: '#007aff',
-  method: '#34c759',
-  concept: '#5856d6',
-  default: '#8e8e93',
-};
-
-const badgeColor = categoryColors[category] || categoryColors.default;
+const { title, slug, yomikata, aliases, description } = Astro.props;
 ---
 
-<div class="glossary-card" transition:name={`glossary-card-${slug}`}>
-  <!-- ヘッダーエリア: 辞書的な見出し -->
+<a href={`/glossary/${slug}/`} class="glossary-card" transition:name={`glossary-card-${slug}`}>
   <div class="glossary-header">
-    <div class="header-row">
-      <div class="header-main">
-        <span class="category-badge" style={`background: ${badgeColor}15; color: ${badgeColor};`}>
-          {category}
-        </span>
-        <a href={`/glossary/${slug}`} class="term-title-link">
-          <h3 class="term-title">{title}</h3>
-        </a>
-        {yomikata && <span class="yomikata">({yomikata})</span>}
-      </div>
-      <div class="toggle-icon">▼</div>
+    <div class="header-main">
+      <h3 class="term-title">{title}</h3>
+      {yomikata && <span class="yomikata">({yomikata})</span>}
     </div>
     {aliases && aliases.length > 0 && (
       <div class="aliases">
@@ -44,19 +24,16 @@ const badgeColor = categoryColors[category] || categoryColors.default;
     )}
   </div>
 
-  <!-- ボディエリア: 定義 -->
   <div class="glossary-body">
     <p class="description">{description}</p>
   </div>
 
-  <!-- フッターエリア: 関連リンク (本文のWikiLinkから生成) -->
-  <div class="glossary-links">
-    <slot />
-  </div>
-</div>
+  <div class="card-arrow">→</div>
+</a>
 
 <style>
   .glossary-card {
+    display: block;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -65,23 +42,19 @@ const badgeColor = categoryColors[category] || categoryColors.default;
     padding: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+    position: relative;
   }
 
   .glossary-card:hover {
-    background: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
   }
 
   .glossary-header {
-    margin-bottom: 1rem;
-  }
-
-  .header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .header-main {
@@ -89,36 +62,6 @@ const badgeColor = categoryColors[category] || categoryColors.default;
     align-items: center;
     gap: 0.75rem;
     flex-wrap: wrap;
-    flex: 1;
-  }
-
-  .toggle-icon {
-    font-size: 0.8rem;
-    color: #8e8e93;
-    transition: transform 0.3s ease;
-    padding-top: 0.5rem;
-  }
-
-  :global(.glossary-card-wrapper.expanded) .toggle-icon {
-    transform: rotate(180deg);
-  }
-
-  .category-badge {
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-  }
-
-  .term-title-link {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .term-title-link:hover .term-title {
-    color: #007aff;
   }
 
   .term-title {
@@ -128,6 +71,10 @@ const badgeColor = categoryColors[category] || categoryColors.default;
     margin: 0;
     letter-spacing: -0.01em;
     transition: color 0.2s ease;
+  }
+
+  .glossary-card:hover .term-title {
+    color: #007aff;
   }
 
   .yomikata {
@@ -148,7 +95,7 @@ const badgeColor = categoryColors[category] || categoryColors.default;
   }
 
   .glossary-body {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .description {
@@ -158,44 +105,27 @@ const badgeColor = categoryColors[category] || categoryColors.default;
     margin: 0;
   }
 
-  .glossary-links {
-    padding-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  .card-arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #8e8e93;
+    opacity: 0.3;
+    transition: all 0.3s ease;
   }
 
-  /* WikiLinkをPill型ボタンにスタイリング */
-  .glossary-links :global(a) {
-    display: inline-block;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(88, 86, 214, 0.1) 100%);
+  .glossary-card:hover .card-arrow {
+    opacity: 1;
     color: #007aff;
-    padding: 6px 14px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    margin: 4px;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-  }
-
-  .glossary-links :global(a:hover) {
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.2) 0%, rgba(88, 86, 214, 0.2) 100%);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
-  }
-
-  .glossary-links :global(a:active) {
-    transform: translateY(0);
-  }
-
-  /* WikiLinkがない場合は非表示 */
-  .glossary-links:empty {
-    display: none;
+    transform: translateY(-50%) translateX(4px);
   }
 
   @media (max-width: 768px) {
     .glossary-card {
       padding: 1rem;
+      padding-right: 2.5rem;
       border-radius: 16px;
     }
 
@@ -207,9 +137,8 @@ const badgeColor = categoryColors[category] || categoryColors.default;
       font-size: 0.9rem;
     }
 
-    .glossary-links :global(a) {
-      padding: 8px 16px;
-      font-size: 0.9rem;
+    .card-arrow {
+      right: 1rem;
     }
   }
 </style>

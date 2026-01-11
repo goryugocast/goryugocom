@@ -3,7 +3,7 @@ project: ks
 topic: アーカイブ
 title: ObsidianとGemini CLI
 subtitle: 『アトミック・シンキング』実践セミナー037 動画アーカイブ
-description: null
+description: ChatGPTの次に来る、新しいAIの形「Gemini CLI」入門。本セミナーでは、コマンドラインで動作するこのAIが、いかにObsidianでの知的生産を加速させるかを解説します。ローカルファイルを直接読み書きできる利点を活かし、長文の文字起こしデータから構造化された要約を生成するデモや、AIに特定の文体を学習させ執筆パートナーとして「育成」する方法を紹介。AI自身が指示を学習し自己更新していく、未来のワークフローを体験します。
 url: 'https://knowledgestuck.substack.com/p/ks037'
 date_published: 2025-09-06T00:00:00.000Z
 audience: only_paid
