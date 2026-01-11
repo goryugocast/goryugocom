@@ -4,7 +4,7 @@ topic: その他
 topic_code: misc
 title: Obsidian以外のノートツールの活用事例
 subtitle: 『アトミック・シンキング』実践セミナー018 動画アーカイブ
-description: null
+description: Obsidianをハブとしながらも、それ以外のノートツールをいかに賢く活用するかに焦点を当てたセミナー。Day Oneでのジャーナリング、Apple標準メモでの一時的な情報保管や家族共有、Draftsでの高速なテキストキャプチャなど、各ツールの得意分野を活かした具体的な使い分けを紹介。一つのツールに固執せず、複数のツールを連携させることで、より柔軟で効果的な知識管理システムを構築する方法を解説します。
 url: 'https://knowledgestuck.substack.com/p/ks018'
 date_published: 2024-02-03T00:00:00.000Z
 audience: only_paid
