@@ -6,14 +6,6 @@ subtitle: "\U0001FA84Obsidianの全技術3 アフタートーク"
 description: Obsidianの全技術シリーズ第3回アフタートーク。今回は、Spaced RepetitionプラグインのGTD的応用から、新プラグイン「Obsidian Bases」の革新的な機能まで、よりマニアックな活用法を深掘りします。DataViewを超える直感的なUI、テンプレートの再利用性を高める隠しパラメータ、そして未来の知的生産をどう変えるか。ツールの本質を「体で」理解するプロセスと共に、Obsidianの新たな可能性を探ります。
 url: 'https://knowledgestuck.substack.com/p/obsidian-bases-f59'
 date_published: 2025-09-11T00:00:00.000Z
-audience: only_paid
-cover_image: >-
-  https://substack-video.s3.amazonaws.com/video_upload/post/172660898/9ae861e4-7d7b-44c9-9f4c-b6a088174995/transcoded-00001.png
-tags:
-  - Obsidian
-  - Bases
-draft_link: null
-series_name: Obsidianの全技術
 ---
 # メモ・原稿
 

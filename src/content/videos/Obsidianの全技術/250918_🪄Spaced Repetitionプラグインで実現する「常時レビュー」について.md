@@ -2,18 +2,12 @@
 project: ks
 topic: Obsidianの全技術
 title: Spaced Repetitionプラグインで実現する「常時レビュー」について
-subtitle: "\U0001FA84Obsidianの全技術4"
+subtitle: "🪄Obsidianの全技術4"
 description: Obsidianの全技術シリーズ第4回。Spaced Repetitionプラグインの効果を振り返りつつ、週次レビューの限界を超える「常時レビュー」という新概念を提案。日々の隙間時間に見直しを行うことで、知的生産の効率をいかに高めるかを解説します。さらに、新プラグイン「Bases」の基本から、PC・モバイル間の同期設定といったマニアックなノウハウまで、Obsidianをより深く活用するためのテクニックを紹介します。
 url: 'https://knowledgestuck.substack.com/p/spaced-repetition'
 date_published: 2025-09-18T00:00:00.000Z
-audience: only_paid
-cover_image: >-
-  https://substack-video.s3.amazonaws.com/video_upload/post/173841215/55b33fd3-378e-453f-b1ce-db9f374d3010/transcoded-00001.png
-tags:
-  - Obsidian
-draft_link: null
-series_name: Obsidianの全技術
----## セミナー構成
+---
+## セミナー構成
 
 ### [1. Spaced Repetitionプラグインの振り返りと効果](https://knowledgestuck.substack.com/p/spaced-repetition?timestamp=26)
 **時間**: 00:00:26 ～

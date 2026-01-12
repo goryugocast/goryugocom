@@ -2,18 +2,12 @@
 project: ks
 topic: Obsidianの全技術
 title: Obsidianの標準検索機能を使い倒す
-subtitle: "\U0001FA84Obsidianの全技術5"
+subtitle: "🪄Obsidianの全技術5"
 description: Obsidianの全技術シリーズ第5回。今回は、強力ながらも注意が必要なBasesプラグインから一歩引き、Obsidianの標準「検索機能」を徹底解説。基本的な使い方から、`path:`や`OR`などの検索演算子を駆使した高度な絞り込みテクニック、そして検索結果を知的生産の素材に変える「Copy search results」機能まで、その真価に迫ります。機能を知った上で「使わない」という選択肢を持つ、ツールとの上手な付き合い方も探求します。
 url: 'https://knowledgestuck.substack.com/p/obv5'
 date_published: 2025-10-02T00:00:00.000Z
-audience: only_paid
-cover_image: >-
-  https://substack-video.s3.amazonaws.com/video_upload/post/174508047/2bf033cd-a07b-4627-9831-4e00b05b7aa3/transcoded-00001.png
-tags:
-  - Obsidian
-draft_link: null
-series_name: Obsidianの全技術
----## セミナー構成
+---
+## セミナー構成
 
 ### [1. 前回の振り返りと今回のテーマ：標準検索機能](https://knowledgestuck.substack.com/p/obv5?timestamp=20)
 **時間**: 00:00:20 ～

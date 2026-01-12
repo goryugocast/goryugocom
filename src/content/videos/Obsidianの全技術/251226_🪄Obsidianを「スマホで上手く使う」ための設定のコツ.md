@@ -6,10 +6,6 @@ subtitle: 🪄Obsidianの全技術10
 date_published: 2025-12-26
 url: https://knowledgestuck.substack.com/p/obv10
 description: "スマホ（iPhone）でObsidianを快適に使うための設定を紹介。設定ファイルの分離、コマンドパレットの活用、モバイルツールバーのカスタマイズなど、具体的なテクニックを解説。"
-tags:
-  - Obsidian
-  - モバイル
-series_name: Obsidianの全技術
 ---
 ## セミナー構成
 
