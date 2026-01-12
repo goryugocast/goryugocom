@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: Live PreviewをオフにするとObsidianは軽い
 subtitle: "\U0001F4C5012 iPadではObsidianのLive Previewを使わなくなった"
-description: null
+description: iPadでObsidianが重い問題は、Live Previewをオフにすることで改善されるかもしれません。また、ナレッジスタックの有料プラン登録者増加への感謝を述べつつ、今後もニッチで興味深いコンテンツ作りに集中していく抱負を語ります。
 url: 'https://knowledgestuck.substack.com/p/w012'
 date_published: 2023-06-16T00:00:00.000Z
 audience: everyone
