@@ -1,36 +1,27 @@
 ---
 project: ks
-topic: 振り返り
+topic:
+  - Obsidian
+  - Sync
+  - 効率化
+  - ワークフロー
 title: Obsidian Syncを改めて使い始めた
-subtitle: "\U0001F4C5017 なくてもいいかと思ったがなくなると意外に困るObsidian Sync"
-description: null
+subtitle: "📅017 なくてもいいかと思ったがなくなると意外に困るObsidian Sync"
+description: ナレッジスタックの隔週コンテンツ。一度解約したObsidian Syncを再開した経緯を語ります。iCloud同期の課題、GitとWorkingCopyでの同期の限界、そしてモバイルでのObsidian利用の意外な必要性を経て、『小さいお金をけちったらいかん』という結論に至るまでの試行錯誤を詳細に解説します。
 url: 'https://knowledgestuck.substack.com/p/w017'
 date_published: 2023-09-13T00:00:00.000Z
 audience: only_paid
 tags:
   - Obsidian
-draft_link: null
-series_name: その他
-category: 振り返り
----## メモ・原稿
-
-#ks/📅  
-`= this.file.frontmatter.url`
-
-```dataview
-LIST
-FROM #ks/📅 
-WHERE file.day <= this.file.day - dur(1 d)
-SORT file.day DESC
-LIMIT 1
-```
-```dataview
-LIST
-FROM #ks/📅 
-WHERE file.day >= this.file.day + dur(1 d)
-SORT file.day ASC
-LIMIT 1
-```
+  - Sync
+  - iCloud
+  - Git
+  - WorkingCopy
+  - 効率化
+  - モバイル
+  - 有料サービス
+---
+## メモ・原稿
 
 2週間に1回くらいをめどにお届けする予定の「隔週刊ナレッジスタック」的な雑記コンテンツです。（最近はもう少しこの手の書きたいことが増えてきている）
 
@@ -38,7 +29,7 @@ LIMIT 1
 
 ---
 
-## Obsidian Syncを再開
+Obsidian Syncを再開
 
 2023年8月に、Obsidian Syncの契約期間がちょうど一区切り（1年）を迎えました。
 
@@ -52,13 +43,13 @@ LIMIT 1
 
 ---
 
-まず先に結論を言っておくと、一回やめたObsidian Syncは、やっぱりやめるのをやめました。つまり、**結局もう一回Obsidian Syncを使うことにした**、というのが現段階での結論です。
+まず先に結論を言っておくと、一回やめたObsidian Syncは、やっぱりやめるのをやめました。つまり、結局もう一回Obsidian Syncを使うことにした、というのが現段階での結論です。
 
 今回の話は、その結論に至るまでにどんなことがあったのか、という話です。
 
 ---
 
-## iCloudはファイルが多いと重くて動かない
+iCloudはファイルが多いと重くて動かない
 
 まず、Obsidian Syncをやめて試してみたのが、iCloudを使ってObsidianを同期するという方法。
 
