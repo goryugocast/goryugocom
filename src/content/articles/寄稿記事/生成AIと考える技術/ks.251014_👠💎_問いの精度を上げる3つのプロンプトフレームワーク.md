@@ -1,9 +1,9 @@
 ---
 project: ks
 topic: 妻の記事
-title: "\U0001F48E 問いの精度を上げる3つのプロンプトフレームワーク"
+title: "💎 問いの精度を上げる3つのプロンプトフレームワーク"
 subtitle: 生成AIとの対話を深め、思考の精度を上げる方法
-description: null
+description: 生成AIとの対話を深める「問いの解像度」の重要性と、RTF、BAB、SCQAという3つの具体的なプロンプトフレームワークを解説し、問いを磨く技術を提案します。
 url: 'https://knowledgestuck.substack.com/p/haruna023'
 date_published: 2025-10-14T00:00:00.000Z
 audience: everyone
