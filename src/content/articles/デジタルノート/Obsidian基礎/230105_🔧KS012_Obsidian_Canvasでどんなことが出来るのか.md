@@ -1,21 +1,11 @@
 ---
 project: ks
-topic: ワークシートアップデート
 title: Obsidian Canvasでどんなことが出来るのか
 subtitle: "\U0001F527012 Obsidian Canvasのファースインプレッションの「次」"
-description: 'Webから本文を取得できませんでした。有料記事のため、手動での確認が必要です。'
+description: 
 url: 'https://knowledgestuck.substack.com/p/obsidian-canvas-8aa'
 date_published: 2023-01-05T00:00:00.000Z
 audience: only_paid
-cover_image: >-
-  https://substackcdn.com/image/fetch/$s_!zKXO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Faac03686-bbcf-4a6e-a973-246cc922af02_2806x4912.png
-tags:
-  - Obsidian
-  - review
-draft_link: null
-series_name: その他
-status: error
-category: 技術・ノウハウ
 ---
 ## メモ・原稿
 

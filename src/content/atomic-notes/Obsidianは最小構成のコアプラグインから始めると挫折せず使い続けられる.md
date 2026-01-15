@@ -1,0 +1,10 @@
+---
+project: an
+title: Obsidianは最小構成のコアプラグインから始めると挫折せず使い続けられる
+topic: Obsidian
+note_type: technique
+---
+
+Obsidianを始める際は、コアプラグインの中から必要最低限のものだけを有効にする。ワークスペース、デイリーノート、そしてコミュニティプラグインならカレンダーとNote Refactorがあれば十分。いきなりたくさんのプラグインを入れると混乱するし、どれが重要かわからなくなる。シンプルに始めて、使いながら必要に応じて追加していく方が、挫折せずに使い続けられる。
+
+出典: [【15年分のノート術を凝縮】Obsidianで挫折しないための全技術](https://knowledgestuck.substack.com/p/15obsidian?timestamp=2379)

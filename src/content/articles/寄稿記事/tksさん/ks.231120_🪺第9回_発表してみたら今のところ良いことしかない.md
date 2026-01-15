@@ -3,7 +3,7 @@ project: ks
 topic: 友人(tks)の記事
 title: 第9回 発表してみたら今のところ良いことしかない
 subtitle: "\U0001FABA発表した時点で失敗はない"
-description: null
+description: 人前で何かを「発表」することに、ためらいを感じていませんか？この記事では、発表は「した時点で失敗はない」と断言します。文章を書いたり、人前で話したりすることは、それ自体が学びを深める最強の思考術です。さらに、他者からの思いがけない反応によって、自分の思考の枠を越えるきっかけも得られます。発表がもたらす「良いことしかない」効果と、緊張を乗り越えるための心構えを解説します。
 url: 'https://knowledgestuck.substack.com/p/tks009'
 date_published: 2023-11-20T00:00:00.000Z
 audience: everyone
