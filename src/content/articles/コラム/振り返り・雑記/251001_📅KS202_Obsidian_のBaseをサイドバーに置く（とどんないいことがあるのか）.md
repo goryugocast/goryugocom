@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: Obsidian のBaseをサイドバーに置く（とどんないいことがあるのか）
 subtitle: "\U0001F4C52025年9月の振り返り"
-description: null
+description: 2025年9月の振り返り。記事のネタ帳を兼ねた振り返り術、プリズナートレーニングとスロージョギングの継続状況、そしてObsidianのBase機能をサイドバーで活用するテクニックについて。
 url: 'https://knowledgestuck.substack.com/p/obsidian-base'
 date_published: 2025-10-01T00:00:00.000Z
 audience: everyone

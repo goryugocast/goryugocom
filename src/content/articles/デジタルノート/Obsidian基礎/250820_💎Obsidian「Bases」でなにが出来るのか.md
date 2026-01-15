@@ -2,7 +2,7 @@
 project: ks
 title: Obsidian「Bases」でなにが出来るのか
 subtitle: "\U0001F48EDataviewは難しいがBasesは直感的に情報整理が出来る"
-description: null
+description: Obsidian 1.9で追加された公式機能「Bases」を解説。Notionのようなデータベース的な情報整理を直感的に行える魅力や、RINKシステムとの連携、自己満足に陥らないための活用のコツを紹介。
 url: 'https://knowledgestuck.substack.com/p/obsidianbases'
 date_published: 2025-08-20T00:00:00.000Z
 audience: everyone

@@ -3,18 +3,16 @@ project: ks
 topic: Podcast
 title: LogseqをやめてObsidianに完全移行してからの変化
 subtitle: "🎙008 習慣的でない行動はすべて「考えている」と捉えれば安心できる"
-description: null
+description: LogseqからObsidianへの移行経験を語るPodcast。デイリーノートの運用、デジタルとアナログのノート使い分け、「習慣的でない行動はすべて考えていると捉える」という思考の整理術について議論。
 url: 'https://knowledgestuck.substack.com/p/pod008'
 date_published: 2024-06-05T00:00:00.000Z
 audience: everyone
 tags:
   - Obsidian
   - 習慣
-  - review
 draft_link: null
 series_name: その他
 category: Podcast
-status: error
 ---
 ## メモ・原稿
 
