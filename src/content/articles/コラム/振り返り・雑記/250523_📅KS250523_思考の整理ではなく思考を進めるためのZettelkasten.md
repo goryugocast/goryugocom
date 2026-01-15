@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: 思考の整理ではなく思考を進めるためのZettelkasten
 subtitle: "\U0001F4C5ルールが上手く動かないCursorと掘り下げてみたら超楽しいZettelkastenの記録"
-description: null
+description: Cursorでの事務処理的な整理の現状と、新たに始めたルーマン式Zettelkastenの実践記録。デジタルテンプレートを用いた思考を進めるためのカード作成の難しさと面白さ、そして「PKMではなく思考を研ぎ澄ますもの」という洞察について。
 url: 'https://knowledgestuck.substack.com/p/zettelkasten-514'
 date_published: 2025-05-23T00:00:00.000Z
 audience: only_paid

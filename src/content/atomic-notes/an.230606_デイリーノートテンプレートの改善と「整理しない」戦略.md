@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートテンプレートの改善と「整理しない」戦略
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 効率
-- 整理
+  - デイリーノート
+  - 効率
+  - 整理
 source_article: ks.230606_Obsidianで最初に重視するのはデイリーノート
 note_type: insight
 ---

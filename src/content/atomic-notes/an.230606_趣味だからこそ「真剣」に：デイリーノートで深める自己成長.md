@@ -1,12 +1,12 @@
 ---
 project: an
 title: 趣味だからこそ「真剣」に：デイリーノートで深める自己成長
-prefix: 
+prefix: dailynote
 topic:
   - 趣味
   - 自己成長
   - モチベーション
-source_article: "ks.230606_Obsidianで最初に重視するのはデイリーノート"
+source_article: ks.230606_Obsidianで最初に重視するのはデイリーノート
 ---
 
 # 趣味だからこそ「真剣」に：デイリーノートで深める自己成長

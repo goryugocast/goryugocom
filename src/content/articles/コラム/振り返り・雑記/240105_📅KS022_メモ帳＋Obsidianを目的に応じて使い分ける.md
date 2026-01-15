@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: メモ帳＋Obsidianを目的に応じて使い分ける
 subtitle: "\U0001F4C5022 ノートリンクはメモ帳でも便利に使える"
-description: null
+description: 筆者は年末年始に家族がインフルエンザにかかり多忙な中、自作キーボードの配列を再考し、ギター練習のノートをObsidianからMacのメモ帳へ移行。Obsidianとメモ帳を目的別に使い分ける重要性を説く。
 url: 'https://knowledgestuck.substack.com/p/w022'
 date_published: 2024-01-05T00:00:00.000Z
 audience: everyone

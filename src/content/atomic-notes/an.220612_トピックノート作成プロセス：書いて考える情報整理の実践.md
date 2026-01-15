@@ -1,11 +1,11 @@
 ---
 project: an
 title: トピックノート作成プロセス：書いて考える情報整理の実践
-prefix: null
+prefix: topic
 topic:
-- トピックノート
-- 思考法
-- 情報整理
+  - トピックノート
+  - 思考法
+  - 情報整理
 source_article: ks.220612_Obsidianのノートをまとめるノート「トピックノート」
 note_type: method
 ---

@@ -1,11 +1,11 @@
 ---
 project: an
 title: Obsidianでジョニーデシマルを応用：数字とクイックスイッチャーで高速アクセス
-prefix: null
+prefix: jd
 topic:
-- Obsidian
-- ジョニーデシマル
-- 効率化
+  - Obsidian
+  - ジョニーデシマル
+  - 効率化
 source_article: ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について
 note_type: method
 ---

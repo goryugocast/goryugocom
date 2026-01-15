@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidian_to_Ankiによる学習効率化のメリット
-prefix: ''
+prefix: srs
 topic:
-- Obsidian
-- Anki
-- 学習効率化
-- 知識管理
+  - Obsidian
+  - Anki
+  - 学習効率化
+  - 知識管理
 source_article: ks.221221_🔧KS011_Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る
 note_type: method
 ---

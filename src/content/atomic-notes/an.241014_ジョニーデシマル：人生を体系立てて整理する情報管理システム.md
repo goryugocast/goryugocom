@@ -1,12 +1,12 @@
 ---
 project: an
 title: ジョニーデシマル：人生を体系立てて整理する情報管理システム
-prefix: 
+prefix: jd
 topic:
   - ジョニーデシマル
   - 情報整理
   - 効率化
-source_article: "ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について"
+source_article: ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について
 ---
 
 # ジョニーデシマル：人生を体系立てて整理する情報管理システム

@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidianのワークスペース機能で目的に応じた最適環境を構築する
-prefix: ""
+prefix: workspace
 topic:
   - Obsidian
   - ワークフロー
   - 効率化
-source_article: "240522_🎙KS007_Obsidianでの贈答品管理"
+source_article: 240522_🎙KS007_Obsidianでの贈答品管理
 ---
 
 # Obsidianのワークスペース機能で目的に応じた最適環境を構築する

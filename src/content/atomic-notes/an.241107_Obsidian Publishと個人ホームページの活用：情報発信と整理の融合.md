@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidian Publishと個人ホームページの活用：情報発信と整理の融合
-prefix: 
+prefix: publish
 topic:
   - Obsidian Publish
   - 情報発信
   - ホームページ
-source_article: "ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する"
+source_article: ks.241107_Obsidianで普段どんなことをやっているのかを改めて整理する
 ---
 
 # Obsidian Publishと個人ホームページの活用：情報発信と整理の融合

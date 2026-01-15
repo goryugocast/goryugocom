@@ -1,12 +1,12 @@
 ---
 project: an
 title: MOCの整理：自由な発想と目的意識
-prefix: ""
+prefix: topic
 topic:
   - Obsidian
   - MOC
   - 整理術
-source_article: "ks.210316_📨KS210316_明日以降の自分に優しくする仕事の仕方"
+source_article: ks.210316_📨KS210316_明日以降の自分に優しくする仕事の仕方
 ---
 
 # MOCの整理：自由な発想と目的意識

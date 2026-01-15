@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートの重要性：デジタルノートにおける最強の整理システム
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 情報整理
-- 効率化
+  - デイリーノート
+  - 情報整理
+  - 効率化
 source_article: ks.250305_なぜ「デイリーノートさえあればそれで十分」なのか？
 note_type: insight
 ---

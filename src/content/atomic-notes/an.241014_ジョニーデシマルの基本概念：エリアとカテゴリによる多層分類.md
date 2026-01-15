@@ -1,11 +1,11 @@
 ---
 project: an
 title: ジョニーデシマルの基本概念：エリアとカテゴリによる多層分類
-prefix: null
+prefix: jd
 topic:
-- ジョニーデシマル
-- 情報整理
-- 分類法
+  - ジョニーデシマル
+  - 情報整理
+  - 分類法
 source_article: ks.241014_ジョニーデシマル（Johnny.Decimal）という情報整理方法について
 note_type: method
 ---

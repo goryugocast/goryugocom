@@ -5,6 +5,7 @@ topic:
   - Zettelkasten
   - Obsidian
   - 思考法
+prefix: RINK
 ---
 
 # 「リンクシステム」：ObsidianでのZettelkasten実践

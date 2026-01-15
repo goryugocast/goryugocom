@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: 消すか悩んだノートはObsidianの「外側」に置いておく
 subtitle: "\U0001F4C5020 近いうちにオフ会を開催したいです"
-description: null
+description: Obsidianで不要か悩むノートを外部フォルダへ移動させる管理術を紹介。ローカルファイル管理の利点を活かし、ワークスペースを整理。京都でのオフ会体験と今後の開催計画も語る。
 url: 'https://knowledgestuck.substack.com/p/w020'
 date_published: 2023-11-06T00:00:00.000Z
 audience: everyone

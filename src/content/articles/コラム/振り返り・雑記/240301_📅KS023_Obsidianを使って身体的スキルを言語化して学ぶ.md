@@ -3,7 +3,7 @@ project: ks
 topic: 振り返り
 title: Obsidianを使って身体的スキルを言語化して学ぶ
 subtitle: "\U0001F4C5023 飲み会開催の連絡もあります"
-description: null
+description: ギター練習を題材に、言語化しづらい身体的スキルをObsidianで言語化・体系化して学ぶ方法を提案。また、東京でのナレッジスタック交流会の開催を告知。
 url: 'https://knowledgestuck.substack.com/p/obsidian-484'
 date_published: 2024-03-01T00:00:00.000Z
 audience: everyone

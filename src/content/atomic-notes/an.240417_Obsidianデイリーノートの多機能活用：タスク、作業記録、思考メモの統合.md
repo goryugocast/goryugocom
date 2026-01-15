@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidianデイリーノートの多機能活用：タスク、作業記録、思考メモの統合
-prefix: 
+prefix: dailynote
 topic:
   - Obsidian
   - デイリーノート
   - タスク管理
-source_article: "ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方"
+source_article: ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方
 ---
 
 # Obsidianデイリーノートの多機能活用：タスク、作業記録、思考メモの統合

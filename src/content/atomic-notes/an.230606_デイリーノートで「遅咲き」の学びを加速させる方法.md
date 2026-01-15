@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートで「遅咲き」の学びを加速させる方法
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 学習
-- モチベーション
+  - デイリーノート
+  - 学習
+  - モチベーション
 source_article: ks.230606_Obsidianで最初に重視するのはデイリーノート
 note_type: method
 ---

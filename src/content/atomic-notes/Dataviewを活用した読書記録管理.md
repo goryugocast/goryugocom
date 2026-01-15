@@ -1,11 +1,11 @@
 ---
 project: an
 title: Dataviewを活用した読書記録管理
-prefix: ''
+prefix: dataview
 topic:
-- Dataview
-- 読書記録
-- 情報整理
+  - Dataview
+  - 読書記録
+  - 情報整理
 source_article: ks.221120_🔧KS007_ObsidianのDataviewで「ホーム画面」「デイリーノート」を改善する
 note_type: method
 ---

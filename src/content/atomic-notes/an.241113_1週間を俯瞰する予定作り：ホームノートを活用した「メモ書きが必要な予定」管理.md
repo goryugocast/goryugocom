@@ -1,11 +1,11 @@
 ---
 project: an
 title: 1週間を俯瞰する予定作り：ホームノートを活用した「メモ書きが必要な予定」管理
-prefix: null
+prefix: HOMEnote
 topic:
-- ホームノート
-- 予定管理
-- 効率化
+  - ホームノート
+  - 予定管理
+  - 効率化
 source_article: ks.241113_ホームノートの入れ替えることで自然に1週間の振り返りができる
 note_type: method
 ---

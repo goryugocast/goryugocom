@@ -1,11 +1,11 @@
 ---
 project: an
 title: Obsidian HOMEノートで予定を管理する新しい方法
-prefix: null
+prefix: HOMEnote
 topic:
-- Obsidian
-- HOMEノート
-- 予定管理
+  - Obsidian
+  - HOMEノート
+  - 予定管理
 source_article: ks.240819_HOMEノートを使った予定の管理
 note_type: method
 ---

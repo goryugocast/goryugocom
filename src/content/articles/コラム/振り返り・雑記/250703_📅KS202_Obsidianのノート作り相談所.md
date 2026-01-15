@@ -4,7 +4,7 @@ topic: 振り返り
 topic_order: 47
 title: Obsidianのノート作り相談所
 subtitle: "\U0001F4C5 2025年6月の振り返り"
-description: null
+description: 2025年6月の振り返り。Discordでのノート発表の場づくり、Zettelkastenシステム「RINK」の進展、そして「スロージョギング」の実践について。
 url: 'https://knowledgestuck.substack.com/p/obsidian-e2d'
 date_published: 2025-07-03T00:00:00.000Z
 audience: everyone

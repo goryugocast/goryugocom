@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidian_to_Ankiプラグインの設定手順
-prefix: ''
+prefix: srs
 topic:
-- Obsidian
-- Anki
-- 設定
-- 学習
+  - Obsidian
+  - Anki
+  - 設定
+  - 学習
 source_article: ks.221221_🔧KS011_Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る
 note_type: technique
 ---

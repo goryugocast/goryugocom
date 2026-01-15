@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートテンプレートとアトミックな練習ノートでギター練習を効率化
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 練習計画
-- 効率化
+  - デイリーノート
+  - 練習計画
+  - 効率化
 source_article: ks.230712_Graph Viewをモチベーションアップのために活用する
 note_type: method
 ---

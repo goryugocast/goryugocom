@@ -1,11 +1,11 @@
 ---
 project: an
 title: Obsidian Publishによるコンテンツの構造化と公開
-prefix: ''
+prefix: publish
 topic:
-- Obsidian Publish
-- コンテンツ制作
-- 情報整理
+  - Obsidian Publish
+  - コンテンツ制作
+  - 情報整理
 source_article: ks.230227_📅KS007_大きなものを作りあげたり小さなものをサッとまとめるObsidian_Publish
 note_type: insight
 ---

@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートで「いつか」ではなく「今」に集中する情報管理
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 情報整理
-- 効率
+  - デイリーノート
+  - 情報整理
+  - 効率
 source_article: ks.230622_いつか使いたいものではなく今必要なものを使いやすく整理する
 note_type: method
 ---

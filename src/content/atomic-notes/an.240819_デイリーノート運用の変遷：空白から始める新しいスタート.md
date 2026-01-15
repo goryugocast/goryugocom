@@ -1,12 +1,12 @@
 ---
 project: an
 title: デイリーノート運用の変遷：空白から始める新しいスタート
-prefix: 
+prefix: dailynote
 topic:
   - デイリーノート
   - 運用
   - ノート術
-source_article: "ks.240819_HOMEノートを使った予定の管理"
+source_article: ks.240819_HOMEノートを使った予定の管理
 ---
 
 # デイリーノート運用の変遷：空白から始める新しいスタート

@@ -1,11 +1,11 @@
 ---
 project: an
 title: Obsidian Publishを活用したコンテンツ整理とpermalink
-prefix: ''
+prefix: publish
 topic:
-- Obsidian Publish
-- 情報整理
-- コンテンツ制作
+  - Obsidian Publish
+  - 情報整理
+  - コンテンツ制作
 source_article: ks.230501_📅KS009_ニュースレターをObsidian_Publishで整理
 note_type: method
 ---

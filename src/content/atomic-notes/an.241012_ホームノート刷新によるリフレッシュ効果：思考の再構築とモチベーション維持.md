@@ -1,11 +1,11 @@
 ---
 project: an
 title: ホームノート刷新によるリフレッシュ効果：思考の再構築とモチベーション維持
-prefix: null
+prefix: HOMEnote
 topic:
-- ホームノート
-- 思考整理
-- モチベーション
+  - ホームノート
+  - 思考整理
+  - モチベーション
 source_article: ks.241012_ホームノートを定期的に引っ越しして最新最強の状態を維持し続ける
 note_type: insight
 ---

@@ -1,12 +1,12 @@
 ---
 project: an
 title: Dataviewを使い前日のToDoを翌日に自動転記する
-prefix: ""
+prefix: dataview
 topic:
   - Obsidian
   - Dataview
   - タスク管理
-source_article: "240621_🎙KS009_Wordを愛する人間のObsidian運用方法の進化"
+source_article: 240621_🎙KS009_Wordを愛する人間のObsidian運用方法の進化
 ---
 
 # Dataviewを使い前日のToDoを翌日に自動転記する
