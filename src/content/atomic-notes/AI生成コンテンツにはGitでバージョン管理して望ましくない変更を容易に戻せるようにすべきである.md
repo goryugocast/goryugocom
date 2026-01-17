@@ -2,10 +2,11 @@
 project: an
 title: AI生成コンテンツにはGitでバージョン管理して望ましくない変更を容易に戻せるようにすべきである
 topic:
-- Gemini CLI
-- AI
-- バージョン管理
+  - Gemini CLI
+  - AI
+  - バージョン管理
 note_type: method
+prefix: github
 ---
 
 # AI生成コンテンツのバージョン管理

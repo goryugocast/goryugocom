@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidian Syncは月数ドルの出費で日々のワークフローの快適性と効率を向上させる
-prefix: ""
+prefix: sync
 topic:
   - Obsidian
   - 効率化
   - ワークフロー
-source_article: "230913_📅KS017_Obsidian_Syncを改めて使い始めた"
+source_article: 230913_📅KS017_Obsidian_Syncを改めて使い始めた
 ---
 
 # Obsidian Syncは月数ドルの出費で日々のワークフローの快適性と効率を向上させる

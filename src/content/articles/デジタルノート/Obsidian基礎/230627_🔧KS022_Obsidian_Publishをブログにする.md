@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: Obsidian Publishをブログにする
 subtitle: "\U0001F527022 自分は「ブログ」という形態にとらわれすぎていたのではないだろうか？"
-description: null
+description: なぜブログの移行先としてObsidian Publishを選んだのか。Permalinksやナビゲーションの進化により、Obsidian Publishが単なる公開機能ではなく、手軽に更新できる現代の「ホームページ」として、より本質的な情報発信の欲求を満たすツールになった経緯を解説します。
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish-b94'
 date_published: 2023-06-27T00:00:00.000Z
 audience: everyone

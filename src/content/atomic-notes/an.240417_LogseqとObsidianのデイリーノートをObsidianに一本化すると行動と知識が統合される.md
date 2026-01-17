@@ -1,11 +1,11 @@
 ---
 project: an
 title: LogseqとObsidianのデイリーノートをObsidianに一本化すると行動と知識が統合される
-prefix: null
+prefix: logseq
 topic:
-- Obsidian
-- Logseq
-- デイリーノート
+  - Obsidian
+  - Logseq
+  - デイリーノート
 source_article: ks.240417_LogseeqからObsidianに一本化したデイリーノートの使い方
 note_type: insight
 ---

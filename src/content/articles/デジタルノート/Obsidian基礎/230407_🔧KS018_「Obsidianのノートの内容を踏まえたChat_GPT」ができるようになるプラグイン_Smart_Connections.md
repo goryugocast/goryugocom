@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: 「Obsidianのノートの内容を踏まえたChat GPT」ができるようになるプラグイン Smart Connections
 subtitle: "\U0001F527018 現状はまだ難点はありつつもかなり「未来な気分」は味わえる"
-description: null
+description: Obsidianプラグイン「Smart Connections」を紹介。OpenAIのAPIを利用し、キーワードが一致しなくても内容が類似したノートをベクトル検索で発見。自分のノート群全体を文脈としてChatGPTと対話できる「未来の検索」を体験できます。
 url: 'https://knowledgestuck.substack.com/p/smartconnections'
 date_published: 2023-04-07T00:00:00.000Z
 audience: everyone

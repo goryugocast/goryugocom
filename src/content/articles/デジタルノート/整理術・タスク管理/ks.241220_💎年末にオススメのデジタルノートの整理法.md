@@ -2,7 +2,7 @@
 project: ks
 title: 年末にオススメのデジタルノートの整理法
 subtitle: "\U0001F48E新しい年をスッキリしたObsidianで迎える"
-description: null
+description: 年末に行うデジタルノートの大掃除術を提案。過去のフォルダやノートをすべて「2024」のような年号フォルダに丸ごと移動させることで、システムを強制的にリセット。気持ちを新たに、より上達した現在の自分で新しいノートの使い方を始められます。
 url: 'https://knowledgestuck.substack.com/p/obsidian-037'
 date_published: 2024-12-20T00:00:00.000Z
 audience: everyone

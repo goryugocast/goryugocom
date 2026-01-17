@@ -3,7 +3,7 @@ project: ks
 topic: ['Obsidian', '仕事術', 'ノート整理']
 title: 大きな仕事は細かな区切りのノートを作って整理する
 subtitle: "\U0001F48E仕事ノートもトピックノート的に整理すればいい"
-description: null
+description: Obsidianの「1タスク1ノート」方式で巨大プロジェクトが停滞する問題の解決策。単一のノートが長大化するのを防ぐため、仕事を「トピックノート」的に捉え、大きな親ノートから複数の小さな子ノートに分割して管理するアプローチを提案します。
 url: 'https://knowledgestuck.substack.com/p/obsidian-026'
 date_published: 2024-08-13T00:00:00.000Z
 audience: only_paid

@@ -1,11 +1,11 @@
 ---
 project: an
 title: Logseqのスケジュール機能は直接編集可能なフレキシブルチェックリストになる
-prefix: null
+prefix: logseq
 topic:
-- Logseq
-- スケジュール
-- チェックリスト
+  - Logseq
+  - スケジュール
+  - チェックリスト
 source_article: ks.220522_Logseqのデイリーページに書いている内容のまとめ
 note_type: method
 ---

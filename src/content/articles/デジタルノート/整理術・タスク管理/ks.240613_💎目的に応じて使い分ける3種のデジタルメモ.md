@@ -2,7 +2,7 @@
 project: ks
 title: 目的に応じて使い分ける3種のデジタルメモ
 subtitle: "\U0001F48Eデイリーノート2種×メモ帳システム"
-description: null
+description: メモの目的別に3つのデジタルツールを使い分けるシステムを紹介。メインの思考蓄積には「Obsidian」、Webクリップや一時的な検討事項には「Apple標準メモ」、iPhoneでの高速なメモには「iA Writer」と、それぞれのツールの特性を活かしたメモ帳の使い分け術を解説。
 url: 'https://knowledgestuck.substack.com/p/obsidian-021'
 date_published: 2024-06-13T00:00:00.000Z
 audience: only_paid

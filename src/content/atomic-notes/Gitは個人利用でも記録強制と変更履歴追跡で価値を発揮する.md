@@ -1,11 +1,11 @@
 ---
 project: an
 title: Gitは個人利用でも記録強制と変更履歴追跡で価値を発揮する
-prefix: ''
+prefix: github
 topic:
-- Git
-- バージョン管理
-- 記録
+  - Git
+  - バージョン管理
+  - 記録
 source_article: ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか
 note_type: insight
 ---

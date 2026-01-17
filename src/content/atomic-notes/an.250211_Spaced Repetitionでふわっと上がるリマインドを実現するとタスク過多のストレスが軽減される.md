@@ -1,11 +1,11 @@
 ---
 project: an
 title: Spaced Repetitionでふわっと上がるリマインドを実現するとタスク過多のストレスが軽減される
-prefix: null
+prefix: srs
 topic:
-- タスク管理
-- リマインド
-- 効率化
+  - タスク管理
+  - リマインド
+  - 効率化
 source_article: ks.250211_Obsidianとたすくまを使ったタスク管理
 note_type: method
 ---

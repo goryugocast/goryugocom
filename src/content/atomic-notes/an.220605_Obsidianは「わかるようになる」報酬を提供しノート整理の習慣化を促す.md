@@ -1,12 +1,12 @@
 ---
 project: an
 title: Obsidianは「わかるようになる」報酬を提供しノート整理の習慣化を促す
-prefix: 
+prefix: logseq
 topic:
   - ノート整理
   - 習慣化
   - モチベーション
-source_article: "ks.220605_Obsidianは緊急ではない重要なことを行うツール"
+source_article: ks.220605_Obsidianは緊急ではない重要なことを行うツール
 ---
 
 # 楽しくノート整理する習慣の構築：Obsidianが提供する報酬

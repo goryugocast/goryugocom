@@ -1,12 +1,12 @@
 ---
 project: an
 title: GitHub経由の同期はファイル競合を防ぎ作業記録の意識を高める
-prefix: ''
+prefix: github
 topic:
-- Obsidian
-- GitHub
-- データ同期
-- ワークフロー
+  - Obsidian
+  - GitHub
+  - データ同期
+  - ワークフロー
 source_article: ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
 note_type: insight
 ---

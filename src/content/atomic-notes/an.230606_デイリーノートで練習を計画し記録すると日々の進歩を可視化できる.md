@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートで練習を計画し記録すると日々の進歩を可視化できる
-prefix: null
+prefix: dailynote
 topic:
-- デイリーノート
-- 計画
-- 記録
+  - デイリーノート
+  - 計画
+  - 記録
 source_article: ks.230606_Obsidianで最初に重視するのはデイリーノート
 note_type: method
 ---

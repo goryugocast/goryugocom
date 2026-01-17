@@ -1,11 +1,11 @@
 ---
 project: an
 title: Logseqのエイリアス機能は日本語の表記揺れを同一ページとして統一する
-prefix: null
+prefix: logseq
 topic:
-- Logseq
-- エイリアス
-- 日本語処理
+  - Logseq
+  - エイリアス
+  - 日本語処理
 source_article: ks.220529_ショートカットアプリで素早くLogseqにメモを残す
 note_type: method
 ---

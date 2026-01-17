@@ -2,7 +2,7 @@
 project: ks
 title: アナログ情報をデジタルで管理する
 subtitle: "\U0001F48EObsidianでこれまでのノートの中身を把握できるようにする"
-description: null
+description: 複数の手帳の使い分けに悩んだ末、Obsidianで「アナログ情報を管理する」方法を考案。手帳の中身をすべて電子化するのではなく、どの手帳に何が書いてあるかの「目録」をデジタルで作成。物質としてのアナログの良さを活かしつつ、デジタルで全体を俯瞰・把握する新しい管理術を紹介します。
 url: 'https://knowledgestuck.substack.com/p/obsidian-020'
 date_published: 2024-05-29T00:00:00.000Z
 audience: only_paid

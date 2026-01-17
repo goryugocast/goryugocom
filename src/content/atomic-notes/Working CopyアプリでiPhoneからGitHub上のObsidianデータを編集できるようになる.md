@@ -1,12 +1,12 @@
 ---
 project: an
 title: Working CopyアプリでiPhoneからGitHub上のObsidianデータを編集できるようになる
-prefix: ''
+prefix: github
 topic:
-- iPhone
-- GitHub
-- データ同期
-- モバイルワークフロー
+  - iPhone
+  - GitHub
+  - データ同期
+  - モバイルワークフロー
 source_article: ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
 note_type: method
 ---

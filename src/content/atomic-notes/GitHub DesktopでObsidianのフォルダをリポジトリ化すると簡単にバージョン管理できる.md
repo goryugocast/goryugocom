@@ -1,12 +1,12 @@
 ---
 project: an
 title: GitHub DesktopでObsidianのフォルダをリポジトリ化すると簡単にバージョン管理できる
-prefix: ''
+prefix: github
 topic:
-- GitHub
-- Obsidian
-- 設定
-- データ同期
+  - GitHub
+  - Obsidian
+  - 設定
+  - データ同期
 source_article: ks.221114_🔧KS006_MacやWindowsのObsidianデータをGitHub経由でiPhoneと同期する
 note_type: method
 ---

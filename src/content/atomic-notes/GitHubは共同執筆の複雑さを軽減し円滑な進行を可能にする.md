@@ -1,11 +1,11 @@
 ---
 project: an
 title: GitHubは共同執筆の複雑さを軽減し円滑な進行を可能にする
-prefix: ''
+prefix: github
 topic:
-- GitHub
-- 共同執筆
-- プロジェクト管理
+  - GitHub
+  - 共同執筆
+  - プロジェクト管理
 source_article: ks.221201_🔧KS008_GitHubを使って複数人での原稿管理するときのコツ
 note_type: insight
 ---

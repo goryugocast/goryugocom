@@ -1,11 +1,11 @@
 ---
 project: an
 title: ObsidianとLogseqはモバイル利用特性の違いから独立運用が効果的である
-prefix: null
+prefix: logseq
 topic:
-- Logseq
-- Obsidian
-- データ運用
+  - Logseq
+  - Obsidian
+  - データ運用
 source_article: ks.220529_ショートカットアプリで素早くLogseqにメモを残す
 note_type: insight
 ---

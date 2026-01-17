@@ -1,11 +1,11 @@
 ---
 project: an
 title: Canvas上での情報配置は単なる作業ではなく思考そのものである
-prefix: null
+prefix: canvas
 topic:
-- Obsidian Canvas
-- 思考法
-- 試行錯誤
+  - Obsidian Canvas
+  - 思考法
+  - 試行錯誤
 source_article: ks.240213_謎解きの続きはObsidianで
 note_type: insight
 ---

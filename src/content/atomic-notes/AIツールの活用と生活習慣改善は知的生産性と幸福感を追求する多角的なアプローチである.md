@@ -1,12 +1,12 @@
 ---
 project: an
 title: AIツールの活用と生活習慣改善は知的生産性と幸福感を追求する多角的なアプローチである
-prefix: ''
+prefix:
 topic:
-- AIツール
-- ChatGPT
-- 生活習慣
-- 自己改善
+  - AIツール
+  - ChatGPT
+  - 生活習慣
+  - 自己改善
 source_article: ks.230131_📅KS006_自分が求めているもの、楽しいものに直接お金を支払う健全さ
 note_type: technique
 ---

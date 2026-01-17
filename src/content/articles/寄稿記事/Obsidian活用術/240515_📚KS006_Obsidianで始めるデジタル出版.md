@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F4DAObsidianで始めるデジタル出版"
 subtitle: "\U0001F460006 Obsidianを使った電子書籍原稿の作り方"
-description: null
+description: Obsidianを使い、電子書籍『iPadアプリ図鑑』を執筆・出版した具体的なワークフローを紹介。プロジェクトノートでの構想、目次作成、そしてMarkdown ExportプラグインやPandocを活用した効率的なファイル書き出しとePub生成まで、アイデアを収益化するまでの一連の流れを解説します。
 url: 'https://knowledgestuck.substack.com/p/haruna006'
 date_published: 2024-05-15T00:00:00.000Z
 audience: only_paid

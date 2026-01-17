@@ -1,11 +1,11 @@
 ---
 project: an
 title: Obsidian Canvasは視覚的整理で複雑な情報を一目で把握し思考を深める
-prefix: null
+prefix: canvas
 topic:
-- Obsidian Canvas
-- 思考整理
-- 謎解き
+  - Obsidian Canvas
+  - 思考整理
+  - 謎解き
 source_article: ks.240213_謎解きの続きはObsidianで
 note_type: method
 ---

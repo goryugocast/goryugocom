@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F4DA♻️Obsidianを使わずに、Obsidianを活用する方法"
 subtitle: ショートカットアプリやChatGPTを使うことでツールに縛られない
-description: null
+description: Obsidianモバイル版の起動の遅さを、iA Writerとショートカットアプリ、そしてChatGPTで生成したスクリプトを組み合わせて解決するワークフローを紹介。ツールに縛られず、ローカルファイルの利点を活かして「Obsidianを使わずにObsidianを活用する」新しいアプローチを提案します。
 url: 'https://knowledgestuck.substack.com/p/haruna007'
 date_published: 2024-06-10T00:00:00.000Z
 audience: only_paid

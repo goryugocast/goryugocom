@@ -1,11 +1,11 @@
 ---
 project: an
 title: Logseqでは2回以上実行するあらゆる事柄を括弧で括りプロジェクト化できる
-prefix: null
+prefix: logseq
 topic:
-- Logseq
-- プロジェクト管理
-- 思考法
+  - Logseq
+  - プロジェクト管理
+  - 思考法
 source_article: ks.220522_Logseqのデイリーページに書いている内容のまとめ
 note_type: method
 ---

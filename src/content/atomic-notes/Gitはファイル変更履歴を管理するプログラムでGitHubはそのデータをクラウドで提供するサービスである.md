@@ -1,12 +1,12 @@
 ---
 project: an
 title: Gitはファイル変更履歴を管理するプログラムでGitHubはそのデータをクラウドで提供するサービスである
-prefix: ""
+prefix: github
 topic:
   - Git
   - GitHub
   - バージョン管理
-source_article: "ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか"
+source_article: ks.220922_🔧KS002_個人でGitを使うことでなにが得られるのか
 ---
 
 # GitとGitHubの役割と連携

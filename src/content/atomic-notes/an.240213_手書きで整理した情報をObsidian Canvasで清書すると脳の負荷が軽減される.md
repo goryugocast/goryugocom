@@ -1,12 +1,12 @@
 ---
 project: an
 title: 手書きで整理した情報をObsidian Canvasで清書すると脳の負荷が軽減される
-prefix: 
+prefix: canvas
 topic:
   - Obsidian Canvas
   - 情報整理
   - デジタル
-source_article: "ks.240213_謎解きの続きはObsidianで"
+source_article: ks.240213_謎解きの続きはObsidianで
 ---
 
 # 手書きとデジタルの融合：Obsidian Canvasが提示する情報整理の新しいアプローチ

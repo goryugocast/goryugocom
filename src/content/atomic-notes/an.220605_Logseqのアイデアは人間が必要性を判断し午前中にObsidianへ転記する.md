@@ -1,12 +1,12 @@
 ---
 project: an
 title: Logseqのアイデアは人間が必要性を判断し午前中にObsidianへ転記する
-prefix: 
+prefix: logseq
 topic:
   - Logseq
   - Obsidian
   - 情報整理
-source_article: "ks.220605_Obsidianは緊急ではない重要なことを行うツール"
+source_article: ks.220605_Obsidianは緊急ではない重要なことを行うツール
 ---
 
 # LogseqからObsidianへのアイデア転記術：『必要なもの』の判断と実行

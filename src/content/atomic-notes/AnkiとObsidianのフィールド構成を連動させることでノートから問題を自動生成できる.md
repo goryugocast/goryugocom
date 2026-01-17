@@ -1,12 +1,12 @@
 ---
 project: an
 title: AnkiとObsidianのフィールド構成を連動させることでノートから問題を自動生成できる
-prefix: ''
+prefix: anki
 topic:
-- Anki
-- Obsidian
-- 設定
-- データ連携
+  - Anki
+  - Obsidian
+  - 設定
+  - データ連携
 source_article: ks.221221_🔧KS011_Obsidian_to_AnkiでObsidianのノートから簡単にAnki問題を作る
 note_type: insight
 ---

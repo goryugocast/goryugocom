@@ -1,11 +1,11 @@
 ---
 project: an
 title: Logseqは日々のタスク管理に使いObsidianは緊急ではない重要なことに使う
-prefix: null
+prefix: logseq
 topic:
-- Obsidian
-- Logseq
-- GTD
+  - Obsidian
+  - Logseq
+  - GTD
 source_article: ks.220605_Obsidianは緊急ではない重要なことを行うツール
 note_type: technique
 ---

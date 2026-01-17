@@ -1,12 +1,12 @@
 ---
 project: an
 title: Ankiで音程や度数を即答できるまで訓練すると身体が自動反応するようになる
-prefix: 
+prefix: anki
 topic:
   - Anki
   - ギター
   - 学習
-source_article: "ks.230703_脳筋な学習では自分が求めることができるようにならない"
+source_article: ks.230703_脳筋な学習では自分が求めることができるようにならない
 ---
 
 # 効果的なAnki活用：ギター演奏スキルを脳に刻み込む

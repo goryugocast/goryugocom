@@ -1,11 +1,11 @@
 ---
 project: an
 title: Logseqのアウトライナー形式は書き捨ての容易さで思考の解放を促進する
-prefix: null
+prefix: logseq
 topic:
-- Logseq
-- アウトライナー
-- 思考整理
+  - Logseq
+  - アウトライナー
+  - 思考整理
 source_article: ks.220515_ほとんどのメモを「今日」のページで管理・記録するLogseqデイリー日誌術
 note_type: insight
 ---

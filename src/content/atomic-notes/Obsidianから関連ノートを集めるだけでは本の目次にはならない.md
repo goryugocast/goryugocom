@@ -1,10 +1,10 @@
 ---
 project: an
 title: Obsidianから関連ノートを集めるだけでは本の目次にはならない
-prefix: ''
+prefix: zettelkasten
 topic:
-- Zettelkasten
-- 執筆
+  - Zettelkasten
+  - 執筆
 source_article: ks.221017_📖Obsidianからノートを集めて目次案を考える
 note_type: principle
 ---

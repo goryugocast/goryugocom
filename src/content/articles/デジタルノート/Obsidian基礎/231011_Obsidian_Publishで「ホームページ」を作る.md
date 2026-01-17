@@ -3,7 +3,7 @@ project: ks
 topic: その他
 title: Obsidian Publishで「ホームページ」を作る
 subtitle: ブログではない文字での情報発信の可能性
-description: null
+description: Obsidian Publishを、かつての個人ホームページが現代的に進化した「モダンなジオシティーズ」として再評価。ブログの「完成記事」という呪縛から逃れ、思考過程をそのまま公開する「デジタルガーデン」的な情報発信の可能性と、その楽しさを解説します。
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish-7fa'
 date_published: 2023-10-11T00:00:00.000Z
 audience: everyone
