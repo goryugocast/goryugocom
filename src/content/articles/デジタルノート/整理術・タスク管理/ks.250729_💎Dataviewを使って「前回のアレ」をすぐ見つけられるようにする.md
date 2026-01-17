@@ -14,7 +14,8 @@ draft_link: null
 series_name: Obsidian Tips
 ---
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

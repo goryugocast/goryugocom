@@ -447,7 +447,8 @@ to Zいわゆるファイル名を文字順に置いて文字アルファベテ�
 ---
 <!-- Merged from: 251003_KS005Obsidianの標準検索機能を使い倒す.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

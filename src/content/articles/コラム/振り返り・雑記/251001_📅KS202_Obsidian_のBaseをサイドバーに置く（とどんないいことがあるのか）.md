@@ -16,7 +16,8 @@ category: 振り返り
 ---
 ## メモ・原稿
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

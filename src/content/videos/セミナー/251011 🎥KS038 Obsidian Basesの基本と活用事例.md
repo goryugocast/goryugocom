@@ -2834,7 +2834,8 @@ routine taskを使う場合は自動でレコード を作るっていう場合�
 ---
 <!-- Merged from: 251011_🎥KS038『アトミック・シンキング』実践セミナー038動画アーカイブ.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic
@@ -2858,7 +2859,8 @@ views:
 
 ```
 
-```base
+base
+```
 filters:
   and:
     - topic.startsWith("セミナー")
@@ -3040,7 +3042,8 @@ views:
 
 topic_order , topic の先頭文字
 
-```base
+base
+```
 filters:
   and:
     - project == "knowledgestack"
@@ -3086,7 +3089,8 @@ review ワークスペースで実験中
 ## 小技：baseのbaseで全体を管理する
 
 
-```base
+base
+```
 filters:
   and:
     - file.name.endsWith(".base")

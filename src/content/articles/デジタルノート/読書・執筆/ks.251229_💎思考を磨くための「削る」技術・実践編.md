@@ -12,7 +12,8 @@ topic:
   - プロンプト
 ---
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic
@@ -38,7 +39,8 @@ views:
 ```
 
 
-```base
+base
+```
 views:
   - type: table
     name: Table

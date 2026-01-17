@@ -10,6 +10,7 @@ audience: only_paid
 tags:
   - Obsidian
   - デイリーノート
+  - review
 draft_link: null
 series_name: 寄稿記事
 category: ジュン先生

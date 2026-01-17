@@ -434,7 +434,8 @@ Publishedというものを設定していますそのDate Publishedがこれも
 ---
 <!-- Merged from: 251114_KS008未来を見据えてフロントマター重視のObsidian運用を始める.md -->
 
-```base
+base
+```
 views:
   - type: table
     name: Table
@@ -455,7 +456,8 @@ views:
 ```
 
 
-```base
+base
+```
 filters:
   and:
     - project == "ks"

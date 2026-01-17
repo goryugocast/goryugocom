@@ -15,7 +15,8 @@ draft_link: null
 series_name: 寄稿記事
 category: haruna1221
 ---
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

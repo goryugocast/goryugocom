@@ -18,14 +18,16 @@ Base プラグインは複数のビュー（テーブル）を一つのBase内�
 
 ### 例：年度別表示
 
-```base
+base
+```
 # 2025年のノート一覧
 フィルター: filename starts with "2025"
 ```
 
 別のテーブルとして：
 
-```base
+base
+```
 # 2024年のノート一覧
 フィルター: filename starts with "2024"
 ```

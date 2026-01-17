@@ -45,7 +45,8 @@ WHERE date >= today AND status != "完了"
 
 DataViewでコード修正する場合の手間が大幅削減：
 
-```base
+base
+```
 # 最初の絞り込み
 prefix: "M.C"
 

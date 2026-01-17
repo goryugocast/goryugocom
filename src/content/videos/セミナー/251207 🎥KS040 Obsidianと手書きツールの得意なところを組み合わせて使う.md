@@ -3855,7 +3855,8 @@ iPadの話は春奈さんがこのiPadワークアースでいろいろマニア
 ---
 <!-- Merged from: 251206_🎥KS040Obsidianと手書きツールの得意なところを組み合わせて使う.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic
@@ -3880,7 +3881,8 @@ views:
 ```
 
 
-```base
+base
+```
 views:
   - type: table
     name: Table
@@ -3900,7 +3902,8 @@ views:
 
 ```
 
-```base
+base
+```
 filters:
   and:
     - topic.startsWith("セミナー")

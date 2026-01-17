@@ -104,7 +104,8 @@ category: 技術・ノウハウ
 ---
 <!-- Merged from: 251017_🔧KS051生成AIとうまく協業する為にObsidianの使い方をアップデートしていく.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

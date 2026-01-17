@@ -561,7 +561,8 @@ note for reviewレビュー用のノートを開く
 ---
 <!-- Merged from: 251031_KS007SpacedRepetitionでのレビューを実例と共にじっくり解説.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic
@@ -583,7 +584,8 @@ views:
 
 ```
 
-```base
+base
+```
 views:
   - type: table
     name: Table
@@ -604,7 +606,8 @@ views:
 ```
 
 
-```base
+base
+```
 filters:
   and:
     - project == "ks"

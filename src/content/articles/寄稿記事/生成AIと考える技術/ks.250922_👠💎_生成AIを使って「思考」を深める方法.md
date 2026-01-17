@@ -16,7 +16,8 @@ series_name: 寄稿記事
 category: haruna1221
 ---## メモ・原稿
 
-```base
+base
+```
 views:
   - type: table
     name: Table
@@ -42,7 +43,8 @@ views:
 ---
 <!-- Merged from: 250923_💎KS022.md -->
 
-```base
+base
+```
 filters:
   and:
     - topic == this.topic

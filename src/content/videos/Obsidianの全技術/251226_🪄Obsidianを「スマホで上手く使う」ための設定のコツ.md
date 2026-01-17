@@ -70,7 +70,8 @@ iCloudでの同期を安定させるため、iPhoneの「ファイル」アプ�
 
 ---
 
-```base
+base
+```
 views:
   - type: table
     name: Table
@@ -91,7 +92,8 @@ views:
 ```
 
 
-```base
+base
+```
 filters:
   and:
     - project == "ks"
