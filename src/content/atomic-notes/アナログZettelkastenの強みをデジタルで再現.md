@@ -5,6 +5,7 @@ topic:
   - Zettelkasten
   - Obsidian
   - Dataview
+prefix: RINK
 ---
 
 # アナログZettelkastenの強みをデジタルで再現

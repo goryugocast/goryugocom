@@ -2,10 +2,11 @@
 project: an
 title: アトミックノートは知識の整理を目的としZettelkastenは知識の創造を目的とする
 topic:
-- Zettelkasten
-- アトミックノート
-- 知識管理
+  - Zettelkasten
+  - アトミックノート
+  - 知識管理
 note_type: insight
+prefix: atomic
 ---
 
 # Zettelkastenとアトミックノートの違い

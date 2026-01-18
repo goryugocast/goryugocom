@@ -2,10 +2,11 @@
 project: an
 title: スマホでは整理せずPCで整理する
 topic:
-- Obsidian
-- モバイル
-- 運用方針
+  - Obsidian
+  - モバイル
+  - 運用方針
 note_type: method
+prefix: mobile
 ---
 
 # スマホでは整理せずPCで整理する

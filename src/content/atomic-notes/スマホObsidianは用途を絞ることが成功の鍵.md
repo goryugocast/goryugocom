@@ -5,6 +5,7 @@ topic:
   - Obsidian
   - モバイル
   - 運用方針
+prefix: mobile
 ---
 
 # スマホObsidianは用途を絞ることが成功の鍵

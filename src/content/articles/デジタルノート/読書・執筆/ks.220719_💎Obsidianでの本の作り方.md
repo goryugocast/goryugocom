@@ -3,7 +3,7 @@ project: ks
 topic: その他
 title: Obsidianでの本の作り方
 subtitle: 大きな原稿を作るときに「目次ノート」を活用する
-description: null
+description: 大きな原稿を作るときは「目次ノート」をObsidianで作成しリンクで構成を管理する。並べ替えが簡単でインライン表示で全体像も確認できる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-4e7'
 date_published: 2022-07-19T00:00:00.000Z
 audience: everyone

@@ -3,7 +3,7 @@ project: ks
 topic: その他
 title: Obsidianでの読書メモの作り方
 subtitle: 「なにを残すといいのか」は「読書メモを残せば残すほどわかるようになる」
-description: null
+description: 読書メモは振り返ることで知識が定着する。obsidian-spaced-repetitionで定期的に見直し時間をかけてアトミックノートに分割していく。
 url: 'https://knowledgestuck.substack.com/p/obsidian-75a'
 date_published: 2022-07-10T00:00:00.000Z
 audience: everyone

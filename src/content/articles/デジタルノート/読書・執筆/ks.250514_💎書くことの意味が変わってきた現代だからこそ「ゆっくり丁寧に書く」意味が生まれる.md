@@ -8,6 +8,7 @@ date_published: 2025-05-14T00:00:00.000Z
 audience: everyone
 tags:
   - AI
+  - review
 draft_link: null
 series_name: Obsidian Tips
 ---

@@ -1,11 +1,11 @@
 ---
 project: an
 title: デイリーノートの保存先をdailyフォルダに指定すると自動で整理され管理しやすくなる
-prefix: null
+prefix: dailynote
 topic:
-- obsidian
-- workflow
-- daily-notes
+  - obsidian
+  - workflow
+  - daily-notes
 note_type: method
 ---
 

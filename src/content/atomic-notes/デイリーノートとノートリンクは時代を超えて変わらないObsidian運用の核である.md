@@ -5,6 +5,7 @@ topic:
   - Obsidian
   - 知識管理
   - デイリーノート
+prefix: dailynote
 ---
 
 # 変わらないObsidian運用の核：デイリーノートとリンク

@@ -2,7 +2,7 @@
 project: ks
 title: 1年のテーマを決めて適切な間隔でテーマを振り返る
 subtitle: "\U0001F48E毎日振り返るのは多すぎるが月一では少なすぎる場合にどうするか"
-description: null
+description: 1年のテーマは毎日見るのは鬱陶しいが完全に忘れるのもよくない。reviewタグで適切な間隔の振り返りを仕組み化する方法を紹介。
 url: 'https://knowledgestuck.substack.com/p/1-04a'
 date_published: 2025-01-28T00:00:00.000Z
 audience: only_paid
