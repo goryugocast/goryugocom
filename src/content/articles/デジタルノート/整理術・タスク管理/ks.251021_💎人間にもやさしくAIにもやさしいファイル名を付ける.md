@@ -2,7 +2,7 @@
 project: ks
 title: 人間にもやさしくAIにもやさしいファイル名を付ける
 subtitle: "\U0001F48Eプレフィックス＋絵文字のハイブリッド運用"
-description: null
+description: プレフィックス＋絵文字のハイブリッド命名規則で、日付不要でGemini CLIからファイル指定が容易に。人間と生成AIの両方にわかりやすいファイル名を実現。
 url: 'https://knowledgestuck.substack.com/p/ai'
 date_published: 2025-10-21T00:00:00.000Z
 audience: only_paid

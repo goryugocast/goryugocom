@@ -3,7 +3,7 @@ project: ks
 topic: 本
 title: Obsidianで実践するアトミックシンキング
 subtitle: "\U0001F4D8✍️000 9月からそうした内容を充実させていきます"
-description: null
+description: 大きなテーマは「リニア」ではなく「ネットワーク」でまとめる。構成を決めずに書けるところから少しずつ書き進め後から構造を整理する。
 url: 'https://knowledgestuck.substack.com/p/howto-atomic-000'
 date_published: 2023-08-18T00:00:00.000Z
 audience: everyone

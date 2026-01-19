@@ -2,7 +2,7 @@
 project: ks
 title: 「RINK」システムを「特定テーマのノート整理」に使う
 subtitle: "\U0001F48E「トピックノート」の悩みの多くはRINKで解決するかもしれない"
-description: null
+description: RINKをZettelkasten以外の「テーマ別ノート整理」に応用。音楽ノート100個を「必ずどこかにくっつける」ルールで整理すると俯瞰的管理が実現。
 url: 'https://knowledgestuck.substack.com/p/rink-15b'
 date_published: 2025-06-23T00:00:00.000Z
 audience: only_paid

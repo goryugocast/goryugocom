@@ -2,7 +2,7 @@
 project: ks
 title: 手帳やノートなどのアナログ情報をObsidianに突っ込んでみたら想像以上にスッキリした
 subtitle: "\U0001F48Eデジタルが得意な「全体把握」を活かしたノート運用"
-description: null
+description: 紙のノートや手帳をObsidianで管理。中身を全部コピーせず目録を作るだけで全体把握ができスッキリ。デジタルの強みは俯瞰と把握にある。
 url: 'https://knowledgestuck.substack.com/p/obsidian-028'
 date_published: 2024-09-19T00:00:00.000Z
 audience: everyone

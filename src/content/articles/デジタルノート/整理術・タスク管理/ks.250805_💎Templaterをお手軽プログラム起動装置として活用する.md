@@ -2,7 +2,7 @@
 project: ks
 title: Templaterをお手軽プログラム起動装置として活用する
 subtitle: "\U0001F48EWebClipperとTemplaterをアフィリエイトに活用するアイデア"
-description: null
+description: Templaterを「テンプレート作成」ではなく「プログラム起動装置」として活用。ChatGPTで5分でコード完成し、アフィリエイトリンク生成などが劇的に効率化。
 url: 'https://knowledgestuck.substack.com/p/templater'
 date_published: 2025-08-05T00:00:00.000Z
 audience: everyone

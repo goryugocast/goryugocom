@@ -3,7 +3,7 @@ project: ks
 topic: アーカイブ
 title: Obsidianでの読書メモの残し方の全体像と具体的なメモの例
 subtitle: "\U0001F914\U0001F4AD007 『アトミック・シンキング』実践セミナー2補足解説 2-1"
-description: null
+description: 読書メモは書誌情報を土台にしアトミックノートを作りながら読む。手書き・iPhoneテキスト・写真スクショの3種類を使い分ける。
 url: 'https://knowledgestuck.substack.com/p/obsidian-88c'
 date_published: 2022-11-03T00:00:00.000Z
 audience: only_paid

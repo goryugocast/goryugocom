@@ -2,7 +2,7 @@
 project: ks
 title: あらゆるノートを直感的かつ網羅的に分類する10項目
 subtitle: "\U0001F48E10の分類でトピックノートを構造的にまとめる"
-description: null
+description: トピックノートの分類に学校の授業科目（国語算数理科社会）＋心技体＋衣食住を活用。直感的で網羅的な分類で自分の興味の全体像を把握できる。
 url: 'https://knowledgestuck.substack.com/p/obsidian029'
 date_published: 2024-10-01T00:00:00.000Z
 audience: only_paid

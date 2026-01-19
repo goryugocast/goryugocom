@@ -3,7 +3,7 @@ project: ks
 topic: アトミックシンキング
 title: Obsidianを使って自分が考えたいテーマを見つける
 subtitle: ナレッジワーカーに有効な「考えることを進めていく」ための方法論
-description: null
+description: 追いかけたいテーマはトピックノートから見つかる。🏠HOMEノートで「テーマを見つけようということをテーマにする」と、日常でアンテナが立つようになる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-6e4'
 date_published: 2022-07-26T00:00:00.000Z
 audience: everyone

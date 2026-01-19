@@ -2,7 +2,7 @@
 project: ks
 title: Obsidian Canvasでどんなことが出来るのか
 subtitle: "\U0001F527012 Obsidian Canvasのファースインプレッションの「次」"
-description: 
+description: Obsidian Canvasでノートを並べると「思考が整理される」のではなく「新しい思考が生まれる」。カード作成・ノート変換・フォルダ一括追加など機能も充実。 
 url: 'https://knowledgestuck.substack.com/p/obsidian-canvas-8aa'
 date_published: 2023-01-05T00:00:00.000Z
 audience: only_paid

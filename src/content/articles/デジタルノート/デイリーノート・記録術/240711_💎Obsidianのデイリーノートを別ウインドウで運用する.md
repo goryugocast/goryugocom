@@ -2,7 +2,7 @@
 project: ks
 title: Obsidianのデイリーノートを別ウインドウで運用する
 subtitle: "\U0001F48Eウインドウが分かれるだけで圧倒的に柔軟な運用が出来るようになった"
-description: null
+description: デイリーノートを別ウインドウにするとブラウザを開きながらでもデイリーノートが隠れずメモが取りやすくなる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-023'
 date_published: 2024-07-11T00:00:00.000Z
 audience: only_paid

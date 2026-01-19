@@ -2,7 +2,7 @@
 project: ks
 title: Dataviewを使って「前回のアレ」をすぐ見つけられるようにする
 subtitle: "\U0001F48Eseries設定であらゆるノートで「同じクエリ」が使える"
-description: null
+description: seriesプロパティとDataviewを組み合わせ、どのノートでも同じクエリで前後のノートを表示。2年かけて到達した「全ノート共通コード」運用術。
 url: 'https://knowledgestuck.substack.com/p/dataview'
 date_published: 2025-07-29T00:00:00.000Z
 audience: only_paid

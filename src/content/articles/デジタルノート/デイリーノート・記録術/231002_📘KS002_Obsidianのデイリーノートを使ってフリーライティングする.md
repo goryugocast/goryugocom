@@ -3,7 +3,7 @@ project: ks
 topic: 本
 title: Obsidianのデイリーノートを使ってフリーライティングする
 subtitle: "\U0001F4D8✍️002 1日10分間を「考える」時間にする"
-description: null
+description: デイリーノートで1日10分のフリーライティング。単語やフレーズではなく「文章の形式」で書くことが思考を深めるコツ。まずは通算30日を目標に。
 url: 'https://knowledgestuck.substack.com/p/howto-atomic-002'
 date_published: 2023-10-02T00:00:00.000Z
 audience: everyone

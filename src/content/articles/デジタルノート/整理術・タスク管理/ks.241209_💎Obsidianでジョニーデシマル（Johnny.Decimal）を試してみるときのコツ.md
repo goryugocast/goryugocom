@@ -2,7 +2,7 @@
 project: ks
 title: Obsidianでジョニーデシマル（Johnny.Decimal）を試してみるときのコツ
 subtitle: "\U0001F48E普通のひとが普通に情報を整理するときに便利な手法＋そこから考えうる快適なノートシステムの可能性"
-description: null
+description: ジョニーデシマルとObsidianは相性抜群。「モノ」の整理に向き、最初は00-99の数字だけでOK。IDは後から作り、1年かけて構造を固める。
 url: 'https://knowledgestuck.substack.com/p/johnnydecimal2'
 date_published: 2024-12-09T00:00:00.000Z
 audience: only_paid

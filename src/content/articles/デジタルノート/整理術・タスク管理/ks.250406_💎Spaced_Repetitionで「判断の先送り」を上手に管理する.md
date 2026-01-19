@@ -2,7 +2,7 @@
 project: ks
 title: Spaced Repetitionで「判断の先送り」を上手に管理する
 subtitle: "\U0001F48E間隔学習の使い道は「勉強」だけではない"
-description: null
+description: SRSを「復習」ではなく「判断の先送り」に活用。欲しいものリストやプロフィール更新など「毎週は多く毎年は少ない」タスクに最適の物欲抑制システム。
 url: 'https://knowledgestuck.substack.com/p/obsidian-046'
 date_published: 2025-04-06T00:00:00.000Z
 audience: everyone

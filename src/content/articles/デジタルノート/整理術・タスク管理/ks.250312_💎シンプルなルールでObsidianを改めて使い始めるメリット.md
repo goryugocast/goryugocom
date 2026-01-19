@@ -2,7 +2,7 @@
 project: ks
 title: シンプルなルールでObsidianを改めて使い始めるメリット
 subtitle: "\U0001F48E昔のノートはいつでも元に戻せることを知る"
-description: null
+description: 既存ユーザーでも新しい保管庫を始める価値がある。フォルダは3種類のみ、タグは使わず、昔のノートはインポートしない。制約から新しい発見が生まれる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-045'
 date_published: 2025-03-12T00:00:00.000Z
 audience: only_paid

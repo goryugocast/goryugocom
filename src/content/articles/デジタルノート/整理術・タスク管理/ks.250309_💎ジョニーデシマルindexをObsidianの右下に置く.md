@@ -2,7 +2,7 @@
 project: ks
 title: ジョニーデシマルindexをObsidianの右下に置く
 subtitle: "\U0001F48E右下＋ピン留めで「すぐ見るノート」を常駐させられる"
-description: null
+description: ジョニーデシマルのインデックスをObsidianの右下サイドバーに配置しピン留め。ホームノートより気が散らず、構造を常時把握しながら作業できる。
 url: 'https://knowledgestuck.substack.com/p/indexobsidian'
 date_published: 2025-03-09T00:00:00.000Z
 audience: only_paid

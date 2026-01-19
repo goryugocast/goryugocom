@@ -3,7 +3,7 @@ project: ks
 topic: アトミックシンキング
 title: Obsidianでアイデアを整理するまでの手順
 subtitle: アイデアという曖昧なものをどうやってノートにまとめていくのか
-description: null
+description: たとえ話や体験談も「アイデア」として認識できれば、思いつける対象が広がる。アイデアはフリーライティングで記録し、翌日アトミックノートに転記。
 url: 'https://knowledgestuck.substack.com/p/obsidian-0a1'
 date_published: 2022-08-16T00:00:00.000Z
 audience: everyone

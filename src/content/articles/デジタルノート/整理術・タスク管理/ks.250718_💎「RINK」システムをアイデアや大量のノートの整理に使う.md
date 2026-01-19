@@ -9,7 +9,8 @@ audience: only_paid
 cover_image: >-
   https://substackcdn.com/image/fetch/$s_!0HSX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd096adbf-3440-43cf-9ddb-41cea9e4ce9e_1334x2436.png
 draft_link: null
-tags: []
+tags:
+  - review
 series_name: Obsidian Tips
 ---
 ## メモ・原稿
