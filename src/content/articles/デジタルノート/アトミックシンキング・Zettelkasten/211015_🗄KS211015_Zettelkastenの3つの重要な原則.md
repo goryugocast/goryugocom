@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F5C4Zettelkastenの3つの重要な原則"
 subtitle: 1つのことだけを書く意味と効果
-description: null
+description: 1枚に1つのことを書くのは難しいが流暢な思考に重要。ノートはAPIのように再利用可能にし、他のノートからリンクしやすくする。
 url: 'https://knowledgestuck.substack.com/p/zettelkasten3'
 date_published: 2021-10-15T00:00:00.000Z
 audience: everyone

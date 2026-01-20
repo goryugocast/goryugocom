@@ -2,7 +2,7 @@
 project: ks
 title: Obsidianでトピックノートの再整理を行う
 subtitle: "\U0001F48Eノート整理が上達すると「ヘタクソ」な過去のノートを整備したくなる"
-description: null
+description: ノート整理が上達すると過去のヘタクソノートを整備したくなる。トピックノートのタイトルはシンプルに。セクションノートで考えをまとめる新手法。
 url: 'https://knowledgestuck.substack.com/p/obsidian012'
 date_published: 2023-11-09T00:00:00.000Z
 audience: only_paid

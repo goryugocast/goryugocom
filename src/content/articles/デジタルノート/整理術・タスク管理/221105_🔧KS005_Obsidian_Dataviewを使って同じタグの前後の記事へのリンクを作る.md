@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: Obsidian Dataviewを使って同じタグの前後の記事へのリンクを作る
 subtitle: "\U0001F527005 Dataviewを仕事術に取り入れて、面倒な処理を楽にする"
-description: null
+description: "Dataviewでファイル名の日付を認識し、同じタグの前後記事へのリンクを自動生成。タスク管理や振り返りにも活用でき、面倒な処理を楽にする。"
 url: 'https://knowledgestuck.substack.com/p/obsidian-dataview'
 date_published: 2022-11-05T00:00:00.000Z
 audience: only_paid

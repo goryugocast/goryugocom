@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F5C4Zettelkastenの3つの重要な原則（後編）"
 subtitle: 自分の言葉で書く、他のカードにリンクする
-description: null
+description: コピペ禁止で自分の言葉で書くことが理解の確認になる。関連ノートを脳内検索してリンクすることでアイデアが生まれ、知識が深まる。
 url: 'https://knowledgestuck.substack.com/p/zettelkasten3-e22'
 date_published: 2021-10-21T00:00:00.000Z
 audience: everyone

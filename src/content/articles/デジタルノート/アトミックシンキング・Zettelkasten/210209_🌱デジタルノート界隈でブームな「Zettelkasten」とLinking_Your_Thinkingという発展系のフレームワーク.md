@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F331デジタルノート界隈でブームな「Zettelkasten」とLinking Your Thinkingという発展系のフレームワーク"
 subtitle: デジタルを活用したこれからの「情報カード」のあり方を考えていく
-description: null
+description: "Zettelkastenは1枚1アイデアを自分の言葉で書きリンクで繋ぐ情報整理法。デジタルツールで誰でも実践可能に。LYTはそれをObsidian向けに最適化したフレームワーク。"
 url: 'https://knowledgestuck.substack.com/p/zetterkastenlink-your-thinking'
 date_published: 2021-02-09T00:00:00.000Z
 audience: everyone

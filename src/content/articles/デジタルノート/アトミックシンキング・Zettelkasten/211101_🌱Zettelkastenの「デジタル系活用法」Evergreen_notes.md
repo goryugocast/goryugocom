@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F5C4Zettelkastenの「デジタル系活用法」Evergreen notes"
 subtitle: エバーグリーンノートの特徴とZettelkastenとの相違
-description: null
+description: エバーグリーンノートはZettelkastenの現代版。デジタル前提でバックリンク、少しずつ書く、APIのようなタイトル、振り返る仕組みが特徴。
 url: 'https://knowledgestuck.substack.com/p/zettelkastenevergreen-notes'
 date_published: 2021-11-01T00:00:00.000Z
 audience: everyone

@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: "\U0001F5C4Zettelkasten（ツェッテルカステン）から始まるデジタルノートの活用についてまとめていきます"
 subtitle: How to Take Smart Notes→Evergreen Note→Link Your Thinking
-description: null
+description: ニクラス・ルーマンが有名にしたカードと箱の情報整理術。梅棹忠夫の情報カードとほぼ同じ。1ノート1概念、自分の言葉で書き、リンクするのが基本。
 url: 'https://knowledgestuck.substack.com/p/zettelkasten'
 date_published: 2021-10-08T00:00:00.000Z
 audience: everyone

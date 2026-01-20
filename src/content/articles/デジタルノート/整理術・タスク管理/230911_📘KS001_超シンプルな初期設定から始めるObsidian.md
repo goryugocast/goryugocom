@@ -3,7 +3,7 @@ project: ks
 topic: 妻の記事
 title: 超シンプルな初期設定から始めるObsidian
 subtitle: "\U0001F4D8✍️001 アトミック・シンキング実践のための超基本的なObsidian設定"
-description: null
+description: "アトミック・シンキング実践のための超基本Obsidian設定。フォルダは3個だけ、デイリーノートのテンプレート設定、バックリンク表示。まずはフリーライティングを1ヶ月続ける。"
 url: 'https://knowledgestuck.substack.com/p/howto-atomic-001'
 date_published: 2023-09-11T00:00:00.000Z
 audience: everyone

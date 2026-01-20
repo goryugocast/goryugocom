@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: Obsidian Publishで「自分の考えを文字にして整理する」
 subtitle: "\U0001F527015 今更でも何か書けることはあるのだ"
-description: null
+description: "Obsidian Publishで「1つのことだけ」書いたページを整備し繋げていく。パブリックな場所で書くと丁寧にまとめるようになり、より役立つノートに変化する。"
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish'
 date_published: 2023-02-08T00:00:00.000Z
 audience: everyone

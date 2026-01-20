@@ -3,7 +3,7 @@ project: ks
 topic: その他
 title: Obsidianのこと（を中心に色々話す）Podcastを始めます
 subtitle: 12/26 から隔週火曜日配信予定
-description: null
+description: "いろいろな人にObsidianの使い方を聞くPodcastを開始。隔週火曜配信。他者との対話は知識と思考の整理に役立つ。多様な事例を知り自分に取り入れることが成長の鍵。"
 url: 'https://knowledgestuck.substack.com/p/obsidianpodcast'
 date_published: 2023-12-19T00:00:00.000Z
 audience: everyone

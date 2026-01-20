@@ -2,7 +2,7 @@
 project: ks
 title: 一見すると小さな違いであることほど大きな違いを生む
 subtitle: "\U0001F48Eホームノートのピン留めとデイリーノートを書きやすくする工夫"
-description: null
+description: HOMEノートをピン留めすると「閉じる」操作で戻れる。デイリーノートを別ウインドウで右側に配置すると自然にメモが取れるようになる。小さな違いが大きな変化を生む。
 url: 'https://knowledgestuck.substack.com/p/obsidian-024'
 date_published: 2024-07-18T00:00:00.000Z
 audience: only_paid

@@ -2,7 +2,7 @@
 project: ks
 title: ObsidianのDataviewで前後の日付のノートへのリンクを自動で作る
 subtitle: "\U0001F48Eノートのコピーを繰り返すことで仕事の精度が自然に上がる"
-description: null
+description: Dataviewで同じタグの前後5件をリスト表示。前回のノートをコピーするだけで継続的な改善ができ、繰り返し仕事の精度が自然に上がる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-019'
 date_published: 2024-05-20T00:00:00.000Z
 audience: only_paid

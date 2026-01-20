@@ -2,7 +2,7 @@
 project: ks
 title: ファイルコピーを使って「繰り返し」の仕事を作り出す
 subtitle: "\U0001F48EDataviewきっかけで始めたMake a copyを活かす仕事術"
-description: null
+description: すべての仕事は前回からの繰り返し。前回のノートをコピーして改善し続けると自然に最強の手順書ができる。Dataviewで前後リンクも自動化。
 url: 'https://knowledgestuck.substack.com/p/obsidian-014'
 date_published: 2023-12-12T00:00:00.000Z
 audience: only_paid

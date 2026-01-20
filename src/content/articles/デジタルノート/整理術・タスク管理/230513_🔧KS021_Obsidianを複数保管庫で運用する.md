@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: Obsidianを複数保管庫で運用する
 subtitle: "\U0001F527021 どんなときにどういう理由で複数の保管庫を使うのか"
-description: null
+description: "ギター練習専用にObsidianの保管庫を分けた。YouTube動画の埋め込みと時間指定再生が便利。別端末・別目的で使う場合は保管庫を分ける価値がある。"
 url: 'https://knowledgestuck.substack.com/p/obsidian-af6'
 date_published: 2023-05-13T00:00:00.000Z
 audience: only_paid

@@ -2,7 +2,7 @@
 project: ks
 title: Obsidianを便利に使えるノートタイトル「〜について〜したノート」
 subtitle: "\U0001F48Eタイトルの工夫で幅広い用途のノートを「1つのルール」で運用できる"
-description: null
+description: タイトルを「〜について〜したノート」形式にすると検索しやすい。ノートが増えたらまとめノートを作る。1つのルールで幅広い用途に対応できる。
 url: 'https://knowledgestuck.substack.com/p/obsidian-025'
 date_published: 2024-07-24T00:00:00.000Z
 audience: only_paid

@@ -3,7 +3,7 @@ project: ks
 topic: ワークシートアップデート
 title: Obsidian Publishで「ナレッジスタックニュースレター」を便利に使えるようにする
 subtitle: "\U0001F527016 整理が難しい「ブログ」の整理にObsidian Publishを補助として活用する"
-description: null
+description: "Substackは過去記事の整理が苦手。Obsidian Publishで「過去記事へのアクセスしやすさ」を補強。整理が得意なツールで蓄積型コンテンツを活かす。"
 url: 'https://knowledgestuck.substack.com/p/obsidian-publish-eb7'
 date_published: 2023-02-12T00:00:00.000Z
 audience: everyone
