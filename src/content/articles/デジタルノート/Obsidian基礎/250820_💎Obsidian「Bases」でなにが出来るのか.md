@@ -17,30 +17,7 @@ series_name: Obsidian Tips
 ---
 ## メモ・原稿
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - date_published < this.date_published
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 
 # Obsidianの新機能「Bases」について

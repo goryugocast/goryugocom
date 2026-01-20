@@ -14,30 +14,7 @@ draft_link: null
 series_name: Obsidian Tips
 ---
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 ```dataview
 LIST

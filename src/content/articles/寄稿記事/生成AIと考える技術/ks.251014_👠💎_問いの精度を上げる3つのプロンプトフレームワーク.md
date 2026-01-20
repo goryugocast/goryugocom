@@ -15,31 +15,7 @@ draft_link: null
 series_name: 寄稿記事
 category: haruna1221
 ---
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-        - status != true
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 はるなが書いてくれた記事をコピペしてローカルに貼っておく
 次回の原稿をコピーする

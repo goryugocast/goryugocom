@@ -189,26 +189,7 @@ Obsidianのコミュニティプラグイン「Calender」で作成できる「1
 ---
 <!-- Merged from: 251202_💎KS062Obsidianを使って「昨日の自分を超える為の練習」をする.md -->
 
-base
-```
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - file.name.contains(this.file.name.slice(0,7))
-    order:
-      - date_published
-      - file.name
-    sort:
-      - property: date_published
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 
 

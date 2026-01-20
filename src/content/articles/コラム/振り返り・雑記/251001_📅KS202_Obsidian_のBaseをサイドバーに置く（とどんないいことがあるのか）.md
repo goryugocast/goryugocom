@@ -16,30 +16,7 @@ category: 振り返り
 ---
 ## メモ・原稿
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 これ、毎回ここをきっかけにして下書きを書いて、残ったものだけが振り返りに残る、というの、いいんじゃない？
 公開したやつはリンクする。

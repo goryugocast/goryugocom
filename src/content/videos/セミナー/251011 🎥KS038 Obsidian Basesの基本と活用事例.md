@@ -2834,44 +2834,9 @@ routine taskを使う場合は自動でレコード を作るっていう場合�
 ---
 <!-- Merged from: 251011_🎥KS038『アトミック・シンキング』実践セミナー038動画アーカイブ.md -->
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
-base
-```
-filters:
-  and:
-    - topic.startsWith("セミナー")
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order == this.topic_order
 
-```
 
 
 セミナー終わったら、動画書き出しが終わるのを待ち、写真アプリへ。切り取りをして書き出し。
@@ -3042,20 +3007,7 @@ views:
 
 topic_order , topic の先頭文字
 
-base
-```
-filters:
-  and:
-    - project == "knowledgestack"
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order == this.topic_order
-        - topic.startsWith("セミナー")
 
-```
 
 
 ## 例4：サイドバー活用の可能性
@@ -3089,15 +3041,7 @@ review ワークスペースで実験中
 ## 小技：baseのbaseで全体を管理する
 
 
-base
-```
-filters:
-  and:
-    - file.name.endsWith(".base")
-views:
-  - type: table
-    name: MyBases
-```
+
 
 ファイル名が`.base`で終わるものを抽出
 

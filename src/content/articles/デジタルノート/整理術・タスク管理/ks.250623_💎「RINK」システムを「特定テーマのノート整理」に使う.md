@@ -13,27 +13,7 @@ series_name: Obsidian Tips
 ---
 ## メモ・原稿
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 ObsidianとDataviewでノートをつなげて整理する方法「RINK」を思いついてから、Obsidianの使い方が一段階進化したというか、これまで感じていたモヤモヤの、かなりの部分が解消しました。
 

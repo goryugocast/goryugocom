@@ -2080,44 +2080,9 @@ CLIの利点が毎回ファイルを選択する必要がなくて以外にあ�
 ---
 <!-- Merged from: 250906_🎥KS037『アトミック・シンキング』実践セミナー037動画アーカイブ.md -->
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
-base
-```
-filters:
-  and:
-    - topic.startsWith("セミナー")
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order == this.topic_order
 
-```
 
 
 セミナー終わったら、動画書き出しが終わるのを待ち、写真アプリへ。切り取りをして書き出し。
