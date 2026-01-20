@@ -570,27 +570,7 @@ Syntaxっていうのを押すと何ができるかというのは一応英語�
 ---
 <!-- Merged from: 250919_KS004SpacedRepetitionプラグインでで実現する「常時レビュー」について.md -->
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 
 [[2025-08-28 🥁うりなみさん打ち合わせ]]

@@ -45,16 +45,7 @@ WHERE date >= today AND status != "完了"
 
 DataViewでコード修正する場合の手間が大幅削減：
 
-base
-```
-# 最初の絞り込み
-prefix: "M.C"
 
-# ユーザーが直接数字を変更
-limit: 5
-↓
-limit: 10
-```
 
 - フィルター条件の数字を直接編集
 - コード記述不要

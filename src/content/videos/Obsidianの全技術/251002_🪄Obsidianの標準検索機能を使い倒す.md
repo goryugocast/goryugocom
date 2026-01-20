@@ -447,33 +447,7 @@ to Zいわゆるファイル名を文字順に置いて文字アルファベテ�
 ---
 <!-- Merged from: 251003_KS005Obsidianの標準検索機能を使い倒す.md -->
 
-base
-```
-filters:
-  and:
-    - topic == this.topic
-views:
-  - type: table
-    name: Table
-    filters:
-      and:
-        - topic_order <= this.topic_order
-        - status != true
-    order:
-      - date_published
-      - topic_order
-      - file.name
-    sort:
-      - property: date_published
-        direction: DESC
-      - property: topic_order
-        direction: DESC
-    limit: 5
-    columnSize:
-      note.date_published: 155
-      note.topic_order: 54
 
-```
 
 
 [[250925 🥁うりなみさん打ち合わせ]]
