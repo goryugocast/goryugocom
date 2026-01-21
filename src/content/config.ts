@@ -54,20 +54,6 @@ const topic = defineCollection({
   }),
 });
 
-// atomic-notes/ - アトミックノート
-const atomicNotes = defineCollection({
-  type: 'content',
-  schema: z.object({
-    project: z.string().optional(),
-    title: z.string().optional(),
-    prefix: z.string().optional().nullable(),
-    topic: z.union([z.string(), z.array(z.string())]).transform(val => typeof val === 'string' ? [val] : val).optional(),
-    tags: z.array(z.string()).optional(),
-    description: z.string().optional(),
-    related: z.array(z.string()).optional(),
-    created: z.string().or(z.date()).optional(),
-    note_type: z.enum(['principle', 'method', 'insight', 'technique', 'definition']).optional(),
-  }),
-});
 
-export const collections = { videos, articles, topic, 'atomic-notes': atomicNotes };
+
+export const collections = { videos, articles, topic };
