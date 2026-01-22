@@ -22,6 +22,21 @@ export async function getStaticPaths() {
 const { term, relatedTerms } = Astro.props;
 const { Content } = await term.render();
 
+// Recommended Articles & Videos Logic
+const allArticles = await getCollection('articles');
+const allVideos = await getCollection('videos');
+const recommendedIds = term.data.recommended_articles || [];
+
+const recommendedContent = [
+  ...allArticles,
+  ...allVideos
+].filter(item => {
+  // Check if item's slug or id is in recommendedIds
+  // Handling partial matches or exact filenames
+  const id = item.slug.split('/').pop(); // simple filename match
+  return recommendedIds.some(rec => id === rec || item.slug === rec || item.id === rec);
+});
+
 // カテゴリごとの色設定
 const categoryColors: Record<string, string> = {
   tool: '#007aff',
@@ -155,54 +170,7 @@ const badgeColor = categoryColors[term.data.category] || categoryColors.default;
         border-radius: 4px;
       }
 
-      /* Embedded Atomic Note */
-      .embedded-note {
-        background: white;
-        border-radius: var(--radius);
-        padding: 32px;
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-        position: relative;
-        transition: transform 0.3s ease;
-      }
 
-      .embedded-note:hover {
-        transform: translateY(-2px);
-      }
-
-      .embedded-note .note-label {
-        position: absolute;
-        top: -12px;
-        right: 24px;
-        background: var(--text-main);
-        color: white;
-        padding: 2px 10px;
-        font-size: 0.7rem;
-        border-radius: 4px;
-        font-weight: 500;
-      }
-
-      .embedded-note .note-title {
-        font-size: 1.1rem;
-        font-weight: 700;
-        margin-bottom: 16px;
-        color: var(--accent);
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .embedded-note p {
-        margin: 0;
-        font-size: 1.05rem;
-      }
-
-      .embedded-note .note-footer {
-        margin-top: 20px;
-        padding-top: 16px;
-        border-top: 1px dashed var(--border);
-        font-size: 0.85rem;
-      }
 
       .source-link {
         color: var(--text-sub);
@@ -348,10 +316,7 @@ const badgeColor = categoryColors[term.data.category] || categoryColors.default;
           font-size: 1rem;
         }
 
-        .embedded-note {
-          padding: 20px;
-          border-radius: 16px;
-        }
+
 
         .related-grid {
           grid-template-columns: 1fr;
@@ -359,6 +324,69 @@ const badgeColor = categoryColors[term.data.category] || categoryColors.default;
 
         .card {
           padding: 20px;
+        }
+      }
+    </style>
+    <style is:global>
+      /* Embedded Atomic Note Card Design - Global for Dynamic Content */
+      .embedded-note {
+        background-color: #fff;
+        border-left: 5px solid var(--accent);
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 0 8px 8px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .embedded-note:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      }
+
+      .embedded-note h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--text-main);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      /* Quote icon decorative element */
+      .embedded-note h3::before {
+        content: "“";
+        font-family: serif;
+        font-size: 3rem;
+        line-height: 0;
+        color: var(--accent);
+        opacity: 0.3;
+        margin-right: -0.2rem;
+        display: inline-block;
+        transform: translateY(0.8rem);
+      }
+
+      .embedded-note p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-sub);
+      }
+      
+      .embedded-note .note-footer {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px dashed var(--border);
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 768px) {
+        .embedded-note {
+          padding: 20px;
+          border-radius: 16px;
         }
       }
     </style>
@@ -380,6 +408,20 @@ const badgeColor = categoryColors[term.data.category] || categoryColors.default;
           <Content />
         </div>
 
+        {recommendedContent.length > 0 && (
+          <div class="related-section">
+            <h2 class="section-header">関連する記事・動画</h2>
+            <div class="related-grid">
+              {recommendedContent.map((item) => (
+                <a href={`/${item.collection}/${item.slug}/`} class="card">
+                  <div class="card-title">{item.data.title}</div>
+                  <div class="card-desc">{item.data.description || item.data.title}</div>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
         {relatedTerms.length > 0 && (
           <div class="related-section">
             <h2 class="section-header">関連する用語</h2>
@@ -395,5 +437,6 @@ const badgeColor = categoryColors[term.data.category] || categoryColors.default;
         )}
       </div>
     </div>
+
   </body>
 </html>
