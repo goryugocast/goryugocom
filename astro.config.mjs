@@ -1,5 +1,6 @@
-import { remarkWikiLink } from './remark-wiki-link.mjs';
-import { remarkEmbedAtomicNotes } from './remark-embed-atomic-notes.mjs';
+import { defineConfig } from 'astro/config';
+import { remarkWikiLink } from './plugins/remark-wiki-link.mjs';
+import { remarkEmbedAtomicNotes } from './plugins/remark-embed-atomic-notes.mjs';
 
 // GitHub Actionsでビルドする時だけ base パスを設定
 // ローカル開発時は base: '/' でシンプルに
