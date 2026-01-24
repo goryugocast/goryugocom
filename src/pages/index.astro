@@ -1687,6 +1687,7 @@ const renderedGlossary = await Promise.all(
       let modeLists = {};
 
       function initElements() {
+        console.log('[Debug] initElements started');
         videoList = document.getElementById('video-list');
         articleList = document.getElementById('article-list');
         glossaryList = document.getElementById('glossary-list');
@@ -1700,6 +1701,11 @@ const renderedGlossary = await Promise.all(
         glossarySearchSection = document.getElementById('glossary-search-section');
         glossarySearchInput = document.getElementById('glossary-search-input');
         glossarySearchCount = document.getElementById('glossary-search-count');
+
+        // Log missing critical elements
+        if (!glossaryList) console.warn('[Debug] glossaryList not found');
+        if (!articleList) console.warn('[Debug] articleList not found');
+        if (!videoList) console.warn('[Debug] videoList not found');
 
         // Article category lists map (Level 2)
         modeLists = {
@@ -1720,18 +1726,29 @@ const renderedGlossary = await Promise.all(
           column: document.getElementById('column-filter-list'),
           contributions: document.getElementById('contributions-filter-list')
         };
+        console.log('[Debug] initElements completed. modeLists keys:', Object.keys(modeLists));
       }
 
       // Restore state from sessionStorage
       function restoreState() {
-        const savedMode = sessionStorage.getItem('portal_currentMode');
-        if (savedMode) currentMode = savedMode;
-        // Restore other filters if needed, but mode is most important for "Back" button
+        try {
+            const savedMode = sessionStorage.getItem('portal_currentMode');
+            if (savedMode) {
+                currentMode = savedMode;
+                console.log('[Debug] State restored. currentMode:', currentMode);
+            }
+        } catch (e) {
+            console.error('[Debug] Failed to restore state', e);
+        }
       }
 
       // Save state to sessionStorage
       function saveState() {
-        sessionStorage.setItem('portal_currentMode', currentMode);
+        try {
+            sessionStorage.setItem('portal_currentMode', currentMode);
+        } catch (e) {
+             console.error('[Debug] Failed to save state', e);
+        }
       }
 
       // Permanent Sticky Bar Logic (needs re-attaching)
@@ -1752,8 +1769,13 @@ const renderedGlossary = await Promise.all(
 
       function toggleBulkExpand() {
         const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
+        console.log('[Debug] toggleBulkExpand called. actualMode:', actualMode);
+
         const currentList = modeLists[actualMode];
-        if (!currentList) return;
+        if (!currentList) {
+            console.warn('[Debug] currentList is null for mode:', actualMode);
+            return;
+        }
         const visibleCards = Array.from(currentList.querySelectorAll('.article-card:not(.hidden), .glossary-card-wrapper:not(.hidden)'));
         const anyExpanded = visibleCards.some(card => card.classList.contains('expanded'));
 
@@ -1766,14 +1788,17 @@ const renderedGlossary = await Promise.all(
 
       // Global Click Listener (Delegate) - persistent across page transitions so keep outside
       document.addEventListener('click', (e) => {
-        const card = (e.target).closest('.article-card');
-        const glossaryCardWrapper = (e.target).closest('.glossary-card-wrapper');
-        const readMoreBtn = (e.target).closest('.read-more-btn');
-        const seminarItem = (e.target).closest('.seminar-section-item');
-        const relatedLink = (e.target).closest('.glossary-related-item a');
-        const noteBodyLink = (e.target).closest('.note-body-preview a');
-        const wikiLink = (e.target).closest('.wiki-link');
-        const glossaryLink = (e.target).closest('.glossary-links a');
+        const target = e.target;
+        if (!target) return;
+
+        const card = target.closest('.article-card');
+        const glossaryCardWrapper = target.closest('.glossary-card-wrapper');
+        const readMoreBtn = target.closest('.read-more-btn');
+        const seminarItem = target.closest('.seminar-section-item');
+        const relatedLink = target.closest('.glossary-related-item a');
+        const noteBodyLink = target.closest('.note-body-preview a');
+        // const wikiLink = target.closest('.wiki-link'); // unused variable
+        const glossaryLink = target.closest('.glossary-links a');
 
         if (card && !readMoreBtn && !seminarItem && !relatedLink && !noteBodyLink) {
           card.classList.toggle('expanded');
@@ -1788,14 +1813,16 @@ const renderedGlossary = await Promise.all(
 
 
       function attachEventListeners() {
+        console.log('[Debug] extractEventListeners started');
         // Level 1: Main Mode Switch (Glossary / Articles)
         document.querySelectorAll('.main-filter-button').forEach(btn => {
           btn.addEventListener('click', () => {
+            console.log('[Debug] Main filter clicked:', btn.dataset.mainFilter);
             currentMode = btn.dataset.mainFilter;
             saveState();
             currentCategoryChild = '';
             currentGlossarySearch = '';
-            activeNoteFilter = null;
+            // activeNoteFilter = null; // Removed as it was undefined in original code
             if (glossarySearchInput) glossarySearchInput.value = '';
             const clearBtn = document.getElementById('clear-filter-btn');
             if (clearBtn) clearBtn.classList.add('hidden');
@@ -1814,6 +1841,7 @@ const renderedGlossary = await Promise.all(
         // Level 2: Article Category Switch
         document.querySelectorAll('.category-button').forEach(btn => {
           btn.addEventListener('click', () => {
+            console.log('[Debug] Category button clicked:', btn.dataset.articleCategory);
             currentArticleCategory = btn.dataset.articleCategory;
             currentCategoryChild = '';
             updateUI();
@@ -1864,7 +1892,7 @@ const renderedGlossary = await Promise.all(
         const clearBtn = document.getElementById('clear-filter-btn');
         if (clearBtn) {
             clearBtn.addEventListener('click', () => {
-                activeNoteFilter = null;
+                // activeNoteFilter = null; // Undefined in original
                 clearBtn.classList.add('hidden');
                 updateUI();
             });
@@ -1872,12 +1900,16 @@ const renderedGlossary = await Promise.all(
       }
 
       function updateUI() {
+        console.log('[Debug] updateUI called. currentMode:', currentMode);
+
         // Determine actual display mode
         const isArticlesMode = currentMode === 'articles';
         const actualMode = isArticlesMode ? currentArticleCategory : currentMode;
-        const articleCategories = ['videos', 'digital-note', 'lifestyle', 'column', 'contributions'];
-        const isArticleCategory = articleCategories.includes(actualMode);
+        // const articleCategories = ['videos', 'digital-note', 'lifestyle', 'column', 'contributions'];
+        // const isArticleCategory = articleCategories.includes(actualMode);
         const isGlossaryMode = actualMode === 'glossary';
+        
+        console.log('[Debug] actualMode:', actualMode);
 
         // Show/hide lists based on actual mode
         if (videoList) videoList.classList.toggle('hidden', actualMode !== 'videos');
@@ -1939,7 +1971,11 @@ const renderedGlossary = await Promise.all(
         if (actualMode === 'glossary') {
           filterGlossary();
         } else {
-          filterContent();
+          try {
+            filterContent();
+          } catch(e) {
+            console.error('[Debug] filterContent failed', e);
+          }
         }
       }
 
@@ -1979,7 +2015,10 @@ const renderedGlossary = await Promise.all(
       function filterContent() {
         // Use actualMode for articles
         const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
-        if (!modeLists[actualMode]) return;
+        if (!modeLists[actualMode]) {
+             console.warn('[Debug] filterContent: No list found for mode:', actualMode);
+             return;
+        }
         const currentList = modeLists[actualMode];
         const cards = Array.from(currentList.querySelectorAll('.article-card, .glossary-card-wrapper'));
         let visibleCount = 0;
@@ -2034,6 +2073,7 @@ const renderedGlossary = await Promise.all(
         const actualMode = currentMode === 'articles' ? currentArticleCategory : currentMode;
         const articleModes = ['digital-note', 'lifestyle', 'column', 'contributions'];
         const hasExpandableCards = actualMode === 'videos' || articleModes.includes(actualMode) || actualMode === 'glossary';
+        
         if (bulkToggleBtn) bulkToggleBtn.classList.toggle('hidden', !hasExpandableCards);
         const floatingBulkBtn = document.getElementById('floating-bulk-toggle-btn');
         if (floatingBulkBtn) floatingBulkBtn.classList.toggle('hidden', !hasExpandableCards);
@@ -2061,7 +2101,8 @@ const renderedGlossary = await Promise.all(
           // Article category modes
           title = currentCategoryChild ? `${modeToTitle[actualMode]} / ${currentCategoryChild}` : modeToTitle[actualMode];
         } else if (actualMode === 'glossary') {
-          title = currentGlossaryCategory === 'all' ? '用語集' : currentGlossaryCategory;
+        //   title = currentGlossaryCategory === 'all' ? '用語集' : currentGlossaryCategory; // Undefined var
+          title = '用語集';
         }
 
         if (filterTitle) filterTitle.textContent = title;
@@ -2084,17 +2125,16 @@ const renderedGlossary = await Promise.all(
 
       // Initialize on page load
       document.addEventListener('astro:page-load', () => {
-        initElements();
-        restoreState();
-        initScrollListener();
-        attachEventListeners();
-        updateUI();
-
-        // Listen for hash changes
-        // window.removeEventListener('hashchange', handleHashChange);
-        // window.addEventListener('hashchange', handleHashChange);
-        // handleHashChange();
-
+        try {
+            console.log('[Debug] astro:page-load event fired');
+            initElements();
+            restoreState();
+            initScrollListener();
+            attachEventListeners();
+            updateUI();
+        } catch(e) {
+            console.error('[Debug] Error during page load initialization:', e);
+        }
       });
     </script>
   </body>
