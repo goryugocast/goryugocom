@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArchiveList from '../components/ArchiveList.jsx';
+import archiveData from '../data/archive.json';
+---
+
+<Layout title="ナレッジスタック Archive">
+	<h1 style="text-align: center; margin-bottom: 2rem;">ナレッジスタック Archive</h1>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+        Substackの記事と動画講義のアーカイブ集です。
+    </p>
+
+    <!-- Client:load directive is crucial for interactivity -->
+    <ArchiveList items={archiveData} client:load />
+</Layout>

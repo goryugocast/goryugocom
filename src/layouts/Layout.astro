@@ -1,0 +1,59 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+        <style is:global>
+            body {
+                font-family: system-ui, -apple-system, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #fdfdfd;
+                color: #333;
+                line-height: 1.6;
+            }
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+            a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            code {
+                background: #f4f4f4;
+                padding: 0.2em 0.4em;
+                border-radius: 4px;
+                font-size: 0.9em;
+            }
+        </style>
+	</head>
+	<body>
+        <header style="border-bottom: 1px solid #eee; background: #fff; position: sticky; top: 0; z-index: 10;">
+            <nav style="max-width: 800px; margin: 0 auto; padding: 1rem 2rem; display: flex; gap: 1.5rem;">
+                <a href="/archive" style="font-weight: bold; color: #333; text-decoration: none;">Stack Archive</a>
+                <a href="/archive" style="color: #666; text-decoration: none;">Link Collection</a>
+                <a href="/glossary" style="color: #666; text-decoration: none;">Glossary</a>
+            </nav>
+        </header>
+        <main>
+		    <slot />
+        </main>
+	</body>
+</html>

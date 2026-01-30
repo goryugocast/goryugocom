@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const glossaryEntries = await getCollection('glossary');
+// Sort alphabetically
+glossaryEntries.sort((a, b) => a.id.localeCompare(b.id));
+
+---
+
+<Layout title="Glossary Index">
+	<h1 style="text-align: center; margin-bottom: 2rem;">Glossary</h1>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+        用語集インデックス
+    </p>
+
+    <ul class="glossary-list">
+        {glossaryEntries.map(entry => (
+            <li>
+                <a href={`/glossary/${entry.id}`}>
+                    {entry.data.title || entry.id}
+                </a>
+            </li>
+        ))}
+    </ul>
+</Layout>
+
+<style>
+    .glossary-list {
+        list-style: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .glossary-list li {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    .glossary-list a {
+        font-size: 1.1rem;
+        display: block;
+    }
+</style>
