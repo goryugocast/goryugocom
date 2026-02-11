@@ -23,8 +23,8 @@
 
 ## Publish flow
 1. Local confirmation
-- `npm run build`
-- `npm run dev` or `npm run preview`
+- `npm run build:local` (content sync + build)
+- `npm run dev:local` or `npm run preview`
 
 2. Push private repo changes
 - `git add -A`
@@ -41,6 +41,7 @@
 - Content generation depends on local `content-source` symlink.
 - CI cannot read your local iCloud files.
 - Therefore, commit generated data used by build (`src/data/archive.json`, `src/content/glossary/*`) from local machine when content changes.
+- CI build does not run content sync. It only builds/deploys committed files.
 
 ## Custom domain
 - This project publishes `public/CNAME` with `portal.goryugo.com`.

@@ -4,8 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/sync-content.js",
+    "dev:local": "npm run sync-content && astro dev",
+    "sync-content": "node scripts/sync-content.js",
     "build": "astro build",
+    "build:local": "npm run sync-content && astro build",
+    "build:ci": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
