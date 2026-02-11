@@ -151,9 +151,15 @@ function sideLoadChapters(mainFilePath) {
 async function syncArchive() {
     console.log('🔄 Syncing Archive (ks + side-loaded chapters)...');
     let allItems = [];
+    let hasReadableSource = false;
 
     for (const relativeDir of ARCHIVE_DIRS) {
         const sourceDir = path.join(SOURCE_BASE, relativeDir);
+        if (!fs.existsSync(sourceDir)) {
+            console.warn(`  ⚠️ Archive source not found at ${sourceDir}. Skipping this source.`);
+            continue;
+        }
+        hasReadableSource = true;
         // RECURSIVE glob to find all md files in subdirectories
         const files = await glob('**/*.md', { cwd: sourceDir, absolute: true });
 
@@ -235,6 +241,15 @@ async function syncArchive() {
         return dateB - dateA;
     });
 
+    if (!hasReadableSource) {
+        console.warn('⚠️ No readable archive source found. Keeping existing src/data/archive.json.');
+        return;
+    }
+    if (allItems.length === 0) {
+        console.warn('⚠️ Archive sync produced 0 items. Keeping existing src/data/archive.json.');
+        return;
+    }
+
     const destFile = path.join(DEST_DATA_DIR, 'archive.json');
     fs.writeJsonSync(destFile, allItems, { spaces: 2 });
     console.log(`✅ Generated archive.json with ${allItems.length} items.`);
@@ -242,15 +257,20 @@ async function syncArchive() {
 
 async function syncGlossary() {
     console.log('🔄 Syncing Glossary...');
-    fs.emptyDirSync(DEST_CONTENT_DIR);
 
     const sourceDir = path.join(SOURCE_BASE, GLOSSARY_DIR);
     if (!fs.existsSync(sourceDir)) {
-        console.warn(`  ⚠️ Glossary directory not found at ${sourceDir}`);
+        console.warn(`  ⚠️ Glossary source not found at ${sourceDir}. Keeping existing glossary content.`);
         return;
     }
 
     const files = await glob('*.md', { cwd: sourceDir, absolute: true });
+    if (files.length === 0) {
+        console.warn('  ⚠️ Glossary sync found 0 files. Keeping existing glossary content.');
+        return;
+    }
+
+    fs.emptyDirSync(DEST_CONTENT_DIR);
     // console.log(`  Found ${files.length} glossary items.`);
 
     let count = 0;
