@@ -11,7 +11,8 @@ const __dirname = path.dirname(__filename);
 
 // Config
 const SOURCE_BASE = path.join(__dirname, '../content-source');
-const ARCHIVE_DIRS = ['Archives/ks', 'Archives/videos']; // Relative to SOURCE_BASE
+// Archives/videos is merged into Archives/ks, so we only scan Archives/ks
+const ARCHIVE_DIRS = ['Archives/ks'];
 const GLOSSARY_DIR = 'Glossary'; // Relative to SOURCE_BASE
 
 const DEST_DATA_DIR = path.join(__dirname, '../src/data');
@@ -118,18 +119,63 @@ function extractChapters(content) {
     return chapters;
 }
 
+// Helper to look for a Summary file in the same directory and extract chapters
+function sideLoadChapters(mainFilePath) {
+    const dir = path.dirname(mainFilePath);
+    const basename = path.basename(mainFilePath, '.md');
+    // Expecting Summary file named: basename + '_Summary.md'
+    const summaryFilename = `${basename}_Summary.md`;
+    const summaryPath = path.join(dir, summaryFilename);
+    const legacySummaryPath = path.join(dir, 'Summary.md'); // Fallback
+
+    let targetPath = null;
+    if (fs.existsSync(summaryPath)) {
+        targetPath = summaryPath;
+    } else if (fs.existsSync(legacySummaryPath)) {
+        targetPath = legacySummaryPath;
+    }
+
+    if (targetPath) {
+        try {
+            const content = fs.readFileSync(targetPath, 'utf8');
+            const { content: body } = matter(content);
+            console.log(`    🔗 Sideloading chapters from ${path.basename(targetPath)}`);
+            return extractChapters(body);
+        } catch (e) {
+            console.warn(`    ⚠️ Failed to read summary file ${targetPath}: ${e.message}`);
+        }
+    }
+    return [];
+}
+
 async function syncArchive() {
-    console.log('🔄 Syncing Archive (ks, videos)...');
+    console.log('🔄 Syncing Archive (ks + side-loaded chapters)...');
     let allItems = [];
 
     for (const relativeDir of ARCHIVE_DIRS) {
         const sourceDir = path.join(SOURCE_BASE, relativeDir);
-        // Use glob to find all md files
-        const files = await glob('*.md', { cwd: sourceDir, absolute: true });
+        // RECURSIVE glob to find all md files in subdirectories
+        const files = await glob('**/*.md', { cwd: sourceDir, absolute: true });
 
-        console.log(`  Found ${files.length} files in ${relativeDir}`);
+        console.log(`  Found ${files.length} MD files in ${relativeDir} (recursive)`);
 
         for (const file of files) {
+            const filename = path.basename(file);
+            const lowerName = filename.toLowerCase();
+
+            // 🚫 FILTER: Skip system files (Transcript, Summary, Source, etc.)
+            // We only want the MAIN entry file to be processed as an article/video item.
+            if (
+                lowerName.endsWith('_transcript.md') ||
+                lowerName.endsWith('_summary.md') ||
+                lowerName.endsWith('_source.md') ||
+                filename === 'Seminar.md' ||
+                filename === 'Transcript.md' ||
+                filename === 'Summary.md'
+            ) {
+                continue;
+            }
+
             try {
                 const content = fs.readFileSync(file, 'utf8');
                 const { data, content: body } = matter(content);
@@ -137,19 +183,43 @@ async function syncArchive() {
                 // Basic validation
                 if (!data.title) continue;
 
-                const type = relativeDir.includes('videos') ? 'video' : 'article';
+                // Determine type based on folder structure + frontmatter.
+                // Rule: In Archives/ks, a numeric-starting folder = video package.
+                // Direct .md files under ks are link entries (articles).
+                let type = 'article';
+                const relPath = path.relative(sourceDir, file);
+                const parts = relPath.split(path.sep);
+                const parentDir = parts.length > 1 ? parts[0] : null;
+                const isVideoPackageDir = parentDir && /^\d/.test(parentDir);
+                if (isVideoPackageDir) {
+                    const expectedBase = parentDir.split('_').slice(1).join('_');
+                    const base = path.basename(file, '.md');
+                    // Only accept the main file inside the package
+                    if (base !== expectedBase) {
+                        continue;
+                    }
+                    type = 'video';
+                } else if (data.type === 'video' || relativeDir.includes('videos')) {
+                    type = 'video';
+                }
 
-                // Extract chapters if it is a video (or even if article, if mixed)
-                let chapters = [];
-                if (type === 'video') {
-                    chapters = extractChapters(body);
+                // 📦 CHAPTER EXTRACTION STRATEGY
+                // 1. Try to get chapters from the current file (legacy support)
+                let chapters = extractChapters(body);
+
+                // 2. If no chapters found, try SIDE-LOADING from a sibling Summary file
+                if (chapters.length === 0) {
+                    const sideLoaded = sideLoadChapters(file);
+                    if (sideLoaded.length > 0) {
+                        chapters = sideLoaded;
+                    }
                 }
 
                 allItems.push({
-                    file: path.basename(file),
+                    file: filename,
                     type: type,
                     ...data,
-                    body: body.slice(0, 500),
+                    body: body.slice(0, 500), // Preview text
                     chapters: chapters
                 });
             } catch (e) {

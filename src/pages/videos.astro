@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArchiveList from '../components/ArchiveList.jsx';
+import archiveData from '../data/archive.json';
+
+const videos = archiveData.filter(item => item.type === 'video');
+---
+
+<Layout title="Knowledge Stack - Videos">
+	<h1 style="text-align: center; margin-bottom: 2rem;">Videos</h1>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+        セミナー動画のアーカイブと構成案
+    </p>
+
+    <ArchiveList items={videos} enableVideoSeriesFilter={true} client:load />
+</Layout>

@@ -16,7 +16,7 @@ const { Content } = await render(entry);
 <Layout title={entry.id}> <!-- Use ID or parsed metadata title as title -->
   <div class="glossary-content">
       <h1 style="border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">{entry.id}</h1> <!-- Temporarily use filename/id as title -->
-      <a href="/archive" style="display: block; margin-bottom: 2rem; color: #666;">&larr; Back to Archive</a>
+      <a href="/glossary" style="display: block; margin-bottom: 2rem; color: #666;">&larr; Back to Glossary</a>
       
       <div class="markdown-body">
         <Content />

@@ -1,15 +1,14 @@
-name: Deploy Site
+name: Deploy Public Site
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -28,10 +27,17 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Validate secret
+        run: |
+          if [ -z "${{ secrets.PUBLIC_REPO_PAT }}" ]; then
+            echo "PUBLIC_REPO_PAT is not set"
+            exit 1
+          fi
+
+      - name: Deploy dist to public repository
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: goryugo/goryugo.github.io
+          personal_token: ${{ secrets.PUBLIC_REPO_PAT }}
+          external_repository: goryugocast/goryugocom
           publish_dir: ./dist
-          publish_branch: main 
+          publish_branch: main
