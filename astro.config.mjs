@@ -5,6 +5,7 @@ import wikiLinkPlugin from 'remark-wiki-link';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://portal.goryugo.com',
   integrations: [preact()],
   markdown: {
     remarkPlugins: [

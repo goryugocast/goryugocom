@@ -41,3 +41,7 @@
 - Content generation depends on local `content-source` symlink.
 - CI cannot read your local iCloud files.
 - Therefore, commit generated data used by build (`src/data/archive.json`, `src/content/glossary/*`) from local machine when content changes.
+
+## Custom domain
+- This project publishes `public/CNAME` with `portal.goryugo.com`.
+- Keep DNS for `portal.goryugo.com` pointed to GitHub Pages.
