@@ -21,7 +21,6 @@ function detectVideoSeries(item) {
 
 export default function ArchiveList({ items, enableVideoSeriesFilter = false }) {
     const [search, setSearch] = useState('');
-    const [filterType, setFilterType] = useState('all');
     const [selectedSeries, setSelectedSeries] = useState('all');
 
     const filteredItems = useMemo(() => {
@@ -33,10 +32,9 @@ export default function ArchiveList({ items, enableVideoSeriesFilter = false }) 
             const matchesSearch = (item.title || '').toLowerCase().includes(search.toLowerCase()) ||
                 (item.description || '').toLowerCase().includes(search.toLowerCase()) ||
                 (item.body || '').toLowerCase().includes(search.toLowerCase());
-            const matchesType = filterType === 'all' || item.type === filterType;
-            return matchesSeries && matchesSearch && matchesType;
+            return matchesSeries && matchesSearch;
         });
-    }, [items, search, filterType, selectedSeries, enableVideoSeriesFilter]);
+    }, [items, search, selectedSeries, enableVideoSeriesFilter]);
 
     // Group by year for better readability
     const groupedItems = useMemo(() => {
@@ -60,15 +58,6 @@ export default function ArchiveList({ items, enableVideoSeriesFilter = false }) 
                         onInput={(e) => setSearch(e.target.value)}
                         style={{ flex: 1, padding: '0.5rem', fontSize: '1rem', borderRadius: '4px', border: '1px solid #ddd' }}
                     />
-                    <select
-                        value={filterType}
-                        onChange={(e) => setFilterType(e.target.value)}
-                        style={{ padding: '0.5rem', fontSize: '1rem', borderRadius: '4px', border: '1px solid #ddd' }}
-                    >
-                        <option value="all">All Types</option>
-                        <option value="article">Articles</option>
-                        <option value="video">Videos</option>
-                    </select>
                 </div>
                 {enableVideoSeriesFilter && (
                     <div style={{

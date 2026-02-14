@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
@@ -15,6 +16,24 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		{
+			gaMeasurementId && (
+				<>
+					<script
+						async
+						src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+					></script>
+					<script is:inline define:vars={{ gaMeasurementId }}>
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag('js', new Date());
+						gtag('config', gaMeasurementId);
+					</script>
+				</>
+			)
+		}
         <style is:global>
             body {
                 font-family: system-ui, -apple-system, sans-serif;
