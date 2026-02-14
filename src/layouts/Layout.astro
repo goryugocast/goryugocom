@@ -21,6 +21,7 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 				<>
 					<script
 						async
+						is:inline
 						src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
 					></script>
 					<script is:inline define:vars={{ gaMeasurementId }}>
