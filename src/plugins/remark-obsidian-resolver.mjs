@@ -5,8 +5,8 @@ import matter from 'gray-matter';
 import { visit } from 'unist-util-visit';
 
 const DEFAULT_SOURCE_BASE_PATH = '/Users/goryugo/GitHub/Astro/content-source';
-const DEFAULT_EXTERNAL_COLLECTIONS = ['ks', 'bc', 'iw'];
-const DEFAULT_COLLECTION_PRIORITY = ['ks', 'bc', 'iw'];
+const DEFAULT_EXTERNAL_COLLECTIONS = ['ks', 'bc', 'iw', 'topics'];
+const DEFAULT_COLLECTION_PRIORITY = ['ks', 'bc', 'iw', 'topics'];
 const DEFAULT_ON_MISSING = 'text';
 const DEFAULT_STRICT_URL = true;
 const LOG_PREFIX = '[remark-obsidian-resolver]';
@@ -62,9 +62,9 @@ function buildExternalFileIndex(options) {
       const raw = fs.readFileSync(absPath, 'utf8');
       const { data } = matter(raw);
       let url = typeof data.url === 'string' ? data.url.trim() : '';
-      if (!url && collection === 'Topics') {
+      if (!url && collection === 'topics') {
         const slug = data.slug || basename;
-        url = `/glossary/${slug}`;
+        url = `/topics/${slug}`;
       }
 
       const current = index.get(basename) || [];

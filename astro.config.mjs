@@ -14,9 +14,9 @@ export default defineConfig({
         aliasDivider: '|'
       }],
       [remarkObsidianResolver, {
-        sourceBasePath: '/Users/goryugo/GitHub/Astro/content-source/Archives',
-        externalCollections: ['ks', 'bc', 'iw', 'Topics'],
-        collectionPriority: ['ks', 'bc', 'iw', 'Topics'],
+        sourceBasePath: '/Users/goryugo/GitHub/Astro/content-source',
+        externalCollections: ['ks', 'bc', 'iw', 'topics'],
+        collectionPriority: ['ks', 'bc', 'iw', 'topics'],
         onMissing: 'text',
         strictUrl: true
       }]

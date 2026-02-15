@@ -13,10 +13,10 @@ const __dirname = path.dirname(__filename);
 const SOURCE_BASE = path.join(__dirname, '../content-source');
 // Archives/videos is merged into Archives/ks, so we only scan Archives/ks
 const ARCHIVE_DIRS = ['Archives/ks'];
-const GLOSSARY_DIR = 'Topics'; // Relative to SOURCE_BASE
+const TOPICS_DIR = 'topics'; // Relative to SOURCE_BASE
 
 const DEST_DATA_DIR = path.join(__dirname, '../src/data');
-const DEST_CONTENT_DIR = path.join(__dirname, '../src/content/glossary');
+const DEST_CONTENT_DIR = path.join(__dirname, '../src/content/topics');
 
 // Ensure destination directories exist
 fs.ensureDirSync(DEST_DATA_DIR);
@@ -255,23 +255,23 @@ async function syncArchive() {
     console.log(`✅ Generated archive.json with ${allItems.length} items.`);
 }
 
-async function syncGlossary() {
-    console.log('🔄 Syncing Glossary...');
+async function syncTopics() {
+    console.log('🔄 Syncing Topics...');
 
-    const sourceDir = path.join(SOURCE_BASE, GLOSSARY_DIR);
+    const sourceDir = path.join(SOURCE_BASE, TOPICS_DIR);
     if (!fs.existsSync(sourceDir)) {
-        console.warn(`  ⚠️ Glossary source not found at ${sourceDir}. Keeping existing glossary content.`);
+        console.warn(`  ⚠️ Topics source not found at ${sourceDir}. Keeping existing topics content.`);
         return;
     }
 
     const files = await glob('*.md', { cwd: sourceDir, absolute: true });
     if (files.length === 0) {
-        console.warn('  ⚠️ Glossary sync found 0 files. Keeping existing glossary content.');
+        console.warn('  ⚠️ Topics sync found 0 files. Keeping existing topics content.');
         return;
     }
 
     fs.emptyDirSync(DEST_CONTENT_DIR);
-    // console.log(`  Found ${files.length} glossary items.`);
+    // console.log(`  Found ${files.length} topics items.`);
 
     let count = 0;
     for (const file of files) {
@@ -280,7 +280,7 @@ async function syncGlossary() {
         fs.copySync(file, dest);
         count++;
     }
-    console.log(`✅ Copied ${count} glossary files.`);
+    console.log(`✅ Copied ${count} topics files.`);
 }
 
 async function main() {
@@ -291,7 +291,7 @@ async function main() {
         }
 
         await syncArchive();
-        await syncGlossary();
+        await syncTopics();
         console.log('🎉 Content sync complete!');
     } catch (e) {
         console.error('❌ Sync failed:', e);
