@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="ja"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.17.1"><title>振り返り</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-JYCCRBEE1K"></script><script>(function(){const gaMeasurementId = "G-JYCCRBEE1K";
+
+						window.dataLayer = window.dataLayer || [];
+						function gtag() {
+							dataLayer.push(arguments);
+						}
+						gtag('js', new Date());
+						gtag('config', gaMeasurementId);
+					})();</script><style>body{font-family:system-ui,-apple-system,sans-serif;margin:0;padding:0;background:#fdfdfd;color:#333;line-height:1.6}main{max-width:800px;margin:0 auto;padding:2rem}a{color:#06c;text-decoration:none}a:hover{text-decoration:underline}code{background:#f4f4f4;padding:.2em .4em;border-radius:4px;font-size:.9em}
+.markdown-body h1{font-size:1.8rem;margin-top:2rem}.markdown-body h2{font-size:1.5rem;margin-top:1.5rem}.markdown-body p{margin-bottom:1rem}.markdown-body ul{margin-bottom:1rem;padding-left:1.5rem}
+</style></head> <body> <header style="border-bottom: 1px solid #eee; background: #fff; position: sticky; top: 0; z-index: 10;"> <div style="max-width: 800px; margin: 0 auto; padding: 1rem 2rem;"> <div style="font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem;">Knowledge Stack Portal</div> <nav style="display: flex; gap: 1.5rem;"> <a href="/" style="text-decoration: none; padding-bottom: 0.5rem; color: #666;">
+Articles
+</a> <a href="/videos" style="text-decoration: none; padding-bottom: 0.5rem; color: #666;">
+Videos
+</a> <a href="/topics" style="text-decoration: none; padding-bottom: 0.5rem; border-bottom: 2px solid #0066cc; color: #0066cc; font-weight: bold;">
+Topics
+</a> </nav> </div> </header> <main>   <div class="topics-content"> <h1 style="border-bottom: 2px solid #eee; padding-bottom: 0.5rem;">振り返り</h1> <!-- Temporarily use filename/id as title --> <a href="/topics" style="display: block; margin-bottom: 2rem; color: #666;">&larr; Back to Topics</a> <div class="markdown-body"> <h1 id="振り返り">振り返り</h1>
+<p>振り返り、あるいはレビューという行為は、一般的に「定期的に過去を顧みて、学びを得て、次へと活かす」ための活動とされています。特に多くのタスク管理術における「週次レビュー」は、システムを信頼し、維持するための根幹として、重要視されている概念です。</p>
+<p>しかし、私自身の経験では、この「週次レビュー」こそがシステムを破綻させる最大の要因でした。従来の手法の教えに従い、頭の中の気になることをすべて収集する。これは素晴らしい第一歩です。問題は、その次に来る「処理」と、溜まり続けた「いつかやる」リストでした。集めたものを、一つひとつ適切に処理し、分類していく。この行為は想像以上に難しく、特に「すぐに行動できないが、気になるアイデア」のようなものは、行き場を失いがちです。</p>
+<p>結果として、それらは「いつかやる／考えたいこと」リストに蓄積されます。このリストは、週を追うごとに肥大化し、週次レビューのたびに数十、数百の項目を見返すことになります。すべてを見返すだけで膨大な時間がかかり、精神的にも大きな負担となる。やがて、レビューそのものが億劫になり、実行されなくなっていく。システムが信頼できなくなり、管理そのものが破綻するのです。これが、私が長年抱えていた問題でした。</p>
+<p>この課題を解決するために私が行き着いたのが、Obsidianと「Spaced Repetition（間隔反復）」プラグインを組み合わせた、まったく新しいアプローチです。これは、週に一度まとめて時間を確保して行う「レビュー」ではなく、日々の小さな積み重ねによる「分散的な振り返り」です。</p>
+<p>現在の私のシステムは、これを現代風に再構築したもので、以下の3つのステップで構成されています。</p>
+<ol>
+<li><strong>収集（デイリーノート）</strong>: 気になったことは、まずすべてデイリーノートに書き留めます。</li>
+<li><strong>処理（アトミックノート）</strong>: デイリーノートに書かれた内容のうち、後で考えたいこと、育てたいアイデアを独立したノート（アトミックノート）にします。</li>
+<li><strong>整理・見直し・実行（振り返り）</strong>: ここでSpaced Repetitionプラグインが活躍します。</li>
+</ol>
+<p>私は、振り返りたいと思うノートに <code>#review</code> などの特定のタグを付けます。Spaced Repetitionプラグインは、そのタグが付いたノートを、独自のアルゴリズムに基づいて「今日、見返すタイミングです」とお知らせしてくれます。見返した際に「Easy（簡単／もういい）」と評価すれば次は数ヶ月後に、「Hard（難しい／また考えたい）」と評価すれば数日後に、再びそのノートが私の目の前に現れる。</p>
+<p>この仕組みの素晴らしい点は、巨大な「保留」リストを一度にすべて見返す必要がなくなることです。システムが「今日考えるべきこと」だけを自動で選んでくれるため、私は毎日数分、提示された数個のノートと向き合うだけで済みます。これは、よくある「2分以内にできることはすぐやる」というルールを逆手に取った、「2分だけやってみる」という考え方です。2分で終わると思えば、人間は驚くほど気軽に着手できるものです。</p>
+<p>この方法を導入したことで、私は「すべてをやらなければならない」という強迫観念から解放されました。システムが覚えていてくれるという信頼感が、精神的な安定をもたらしてくれたのです。本来の目的が「頭の中を空っぽにして、創造的な活動に集中すること」であるならば、私にとっての「振り返り」は、このSpaced Repetitionを使った分散的なアプローチによって、ようやくその真価を発揮するようになったのです。</p>
+<h2 id="関連資料">関連資料</h2>
+<ul>
+<li>210916_🌱_信頼できる振り返りのシステムを使ってノートを書く
+<ul>
+<li>なぜ「システム」を信頼することが重要なのか、その哲学的な基盤について。</li>
+</ul>
+</li>
+<li>250918_📄Spaced Repetitionプラグインで実現する「常時レビュー」について
+<ul>
+<li>週次レビューを廃止し、毎日少しずつ行う「分散型レビュー」の具体的な実践手法。</li>
+</ul>
+</li>
+<li>210103_📄_1年の振り返りとiPadで年間目標を立てる
+<ul>
+<li>長期的な視点での振り返り（年次レビュー）の実例。</li>
+</ul>
+</li>
+<li>251030_📄Spaced Repetitionでのレビューを実例と共にじっくり解説
+<ul>
+<li>実際の画面を見ながら、どのようにノートを振り返り、評価しているかの解説。</li>
+</ul>
+</li>
+</ul>
+<!-- <SubstackEmbed /> --> </div> </div>  </main> </body></html> 
