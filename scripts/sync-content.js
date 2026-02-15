@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 const SOURCE_BASE = path.join(__dirname, '../content-source');
 // Archives/videos is merged into Archives/ks, so we only scan Archives/ks
 const ARCHIVE_DIRS = ['Archives/ks'];
-const GLOSSARY_DIR = 'Glossary'; // Relative to SOURCE_BASE
+const GLOSSARY_DIR = 'Topics'; // Relative to SOURCE_BASE
 
 const DEST_DATA_DIR = path.join(__dirname, '../src/data');
 const DEST_CONTENT_DIR = path.join(__dirname, '../src/content/glossary');

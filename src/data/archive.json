@@ -9,7 +9,7 @@
     "date_published": "2026-02-07T00:00:00.000Z",
     "url": "https://knowledgestuck.substack.com/p/ks042",
     "description": "AntigravityとObsidianを組み合わせた仕事術の思想編。AIをエディターではなくエージェント管理層として使う発想、マルチタスク運用の設計、Rules・Skills・Workflowsによる安定化をデモ付きで解説。実務導入の前提を整理できる。",
-    "body": "\n## Reference\n[[ks042_Transcript]]\n\nナレッジスタックセミナーの動画アーカイブです。\n今回は「AI時代の知的生産術：第1回 思想編」として、「なぜAIを使うのか」「どう仕事を変えるのか」という根幹の話をしました。\n\n具体的なツールの作り方や実践的なワークフローは、次回「第2回 実践編」として深掘り予定です。\n\nこれまでのセミナーの一覧は、こちからから確認できます。\n\n→[📋ナレッジスタックセミナー - Obsidian Publish](https://goryugo.com/ks_seminar)\n\n今後は、こちらからより詳しくアーカイブ一覧が見られるように整備していきます。\n\n→ [ナレッジスタックポータル](https://portal.goryugo.com/)\n\n今回から、記事最下部にタイムスタンプ付きの要約リンク（見出しクリックで該当箇所へ移動）も追加しました。振り返りなどの際にはこちらもご活用ください。\n\n***\n\n以下、当日の資料をそのまま添付します。\n\n## 1. イントロ＆デモ\n\n![[weekly_flow.png|300]]\n",
+    "body": "\n## Reference\n[[ks042_Transcript]]\n\nナレッジスタックセミナーの動画アーカイブです。\n今回は「AI時代の知的生産術：第1回 思想編」として、「なぜAIを使うのか」「どう仕事を変えるのか」という根幹の話をしました。\n\n## 30秒要約\n- この回は「思想編」です。AI時代に仕事をどう切り出すかを解説しています。\n- 実装手順そのものは次回の「実践編」で扱います。\n- まずは、仕事をアトミックに分ける視点だけ持ち帰れば十分です。\n\n## この回が向いている人\n- AIツールを試したが、運用が安定しない人\n- 「便利そう」から先に進まず、実務に落とし込めていない人\n- 実践編を見る前に、考え方の土台をそろえたい人\n\n具体的なツールの作り方や実践的なワークフローは、次回「第2回 実践編」として深掘り予定です。\n\nこれまでのセミナーの一覧は、こちからから確認できます。\n\n→[📋ナレッジスタックセミナー - Obsidian Publish](https://goryugo.com/ks_seminar)\n\n今後は、こちらからより詳しくアーカイブ一覧が見られるよ",
     "chapters": [
       {
         "title": "1. イントロダクション - Antigravityとは",
@@ -179,7 +179,6 @@
     "description": "Antigravityを活用した「自分専用Obsidianプラグイン」の開発プロセスと、AIエージェント管理型ワークフローへの移行について。Claudeとの比較やUI設計思想の解説。",
     "url": "https://knowledgestuck.substack.com/p/antigravity",
     "date_published": "2026-01-26T00:00:00.000Z",
-    "author": "goryugo",
     "paid": false,
     "body": "\n![[260126_header_workbench_1769431051475.png]]\n\n[Atomic InsightsというObsidianのプラグインを作って](https://knowledgestuck.substack.com/p/obsidianatomic-insights)から、自分が求めていた「小さなプラグイン」がたくさんあることに気がつき、今月はこうしたプラグイン作りや既存データの整備、みたいなのにめっちゃエネルギーを使っています。\n\n本読んだり楽器練習したりする時間も惜しんでやりたくなるくらいめっちゃ楽しいんですが、その調子でナレッジスタックの更新をしなくなると社会的にダメージを受けてしまうので、ここ最近やったことやそこから得られたものなどを整理してみようと思います。\n\n## 関連ノート表示機能の拡張\n\nまず、Atomic Insightsを思いつきで「日付」や「絵文字」と絡めたら、実はアトミックなノートだけでなく、自分の日常的なObsidianでの仕事ワークフローが、めちゃくちゃ便利な状態に変化しました。\n\n具体的に言うと、Obsidianのバックリン",
     "chapters": []
@@ -209,7 +208,7 @@
     "date_published": "2026-01-14T00:00:00.000Z",
     "author": "goryugo",
     "paid": false,
-    "body": "Atomic Insightsという名前のObsidianのプラグインを作りました。\n\n![[184521271_2006058f.png]]\n\n右上に見えてるのがそれです\n\nBRATを使っていただき、以下のURLを入力していただくことでプラグインをお試しいただけます。\n\n[https://github.com/goryugocast/atomic-insights](https://github.com/goryugocast/atomic-insights)\n\n以下、このプラグインがどんなものなのか、という話と、プラグインを一晩で作れてしまったことへの感動などをまとめます。\n\nAtomic InsightsはAdamic Adarというアルゴリズムを使って「関連するノート」を表示するプラグインです。（Facebookの「友達かも？」を見つけ出す仕組みがイメージとして近い）\n\n[graph-analysis](https://github.com/SkepticMystic/graph-analysis)というプラグインから影響を受けて、それを「俺専用」みたいな感じでごりゅごが拡張し",
+    "body": "Atomic Insightsという名前のObsidianのプラグインを作りました。\n\n![[184521271_2006058f.png]]\n\n右上に見えてるのがそれです\n\nBRATを使っていただき、以下のURLを入力していただくことでプラグインをお試しいただけます。\n\n[https://github.com/goryugocast/atomic-insights](https://github.com/goryugocast/atomic-insights)\n\n## まず5分で試す手順\n\n1. BRATをインストールして `https://github.com/goryugocast/atomic-insights` を追加する\n2. 任意のノートを1つ開き、右上のAtomic Insights表示を確認する\n3. 提案された関連ノートを1つクリックし、移動できるかを確認する\n\n「使えるかどうか」はこの3ステップで判断できます。まずはここだけ試してみてください。\n\n以下、このプラグインがどんなものなのか、という話と、プラグインを一晩で作れてしまったことへの感動などをまとめます。\n\n",
     "chapters": []
   },
   {
@@ -306,7 +305,7 @@
     "chapters": []
   },
   {
-    "file": "260101_📄_ナレッジスタックのコンテンツをサクッと整理して確認できるポータル（プロトタイプ）を作りました.md",
+    "file": "260101_🔧_ナレッジスタックのコンテンツをサクッと整理して確認できるポータル（プロトタイプ）を作りました.md",
     "type": "article",
     "project": "ks",
     "title": "ナレッジスタックのコンテンツをサクッと整理して確認できるポータル（プロトタイプ）を作りました",
@@ -562,7 +561,7 @@
     "chapters": []
   },
   {
-    "file": "251127_📄現状のRINKシステムとその運用例.md",
+    "file": "251127_💎_現状のRINKシステムとその運用例.md",
     "type": "article",
     "project": "ks",
     "topic": "Obsidianの全技術",
@@ -730,7 +729,7 @@
     "chapters": []
   },
   {
-    "file": "251113_📄未来を見据えてフロントマター重視のObsidian運用を始める.md",
+    "file": "251113_💎_未来を見据えてフロントマター重視のObsidian運用を始める.md",
     "type": "article",
     "project": "ks",
     "topic": "Obsidianの全技術",
@@ -2113,7 +2112,7 @@
     "author": "goryugo",
     "url": "https://knowledgestuck.substack.com/p/obsidian-bases-b15",
     "date_published": "2025-09-10T00:00:00.000Z",
-    "body": "Obsidian Basesの登場にあわせて「実際のところ、どんなことに使えそうか」というのを色々と実験しています。\n\nまず最初に試したのは、これまでDataviewで実現していた「同じプロジェクトで前に使ったノート」へのリンク、というのをBaseでの表現に置き換える実験。\n\n[Dataviewを使って「前回のアレ」をすぐ見つけられるようにする - by goryugo - ナレッジスタック](https://knowledgestuck.substack.com/p/dataview)\n\n自分が使っているDataviewの使い方ならば、Dataviewでもbaseでも、基本的に「同じこと」は実現可能です。そして、自分でちょっとカスタマイズしたりするという観点ならば、間違いなくbaseの方が「わかりやすい」\n\nそういう意味で、これまでDataviewを使って実現していたことに関しては、基本的にBaseに置き換えていく前提でこれから進めていこうと思っています。\n\nまた、この機能で実現するリンクというのは「ノートを便利にするもの」ではあるけれども、情報管理の本質という観点では「必要ない情報",
+    "body": "Obsidian Basesの登場にあわせて「実際のところ、どんなことに使えそうか」というのを色々と実験しています。\n\n## この記事で得られること\n\n- Basesでタスク管理を始めるときの最小構成\n- Dataview運用から移行する判断基準\n- 有料特典を使う前に無料で再現できる範囲\n\nまず最初に試したのは、これまでDataviewで実現していた「同じプロジェクトで前に使ったノート」へのリンク、というのをBaseでの表現に置き換える実験。\n\n[Dataviewを使って「前回のアレ」をすぐ見つけられるようにする - by goryugo - ナレッジスタック](https://knowledgestuck.substack.com/p/dataview)\n\n自分が使っているDataviewの使い方ならば、Dataviewでもbaseでも、基本的に「同じこと」は実現可能です。そして、自分でちょっとカスタマイズしたりするという観点ならば、間違いなくbaseの方が「わかりやすい」\n\nそういう意味で、これまでDataviewを使って実現していたことに関しては、基本的にBaseに置き換えてい",
     "chapters": []
   },
   {

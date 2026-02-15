@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const topicEntries = await getCollection('topics');
+// Sort alphabetically
+topicEntries.sort((a, b) => a.id.localeCompare(b.id));
+
+---
+
+<Layout title="Topics Index">
+	<h1 style="text-align: center; margin-bottom: 2rem;">Topics</h1>
+    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+        トピックインデックス
+    </p>
+
+    <ul class="topics-list">
+        {topicEntries.map(entry => (
+            <li>
+                <a href={`/topics/${entry.id}`}>
+                    {entry.data.title || entry.id}
+                </a>
+            </li>
+        ))}
+    </ul>
+</Layout>
+
+<style>
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .topics-list li {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+    .topics-list a {
+        font-size: 1.1rem;
+        display: block;
+    }
+</style>
