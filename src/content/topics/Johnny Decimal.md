@@ -17,13 +17,13 @@ layout: ../../layouts/TopicLayout.astro
 
 ## 関連資料
 
-- [[241209_💎_Obsidianでジョニーデシマル（Johnny.Decimal）を試してみるときのコツ]]
+- [Obsidianでジョニーデシマル（Johnny.Decimal）を試してみるときのコツ](https://knowledgestuck.substack.com/p/johnnydecimal2)
     - 実際にObsidianでジョニーデシマルを導入する際のポイントと、挫折しないためのコツ。
-- [[241014_💎_ジョニーデシマル（Johnny.Decimal）という情報整理方法について]]
+- [ジョニーデシマル（Johnny.Decimal）という情報整理方法について](https://knowledgestuck.substack.com/p/johnnydecimal)
     - 手法の基本的な解説と、なぜこの「制限」が心地よいのかについての考察。
-- [[ks031|ジョニーデシマルという情報整理法]]
+- [ジョニーデシマルという情報整理法](https://knowledgestuck.substack.com/p/ks031)
     - 具体的なフォルダ構成やナンバリングの実例。
-- [[250309_💎_ジョニーデシマルindexをObsidianの右下に置く]]
+- [ジョニーデシマルindexをObsidianの右下に置く](https://knowledgestuck.substack.com/p/indexobsidian)
     - 常に構造を意識するための、画面レイアウトの工夫。Obsidian機能との連携。
 
 <!-- <SubstackEmbed /> -->

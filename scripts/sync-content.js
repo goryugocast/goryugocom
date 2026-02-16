@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 // Config
 const SOURCE_BASE = path.join(__dirname, '../content-source');
 // Archives/videos is merged into Archives/ks, so we only scan Archives/ks
-const ARCHIVE_DIRS = ['Archives/ks'];
+const ARCHIVE_DIRS = ['Archives/ks', 'Archives/bc', 'Archives/iw'];
 const TOPICS_DIR = 'topics'; // Relative to SOURCE_BASE
 
 const DEST_DATA_DIR = path.join(__dirname, '../src/data');
@@ -21,6 +21,149 @@ const DEST_CONTENT_DIR = path.join(__dirname, '../src/content/topics');
 // Ensure destination directories exist
 fs.ensureDirSync(DEST_DATA_DIR);
 fs.ensureDirSync(DEST_CONTENT_DIR);
+
+
+// --- Link Resolution Helpers (Copied/Adapted from remark-obsidian-resolver.mjs) ---
+
+function astroSlugify(text) {
+    return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-');
+}
+
+function stripPrefix(name) {
+    return name.replace(/^(\d{6}_[^\w\s]?|\d{4}-\d{2}-\d{2}[-_]?)/, '').trim();
+}
+
+/**
+ * ハイブリッド・インデックスの作成
+ */
+function buildFileIndex() {
+    const index = new Map();
+    const sourceBasePath = path.join(SOURCE_BASE, 'Archives');
+    const collections = ['ks', 'bc', 'iw'];
+    const topicsPath = path.join(SOURCE_BASE, 'topics');
+
+    const addToIndex = (key, entry) => {
+        if (!key) return;
+        const normalizedKey = key.toLowerCase().trim();
+        const current = index.get(normalizedKey) || [];
+        if (!current.some(e => e.absPath === entry.absPath)) {
+            current.push(entry);
+            index.set(normalizedKey, current);
+        }
+        // 記号互換
+        const compatKeys = [
+            normalizedKey.replace(/（/g, '(').replace(/）/g, ')'),
+            normalizedKey.replace(/\(/g, '（').replace(/\)/g, '）'),
+            normalizedKey.replace(/ /g, '_'),
+            normalizedKey.replace(/ /g, '-'),
+            normalizedKey.replace(/_/g, ' '),
+            normalizedKey.replace(/-/g, ' ')
+        ];
+        compatKeys.forEach(k => {
+            const c = index.get(k) || [];
+            if (!c.some(e => e.absPath === entry.absPath)) {
+                c.push(entry);
+                index.set(k, c);
+            }
+        });
+    };
+
+    // 1. Archives (外部ソース)
+    for (const collection of collections) {
+        const collectionPath = path.resolve(sourceBasePath, collection);
+        if (!fs.existsSync(collectionPath)) continue;
+
+        const files = glob.sync('**/*.md', { cwd: collectionPath, absolute: true });
+        for (const absPath of files) {
+            const basename = path.basename(absPath, '.md');
+            let data = {};
+            try {
+                data = matter(fs.readFileSync(absPath, 'utf8')).data;
+            } catch (e) {
+                continue;
+            }
+
+            const entry = {
+                collection,
+                absPath,
+                url: typeof data.url === 'string' ? data.url.trim() : null,
+                title: typeof data.title === 'string' ? data.title.trim() : null
+            };
+
+            addToIndex(basename, entry);
+            addToIndex(stripPrefix(basename), entry);
+            addToIndex(astroSlugify(basename), entry);
+            if (entry.title) {
+                addToIndex(entry.title, entry);
+                addToIndex(astroSlugify(entry.title), entry);
+            }
+            if (Array.isArray(data.aliases)) data.aliases.forEach(a => addToIndex(a.trim(), entry));
+        }
+    }
+
+    // 2. トピックス (ソース側)
+    if (fs.existsSync(topicsPath)) {
+        const internalFiles = glob.sync('**/*.md', { cwd: topicsPath, absolute: true });
+        for (const absPath of internalFiles) {
+            const basename = path.basename(absPath, '.md');
+            let data = {};
+            try {
+                data = matter(fs.readFileSync(absPath, 'utf8')).data;
+            } catch (e) {
+                continue;
+            }
+
+            const entry = {
+                collection: 'topics',
+                absPath,
+                url: null, // トピックは常に内部リンク (fallback 等で生成)
+                title: typeof data.title === 'string' ? data.title.trim() : null
+            };
+
+            addToIndex(basename, entry);
+            addToIndex(astroSlugify(basename), entry);
+            if (entry.title) {
+                addToIndex(entry.title, entry);
+                addToIndex(astroSlugify(entry.title), entry);
+            }
+        }
+    }
+
+    return index;
+}
+
+function resolveMarkdownLinks(content, fileIndex) {
+    // [[Target]] or [[Target|Alias]]
+    const wikiLinkRegex = /\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g;
+
+    return content.replace(wikiLinkRegex, (match, target, alias) => {
+        const targetName = target.trim();
+        const searchKeys = [
+            targetName.toLowerCase(),
+            astroSlugify(targetName),
+            targetName.replace(/ /g, '_').toLowerCase(),
+            targetName.replace(/ /g, '-').toLowerCase()
+        ];
+
+        let selected = null;
+        for (const key of searchKeys) {
+            const candidates = fileIndex.get(key);
+            if (candidates) {
+                selected = candidates.find(c => c.url) || candidates[0];
+                if (selected) break;
+            }
+        }
+
+        const displayTitle = alias || selected?.title || targetName;
+        const finalUrl = selected?.url || `/topics/${astroSlugify(targetName)}`;
+
+        return `[${displayTitle}](${finalUrl})`;
+    });
+}
 
 function extractChapters(content) {
     const chapters = [];
@@ -271,16 +414,26 @@ async function syncTopics() {
     }
 
     fs.emptyDirSync(DEST_CONTENT_DIR);
-    // console.log(`  Found ${files.length} topics items.`);
+    const fileIndex = buildFileIndex();
 
     let count = 0;
     for (const file of files) {
         const filename = path.basename(file);
         const dest = path.join(DEST_CONTENT_DIR, filename);
-        fs.copySync(file, dest);
+
+        const content = fs.readFileSync(file, 'utf8');
+        const { data, content: body } = matter(content);
+
+        // Wikiリンクを解決
+        const resolvedBody = resolveMarkdownLinks(body, fileIndex);
+
+        // フロントマターとコンテンツを再構成
+        const newContent = matter.stringify(resolvedBody, data);
+        fs.writeFileSync(dest, newContent);
+
         count++;
     }
-    console.log(`✅ Copied ${count} topics files.`);
+    console.log(`✅ Processed and copied ${count} topics files.`);
 }
 
 async function main() {

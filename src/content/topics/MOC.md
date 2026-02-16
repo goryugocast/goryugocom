@@ -1,8 +1,10 @@
 ---
-topic_id: "MOC"
-title: "MOC (Map of Content)"
-category: "concept"
-description: "Map of Content（コンテンツの地図）の略。複数のアトミックノートを整理するための索引ノート。トピックノートと同様の役割。文章で書いてもよく、沢山あるMOCをさらにMOCで整理することも可能。"
+topic_id: MOC
+title: MOC (Map of Content)
+category: concept
+description: >-
+  Map of
+  Content（コンテンツの地図）の略。複数のアトミックノートを整理するための索引ノート。トピックノートと同様の役割。文章で書いてもよく、沢山あるMOCをさらにMOCで整理することも可能。
 recommended_articles: []
 ---
 

@@ -1,8 +1,9 @@
 ---
-topic_id: "Note Refactor"
-title: "Note Refactor"
-category: "tool"
-description: "Obsidianプラグイン。選択したテキストを新しいノートとして自動切り出し。デイリーノートから個別ノートへの分離、長いノートの分割など、アトミックノート作成を効率化するリファクタリングツール。"
+topic_id: Note Refactor
+title: Note Refactor
+category: tool
+description: >-
+  Obsidianプラグイン。選択したテキストを新しいノートとして自動切り出し。デイリーノートから個別ノートへの分離、長いノートの分割など、アトミックノート作成を効率化するリファクタリングツール。
 recommended_articles: []
 ---
 

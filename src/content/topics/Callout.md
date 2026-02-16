@@ -1,8 +1,9 @@
 ---
-topic_id: "Callout"
-title: "Callout"
-category: "tool"
-description: "Markdown/Obsidian機能。情報を視覚的に強調し、折りたたみ可能なブロックとして表示する。ノート、警告、ヒント、質問など様々なタイプがあり、詳細情報の展開・格納で可読性を向上させる。"
+topic_id: Callout
+title: Callout
+category: tool
+description: >-
+  Markdown/Obsidian機能。情報を視覚的に強調し、折りたたみ可能なブロックとして表示する。ノート、警告、ヒント、質問など様々なタイプがあり、詳細情報の展開・格納で可読性を向上させる。
 recommended_articles: []
 ---
 

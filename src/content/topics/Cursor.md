@@ -1,8 +1,9 @@
 ---
-topic_id: "Cursor"
-title: "Cursor"
-category: "tool"
-description: "AI統合コードエディタ。ローカルファイルを直接処理でき、Obsidianとの連携でノート管理とコンテンツ生成を効率化。ルールファイルによるAI指示の自己更新、記事の自動カテゴリー分け、アーカイブ自動化などが可能。"
+topic_id: Cursor
+title: Cursor
+category: tool
+description: >-
+  AI統合コードエディタ。ローカルファイルを直接処理でき、Obsidianとの連携でノート管理とコンテンツ生成を効率化。ルールファイルによるAI指示の自己更新、記事の自動カテゴリー分け、アーカイブ自動化などが可能。
 recommended_articles: []
 ---
 

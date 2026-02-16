@@ -1,8 +1,10 @@
 ---
-topic_id: "Gemini CLI"
-title: "Gemini CLI"
-category: "tool"
-description: "Google Geminiのコマンドラインインターフェース。ObsidianとBasesを連携させ、AIとの対話でルールを改善しながら知識ベースを構築。ローカルデータを直接扱うAIツールとして、シームレスなコンテンツ作成が可能。"
+topic_id: Gemini CLI
+title: Gemini CLI
+category: tool
+description: >-
+  Google
+  Geminiのコマンドラインインターフェース。ObsidianとBasesを連携させ、AIとの対話でルールを改善しながら知識ベースを構築。ローカルデータを直接扱うAIツールとして、シームレスなコンテンツ作成が可能。
 recommended_articles: []
 ---
 

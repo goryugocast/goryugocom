@@ -1,8 +1,9 @@
 ---
-topic_id: "Workspaces"
-title: "Workspaces (Obsidianコアプラグイン)"
-category: "tool"
-description: "Obsidian公式機能。画面レイアウト、開いているノート、サイドバーの幅、検索内容などを保存・切り替えできる。思考モードごとの最適環境を瞬時に切り替え、レビュー専用、執筆専用などの専用環境を作成可能。"
+topic_id: Workspaces
+title: Workspaces (Obsidianコアプラグイン)
+category: tool
+description: >-
+  Obsidian公式機能。画面レイアウト、開いているノート、サイドバーの幅、検索内容などを保存・切り替えできる。思考モードごとの最適環境を瞬時に切り替え、レビュー専用、執筆専用などの専用環境を作成可能。
 recommended_articles: []
 ---
 

@@ -1,8 +1,9 @@
 ---
-topic_id: "Dataview"
-title: "Dataview"
-category: "tool"
-description: "Obsidianプラグイン。ノートのフロントマター（プロパティ）をクエリ言語で検索・抽出し、動的にリスト・テーブル・カレンダー・タスク表示を生成。Zettelkastenの物理的近接性をデジタルで再現する。"
+topic_id: Dataview
+title: Dataview
+category: tool
+description: >-
+  Obsidianプラグイン。ノートのフロントマター（プロパティ）をクエリ言語で検索・抽出し、動的にリスト・テーブル・カレンダー・タスク表示を生成。Zettelkastenの物理的近接性をデジタルで再現する。
 recommended_articles: []
 ---
 

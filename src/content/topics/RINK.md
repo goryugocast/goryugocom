@@ -1,8 +1,9 @@
 ---
-topic_id: "RINK"
-title: "RINK"
-category: "method"
-description: "アトミックノートの並び順を管理する軽量ナンバリング手法。prefix（例：dv.1a1a2）でアルファベティカルに並べて「思考の流れ」を可視化する。ゴリュゴ独自のシステム。"
+topic_id: RINK
+title: RINK
+category: method
+description: >-
+  アトミックノートの並び順を管理する軽量ナンバリング手法。prefix（例：dv.1a1a2）でアルファベティカルに並べて「思考の流れ」を可視化する。ゴリュゴ独自のシステム。
 recommended_articles: []
 ---
 

@@ -1,8 +1,9 @@
 ---
-topic_id: "Bases"
-title: "Bases (Obsidian)"
-category: "tool"
-description: "Obsidian公式プラグイン。DataviewのUI版として、プログラム知識不要で動的なノート表示・管理が可能。ノートのプロパティを活用した柔軟なフィルタリング、ソート、直接編集機能を提供。"
+topic_id: Bases
+title: Bases (Obsidian)
+category: tool
+description: >-
+  Obsidian公式プラグイン。DataviewのUI版として、プログラム知識不要で動的なノート表示・管理が可能。ノートのプロパティを活用した柔軟なフィルタリング、ソート、直接編集機能を提供。
 recommended_articles: []
 ---
 
