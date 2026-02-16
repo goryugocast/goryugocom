@@ -6,6 +6,7 @@ const topics = defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/content/topics" }),
     schema: z.object({
         title: z.string().optional(),
+        permalink: z.string().optional(),
     })
 });
 

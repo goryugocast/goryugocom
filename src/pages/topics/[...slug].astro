@@ -4,8 +4,9 @@ import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
   const topicEntries = await getCollection('topics');
+  console.log('Topic IDs:', topicEntries.map(e => e.id));
   return topicEntries.map(entry => ({
-    params: { slug: entry.id }, props: { entry },
+    params: { slug: entry.data.permalink || entry.id }, props: { entry },
   }));
 }
 
