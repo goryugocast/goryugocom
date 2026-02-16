@@ -3,7 +3,7 @@ import preact from '@astrojs/preact';
 import wikiLinkPlugin from 'remark-wiki-link';
 import remarkObsidianResolver, { buildFileIndex, astroSlugify } from './src/plugins/remark-obsidian-resolver.mjs';
 
-const sourceBasePath = '/Users/goryugo/GitHub/Astro/content-source/Archives';
+const sourceBasePath = './content-source/Archives';
 const externalCollections = ['ks', 'bc', 'iw', 'topics'];
 const internalTopicsPath = './src/content/topics';
 
@@ -11,7 +11,7 @@ const internalTopicsPath = './src/content/topics';
 const fileIndex = buildFileIndex({
   sourceBasePath,
   collections: externalCollections,
-  internalTopicsPath: '/Users/goryugo/GitHub/Astro/src/content/topics'
+  internalTopicsPath // 相対パス変数を使用
 });
 
 export default defineConfig({
