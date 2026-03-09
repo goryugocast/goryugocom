@@ -27,15 +27,24 @@ const sharedSchema = z.object({
 }).passthrough(); // Allow unknown fields
 
 const publishPath = process.env.VAULT_PUBLISH_PATH || './content-source/Publish';
+const generateContentId = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '').replace(/\\/g, '/');
 
 // Temporarily only include 2023-2024 blogs to avoid image issues in older posts
 const blog = defineCollection({
-  loader: glob({ pattern: "{2023,2024}/**/*.md", base: `${publishPath}/blog` }),
+  loader: glob({
+    pattern: "{2023,2024}/**/*.md",
+    base: `${publishPath}/blog`,
+    generateId: generateContentId,
+  }),
   schema: sharedSchema,
 });
 
 const notes = defineCollection({
-  loader: glob({ pattern: ["**/*.md", "!blog/**/*.md"], base: publishPath }),
+  loader: glob({
+    pattern: ["**/*.md", "!blog/**/*.md"],
+    base: publishPath,
+    generateId: generateContentId,
+  }),
   schema: sharedSchema,
 });
 
