@@ -24,8 +24,9 @@ Obsidian 側には、repo の都合で増える画像キャッシュや正規化
 
 元データの起点は Obsidian Publish 配下の読書ログノート。
 
-- Source root: `/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide/`
+- Source root: `/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/`
 - 対象ノート: `*読んだ本.md`
+- ただし一覧ノート `📋読んだ本.md` は除外する
 - 現時点の抽出対象: HTML の `book-affiliate-card` を含む読書ログ
 
 読書ログの本文は人間が編集する一次ソース。

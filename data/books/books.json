@@ -1,8 +1,25 @@
 {
-  "generated_at": "2026-03-09T09:35:08.093405+00:00",
-  "source_root": "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide",
+  "generated_at": "2026-03-09T09:38:53.993203+00:00",
+  "source_root": "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish",
   "image_root": "/images/books/",
   "books": [
+    {
+      "asin": "448844315X",
+      "title": "11文字の檻: 青崎有吾短編集成 (創元推理文庫)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448844315X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448844315X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51Zdjy2IVoL._SL1500_.\\1",
+      "local_image": "/images/books/448844315X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
     {
       "asin": "4910511156",
       "title": "AMBIENT definitive 増補改訂版 (ele-king books)",
@@ -51,6 +68,23 @@
         {
           "permalink": "read_2025_10",
           "month_note": "2025年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4296117335",
+      "title": "ATTENTION SPAN(アテンション・スパン) デジタル時代の「集中力」の科学",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4296117335/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4296117335/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71z+ym0HHTL._SL1500_.\\1",
+      "local_image": "/images/books/4296117335.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
         }
       ]
     },
@@ -157,6 +191,74 @@
       ]
     },
     {
+      "asin": "4422130110",
+      "title": "SNSの哲学: リアルとオンラインのあいだ (シリーズ「あいだで考える」)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4422130110/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4422130110/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71E5FT36mcL._SL1500_.\\1",
+      "local_image": "/images/books/4422130110.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4478112487",
+      "title": "THE UNIVERSE IN A BOX 箱の中の宇宙 あたらしい宇宙１３８億年の歴史",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4478112487/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4478112487/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71GdInP0MML._SL1500_.\\1",
+      "local_image": "/images/books/4478112487.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4023323640",
+      "title": "「Y」の悲劇　男たちが直面するY染色体消滅の真実",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4023323640/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4023323640/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81hDyVsOkHL._SL1500_.\\1",
+      "local_image": "/images/books/4023323640.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4065357268",
+      "title": "「スティーブ・ジョブズ」翻訳者の仕事部屋 フリーランスが訳し、働き、食うための実務的アイデア",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065357268/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065357268/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61z+24a3wAL._SL1500_.\\1",
+      "local_image": "/images/books/4065357268.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "448068509X",
       "title": "「嘘をつく」とはどういうことか　――哲学から考える (ちくまプリマー新書 ４７９)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448068509X/room510-22/",
@@ -170,6 +272,40 @@
         {
           "permalink": "read_2025_09",
           "month_note": "2025年9月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4065372763",
+      "title": "「腸と脳」の科学 脳と体を整える、腸の知られざるはたらき (ブルーバックス B 2273)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065372763/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065372763/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61OpKPgSn4L._SL1500_.\\1",
+      "local_image": "/images/books/4065372763.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_12",
+          "month_note": "2024年12月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4480076158",
+      "title": "「頭がいい」とはどういうことか　――脳科学から考える (ちくま新書 １７８７)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480076158/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480076158/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41iCLr6lnSL._SL1500_.\\1",
+      "local_image": "/images/books/4480076158.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
         }
       ]
     },
@@ -429,6 +565,40 @@
       ]
     },
     {
+      "asin": "4761527358",
+      "title": "オーバーツーリズム: 観光に消費されないまちのつくり方",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4761527358/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4761527358/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51GaqTVHMlL._SL1500_.\\1",
+      "local_image": "/images/books/4761527358.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4087213080",
+      "title": "カレー移民の謎 日本を制覇する「インネパ」 (集英社新書)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087213080/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087213080/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41isOvZGv1L._SL1500_.\\1",
+      "local_image": "/images/books/4087213080.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4022520396",
       "title": "ゲーテはすべてを言った",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4022520396/room510-22/",
@@ -463,6 +633,74 @@
       ]
     },
     {
+      "asin": "4799329138",
+      "title": "スマホ時代の哲学 失われた孤独をめぐる冒険",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4799329138/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4799329138/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81O43BvZfLL._SL1500_.\\1",
+      "local_image": "/images/books/4799329138.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4048677608",
+      "title": "ソードアート・オンライン1アインクラッド (電撃文庫)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4048677608/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4048677608/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51kzSDL+DnL._SL1500_.\\1",
+      "local_image": "/images/books/4048677608.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4334101399",
+      "title": "ツミデミック",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4334101399/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4334101399/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/818NsbH0RQL._SL1500_.\\1",
+      "local_image": "/images/books/4334101399.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4866995726",
+      "title": "ティアムーン帝国物語11 ～断頭台から始まる、姫の転生逆転ストーリー～",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4866995726/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4866995726/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91ukxSjixML._SL1500_.\\1",
+      "local_image": "/images/books/4866995726.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4087370089",
       "title": "テクノ封建制 デジタル空間の領主たちが私たち農奴を支配する とんでもなく醜くて、不公平な経済の話。",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087370089/room510-22/",
@@ -476,6 +714,23 @@
         {
           "permalink": "read_2025_05",
           "month_note": "2025年5月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4334102905",
+      "title": "バッタを倒すぜ　アフリカで (光文社新書 1305)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4334102905/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4334102905/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61FkXsa+R3L._SL1500_.\\1",
+      "local_image": "/images/books/4334102905.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_12",
+          "month_note": "2024年12月に読んだ本"
         }
       ]
     },
@@ -616,6 +871,40 @@
       ]
     },
     {
+      "asin": "B07NXQW2NX",
+      "title": "プリズナートレーニング外伝　監獄式ボディビルディング",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B07NXQW2NX/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B07NXQW2NX/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91dtH4tZHXL._SL1500_.\\1",
+      "local_image": "/images/books/B07NXQW2NX.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "B0746H85JW",
+      "title": "プリズナー・トレーニング 圧倒的な強さを手に入れる究極の自重筋トレ",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0746H85JW/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0746H85JW/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91UcZ7jW8dL._SL1500_.\\1",
+      "local_image": "/images/books/B0746H85JW.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4065020050",
       "title": "ランニングする前に読む本 最短で結果を出す科学的トレーニング (ブルーバックス 2005)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065020050/room510-22/",
@@ -663,6 +952,57 @@
         {
           "permalink": "read_2025_10",
           "month_note": "2025年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4299041674",
+      "title": "レモンと殺人鬼 (宝島社文庫 『このミス』大賞シリーズ)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4299041674/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4299041674/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81w11Fi8VaL._SL1500_.\\1",
+      "local_image": "/images/books/4299041674.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4815619220",
+      "title": "一度読んだら絶対に忘れない哲学の教科書",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4815619220/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4815619220/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51oPjtR0GsL._SL1500_.\\1",
+      "local_image": "/images/books/4815619220.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4798177873",
+      "title": "一枚の絵でストーリーを伝える方法 ビジュアルストーリーテリングの基礎から応用まで",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4798177873/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4798177873/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91kSQZFGI8L._SL1500_.\\1",
+      "local_image": "/images/books/4798177873.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
         }
       ]
     },
@@ -752,6 +1092,23 @@
       ]
     },
     {
+      "asin": "B08HMCN5JT",
+      "title": "信長の原理【上下 合本版　電子特典付き】 (角川文庫)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B08HMCN5JT/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B08HMCN5JT/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/816Rda-VVFL._SL1500_.\\1",
+      "local_image": "/images/books/B08HMCN5JT.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B0CVXBGYJM",
       "title": "冬期限定ボンボンショコラ事件 〈小市民〉シリーズ (創元推理文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CVXBGYJM/room510-22/",
@@ -803,6 +1160,23 @@
       ]
     },
     {
+      "asin": "4103553111",
+      "title": "君が手にするはずだった黄金について",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4103553111/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4103553111/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81JURbi6Y6L._SL1500_.\\1",
+      "local_image": "/images/books/4103553111.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_11",
+          "month_note": "2024年11月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B074KFC226",
       "title": "地図のない場所で眠りたい (講談社文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B074KFC226/room510-22/",
@@ -816,6 +1190,23 @@
         {
           "permalink": "read_2025_01",
           "month_note": "2025年1月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4767833221",
+      "title": "地獄の解剖図鑑",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4767833221/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4767833221/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91X5PmXl74L._SL1500_.\\1",
+      "local_image": "/images/books/4767833221.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_11",
+          "month_note": "2024年11月に読んだ本"
         }
       ]
     },
@@ -888,6 +1279,23 @@
       ]
     },
     {
+      "asin": "4817039744",
+      "title": "失敗しない水彩の画材選び",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4817039744/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4817039744/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51J4q8ZTH2L._SL1500_.\\1",
+      "local_image": "/images/books/4817039744.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B009GAIR1E",
       "title": "姑獲鳥の夏(1)【電子百鬼夜行】 (講談社文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B009GAIR1E/room510-22/",
@@ -935,6 +1343,23 @@
         {
           "permalink": "read_2025_12",
           "month_note": "2025年12月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "400431853X",
+      "title": "実践 自分で調べる技術 (岩波新書 新赤版 1853)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400431853X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400431853X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61r+kov4zgL._SL1500_.\\1",
+      "local_image": "/images/books/400431853X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
         }
       ]
     },
@@ -990,6 +1415,23 @@
       ]
     },
     {
+      "asin": "415209690X",
+      "title": "平均思考は捨てなさい",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/415209690X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/415209690X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51DVRItPVML._SL1500_.\\1",
+      "local_image": "/images/books/415209690X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B01FDIF2QK",
       "title": "怪獣記 (講談社文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B01FDIF2QK/room510-22/",
@@ -1007,6 +1449,108 @@
       ]
     },
     {
+      "asin": "4480684883",
+      "title": "悪いことはなぜ楽しいのか (ちくまプリマー新書 ４５９)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684883/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684883/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61O6MLrNpKL._SL1500_.\\1",
+      "local_image": "/images/books/4480684883.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "448068459X",
+      "title": "悪口ってなんだろう (ちくまプリマー新書 ４３２)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448068459X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448068459X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61VSzQWkqML._SL1500_.\\1",
+      "local_image": "/images/books/448068459X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "B0CNPKM1CX",
+      "title": "成瀬は信じた道をいく 「成瀬」シリーズ",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CNPKM1CX/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CNPKM1CX/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81Nhr98GqnL._SL1500_.\\1",
+      "local_image": "/images/books/B0CNPKM1CX.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "B0BTCW4JK5",
+      "title": "成瀬は天下を取りにいく 「成瀬」シリーズ",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0BTCW4JK5/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0BTCW4JK5/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51s1J7eapyL._SL1500_.\\1",
+      "local_image": "/images/books/B0BTCW4JK5.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4065342104",
+      "title": "推理の時間です",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065342104/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065342104/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61W7SGTw6aL._SL1500_.\\1",
+      "local_image": "/images/books/4065342104.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4480684891",
+      "title": "料理人という仕事 (ちくまプリマー新書４６２)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684891/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684891/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61d5JENXGgL._SL1500_.\\1",
+      "local_image": "/images/books/4480684891.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B0BLRL2B2W",
       "title": "日本発酵紀行 (角川文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0BLRL2B2W/room510-22/",
@@ -1020,6 +1564,23 @@
         {
           "permalink": "read_2025_08",
           "month_note": "2025年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4478116830",
+      "title": "早回し全歴史 ──宇宙誕生から今の世界まで一気にわかる",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4478116830/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4478116830/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51ojrPZ4ybL._SL1500_.\\1",
+      "local_image": "/images/books/4478116830.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
         }
       ]
     },
@@ -1075,6 +1636,23 @@
       ]
     },
     {
+      "asin": "4065357489",
+      "title": "東洋医学はなぜ効くのか ツボ・鍼灸・漢方薬、西洋医学で見る驚きのメカニズム (ブルーバックス B 2261)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065357489/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065357489/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71yqLId4cwL._SL1500_.\\1",
+      "local_image": "/images/books/4065357489.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B09BF4S8HN",
       "title": "某 (幻冬舎文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B09BF4S8HN/room510-22/",
@@ -1126,6 +1704,40 @@
       ]
     },
     {
+      "asin": "4798626600",
+      "title": "水彩で描く色鮮やかな天体 星空から、惑星、星座、銀河まで",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4798626600/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4798626600/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81H7M3gclgL._SL1500_.\\1",
+      "local_image": "/images/books/4798626600.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4817039787",
+      "title": "水彩画 建物の描き方30のワザ",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4817039787/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4817039787/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/51TgP+d-1JL._SL1500_.\\1",
+      "local_image": "/images/books/4817039787.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_07",
+          "month_note": "2024年7月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "406535143X",
       "title": "永劫館超連続殺人事件 魔女はXと死ぬことにした (星海社FICTIONS ミ 3-03)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/406535143X/room510-22/",
@@ -1160,6 +1772,23 @@
       ]
     },
     {
+      "asin": "B0D8HVT9QY",
+      "title": "法廷占拠　爆弾２",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0D8HVT9QY/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0D8HVT9QY/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91qpHUMlVPL._SL1500_.\\1",
+      "local_image": "/images/books/B0D8HVT9QY.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_12",
+          "month_note": "2024年12月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4150119716",
       "title": "火星の人 (ハヤカワ文庫SF)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4150119716/room510-22/",
@@ -1173,6 +1802,23 @@
         {
           "permalink": "read_2025_03",
           "month_note": "2025年3月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "410355231X",
+      "title": "熟達論：人はいつまでも学び、成長できる",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/410355231X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/410355231X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/419pPVqq6ML._SL1500_.\\1",
+      "local_image": "/images/books/410355231X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
         }
       ]
     },
@@ -1296,6 +1942,40 @@
       ]
     },
     {
+      "asin": "4480684867",
+      "title": "社会学をはじめる　――複雑さを生きる技法 (ちくまプリマー新書 ４６０)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684867/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480684867/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61CPL1EbZEL._SL1500_.\\1",
+      "local_image": "/images/books/4480684867.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4488451055",
+      "title": "秋期限定栗きんとん事件〈上〉 (創元推理文庫)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4488451055/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4488451055/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71EkEPeblbL._SL1500_.\\1",
+      "local_image": "/images/books/4488451055.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B0168BQTWM",
       "title": "移民の宴　日本に移り住んだ外国人の不思議な食生活 (講談社文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0168BQTWM/room510-22/",
@@ -1309,6 +1989,74 @@
         {
           "permalink": "read_2025_01",
           "month_note": "2025年1月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "448007614X",
+      "title": "結婚の社会学 (ちくま新書 １７８９)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448007614X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/448007614X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41vdJfxO8vL._SL1500_.\\1",
+      "local_image": "/images/books/448007614X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_11",
+          "month_note": "2024年11月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "B0DFLQPWJF",
+      "title": "肥満の科学　ヒトはなぜ太るのか",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0DFLQPWJF/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0DFLQPWJF/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71MBl5l-8WL._SL1500_.\\1",
+      "local_image": "/images/books/B0DFLQPWJF.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_11",
+          "month_note": "2024年11月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "400600284X",
+      "title": "脱常識の社会学 第二版――社会の読み方入門 (岩波現代文庫)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400600284X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400600284X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41uaW4f3TVL._SL1500_.\\1",
+      "local_image": "/images/books/400600284X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4007001170",
+      "title": "自分で調べる技術: 市民のための調査入門 (岩波アクティブ新書 117)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4007001170/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4007001170/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/817xa1wGOPL._SL1500_.\\1",
+      "local_image": "/images/books/4007001170.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_09",
+          "month_note": "2024年9月に読んだ本"
         }
       ]
     },
@@ -1398,6 +2146,40 @@
       ]
     },
     {
+      "asin": "4130841025",
+      "title": "言語学バーリ・トゥード Round 2: 言語版SASUKEに挑む",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4130841025/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4130841025/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/91LinyAf77L._SL1500_.\\1",
+      "local_image": "/images/books/4130841025.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4065360609",
+      "title": "読めばもっとおいしくなる うなぎ大全",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065360609/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065360609/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61fE6jJFz6L._SL1500_.\\1",
+      "local_image": "/images/books/4065360609.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_08",
+          "month_note": "2024年8月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4480685138",
       "title": "読めば分かるは当たり前？　――読解力の認知心理学 (ちくまプリマー新書 ４８０)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480685138/room510-22/",
@@ -1449,6 +2231,23 @@
       ]
     },
     {
+      "asin": "416391885X",
+      "title": "透明マントのつくり方 究極の〝不可視〟の物理学",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/416391885X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/416391885X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81taa-Mn4GL._SL1500_.\\1",
+      "local_image": "/images/books/416391885X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_10",
+          "month_note": "2024年10月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4860114957",
       "title": "酒を主食とする人々: エチオピアの科学的秘境を旅する",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4860114957/room510-22/",
@@ -1462,6 +2261,23 @@
         {
           "permalink": "read_2025_02",
           "month_note": "2025年2月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "B0CFKM9FHV",
+      "title": "重力のからくり　相対論と量子論はなぜ「相容れない」のか (ブルーバックス)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CFKM9FHV/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CFKM9FHV/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81srWHzbFRL._SL1500_.\\1",
+      "local_image": "/images/books/B0CFKM9FHV.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_11",
+          "month_note": "2024年11月に読んだ本"
         }
       ]
     },
@@ -1496,6 +2312,23 @@
         {
           "permalink": "read_2025_10",
           "month_note": "2025年10月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4087717208",
+      "title": "黄色い夜",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717208/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717208/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41DUlJUnaqL._SL1500_.\\1",
+      "local_image": "/images/books/4087717208.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2024_06",
+          "month_note": "2024年6月に読んだ本"
         }
       ]
     },

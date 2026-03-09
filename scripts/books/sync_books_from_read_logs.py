@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -16,11 +17,12 @@ from urllib.request import Request, urlopen
 
 
 DEFAULT_SOURCE_ROOT = Path(
-    "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide"
+    "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish"
 )
 DEFAULT_OUTPUT_JSON = Path("data/books/books.json")
 DEFAULT_IMAGE_DIR = Path("public/images/books")
 USER_AGENT = "Mozilla/5.0 (compatible; goryugo-books-sync/1.0)"
+PUBLISH_IMAGE_DIR = DEFAULT_SOURCE_ROOT / "img"
 
 
 PERMALINK_RE = re.compile(r"^permalink:\s*(?P<value>.+?)\s*$", re.MULTILINE)
@@ -71,7 +73,11 @@ def parse_args() -> argparse.Namespace:
 
 
 def slug_files(source_root: Path) -> list[Path]:
-    return sorted(source_root.glob("*読んだ本.md"))
+    return sorted(
+        path
+        for path in source_root.rglob("*読んだ本.md")
+        if path.name != "📋読んだ本.md"
+    )
 
 
 def read_permalink(text: str) -> str:
@@ -238,6 +244,22 @@ def download_image(url: str, target: Path) -> None:
     target.write_bytes(data)
 
 
+def copy_local_publish_image(image_url: str, target: Path) -> bool:
+    basename = Path(urlparse(image_url).path).name
+    if not basename:
+        return False
+    source = PUBLISH_IMAGE_DIR / basename
+    if not source.exists():
+        stem = re.sub(r"\._[^.]+(\.[^.]+)$", "", basename)
+        matches = sorted(PUBLISH_IMAGE_DIR.glob(f"{stem}*"))
+        if not matches:
+            return False
+        source = matches[0]
+    target.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(source, target)
+    return True
+
+
 def write_output(records: list[BookRecord], output_json: Path, source_root: Path) -> None:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -266,7 +288,8 @@ def main() -> int:
             try:
                 download_image(record.image_url, target)
             except (HTTPError, URLError) as error:
-                failures.append(f"{record.asin} {record.title}: {error}")
+                if not copy_local_publish_image(record.image_url, target):
+                    failures.append(f"{record.asin} {record.title}: {error}")
 
     print(f"books={len(records)} files={len(files)}")
     if failures:
