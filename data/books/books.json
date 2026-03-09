@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T09:30:50.322040+00:00",
+  "generated_at": "2026-03-09T09:35:08.093405+00:00",
   "source_root": "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide",
   "image_root": "/images/books/",
   "books": [
@@ -340,6 +340,23 @@
         {
           "permalink": "read_2025_03",
           "month_note": "2025年3月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4622097311",
+      "title": "エッシャー完全解読――なぜ不可能が可能に見えるのか",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4622097311/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4622097311/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81AqwI6MylL._SL1500_.jpg",
+      "local_image": "/images/books/4622097311.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_05",
+          "month_note": "2025年5月に読んだ本"
         }
       ]
     },
@@ -701,6 +718,23 @@
       ]
     },
     {
+      "asin": "4791776585",
+      "title": "体内時計の科学: 生命をつかさどるリズムの正体",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4791776585/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4791776585/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/41hy1i2OdoL._SL1500_.jpg",
+      "local_image": "/images/books/4791776585.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_04",
+          "month_note": "2025年4月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B00SWFADK2",
       "title": "侠飯 (文春文庫)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B00SWFADK2/room510-22/",
@@ -799,6 +833,40 @@
         {
           "permalink": "read_2025_03",
           "month_note": "2025年3月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4911410000",
+      "title": "基本から「なぜ?」まですっきり理解できる 古生物超入門",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4911410000/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4911410000/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81BPjA8fDeL._SL1500_.jpg",
+      "local_image": "/images/books/4911410000.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_04",
+          "month_note": "2025年4月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4046064943",
+      "title": "大江戸24時 浮世絵で庶民ライフを物見遊山",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4046064943/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4046064943/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81gqpLjWlYL._SL1500_.jpg",
+      "local_image": "/images/books/4046064943.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_04",
+          "month_note": "2025年4月に読んだ本"
         }
       ]
     },
@@ -1360,6 +1428,23 @@
         {
           "permalink": "read_2025_08",
           "month_note": "2025年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4087717046",
+      "title": "逆ソクラテス",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717046/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717046/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71fHxkdoouL._SL1500_.jpg",
+      "local_image": "/images/books/4087717046.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_01",
+          "month_note": "2025年1月に読んだ本"
         }
       ]
     },
