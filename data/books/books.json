@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T09:20:04.489364+00:00",
+  "generated_at": "2026-03-09T09:24:23.231348+00:00",
   "source_root": "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide",
   "image_root": "/images/books/",
   "books": [
@@ -310,6 +310,23 @@
       ]
     },
     {
+      "asin": "4480685073",
+      "title": "イスラームからお金を考える (ちくまプリマー新書 ４７６)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480685073/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4480685073/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/61zYivre9aL._SL1500_.jpg",
+      "local_image": "/images/books/4480685073.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_03",
+          "month_note": "2025年3月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "B0CQ4YPBD3",
       "title": "オルクセン王国史～野蛮なオークの国は、如何にして平和なエルフの国を焼き払うに至ったか～（サーガフォレスト）１",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/B0CQ4YPBD3/room510-22/",
@@ -476,6 +493,23 @@
         {
           "permalink": "read_2026_01",
           "month_note": "2026年1月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "400432033X",
+      "title": "フェイクニュースを哲学する──何を信じるべきか (岩波新書 新赤版 2033)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400432033X/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/400432033X/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/31tOR36Qy8L._SL1500_.jpg",
+      "local_image": "/images/books/400432033X.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_03",
+          "month_note": "2025年3月に読んだ本"
         }
       ]
     },
@@ -884,6 +918,23 @@
         {
           "permalink": "read_2025_08",
           "month_note": "2025年8月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4065379253",
+      "title": "時間治療 病気になりやすい時間、病気を治しやすい時間 (ブルーバックス B 2280)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065379253/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4065379253/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71B9DYOEnZL._SL1500_.jpg",
+      "local_image": "/images/books/4065379253.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_03",
+          "month_note": "2025年3月に読んだ本"
         }
       ]
     },
