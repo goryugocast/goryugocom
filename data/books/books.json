@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T09:24:23.231348+00:00",
+  "generated_at": "2026-03-09T09:30:50.322040+00:00",
   "source_root": "/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local/Astro/Publish/Pub_hide",
   "image_root": "/images/books/",
   "books": [
@@ -85,6 +85,23 @@
         {
           "permalink": "read_2026_02",
           "month_note": "2026年2月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4087717666",
+      "title": "N",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717666/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4087717666/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/71wiVxXNeRL._SL1500_.jpg",
+      "local_image": "/images/books/4087717666.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_02",
+          "month_note": "2025年2月に読んだ本"
         }
       ]
     },
@@ -633,6 +650,23 @@
       ]
     },
     {
+      "asin": "4101802629",
+      "title": "世界でいちばん透きとおった物語 (新潮文庫 す 31-2)",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4101802629/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4101802629/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/81OiSZz2q9L._SL1500_.jpg",
+      "local_image": "/images/books/4101802629.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_02",
+          "month_note": "2025年2月に読んだ本"
+        }
+      ]
+    },
+    {
       "asin": "4101803005",
       "title": "世界でいちばん透きとおった物語２ (新潮文庫 す 31-3)",
       "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4101803005/room510-22/",
@@ -986,6 +1020,23 @@
         {
           "permalink": "read_2025_07",
           "month_note": "2025年7月に読んだ本"
+        }
+      ]
+    },
+    {
+      "asin": "4062205068",
+      "title": "歌川国芳 21世紀の絵画力",
+      "amazon_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4062205068/room510-22/",
+      "kindle_url": "https://www.amazon.co.jp/exec/obidos/ASIN/4062205068/room510-22/",
+      "image_url": "https://m.media-amazon.com/images/I/516p6o7o3AL._SL1500_.jpg",
+      "local_image": "/images/books/4062205068.jpg",
+      "authors": [],
+      "publisher": "",
+      "published_date": "",
+      "source_logs": [
+        {
+          "permalink": "read_2025_02",
+          "month_note": "2025年2月に読んだ本"
         }
       ]
     },
