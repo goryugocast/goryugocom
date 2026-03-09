@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = await getCollection('notes', ({ data }) => data.status !== 'draft');
+
+// Helper to get title from data or id
+const getTitle = (entry: { data: { title?: string }; id: string }) => {
+  return entry.data.title || entry.id.replace(/\.md$/, '').split('/').pop() || entry.id;
+};
+
+// Sort alphabetically by title
+const sortedNotes = notes.sort((a, b) => {
+  return getTitle(a).localeCompare(getTitle(b), 'ja');
+});
+---
+
+<Layout title="Notes" description="ごりゅごさんのノート一覧">
+  <h1 class="text-3xl font-bold mb-8">Notes</h1>
+
+  {sortedNotes.length > 0 ? (
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {sortedNotes.map(note => (
+        <li>
+          <a href={note.data.permalink || `/${note.id}`} class="block p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors">
+            <h2 class="font-medium text-gray-900">{getTitle(note)}</h2>
+            {note.data.description && (
+              <p class="text-sm text-gray-500 mt-1 line-clamp-2">{note.data.description}</p>
+            )}
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="text-gray-500">まだノートがありません</p>
+  )}
+</Layout>

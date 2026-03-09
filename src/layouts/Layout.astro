@@ -1,0 +1,155 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  isArticle?: boolean;
+}
+
+const { title, description = 'ごりゅごさんのサイト', isArticle = false } = Astro.props;
+const canonicalUrl = Astro.url;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title} | goryugo.com</title>
+    <meta name="description" content={description} />
+
+    <!-- OGP -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content={isArticle ? "article" : "website"} />
+    <meta property="og:site_name" content="goryugo.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="canonical" href={canonicalUrl} />
+
+    <style is:global>
+      @import '../styles/global.css';
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <a href="/" class="site-title">goryugo.com</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/notes">Notes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <p>&copy; {new Date().getFullYear()} goryugo.com</p>
+    </footer>
+
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        border-bottom: 1px solid #e5e7eb;
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 10;
+      }
+
+      .header-nav {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .site-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        text-decoration: none;
+      }
+
+      .site-title:hover {
+        color: #4b5563;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        font-size: 0.9375rem;
+        color: #4b5563;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover {
+        color: #2563eb;
+      }
+
+      .main-content {
+        flex: 1;
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+        width: 100%;
+      }
+
+      .footer {
+        border-top: 1px solid #e5e7eb;
+        margin-top: auto;
+      }
+
+      .footer p {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #9ca3af;
+      }
+
+      @media (max-width: 640px) {
+        .header-nav {
+          padding: 0.875rem 1rem;
+        }
+
+        .main-content {
+          padding: 2rem 1rem;
+        }
+
+        .nav-links {
+          gap: 1rem;
+        }
+
+        .nav-links a {
+          font-size: 0.875rem;
+        }
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+/* Base reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styles for Japanese text */
+html {
+  font-family:
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "BIZ UDPGothic",
+    Meiryo,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+}
+
+body {
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Internal links */
+.internal-link {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-color: #93c5fd;
+  text-underline-offset: 3px;
+}
+
+.internal-link:hover {
+  text-decoration-color: #2563eb;
+}
+
+/* New/broken links */
+.new-link {
+  color: #9ca3af;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* Obsidian Callouts */
+.callout {
+  border-left: 4px solid;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.callout[data-callout="note"] {
+  border-color: #4a9eff;
+  background: #e8f4ff;
+}
+
+.callout[data-callout="warning"] {
+  border-color: #ff9f43;
+  background: #fff3e0;
+}
+
+.callout[data-callout="tip"] {
+  border-color: #2ed573;
+  background: #e8fff0;
+}
+
+.callout[data-callout="important"] {
+  border-color: #ff4757;
+  background: #fff0f0;
+}
+
+.callout[data-callout="info"] {
+  border-color: #4a9eff;
+  background: #e8f4ff;
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="tldr"] {
+  border-color: #00d2d3;
+  background: #e0fcff;
+}
+
+.callout[data-callout="todo"] {
+  border-color: #4a9eff;
+  background: #e8f4ff;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  border-color: #2ed573;
+  background: #e8fff0;
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+  border-color: #ff9f43;
+  background: #fff3e0;
+}
+
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  border-color: #ff9f43;
+  background: #fff3e0;
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+  border-color: #ff4757;
+  background: #fff0f0;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  border-color: #ff4757;
+  background: #fff0f0;
+}
+
+.callout[data-callout="bug"] {
+  border-color: #ff4757;
+  background: #fff0f0;
+}
+
+.callout[data-callout="example"] {
+  border-color: #a855f7;
+  background: #faf5ff;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  border-color: #9ca3af;
+  background: #f9fafb;
+}
+
+.callout-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Prose styling - article body */
+.prose {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.prose > * + * {
+  margin-top: 1.5em;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
+.prose h1 { font-size: 1.75rem; }
+.prose h2 { font-size: 1.5rem; }
+.prose h3 { font-size: 1.25rem; }
+.prose h4 { font-size: 1.125rem; }
+
+.prose h1:first-child,
+.prose h2:first-child,
+.prose h3:first-child {
+  margin-top: 0;
+}
+
+.prose p {
+  margin-bottom: 1.5em;
+}
+
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-color: #93c5fd;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-color: #2563eb;
+}
+
+.prose code {
+  background: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.prose pre {
+  background: #1f2937;
+  color: #f9fafb;
+  border-radius: 8px;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.prose blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1.25rem;
+  margin: 2rem 0;
+  color: #4b5563;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.75em;
+  margin: 1.5em 0;
+}
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose li > ul, .prose li > ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose img {
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 3rem 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.prose th, .prose td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.prose th {
+  background: #f9fafb;
+  font-weight: 600;
+}

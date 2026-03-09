@@ -1,0 +1,59 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
+import Note from '../layouts/Note.astro';
+
+// Helper to get title from data or id
+const getTitle = (entry: { data: { title?: string }; id: string }) => {
+  return entry.data.title || entry.id.replace(/\.md$/, '').split('/').pop() || entry.id;
+};
+
+export async function getStaticPaths() {
+  const [notes, blog] = await Promise.all([
+    getCollection('notes'),
+    getCollection('blog'),
+  ]);
+
+  const allContent = [
+    ...notes.map(entry => ({ ...entry, collection: 'notes' as const })),
+    ...blog.map(entry => ({ ...entry, collection: 'blog' as const })),
+  ];
+
+  return allContent
+    .filter(entry => entry.data.status !== 'draft')
+    .map(entry => {
+      const permalink = entry.data.permalink;
+      const slugParts = permalink
+        ? permalink.replace(/^\//, '').split('/')
+        : [entry.id];
+      return {
+        params: { slug: slugParts.join('/') || undefined },
+        props: { entry }
+      };
+    });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const isBlog = entry.collection === 'blog';
+const title = getTitle(entry);
+---
+
+{isBlog ? (
+  <BlogPost
+    title={title}
+    description={entry.data.description}
+    date={entry.data.date}
+    tags={entry.data.tags}
+  >
+    <Content />
+  </BlogPost>
+) : (
+  <Note
+    title={title}
+    description={entry.data.description}
+  >
+    <Content />
+  </Note>
+)}

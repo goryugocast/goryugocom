@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+// Helper to get title from data or id
+const getTitle = (entry: { data: { title?: string }; id: string }) => {
+  return entry.data.title || entry.id.replace(/\.md$/, '').split('/').pop() || entry.id;
+};
+
+export async function getStaticPaths() {
+  const [blog, notes] = await Promise.all([
+    getCollection('blog'),
+    getCollection('notes'),
+  ]);
+  const allContent = [...blog, ...notes];
+
+  // Collect all tags
+  const tags = new Set<string>();
+  allContent.forEach(entry => {
+    entry.data.tags?.forEach(tag => tags.add(tag));
+  });
+
+  return Array.from(tags).map(tag => ({
+    params: { tag },
+    props: {
+      tag,
+      entries: allContent.filter(entry =>
+        entry.data.tags?.includes(tag) && entry.data.status !== 'draft'
+      )
+    }
+  }));
+}
+
+const { tag, entries } = Astro.props;
+
+const sortedEntries = entries.sort((a, b) => {
+  if (a.data.date && b.data.date) {
+    return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+  }
+  return 0;
+});
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('ja-JP', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
+};
+---
+
+<Layout title={`#${tag}`} description={`「${tag}」タグの記事一覧`}>
+  <h1 class="text-3xl font-bold mb-8">#{tag}</h1>
+
+  {sortedEntries.length > 0 ? (
+    <ul class="space-y-4">
+      {sortedEntries.map(entry => (
+        <li class="border-b border-gray-100 pb-4 last:border-0">
+          <a href={entry.data.permalink || `/${entry.id}`} class="group block">
+            <h2 class="text-lg font-medium text-gray-900 group-hover:text-blue-600">
+              {getTitle(entry)}
+            </h2>
+            {entry.data.date && (
+              <time class="text-sm text-gray-500" datetime={new Date(entry.data.date).toISOString()}>
+                {formatDate(new Date(entry.data.date))}
+              </time>
+            )}
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="text-gray-500">このタグの記事はありません</p>
+  )}
+</Layout>
