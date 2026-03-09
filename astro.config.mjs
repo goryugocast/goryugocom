@@ -9,7 +9,6 @@ import { globSync } from 'glob';
 import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
-import { visit } from 'unist-util-visit';
 
 function astroSlugify(text) {
   return text.toString().toLowerCase().trim().replace(/\s+/g, '-');
@@ -60,20 +59,6 @@ function buildFileIndex(sourceDir) {
   return index;
 }
 
-function remarkStripDataviewBlocks() {
-  return (tree) => {
-    visit(tree, (node, index, parent) => {
-      if (!parent || index === undefined || node.type !== 'code') return;
-
-      const lang = node.lang?.toLowerCase();
-      if (lang === 'dataview' || lang === 'dataviewjs') {
-        parent.children.splice(index, 1);
-        return index;
-      }
-    });
-  };
-}
-
 const publishDir = process.env.VAULT_PUBLISH_PATH || './content-source/Publish';
 const fileIndex = buildFileIndex(publishDir);
 
@@ -90,7 +75,6 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [
       remarkGfm,
-      remarkStripDataviewBlocks,
       remarkObsidianCallout,
       [wikiLinkPlugin, {
         aliasDivider: '|',
