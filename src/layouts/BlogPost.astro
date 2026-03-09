@@ -8,7 +8,8 @@ interface Props {
   tags?: string[];
 }
 
-const { title, description, date, tags = [] } = Astro.props;
+const { title, description, date } = Astro.props;
+const tags = Array.isArray(Astro.props.tags) ? Astro.props.tags : [];
 
 const formatDate = (date: Date) => {
   return date.toLocaleDateString('ja-JP', {

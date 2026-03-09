@@ -29,10 +29,9 @@ const sharedSchema = z.object({
 const publishPath = process.env.VAULT_PUBLISH_PATH || './content-source/Publish';
 const generateContentId = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '').replace(/\\/g, '/');
 
-// Temporarily only include 2023-2024 blogs to avoid image issues in older posts
 const blog = defineCollection({
   loader: glob({
-    pattern: "{2023,2024}/**/*.md",
+    pattern: "**/*.md",
     base: `${publishPath}/blog`,
     generateId: generateContentId,
   }),
