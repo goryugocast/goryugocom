@@ -3,15 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const blogPosts = await getCollection('blog', ({ data }) => data.status !== 'draft');
-const notes = await getCollection('notes', ({ data }) => data.status !== 'draft');
+const allNotes = await getCollection('notes', ({ data }) => data.status !== 'draft');
 
 // Helper to get title from data or id
 const getTitle = (entry: { data: { title?: string }; id: string }) => {
   return entry.data.title || entry.id.replace(/\.md$/, '').split('/').pop() || entry.id;
 };
 
-// Sort blog posts - with date first, then without date
-const sortedPosts = blogPosts
+// Permalink を正規化（先頭の / を保証）
+const getHref = (entry: { data: { permalink?: string | number }; id: string }) => {
+  const p = entry.data.permalink ? String(entry.data.permalink) : '';
+  if (!p) return `/${entry.id}`;
+  return p.startsWith('/') ? p : `/${p}`;
+};
+
+// テーマ案内ハブ（type: landing のノート）
+const hubPages = allNotes
+  .filter(n => n.data.type === 'landing')
+  .sort((a, b) => getTitle(a).localeCompare(getTitle(b), 'ja'));
+
+// 最近のブログ記事（date があるものを優先、なければ末尾）
+const recentPosts = blogPosts
   .sort((a, b) => {
     if (a.data.date && b.data.date) {
       return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
@@ -20,33 +32,49 @@ const sortedPosts = blogPosts
     if (b.data.date) return 1;
     return getTitle(a).localeCompare(getTitle(b), 'ja');
   })
-  .slice(0, 10);
+  .slice(0, 8);
 
-const formatDate = (date: Date) => {
-  return date.toLocaleDateString('ja-JP', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-};
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
 ---
 
-<Layout title="Home" description="ごりゅごさんのブログとノート">
+<Layout title="goryugo.com" description="Obsidianを中心とした知識管理（PKM）と音楽について書く個人サイトです。">
   <section class="hero">
     <h1>goryugo.com</h1>
-    <p>ごりゅごさんが面白いと感じたものを書く場所</p>
+    <p>Obsidianで育てた知識と、音楽との日々を書く個人サイトです。<br>
+    知識管理（PKM）・ノート術・Obsidian・ギター・64パッドが主なテーマです。</p>
   </section>
+
+  {hubPages.length > 0 && (
+    <section class="section">
+      <div class="section-header">
+        <h2>テーマ別に読む</h2>
+      </div>
+      <ul class="hub-grid">
+        {hubPages.map(note => (
+          <li>
+            <a href={getHref(note)} class="hub-card">
+              <strong class="hub-title">{getTitle(note)}</strong>
+              {note.data.description && (
+                <span class="hub-desc">{note.data.description}</span>
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <section class="section">
     <div class="section-header">
       <h2>最近のブログ記事</h2>
       <a href="/blog">すべて見る →</a>
     </div>
-    {sortedPosts.length > 0 ? (
+    {recentPosts.length > 0 ? (
       <ul class="post-list">
-        {sortedPosts.map(post => (
+        {recentPosts.map(post => (
           <li>
-            <a href={post.data.permalink || `/${post.id}`}>
+            <a href={getHref(post)}>
               <span class="post-title">{getTitle(post)}</span>
               {post.data.date && (
                 <time datetime={new Date(post.data.date).toISOString()}>
@@ -62,24 +90,13 @@ const formatDate = (date: Date) => {
     )}
   </section>
 
-  <section class="section">
-    <div class="section-header">
-      <h2>ノート</h2>
-      <a href="/notes">すべて見る →</a>
-    </div>
-    {notes.length > 0 ? (
-      <ul class="note-grid">
-        {notes.slice(0, 6).map(note => (
-          <li>
-            <a href={note.data.permalink || `/${note.id}`}>
-              {getTitle(note)}
-            </a>
-          </li>
-        ))}
-      </ul>
-    ) : (
-      <p class="empty">まだノートがありません</p>
-    )}
+  <section class="cta">
+    <p class="cta-lead">毎週配信のニュースレター</p>
+    <p class="cta-title">Knowledge Stack</p>
+    <p class="cta-body">知識管理・Obsidian・自分で学ぶための方法を深掘りしています。</p>
+    <a href="https://knowledgestuck.substack.com/" target="_blank" rel="noopener" class="cta-btn">
+      無料で購読する →
+    </a>
   </section>
 </Layout>
 
@@ -87,58 +104,79 @@ const formatDate = (date: Date) => {
   .hero {
     margin-bottom: 3rem;
   }
-
   .hero h1 {
     font-size: 2rem;
     font-weight: 700;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.75rem;
   }
-
   .hero p {
-    font-size: 1.125rem;
-    color: #6b7280;
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.8;
     margin: 0;
   }
-
   .section {
     margin-bottom: 3rem;
   }
-
   .section-header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     padding-bottom: 0.75rem;
     border-bottom: 1px solid #e5e7eb;
   }
-
   .section-header h2 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 700;
     margin: 0;
   }
-
   .section-header a {
     font-size: 0.875rem;
     color: #2563eb;
     text-decoration: none;
   }
-
-  .section-header a:hover {
-    text-decoration: underline;
+  .section-header a:hover { text-decoration: underline; }
+  .hub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.875rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-
+  .hub-card {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .hub-card:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+  }
+  .hub-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.375rem;
+  }
+  .hub-desc {
+    display: block;
+    font-size: 0.8125rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
   .post-list {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
-  .post-list li {
-    margin-bottom: 0;
-  }
-
+  .post-list li { margin-bottom: 0; }
   .post-list a {
     display: flex;
     justify-content: space-between;
@@ -149,71 +187,60 @@ const formatDate = (date: Date) => {
     text-decoration: none;
     color: inherit;
   }
-
-  .post-list a:hover .post-title {
-    color: #2563eb;
-  }
-
+  .post-list a:hover .post-title { color: #2563eb; }
   .post-title {
     font-size: 1rem;
     line-height: 1.5;
   }
-
   .post-list time {
     font-size: 0.875rem;
     color: #9ca3af;
     white-space: nowrap;
     flex-shrink: 0;
   }
-
-  .note-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .cta {
+    margin-top: 3rem;
+    padding: 1.75rem 2rem;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 12px;
+    text-align: center;
   }
-
-  .note-grid li {
-    margin: 0;
+  .cta-lead {
+    font-size: 0.8125rem;
+    color: #0369a1;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
-
-  .note-grid a {
-    display: block;
-    padding: 1rem 1.25rem;
-    background: #f9fafb;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #1a1a1a;
+  .cta-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: #0c4a6e;
+  }
+  .cta-body {
     font-size: 0.9375rem;
-    line-height: 1.5;
+    color: #4b5563;
+    margin: 0 0 1.25rem;
   }
-
-  .note-grid a:hover {
-    background: #f3f4f6;
+  .cta-btn {
+    display: inline-block;
+    padding: 0.625rem 1.5rem;
+    background: #0284c7;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    transition: background 0.15s;
   }
-
-  .empty {
-    color: #9ca3af;
-  }
-
+  .cta-btn:hover { background: #0369a1; }
+  .empty { color: #9ca3af; }
   @media (max-width: 640px) {
-    .hero h1 {
-      font-size: 1.5rem;
-    }
-
-    .hero p {
-      font-size: 1rem;
-    }
-
-    .post-list a {
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    .note-grid {
-      grid-template-columns: 1fr;
-    }
+    .hero h1 { font-size: 1.5rem; }
+    .hub-grid { grid-template-columns: 1fr; }
+    .post-list a { flex-direction: column; gap: 0.25rem; }
+    .cta { padding: 1.25rem 1rem; }
   }
 </style>
