@@ -5,12 +5,32 @@
 
 ---
 
+## このリポジトリでの役割
+
+**Astro コード担当**。レイアウト・ルーティング・コンポーネント・スキーマの実装が主な仕事。
+
+コンテンツ（ノートの執筆・frontmatter の編集）は**しない**。
+「この記事の description を書いて」と言われたら → Obsidian 側の Claude に依頼するよう人間に伝える。
+
+### 役割の境界線
+
+| このリポジトリの Claude がやること | Obsidian Vault の Claude がやること |
+|----------------------------------|-----------------------------------|
+| `src/` 以下の Astro コード | `Astro/Publish/` 内のノート執筆・改稿 |
+| コンポーネント・レイアウトの改修 | frontmatter の type/permalink/description |
+| スキーマ（config.ts）の変更 | ハブページ（まとめたノート）の作成 |
+| ルーティング・ビルド設定 | 内部リンクの整理 |
+| `docs/specs/` の更新 | ― |
+
+### スキーマ変更が発生したとき
+両方の Claude が参照する `docs/specs/site-information-architecture.md` を先に更新してから実装する。
+
+---
+
 ## ⚠️ ワークツリー作業の鉄則
 
 このリポジトリは **git worktree** を使って作業することがある。
 worktree のパスは `/Users/goryugo/github/goryugo-com/.claude/worktrees/<name>/` 。
-
-### 絶対に守ること
 
 **ファイルを編集するときは、必ず現在の作業ディレクトリ（worktree）内のパスを使う。**
 
@@ -19,7 +39,7 @@ worktree のパスは `/Users/goryugo/github/goryugo-com/.claude/worktrees/<name
 ❌ /Users/goryugo/github/goryugo-com/src/pages/index.astro  ← これはメイン repo（別ブランチ）
 ```
 
-作業を始めたら `pwd` または git status で現在のブランチを確認してから編集する。
+作業を始めたら `pwd` または `git status` で現在のブランチを確認してから編集する。
 
 ---
 
@@ -80,7 +100,8 @@ https://knowledgestuck.substack.com/
 
 ---
 
-## コンテンツ設計の詳細は docs/specs/ を参照
+## 仕様書・設計ドキュメント
 
 - `docs/specs/goryugo-final-instructions.md` — サイト全体の設計書（最重要）
-- `docs/specs/site-information-architecture.md` — 最近実装した IA・ハブページ設計
+- `docs/specs/site-information-architecture.md` — IA・ハブページ設計（Vault 側 Claude と共有）
+
