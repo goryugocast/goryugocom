@@ -53,6 +53,61 @@ type: blog     → ブログ記事（blog コレクション）
 
 ---
 
+## セッション終了プロトコル（必須）
+
+**作業が終わったら必ずこれを実行する。スキップ禁止。**
+
+### ステップ 1: 統合アクションログに記録する
+
+Vault と共有の統一ログに書き込む。このファイルへの書き込みは **スコープの例外として許可**。
+
+```bash
+VAULT_ROOT="/Users/goryugo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian_local"
+DATE=$(date +%Y-%m-%d)
+YYMMDD=$(date +%y%m%d)
+TIME=$(date +%H:%M)
+LOG="${VAULT_ROOT}/notes/Log/Analytics/actions/${YYMMDD}_action_log.md"
+
+# ファイルがなければヘッダーを作成
+if [ ! -f "$LOG" ]; then
+cat > "$LOG" << HEADER
+---
+type: action_log
+date: ${DATE}
+---
+# Action Log
+HEADER
+fi
+
+# 末尾に追記（action_type・summary・対象ファイルを実際の内容に置き換える）
+cat >> "$LOG" << 'LOGEOF'
+
+## HH:MM design-layout [astro]
+
+**サマリ**:
+何をしたか・なぜしたか・動作確認済みかを記述する
+
+**対象ファイル**:
+- src/pages/index.astro
+- src/layouts/Note.astro
+LOGEOF
+```
+
+`action_type` は `log-analytics-action` スキルの定義を参照して選ぶ。
+
+### ステップ 2: git commit
+
+```bash
+git add -A
+git commit -m "作業内容の一行要約"
+```
+
+### ログの参照
+
+analyze- 系スキルは `notes/Log/Analytics/actions/` を見ることで Astro 側の変更も把握できる。
+
+---
+
 ## Frontmatter Schema（参照用）
 
 ```yaml
